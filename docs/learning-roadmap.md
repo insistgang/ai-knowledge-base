@@ -17,7 +17,7 @@
 | 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已通过角色触发自检 |
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 已完成 V1 |
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 进行中：质量脚本完成 |
-| 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 待做 |
+| 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 进行中：模型客户端完成 |
 | 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务 | 待做 |
 | 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 待做 |
 | 8. 多 Agent 模式 | 第 9 节 | Router、Supervisor | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 手动模拟一次“产出 -> 校验 -> 修正 -> 再校验”的反馈循环。
-2. 视时间决定是否配置 OpenCode TypeScript Hook 自动校验。
-3. 进入第 6 节 MCP 与 Pipeline。
+1. 创建第 6 节实操 2 的四步 Pipeline。
+2. 将采集、分析、整理串成可独立运行的 Python 脚本。
+3. 用小样本跑通 `collect -> analyze -> organize -> save`。
 
 ## API Key 配置示例
 
