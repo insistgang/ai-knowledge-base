@@ -16,7 +16,7 @@
 | 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已通过 Memory 验证 |
 | 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已通过角色触发自检 |
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 已完成 V1 |
-| 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 待做 |
+| 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 进行中：JSON 校验完成 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 待做 |
 | 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务 | 待做 |
 | 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 提交第 4 节 Skill 与 V1 知识条目产物。
-2. 进入第 5 节 Hook 质量门。
-3. 创建 JSON 格式校验脚本与质量评分脚本。
+1. 创建 `hooks/check_quality.py` 质量评分脚本。
+2. 对 `knowledge/articles/*.json` 输出 A/B/C 质量报告。
+3. 手动模拟一次“产出 -> 校验 -> 修正 -> 再校验”的反馈循环。
 
 ## API Key 配置示例
 
