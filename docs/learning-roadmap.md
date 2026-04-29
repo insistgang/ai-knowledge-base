@@ -4,15 +4,15 @@
 
 - 资料目录: `/home/insistgang/agent`
 - 实操项目: `/home/insistgang/ai-knowledge-base`
-- OpenCode: 已安装并可运行
+- OpenCode: 已安装并可运行，项目已配置 DeepSeek provider
 - Git: 已初始化并完成第一版提交
-- 模型 API Key: 未检测到，需要用户本地配置
+- 模型 API Key: 已通过 DeepSeek API 与 OpenCode 最小连通测试
 
 ## 分阶段任务
 
 | 阶段 | 对应资料 | 目标产物 | 状态 |
 | --- | --- | --- | --- |
-| 0. 环境准备 | 第 1 节 | Node、OpenCode、模型 Key、连通测试 | 进行中 |
+| 0. 环境准备 | 第 1 节 | Node、OpenCode、模型 Key、连通测试 | 已完成 |
 | 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已完成骨架 |
 | 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已完成角色文件 |
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 配置至少一个模型 API Key。
-2. 用 OpenCode 在项目目录验证 `AGENTS.md` 能被加载。
-3. 用 OpenCode 触发 `@collector`、`@analyzer`、`@organizer` 做一次角色测试。
+1. 用 OpenCode 在项目目录验证 `AGENTS.md` 能被加载。
+2. 用 OpenCode 触发 `@collector`、`@analyzer`、`@organizer` 做一次角色测试。
+3. 记录第 3 节 Sub-Agent 测试日志。
 
 ## API Key 配置示例
 
