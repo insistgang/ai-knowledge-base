@@ -11,7 +11,8 @@
 ## 下一步
 
 1. 配置可用模型 API Key。
-2. 修复或安装 WSL 内可运行的 OpenCode。
+2. 用 WSL 内的 OpenCode 验证 `AGENTS.md` 加载效果。
 3. 完成 Memory 加载验证。
 4. 创建 3 个 Agent 角色定义文件。
 
+详细推进清单见 `docs/learning-roadmap.md`。
