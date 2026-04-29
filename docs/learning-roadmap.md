@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | 0. 环境准备 | 第 1 节 | Node、OpenCode、模型 Key、连通测试 | 进行中 |
 | 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已完成骨架 |
-| 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 待做 |
+| 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已完成角色文件 |
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 待做 |
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 待做 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 待做 |
@@ -29,7 +29,7 @@
 
 1. 配置至少一个模型 API Key。
 2. 用 OpenCode 在项目目录验证 `AGENTS.md` 能被加载。
-3. 创建第 3 节的三个 Agent 角色定义文件。
+3. 用 OpenCode 触发 `@collector`、`@analyzer`、`@organizer` 做一次角色测试。
 
 ## API Key 配置示例
 
@@ -39,4 +39,3 @@ source ~/.bashrc
 ```
 
 验证时只检查是否存在，不要把 Key 打印到聊天或日志里。
-
