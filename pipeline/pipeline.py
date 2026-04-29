@@ -249,6 +249,13 @@ def make_slug(name: str) -> str:
     return slug
 
 
+def make_article_id(source: str, date_str: str, slug: str) -> str:
+    """Build a stable article id that will not collide across pipeline runs."""
+    source_prefix = "github" if source == "github" else source.replace(":", "-")
+    compact_date = date_str.replace("-", "")
+    return f"{source_prefix}-{compact_date}-{slug}"
+
+
 def organize(
     source: str,
     collected_at: str,
@@ -261,8 +268,8 @@ def organize(
     source_short = "github-trending" if source == "github" else source
 
     for i, (raw, ana) in enumerate(zip(raw_items, analyzed), start=1):
-        article_id = f"github-{date_str.replace('-', '')}-{i:03d}"
         slug = make_slug(raw["name"])
+        article_id = make_article_id(source, date_str, slug)
 
         article = {
             "id": article_id,
