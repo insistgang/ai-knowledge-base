@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-002",
+  "title": "free-claude-code: Claude Code 免费多后端代理",
+  "source": "github-trending",
+  "source_url": "https://github.com/Alishahryar1/free-claude-code",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "Claude Code 免费代理，将 API 流量路由到 NIM/DeepSeek/Ollama 等 6 种后端。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 6 种 provider 后端（NVIDIA NIM、OpenRouter、DeepSeek、LM Studio、llama.cpp、Ollama），可按模型 tier 分层路由",
+      "完整实现 Anthropic Messages 流式协议转译，含 reasoning/thinking block 处理与 token 用量标准化",
+      "可选 Discord/Telegram bot 远程会话 + 本地 Whisper 语音笔记转录"
+    ],
+    "relevance_score": 9,
+    "reason": "极大降低 Claude Code 使用成本门槛，多 provider 分层路由架构为 AI 编码工具的模型自由选择提供了可复用的实践范式，可能改变个人开发者使用 AI 编码的经济模型。",
+    "risks": ["各免费 provider 的推理质量和工具调用能力与官方 Claude 的差距未量化对比"]
+  },
+  "tags": ["claude-code", "proxy", "llm", "open-source", "cost-optimization"],
+  "audience": ["developer"],
+  "status": "draft"
+}

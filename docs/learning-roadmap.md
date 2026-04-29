@@ -15,7 +15,7 @@
 | 0. 环境准备 | 第 1 节 | Node、OpenCode、模型 Key、连通测试 | 已完成 |
 | 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已通过 Memory 验证 |
 | 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已通过角色触发自检 |
-| 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 待做 |
+| 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 已完成 V1 |
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 待做 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 待做 |
 | 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务 | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。
-2. 主 Agent 将采集结果保存到 `knowledge/raw/`。
-3. 用 `@analyzer` 和 `@organizer` 跑通一条小规模数据链路。
+1. 提交第 4 节 Skill 与 V1 知识条目产物。
+2. 进入第 5 节 Hook 质量门。
+3. 创建 JSON 格式校验脚本与质量评分脚本。
 
 ## API Key 配置示例
 

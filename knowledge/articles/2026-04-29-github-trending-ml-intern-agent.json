@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-003",
+  "title": "ml-intern: HuggingFace 开源自主 ML 工程师 Agent",
+  "source": "github-trending",
+  "source_url": "https://github.com/huggingface/ml-intern",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "HuggingFace 自主 ML Agent，可读论文、训模型、提交代码，内置防死循环机制。",
+  "analysis": {
+    "tech_highlights": [
+      "Agentic Loop 最大 300 轮迭代，内置 Doom Loop 检测器自动发现重复工具调用并注入纠正提示",
+      "工具路由支持 HF 文档/论文/数据集/模型仓库的深度访问 + GitHub 代码搜索，MCP 服务器工具可扩展",
+      "分层上下文管理（ContextManager + auto-compaction 170k），Slack 通知网关支持"
+    ],
+    "relevance_score": 8,
+    "reason": "HuggingFace 官方出品的 ML Agent，Doom Loop 检测和 HF 生态深度集成是其独特优势，对 ML 开发者的实际工作效率提升有直接帮助。",
+    "risks": ["自主训练和论文阅读的实际质量未通过第三方评测验证"]
+  },
+  "tags": ["ai-agent", "machine-learning", "open-source", "huggingface"],
+  "audience": ["developer", "researcher"],
+  "status": "draft"
+}

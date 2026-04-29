@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-010",
+  "title": "ds2api: DeepSeek→OpenAI/Claude/Gemini API 转换中间件",
+  "source": "github-trending",
+  "source_url": "https://github.com/CJackHwang/ds2api",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "DeepSeek→OpenAI/Claude/Gemini API 转换中间件，多账号轮询+PoW，Go 全量实现。",
+  "analysis": {
+    "tech_highlights": [
+      "三协议兼容：OpenAI chat/responses/embeddings + Claude Messages + Gemini generateContent，模型 alias 自动映射",
+      "纯 Go 实现的 DeepSeek PoW（DeepSeekHashV1）毫秒级计算，多账号并发队列控制避免 429",
+      "支持编译二进制/Docker/Vercel Serverless 三种部署模式，含 React WebUI 管理台"
+    ],
+    "relevance_score": 7,
+    "reason": "为 DeepSeek 用户提供无缝接入 OpenAI/Claude/Gemini 生态的能力，多协议适配和多账号轮询设计实用性强，对依赖 DeepSeek API 的 Agent 开发有直接帮助。",
+    "risks": ["AGPL-3.0 许可证可能限制商业场景使用"]
+  },
+  "tags": ["deepseek", "api-proxy", "openai-api", "claude-api", "middleware"],
+  "audience": ["developer"],
+  "status": "draft"
+}

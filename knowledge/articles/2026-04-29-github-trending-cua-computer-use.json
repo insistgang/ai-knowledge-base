@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-009",
+  "title": "cua: Computer-Use Agent 开源基础设施（沙箱/SDK/评测）",
+  "source": "github-trending",
+  "source_url": "https://github.com/trycua/cua",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "Computer-Use Agent 开源基础设施，沙箱/SDK/评测全栈，跨 macOS/Linux/Windows。",
+  "analysis": {
+    "tech_highlights": [
+      "Cua Driver 实现 macOS 后台桌面操控（不抢占光标/焦点），支持非 AX 表面（Chromium、Canvas 工具）",
+      "多 OS 沙箱统一 API：Linux/macOS/Windows/Android，同接口调用 shell、截图、键鼠、手势",
+      "内置 Cua-Bench 评测框架（OSWorld、ScreenSpot、Windows Arena），支持轨迹导出用于训练"
+    ],
+    "relevance_score": 8,
+    "reason": "为 Computer-Use Agent 提供完整的基础设施（沙箱→SDK→评测→训练），跨平台统一 API 降低了 Agent 开发的平台适配成本，评测框架填补了该领域的工具空白。",
+    "risks": ["Cua Driver 后台操控的具体实现原理和安全性限制未详尽说明"]
+  },
+  "tags": ["computer-use", "agent", "sandbox", "benchmark", "virtualization"],
+  "audience": ["developer", "researcher"],
+  "status": "draft"
+}

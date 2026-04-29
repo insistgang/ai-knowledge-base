@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-004",
+  "title": "Open-Generative-AI: 开源无审查 AI 图像/视频/唇形同步工作室",
+  "source": "github-trending",
+  "source_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "开源 AI 图像/视频/唇形同步工作室，支持 200+ 模型，可自部署无审查。",
+  "analysis": {
+    "tech_highlights": [
+      "集成 200+ 文生图/文生视频/唇形同步模型（Flux、Kling、Sora、Seedance 等），四模式工作室统一界面",
+      "支持自部署 + 桌面端本地推理（sd.cpp Metal GPU + Wan2GP 远端 GPU 服务器）",
+      "多图输入支持最多 14 张参考图，Workflow Studio 可视化构建多步 AI 管线"
+    ],
+    "relevance_score": 5,
+    "reason": "功能全面但偏向 AI 创作工具方向，与 LLM/Agent 工程化实践的核心关注点有偏移。对研究 AI 多模态应用集成有参考价值，短期对 Agent 开发者的直接帮助有限。",
+    "risks": ["部分模型 API 可用性和延迟未在 README 中明确说明"]
+  },
+  "tags": ["generative-ai", "image-generation", "video-generation", "open-source"],
+  "audience": ["developer", "product", "student"],
+  "status": "draft"
+}

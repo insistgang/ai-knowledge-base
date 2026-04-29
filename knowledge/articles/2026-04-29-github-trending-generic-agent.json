@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-006",
+  "title": "GenericAgent: 极简自我进化 Agent 框架 —— 3K 行种子代码生长技能树",
+  "source": "github-trending",
+  "source_url": "https://github.com/lsdefine/GenericAgent",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "极简自我进化 Agent，3K 行种子代码生长出专属技能树，上下文仅需 30K token。",
+  "analysis": {
+    "tech_highlights": [
+      "自我进化机制：每完成新任务自动将执行路径固化为 Skill，多次使用积累形成专属技能树",
+      "分层记忆系统 L0-L4（元规则→索引→事实→技能→归档），上下文窗口不到 30K token（相比竞品 200K-1M 减少 6x+）",
+      "有 arXiv 技术报告背书（2604.17091），仓库本身由 Agent 自举完成（作者未打开终端）"
+    ],
+    "relevance_score": 10,
+    "reason": "极简设计哲学 + 自我进化机制 + 分层记忆打破了当前 Agent 框架向复杂化发展的趋势，6x token 节省和 arXiv 论文证明其理论深度。可能重新定义轻量 Agent 框架的构建范式。",
+    "risks": ["百万级 Skill 库的社区实际质量和安全性未验证"]
+  },
+  "tags": ["ai-agent", "self-evolving", "memory-system", "skill-tree", "research"],
+  "audience": ["developer", "researcher"],
+  "status": "draft"
+}

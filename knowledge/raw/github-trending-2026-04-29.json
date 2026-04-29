@@ -1,0 +1,87 @@
+{
+  "source": "github-trending",
+  "skill": "github-trending",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "items": [
+    {
+      "name": "forrestchang/andrej-karpathy-skills",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "summary": "基于 Karpathy 对 LLM 编码缺陷观察提炼的 CLAUDE.md 规则文件，四项原则让 AI 编码 Agent 避免过度工程与错误假设。",
+      "stars": 25836,
+      "language": "Shell",
+      "topics": ["claude-code", "agent", "code-generation", "ai-coding"]
+    },
+    {
+      "name": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "将 Claude Code API 路由到 NVIDIA NIM、OpenRouter、DeepSeek 等免费/本地模型后端的代理，支持多模型分层分发。",
+      "stars": 15110,
+      "language": "Python",
+      "topics": ["claude-code", "agent", "proxy", "llm"]
+    },
+    {
+      "name": "huggingface/ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "summary": "HuggingFace 推出的自主 AI 代理，可阅读论文、训练模型、提交代码，内置 Doom Loop 检测与工具路由。",
+      "stars": 6441,
+      "language": "Python",
+      "topics": ["ai-agent", "llm-agent", "code-generation", "deep-learning"]
+    },
+    {
+      "name": "Anil-matcha/Open-Generative-AI",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "summary": "支持 200+ 模型的无审查开源文生图/文生视频/唇形同步平台，替代 Higgsfield、Freepik 等付费工具。",
+      "stars": 4071,
+      "language": "JavaScript",
+      "topics": ["generative-ai", "image-generation", "video-generation", "open-source"]
+    },
+    {
+      "name": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "summary": "Zilliz 推出的 MCP 语义代码搜索插件，结合 BM25+密集向量混合检索，让 AI Agent 理解百万行代码库。",
+      "stars": 3767,
+      "language": "TypeScript",
+      "topics": ["mcp", "claude-code", "rag", "vector-database", "semantic-search"]
+    },
+    {
+      "name": "lsdefine/GenericAgent",
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "summary": "极简自我进化 Agent 框架，仅 3K 行核心代码，9 个原子工具赋予 LLM 系统级控制，任务自动沉淀为 Skill。",
+      "stars": 2620,
+      "language": "Python",
+      "topics": ["ai-agent", "llm-agent", "self-evolving", "browser-automation"]
+    },
+    {
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "summary": "AI 编码 Agent 上下文窗口优化 MCP 服务器，沙箱化工具输出实现 98% token 压缩，支持 14 个平台。",
+      "stars": 2333,
+      "language": "TypeScript",
+      "topics": ["mcp", "claude-code", "ai-coding", "context-window"]
+    },
+    {
+      "name": "AIDC-AI/Pixelle-Video",
+      "url": "https://github.com/AIDC-AI/Pixelle-Video",
+      "summary": "阿里 AIDC 团队出品的 AI 全自动短视频引擎，输入主题即可自动完成文案、配图、语音、BGM 和视频合成。",
+      "stars": 2330,
+      "language": "Python",
+      "topics": ["aigc", "video-generation", "image-generation", "tts"]
+    },
+    {
+      "name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Computer-Use Agent 开源基础设施，提供沙箱、SDK 和评测基准，支持 macOS/Linux/Windows 桌面控制。",
+      "stars": 1336,
+      "language": "HTML",
+      "topics": ["computer-use", "agent", "ai-agent", "virtualization"]
+    },
+    {
+      "name": "CJackHwang/ds2api",
+      "url": "https://github.com/CJackHwang/ds2api",
+      "summary": "将 DeepSeek Web 对话转为 OpenAI/Claude/Gemini 兼容 API 的 Go 中间件，支持多账号轮询与高性能 PoW。",
+      "stars": 997,
+      "language": "Go",
+      "topics": ["deepseek", "openai-api", "claude-api", "proxy"]
+    }
+  ]
+}
