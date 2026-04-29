@@ -1,3 +1,12 @@
+---
+description: AI knowledge collector that gathers source facts without writing files
+mode: subagent
+permission:
+  edit: deny
+  bash: deny
+  webfetch: allow
+---
+
 # 知识采集 Agent（Collector Agent）
 
 ## 角色定义
@@ -51,4 +60,3 @@
 - [ ] 摘要使用中文，关键技术术语保留英文。
 - [ ] 排序逻辑清晰，优先高热度、高相关、高时效内容。
 - [ ] 不写入任何文件，不执行任何 Bash 命令。
-

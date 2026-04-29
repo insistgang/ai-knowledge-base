@@ -13,8 +13,8 @@
 | 阶段 | 对应资料 | 目标产物 | 状态 |
 | --- | --- | --- | --- |
 | 0. 环境准备 | 第 1 节 | Node、OpenCode、模型 Key、连通测试 | 已完成 |
-| 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已完成骨架 |
-| 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已完成角色文件 |
+| 1. Memory 工程 | 第 2 节 | `AGENTS.md`、项目骨架、Memory 验证 | 已通过 Memory 验证 |
+| 2. Sub-Agent | 第 3 节 | `collector.md`、`analyzer.md`、`organizer.md` | 已通过角色触发自检 |
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 待做 |
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 待做 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 用 OpenCode 在项目目录验证 `AGENTS.md` 能被加载。
-2. 用 OpenCode 触发 `@collector`、`@analyzer`、`@organizer` 做一次角色测试。
-3. 记录第 3 节 Sub-Agent 测试日志。
+1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。
+2. 主 Agent 将采集结果保存到 `knowledge/raw/`。
+3. 用 `@analyzer` 和 `@organizer` 跑通一条小规模数据链路。
 
 ## API Key 配置示例
 

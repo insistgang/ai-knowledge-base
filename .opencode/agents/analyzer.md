@@ -1,3 +1,12 @@
+---
+description: AI knowledge analyzer that evaluates collected items without writing files
+mode: subagent
+permission:
+  edit: deny
+  bash: deny
+  webfetch: allow
+---
+
 # 知识分析 Agent（Analyzer Agent）
 
 ## 角色定义
@@ -60,4 +69,3 @@
 - [ ] 评分有区分度，不能全部集中在 7-8。
 - [ ] 对不确定信息明确标注为待确认。
 - [ ] 不写入任何文件，不执行任何 Bash 命令。
-

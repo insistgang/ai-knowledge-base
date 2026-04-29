@@ -11,8 +11,8 @@
 
 ## 下一步
 
-1. 用 WSL 内的 OpenCode 验证 `AGENTS.md` 加载效果。
-2. 用 `@collector`、`@analyzer`、`@organizer` 做一次 Sub-Agent 触发测试。
-3. 记录第 3 节测试日志。
+1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。
+2. 将采集结果保存到 `knowledge/raw/`。
+3. 用 `@analyzer` 和 `@organizer` 跑通一条小规模数据链路。
 
 详细推进清单见 `docs/learning-roadmap.md`。

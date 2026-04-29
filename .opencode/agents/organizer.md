@@ -1,3 +1,12 @@
+---
+description: AI knowledge organizer that formats and writes reviewed JSON articles
+mode: subagent
+permission:
+  edit: allow
+  bash: deny
+  webfetch: deny
+---
+
 # 知识整理 Agent（Organizer Agent）
 
 ## 角色定义
@@ -71,4 +80,3 @@
 - [ ] 文件名符合 `{date}-{source}-{slug}.json`。
 - [ ] 没有重复 URL 或重复标题。
 - [ ] 不访问外部网页，不执行任何 Bash 命令。
-
