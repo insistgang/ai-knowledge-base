@@ -8,6 +8,17 @@
 - 已写入 `AGENTS.md` 项目规范。
 - 已写入 `specs/project-vision.md` 项目愿景。
 - 已写入 `opencode.json`，通过 `DEEPSEEK_API_KEY` 环境变量连接 DeepSeek。
+- 已接入 GitHub Actions 每日采集，并生成 `reports/dashboard.html` 可视化看板。
+
+## Dashboard
+
+生成本地看板:
+
+```bash
+python reports/generate_dashboard.py
+```
+
+打开 `reports/dashboard.html` 即可查看统计卡片、评分分布、标签筛选和知识条目列表。
 
 ## 下一步
 

@@ -18,7 +18,7 @@
 | 3. Skill 封装 | 第 4 节 | `.opencode/skills/*/SKILL.md`、V1 流程 | 已完成 V1 |
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 进行中：质量脚本完成 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 进行中：Pipeline 完成 |
-| 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务 | 进行中：Actions 完成 |
+| 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务、Dashboard | 已完成：自动采集与看板 |
 | 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 待做 |
 | 8. 多 Agent 模式 | 第 9 节 | Router、Supervisor | 待做 |
 | 9. LangGraph 工作流 | 第 10 节 | `KBState`、5 节点工作流、审核循环 | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 手动测试本地定时脚本 `scripts/run_local_collect.sh`。
-2. 按需写入 `crontab`。
-3. 进入第 8 节成本控制。
+1. 进入第 8 节成本控制。
+2. 按需写入本地 `crontab`。
+3. 后续可把 `reports/dashboard.html` 发布到 GitHub Pages。
 
 ## API Key 配置示例
 
