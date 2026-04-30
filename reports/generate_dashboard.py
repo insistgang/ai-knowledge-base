@@ -782,7 +782,7 @@ def render_html(payload: dict[str, Any]) -> str:
 
 
 def generate_dashboard(articles_dir: Path, output_path: Path) -> Path:
-    """Generate the dashboard HTML file and return its path."""
+    """Generate the dashboard HTML files and return the main output path."""
     articles = load_articles(articles_dir)
     payload = {
         "generated_at": data_timestamp(articles),
@@ -790,7 +790,14 @@ def generate_dashboard(articles_dir: Path, output_path: Path) -> Path:
         "stats": build_stats(articles),
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(render_html(payload), encoding="utf-8")
+    html = render_html(payload)
+    output_path.write_text(html, encoding="utf-8")
+
+    index_path = output_path.parent / "index.html"
+    if index_path != output_path:
+        index_path.write_text(html, encoding="utf-8")
+        logger.info("Generated index page: %s", index_path)
+
     logger.info("Generated dashboard: %s (%d articles)", output_path, len(articles))
     return output_path
 

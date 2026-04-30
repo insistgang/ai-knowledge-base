@@ -20,6 +20,12 @@ python reports/generate_dashboard.py
 
 打开 `reports/dashboard.html` 即可查看统计卡片、评分分布、标签筛选和知识条目列表。
 
+GitHub Pages 访问地址:
+
+```text
+https://insistgang.github.io/ai-knowledge-base/
+```
+
 ## 下一步
 
 1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。

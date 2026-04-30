@@ -7,10 +7,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   collect:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -59,3 +68,15 @@ jobs:
             git commit -m "chore: daily collection - ${ARTICLE_COUNT} json files [$(date -u +%Y-%m-%d)]"
             git push
           fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+
+      - name: Deploy dashboard to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
