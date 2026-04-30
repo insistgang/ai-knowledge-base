@@ -19,7 +19,7 @@
 | 4. Hook 质量门 | 第 5 节 | JSON 校验脚本、质量评分脚本 | 进行中：质量脚本完成 |
 | 5. MCP 与 Pipeline | 第 6 节 | 模型客户端、流水线、RSS、MCP Server | 进行中：Pipeline 完成 |
 | 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务、Dashboard | 已完成：自动采集与看板 |
-| 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 进行中：成本 Dashboard 完成 |
+| 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 已完成：V2 验收通过 |
 | 8. 多 Agent 模式 | 第 9 节 | Router、Supervisor | 待做 |
 | 9. LangGraph 工作流 | 第 10 节 | `KBState`、5 节点工作流、审核循环 | 待做 |
 | 10. 自主规划 | 第 11 节 | Reviewer、Reviser、HumanFlag、Planner | 待做 |
@@ -27,9 +27,9 @@
 
 ## 下一步执行
 
-1. 做第 8 节 V2 验收提交。
-2. 准备第 9 节多 Agent 模式。
-3. 后续按需细化深度分析入口。
+1. 开始第 9 节多 Agent 模式。
+2. 设计 Router 与 Supervisor 的职责边界。
+3. 为第 10 节 LangGraph 工作流预留状态结构。
 
 ## API Key 配置示例
 
