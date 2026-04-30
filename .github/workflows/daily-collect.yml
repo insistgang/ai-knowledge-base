@@ -41,6 +41,7 @@ jobs:
           QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AI_KB_DAILY_BUDGET_USD: "0.10"
         run: |
           python pipeline/pipeline.py \
             --sources github \

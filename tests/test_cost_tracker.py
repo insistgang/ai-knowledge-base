@@ -12,7 +12,7 @@ class CostTrackerTest(unittest.TestCase):
     """Verify LLM cost metrics aggregation."""
 
     def test_daily_payload_groups_by_source_and_model(self) -> None:
-        tracker = CostTracker()
+        tracker = CostTracker(budget_usd=0.10)
         tracker.add_call(
             source="github",
             item_name="owner/repo-a",
@@ -38,6 +38,8 @@ class CostTrackerTest(unittest.TestCase):
         )
 
         self.assertEqual(payload["date"], "2026-04-30")
+        self.assertEqual(payload["budget"]["budget_usd"], 0.10)
+        self.assertFalse(payload["budget"]["exceeded"])
         self.assertEqual(payload["total"]["calls"], 3)
         self.assertEqual(payload["total"]["prompt_tokens"], 1700)
         self.assertEqual(payload["total"]["completion_tokens"], 1350)
@@ -52,6 +54,22 @@ class CostTrackerTest(unittest.TestCase):
         self.assertEqual(github_run["calls"], 2)
         self.assertEqual(github_run["total_tokens"], 2750)
         self.assertAlmostEqual(github_run["estimated_cost_usd"], 0.00178)
+
+    def test_budget_exceeded_when_cost_reaches_threshold(self) -> None:
+        tracker = CostTracker(budget_usd=0.001)
+
+        self.assertFalse(tracker.is_budget_exceeded())
+        tracker.add_call(
+            source="github",
+            item_name="owner/repo",
+            model="deepseek-chat",
+            usage=Usage(prompt_tokens=1000, completion_tokens=1000),
+        )
+
+        self.assertTrue(tracker.is_budget_exceeded())
+        status = tracker.budget_status()
+        self.assertEqual(status["budget_usd"], 0.001)
+        self.assertEqual(status["remaining_usd"], 0.0)
 
 
 if __name__ == "__main__":

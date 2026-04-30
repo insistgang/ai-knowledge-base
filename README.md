@@ -37,6 +37,14 @@ python pipeline/pipeline.py --sources github --limit 5 --verbose
 
 成本文件保存到 `knowledge/metrics/cost-YYYY-MM-DD.json`。
 
+默认每日预算是 `$0.10`，可通过环境变量覆盖:
+
+```bash
+AI_KB_DAILY_BUDGET_USD=0.10 python pipeline/pipeline.py --sources github --limit 5 --verbose
+```
+
+当本次运行的累计预估成本达到预算后，pipeline 会停止继续调用 LLM，并自动使用 fallback 分析。
+
 ## 下一步
 
 1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。

@@ -29,6 +29,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 KNOWLEDGE_RAW = PROJECT_ROOT / "knowledge" / "raw"
 KNOWLEDGE_ARTICLES = PROJECT_ROOT / "knowledge" / "articles"
 KNOWLEDGE_METRICS = PROJECT_ROOT / "knowledge" / "metrics"
+DEFAULT_DAILY_BUDGET_USD = 0.10
 
 
 def ensure_dirs() -> None:
@@ -36,6 +37,33 @@ def ensure_dirs() -> None:
     KNOWLEDGE_RAW.mkdir(parents=True, exist_ok=True)
     KNOWLEDGE_ARTICLES.mkdir(parents=True, exist_ok=True)
     KNOWLEDGE_METRICS.mkdir(parents=True, exist_ok=True)
+
+
+def read_daily_budget(default: float = DEFAULT_DAILY_BUDGET_USD) -> float:
+    """Read the daily LLM budget from env, falling back to the default."""
+    raw = os.getenv("AI_KB_DAILY_BUDGET_USD", "").strip()
+    if not raw:
+        return default
+
+    try:
+        budget = float(raw)
+    except ValueError:
+        logger.warning(
+            "Invalid AI_KB_DAILY_BUDGET_USD=%r; using default %.2f",
+            raw,
+            default,
+        )
+        return default
+
+    if budget < 0:
+        logger.warning(
+            "Negative AI_KB_DAILY_BUDGET_USD=%r; using default %.2f",
+            raw,
+            default,
+        )
+        return default
+
+    return budget
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -145,6 +173,13 @@ def analyze_item(
     """Use LLM to analyze a collected item and produce structured output."""
     from pipeline.model_client import chat_with_retry, create_provider
 
+    if cost_tracker is not None and cost_tracker.is_budget_exceeded():
+        logger.warning(
+            "Daily LLM budget exceeded before analyzing %s; using fallback",
+            item.get("name"),
+        )
+        return None
+
     prompt = json.dumps({
         "name": item.get("name", ""),
         "url": item.get("url", ""),
@@ -235,6 +270,14 @@ def analyze(
                 if i == 0:
                     analyzed.append(result)
                 else:
+                    if cost_tracker is not None and cost_tracker.is_budget_exceeded():
+                        logger.warning(
+                            "Daily LLM budget exceeded; fallback analysis for %s",
+                            item.get("name"),
+                        )
+                        analyzed.append(analyze_fallback(item))
+                        continue
+
                     r = analyze_item(
                         item,
                         provider_name=provider,
@@ -331,7 +374,12 @@ def organize(
 # ══════════════════════════════════════════════════════════════════════
 
 
-def save_raw(source: str, collected_at: str, items: list[dict[str, Any]]) -> Path:
+def save_raw(
+    source: str,
+    collected_at: str,
+    items: list[dict[str, Any]],
+    dry_run: bool = False,
+) -> Path:
     """Save raw collected data to knowledge/raw/."""
     date_str = collected_at[:10]
     raw_path = KNOWLEDGE_RAW / f"{source}-{date_str}.json"
@@ -340,8 +388,14 @@ def save_raw(source: str, collected_at: str, items: list[dict[str, Any]]) -> Pat
         "collected_at": collected_at,
         "items": items,
     }
-    raw_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    logger.info("Saved raw data: %s (%d items)", raw_path, len(items))
+    if dry_run:
+        logger.info("[DRY-RUN] Would save raw data: %s (%d items)", raw_path, len(items))
+    else:
+        raw_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        logger.info("Saved raw data: %s (%d items)", raw_path, len(items))
     return raw_path
 
 
@@ -421,7 +475,8 @@ def run_pipeline(
     ensure_dirs()
     collected_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     stats: dict[str, Any] = {}
-    cost_tracker = CostTracker()
+    cost_tracker = CostTracker(budget_usd=read_daily_budget())
+    logger.info("Daily LLM budget: $%.2f", cost_tracker.budget_usd)
 
     for source in sources:
         collector = COLLECTORS.get(source)
@@ -449,7 +504,7 @@ def run_pipeline(
         articles = organize(source, collected_at, raw_items, analyzed)
 
         # Step 4: Save
-        raw_path = save_raw(source, collected_at, raw_items)
+        raw_path = save_raw(source, collected_at, raw_items, dry_run=dry_run)
         article_paths = save_articles(source, collected_at, articles, dry_run=dry_run)
 
         stats[source] = {
@@ -467,6 +522,7 @@ def run_pipeline(
     )
     stats["_cost"] = {
         "metrics_path": str(metrics_path),
+        "budget": cost_tracker.budget_status(),
         "total": cost_tracker.total(),
         "runs": cost_tracker.summarize_runs(),
     }
@@ -553,8 +609,14 @@ def main(argv: list[str] | None = None) -> int:
     cost_stats = stats.get("_cost", {})
     if cost_stats:
         total = cost_stats["total"]
+        budget = cost_stats["budget"]
         print("  cost:")
         print(f"    metrics: {cost_stats['metrics_path']}")
+        print(
+            "    budget: "
+            f"${budget['budget_usd']:.2f}, remaining ${budget['remaining_usd']:.6f}, "
+            f"exceeded={budget['exceeded']}"
+        )
         print(
             "    llm_calls: "
             f"{total['calls']} calls, {total['total_tokens']} tokens, "

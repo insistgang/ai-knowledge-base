@@ -37,7 +37,8 @@ class CostEntry:
 class CostTracker:
     """Collect and summarize LLM cost entries for one pipeline run."""
 
-    def __init__(self) -> None:
+    def __init__(self, budget_usd: float = 0.10) -> None:
+        self.budget_usd = max(0.0, budget_usd)
         self._entries: list[CostEntry] = []
 
     @property
@@ -110,11 +111,31 @@ class CostTracker:
             "estimated_cost_usd": round(estimated_cost, 8),
         }
 
+    def current_cost_usd(self) -> float:
+        """Return the current estimated cost in USD."""
+        return self.total()["estimated_cost_usd"]
+
+    def is_budget_exceeded(self) -> bool:
+        """Return whether the current run has reached or exceeded its budget."""
+        return self.current_cost_usd() >= self.budget_usd
+
+    def budget_status(self) -> dict[str, Any]:
+        """Return current budget status for metrics output."""
+        current = self.current_cost_usd()
+        remaining = max(0.0, self.budget_usd - current)
+        return {
+            "budget_usd": round(self.budget_usd, 8),
+            "current_cost_usd": round(current, 8),
+            "remaining_usd": round(remaining, 8),
+            "exceeded": self.is_budget_exceeded(),
+        }
+
     def to_daily_payload(self, date_str: str, generated_at: str) -> dict[str, Any]:
         """Build the daily cost metrics JSON payload."""
         return {
             "date": date_str,
             "generated_at": generated_at,
+            "budget": self.budget_status(),
             "runs": self.summarize_runs(),
             "total": self.total(),
             "calls": [entry.to_dict() for entry in self._entries],
