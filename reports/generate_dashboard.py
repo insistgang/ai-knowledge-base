@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ARTICLES_DIR = PROJECT_ROOT / "knowledge" / "articles"
+METRICS_DIR = PROJECT_ROOT / "knowledge" / "metrics"
 DEFAULT_OUTPUT = PROJECT_ROOT / "reports" / "dashboard.html"
 
 
@@ -43,6 +44,14 @@ def normalize_list(value: Any) -> list[str]:
     if not isinstance(value, list):
         return []
     return [str(item).strip() for item in value if str(item).strip()]
+
+
+def safe_float(value: Any) -> float:
+    """Normalize a JSON value into a float."""
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
 
 
 def load_articles(articles_dir: Path) -> list[dict[str, Any]]:
@@ -85,6 +94,92 @@ def load_articles(articles_dir: Path) -> list[dict[str, Any]]:
     return articles
 
 
+def empty_cost_metrics() -> dict[str, Any]:
+    """Return the default cost metrics payload when no metrics file exists."""
+    return {
+        "available": False,
+        "date": "-",
+        "generated_at": "-",
+        "budget": {
+            "budget_usd": 0.0,
+            "current_cost_usd": 0.0,
+            "remaining_usd": 0.0,
+            "exceeded": False,
+        },
+        "total": {
+            "calls": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0,
+            "estimated_cost_usd": 0.0,
+        },
+        "runs": [],
+    }
+
+
+def normalize_cost_metrics(raw: dict[str, Any], path: Path) -> dict[str, Any]:
+    """Normalize one cost metrics JSON payload for dashboard rendering."""
+    budget = raw.get("budget") if isinstance(raw.get("budget"), dict) else {}
+    total = raw.get("total") if isinstance(raw.get("total"), dict) else {}
+    runs = raw.get("runs") if isinstance(raw.get("runs"), list) else []
+    try:
+        file_path = str(path.relative_to(PROJECT_ROOT))
+    except ValueError:
+        file_path = str(path)
+
+    normalized_runs = []
+    for run in runs:
+        if not isinstance(run, dict):
+            continue
+        normalized_runs.append({
+            "source": str(run.get("source", "unknown")),
+            "model": str(run.get("model", "unknown")),
+            "calls": int(run.get("calls", 0) or 0),
+            "prompt_tokens": int(run.get("prompt_tokens", 0) or 0),
+            "completion_tokens": int(run.get("completion_tokens", 0) or 0),
+            "total_tokens": int(run.get("total_tokens", 0) or 0),
+            "estimated_cost_usd": safe_float(run.get("estimated_cost_usd")),
+        })
+
+    return {
+        "available": True,
+        "file": file_path,
+        "date": str(raw.get("date", path.stem.replace("cost-", ""))),
+        "generated_at": str(raw.get("generated_at", "")),
+        "budget": {
+            "budget_usd": safe_float(budget.get("budget_usd")),
+            "current_cost_usd": safe_float(budget.get("current_cost_usd")),
+            "remaining_usd": safe_float(budget.get("remaining_usd")),
+            "exceeded": bool(budget.get("exceeded", False)),
+        },
+        "total": {
+            "calls": int(total.get("calls", 0) or 0),
+            "prompt_tokens": int(total.get("prompt_tokens", 0) or 0),
+            "completion_tokens": int(total.get("completion_tokens", 0) or 0),
+            "total_tokens": int(total.get("total_tokens", 0) or 0),
+            "estimated_cost_usd": safe_float(total.get("estimated_cost_usd")),
+        },
+        "runs": normalized_runs,
+    }
+
+
+def load_latest_cost_metrics(metrics_dir: Path) -> dict[str, Any]:
+    """Load the newest cost metrics file."""
+    paths = sorted(metrics_dir.glob("cost-*.json"), reverse=True)
+    for path in paths:
+        try:
+            raw = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            logger.warning("Skipping invalid cost metrics JSON: %s", path)
+            continue
+        if not isinstance(raw, dict):
+            logger.warning("Skipping non-object cost metrics JSON: %s", path)
+            continue
+        return normalize_cost_metrics(raw, path)
+
+    return empty_cost_metrics()
+
+
 def build_stats(articles: list[dict[str, Any]]) -> dict[str, Any]:
     """Build dashboard-level aggregate statistics."""
     source_counts = Counter(article["source"] for article in articles)
@@ -117,12 +212,20 @@ def build_stats(articles: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-def data_timestamp(articles: list[dict[str, Any]]) -> str:
-    """Return a stable timestamp based on the newest article data."""
-    if not articles:
+def data_timestamp(articles: list[dict[str, Any]], cost_metrics: dict[str, Any]) -> str:
+    """Return a stable timestamp based on the newest article or cost data."""
+    timestamps = [
+        parse_datetime(article["collected_at"])
+        for article in articles
+    ]
+    cost_generated_at = str(cost_metrics.get("generated_at", ""))
+    if cost_generated_at and cost_generated_at != "-":
+        timestamps.append(parse_datetime(cost_generated_at))
+
+    if not timestamps:
         return "-"
 
-    latest = max(parse_datetime(article["collected_at"]) for article in articles)
+    latest = max(timestamps)
     return latest.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
 
@@ -266,6 +369,15 @@ def render_html(payload: dict[str, Any]) -> str:
       line-height: 1;
     }
 
+    .metric strong.compact {
+      font-size: 28px;
+    }
+
+    .metric.warning {
+      border-color: #efb0bb;
+      background: #fff5f6;
+    }
+
     .metric small {
       display: block;
       margin-top: 10px;
@@ -358,6 +470,30 @@ def render_html(payload: dict[str, Any]) -> str:
     .score-bars {
       display: grid;
       gap: 8px;
+    }
+
+    .cost-runs {
+      display: grid;
+      gap: 10px;
+    }
+
+    .cost-run {
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface-soft);
+    }
+
+    .cost-run strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    .cost-run span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .score-row {
@@ -549,6 +685,10 @@ def render_html(payload: dict[str, Any]) -> str:
       <div class="metric"><span>最新批次</span><strong id="metricLatest">0</strong><small id="metricLatestDate">-</small></div>
       <div class="metric"><span>平均评分</span><strong id="metricAverage">0</strong><small>relevance_score</small></div>
       <div class="metric"><span>高价值条目</span><strong id="metricHigh">0</strong><small>评分 9-10</small></div>
+      <div class="metric"><span>LLM 调用</span><strong id="metricCalls">0</strong><small id="metricCostDate">暂无成本记录</small></div>
+      <div class="metric"><span>Token 用量</span><strong id="metricTokens" class="compact">0</strong><small>本次记录总量</small></div>
+      <div class="metric"><span>预估成本</span><strong id="metricCost" class="compact">$0.0000</strong><small id="metricBudget">预算 $0.00</small></div>
+      <div class="metric" id="metricRemainingCard"><span>预算剩余</span><strong id="metricRemaining" class="compact">$0.0000</strong><small id="metricBudgetStatus">正常</small></div>
     </section>
 
     <section class="workspace">
@@ -583,6 +723,11 @@ def render_html(payload: dict[str, Any]) -> str:
           <h2>分数分布</h2>
           <div class="score-bars" id="scoreBars"></div>
         </div>
+
+        <div class="panel">
+          <h2>模型成本</h2>
+          <div class="cost-runs" id="costRuns"></div>
+        </div>
       </aside>
 
       <section>
@@ -606,6 +751,7 @@ def render_html(payload: dict[str, Any]) -> str:
     const statusFilter = document.getElementById("statusFilter");
     const tagCloud = document.getElementById("tagCloud");
     const scoreBars = document.getElementById("scoreBars");
+    const costRuns = document.getElementById("costRuns");
     const articleList = document.getElementById("articleList");
     const visibleCount = document.getElementById("visibleCount");
 
@@ -631,12 +777,52 @@ def render_html(payload: dict[str, Any]) -> str:
       return item;
     }
 
+    function formatNumber(value) {
+      return new Intl.NumberFormat("en-US").format(Number(value || 0));
+    }
+
+    function formatUsd(value, digits = 4) {
+      return `$${Number(value || 0).toFixed(digits)}`;
+    }
+
     function setupMetrics() {
       document.getElementById("metricTotal").textContent = payload.stats.total;
       document.getElementById("metricLatest").textContent = payload.stats.latest_count;
       document.getElementById("metricLatestDate").textContent = payload.stats.latest_date;
       document.getElementById("metricAverage").textContent = payload.stats.avg_score;
       document.getElementById("metricHigh").textContent = payload.stats.high_score_count;
+    }
+
+    function setupCostMetrics() {
+      const cost = payload.cost || {};
+      const total = cost.total || {};
+      const budget = cost.budget || {};
+      const available = Boolean(cost.available);
+      const exceeded = Boolean(budget.exceeded);
+
+      document.getElementById("metricCalls").textContent = formatNumber(total.calls);
+      document.getElementById("metricCostDate").textContent = available
+        ? `${cost.date} 成本记录`
+        : "暂无成本记录";
+      document.getElementById("metricTokens").textContent = formatNumber(total.total_tokens);
+      document.getElementById("metricCost").textContent = formatUsd(total.estimated_cost_usd, 6);
+      document.getElementById("metricBudget").textContent = `预算 ${formatUsd(budget.budget_usd, 2)}`;
+      document.getElementById("metricRemaining").textContent = formatUsd(budget.remaining_usd, 6);
+      document.getElementById("metricBudgetStatus").textContent = exceeded ? "已触发 fallback" : "预算正常";
+      document.getElementById("metricRemainingCard").classList.toggle("warning", exceeded);
+
+      if (!available || !(cost.runs || []).length) {
+        costRuns.innerHTML = '<div class="empty">暂无模型成本记录</div>';
+        return;
+      }
+
+      costRuns.innerHTML = cost.runs.map((run) => `
+        <div class="cost-run">
+          <strong>${escapeHtml(run.model)}</strong>
+          <span>${escapeHtml(run.source)} · ${formatNumber(run.calls)} calls</span>
+          <span>${formatNumber(run.total_tokens)} tokens · ${formatUsd(run.estimated_cost_usd, 6)}</span>
+        </div>
+      `).join("");
     }
 
     function setupFilters() {
@@ -766,6 +952,7 @@ def render_html(payload: dict[str, Any]) -> str:
     }
 
     setupMetrics();
+    setupCostMetrics();
     setupFilters();
     setupTags();
     setupScoreBars();
@@ -781,13 +968,19 @@ def render_html(payload: dict[str, Any]) -> str:
     )
 
 
-def generate_dashboard(articles_dir: Path, output_path: Path) -> Path:
+def generate_dashboard(
+    articles_dir: Path,
+    output_path: Path,
+    metrics_dir: Path = METRICS_DIR,
+) -> Path:
     """Generate the dashboard HTML files and return the main output path."""
     articles = load_articles(articles_dir)
+    cost_metrics = load_latest_cost_metrics(metrics_dir)
     payload = {
-        "generated_at": data_timestamp(articles),
+        "generated_at": data_timestamp(articles, cost_metrics),
         "articles": articles,
         "stats": build_stats(articles),
+        "cost": cost_metrics,
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     html = render_html(payload)
@@ -818,6 +1011,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Dashboard HTML output path",
     )
     parser.add_argument(
+        "--metrics-dir",
+        type=Path,
+        default=METRICS_DIR,
+        help="Directory containing cost metrics JSON files",
+    )
+    parser.add_argument(
         "--verbose",
         "-v",
         action="store_true",
@@ -834,7 +1033,7 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
 
-    generate_dashboard(args.articles_dir, args.output)
+    generate_dashboard(args.articles_dir, args.output, args.metrics_dir)
     return 0
 
 

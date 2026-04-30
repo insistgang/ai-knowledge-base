@@ -20,6 +20,7 @@ python reports/generate_dashboard.py
 ```
 
 打开 `reports/dashboard.html` 即可查看统计卡片、评分分布、标签筛选和知识条目列表。
+如果存在 `knowledge/metrics/cost-YYYY-MM-DD.json`，Dashboard 也会显示 LLM 调用次数、token、预估成本和预算剩余。
 
 GitHub Pages 访问地址:
 
