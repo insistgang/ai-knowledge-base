@@ -21,15 +21,15 @@
 | 6. CI/CD 定时任务 | 第 7 节 | GitHub Actions、本地定时任务、Dashboard | 已完成：自动采集与看板 |
 | 7. 成本控制 V2 | 第 8 节 | Token 统计、模型路由、V2 提交 | 已完成：V2 验收通过 |
 | 8. 多 Agent 模式 | 第 9 节 | Router、Supervisor | 已完成：V3 多 Agent 验收通过 |
-| 9. LangGraph 工作流 | 第 10 节 | `KBState`、5 节点工作流、审核循环 | 待做 |
+| 9. LangGraph 工作流 | 第 10 节 | `KBState`、5 节点工作流、审核循环 | 已完成：V4 LangGraph 工作流验收通过 |
 | 10. 自主规划 | 第 11 节 | Reviewer、Reviser、HumanFlag、Planner | 待做 |
 | 11. 生产级实践 V3 | 第 12 节 | CostGuard、Eval、安全检查、V3 提交 | 待做 |
 
 ## 下一步执行
 
-1. 开始第 10 节 LangGraph 工作流。
-2. 构建 KBState 状态定义和 5 节点采集工作流。
-3. 实现 Supervisor 审核循环节点。
+1. 开始第 11 节自主规划。
+2. 设计 Reviewer、Reviser、HumanFlag 三节点审核回路。
+3. 实现 Planner 节点进行任务优先级编排。
 
 ## API Key 配置示例
 
