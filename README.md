@@ -9,6 +9,7 @@
 - 已写入 `specs/project-vision.md` 项目愿景。
 - 已写入 `opencode.json`，通过 `DEEPSEEK_API_KEY` 环境变量连接 DeepSeek。
 - 已接入 GitHub Actions 每日采集，并生成 `reports/dashboard.html` 可视化看板。
+- 已开始第 8 节成本控制，pipeline 会输出 `knowledge/metrics/cost-YYYY-MM-DD.json`。
 
 ## Dashboard
 
@@ -25,6 +26,16 @@ GitHub Pages 访问地址:
 ```text
 https://insistgang.github.io/ai-knowledge-base/
 ```
+
+## Cost Metrics
+
+每次 pipeline 运行会记录 LLM 调用次数、token 用量和预估成本:
+
+```bash
+python pipeline/pipeline.py --sources github --limit 5 --verbose
+```
+
+成本文件保存到 `knowledge/metrics/cost-YYYY-MM-DD.json`。
 
 ## 下一步
 

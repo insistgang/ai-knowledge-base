@@ -28,12 +28,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 KNOWLEDGE_RAW = PROJECT_ROOT / "knowledge" / "raw"
 KNOWLEDGE_ARTICLES = PROJECT_ROOT / "knowledge" / "articles"
+KNOWLEDGE_METRICS = PROJECT_ROOT / "knowledge" / "metrics"
 
 
 def ensure_dirs() -> None:
     """Ensure raw and articles directories exist."""
     KNOWLEDGE_RAW.mkdir(parents=True, exist_ok=True)
     KNOWLEDGE_ARTICLES.mkdir(parents=True, exist_ok=True)
+    KNOWLEDGE_METRICS.mkdir(parents=True, exist_ok=True)
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -134,7 +136,12 @@ JSON 格式:
 - 1-4: 可略过"""
 
 
-def analyze_item(item: dict[str, Any], provider_name: str | None = None) -> dict[str, Any] | None:
+def analyze_item(
+    item: dict[str, Any],
+    provider_name: str | None = None,
+    source: str = "unknown",
+    cost_tracker: Any | None = None,
+) -> dict[str, Any] | None:
     """Use LLM to analyze a collected item and produce structured output."""
     from pipeline.model_client import chat_with_retry, create_provider
 
@@ -146,6 +153,7 @@ def analyze_item(item: dict[str, Any], provider_name: str | None = None) -> dict
         "topics": item.get("topics", []),
     }, ensure_ascii=False)
 
+    provider = None
     try:
         provider = create_provider(provider_name)
         response = chat_with_retry(
@@ -157,7 +165,14 @@ def analyze_item(item: dict[str, Any], provider_name: str | None = None) -> dict
             temperature=0.2,
             max_tokens=512,
         )
-        provider.close()
+
+        if cost_tracker is not None:
+            cost_tracker.add_call(
+                source=source,
+                item_name=str(item.get("name", "")),
+                model=response.model or provider.model,
+                usage=response.usage,
+            )
 
         raw = response.content.strip()
         # Strip possible markdown code fences
@@ -168,6 +183,9 @@ def analyze_item(item: dict[str, Any], provider_name: str | None = None) -> dict
     except Exception:
         logger.warning("Analysis failed for %s", item.get("name"), exc_info=True)
         return None
+    finally:
+        if provider is not None:
+            provider.close()
 
 
 def analyze_fallback(item: dict[str, Any]) -> dict[str, Any]:
@@ -194,14 +212,22 @@ def analyze_fallback(item: dict[str, Any]) -> dict[str, Any]:
 
 
 def analyze(
-    source: str, items: list[dict[str, Any]], provider: str | None = None
+    source: str,
+    items: list[dict[str, Any]],
+    provider: str | None = None,
+    cost_tracker: Any | None = None,
 ) -> list[dict[str, Any]]:
     """Analyze collected items. Uses LLM if available, falls back to heuristic."""
     analyzed: list[dict[str, Any]] = []
 
     # Try LLM analysis for the first item to check connectivity
     if items:
-        result = analyze_item(items[0], provider_name=provider)
+        result = analyze_item(
+            items[0],
+            provider_name=provider,
+            source=source,
+            cost_tracker=cost_tracker,
+        )
         if result is not None:
             # LLM works – use it for all
             logger.info("LLM analysis available, analyzing %d items", len(items))
@@ -209,7 +235,12 @@ def analyze(
                 if i == 0:
                     analyzed.append(result)
                 else:
-                    r = analyze_item(item, provider_name=provider)
+                    r = analyze_item(
+                        item,
+                        provider_name=provider,
+                        source=source,
+                        cost_tracker=cost_tracker,
+                    )
                     if r:
                         analyzed.append(r)
                     else:
@@ -343,6 +374,36 @@ def save_articles(
     return paths
 
 
+def save_cost_metrics(
+    collected_at: str,
+    cost_tracker: Any,
+    dry_run: bool = False,
+) -> Path:
+    """Save LLM token usage and estimated cost metrics."""
+    date_str = collected_at[:10]
+    path = KNOWLEDGE_METRICS / f"cost-{date_str}.json"
+    payload = cost_tracker.to_daily_payload(
+        date_str=date_str,
+        generated_at=collected_at,
+    )
+
+    if dry_run:
+        logger.info("[DRY-RUN] Would save cost metrics: %s", path)
+    else:
+        path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        logger.info(
+            "Saved cost metrics: %s (%d calls, $%.6f)",
+            path,
+            payload["total"]["calls"],
+            payload["total"]["estimated_cost_usd"],
+        )
+
+    return path
+
+
 # ══════════════════════════════════════════════════════════════════════
 # Pipeline orchestrator
 # ══════════════════════════════════════════════════════════════════════
@@ -355,9 +416,12 @@ def run_pipeline(
     provider: str | None = None,
 ) -> dict[str, Any]:
     """Execute the full collect -> analyze -> organize -> save pipeline."""
+    from pipeline.cost_tracker import CostTracker
+
     ensure_dirs()
     collected_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     stats: dict[str, Any] = {}
+    cost_tracker = CostTracker()
 
     for source in sources:
         collector = COLLECTORS.get(source)
@@ -374,7 +438,12 @@ def run_pipeline(
             continue
 
         # Step 2: Analyze
-        analyzed = analyze(source, raw_items, provider=provider)
+        analyzed = analyze(
+            source,
+            raw_items,
+            provider=provider,
+            cost_tracker=cost_tracker,
+        )
 
         # Step 3: Organize
         articles = organize(source, collected_at, raw_items, analyzed)
@@ -390,6 +459,17 @@ def run_pipeline(
             "raw_path": str(raw_path),
             "article_paths": [str(p) for p in article_paths],
         }
+
+    metrics_path = save_cost_metrics(
+        collected_at=collected_at,
+        cost_tracker=cost_tracker,
+        dry_run=dry_run,
+    )
+    stats["_cost"] = {
+        "metrics_path": str(metrics_path),
+        "total": cost_tracker.total(),
+        "runs": cost_tracker.summarize_runs(),
+    }
 
     return stats
 
@@ -461,13 +541,25 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     # Print summary
-    total_collected = sum(s["collected"] for s in stats.values())
-    total_articles = sum(s["articles"] for s in stats.values())
+    source_stats = {src: value for src, value in stats.items() if src != "_cost"}
+    total_collected = sum(s["collected"] for s in source_stats.values())
+    total_articles = sum(s["articles"] for s in source_stats.values())
     print(f"\nPipeline complete: {total_collected} collected, {total_articles} articles")
-    for src, s in stats.items():
+    for src, s in source_stats.items():
         print(f"  {src}: {s['collected']} items -> {s['articles']} articles "
               f"{'(dry-run)' if args.dry_run else ''}")
         print(f"    raw: {s['raw_path']}")
+
+    cost_stats = stats.get("_cost", {})
+    if cost_stats:
+        total = cost_stats["total"]
+        print("  cost:")
+        print(f"    metrics: {cost_stats['metrics_path']}")
+        print(
+            "    llm_calls: "
+            f"{total['calls']} calls, {total['total_tokens']} tokens, "
+            f"${total['estimated_cost_usd']:.6f}"
+        )
 
     return 0
 
