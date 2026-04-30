@@ -30,6 +30,10 @@ KNOWLEDGE_RAW = PROJECT_ROOT / "knowledge" / "raw"
 KNOWLEDGE_ARTICLES = PROJECT_ROOT / "knowledge" / "articles"
 KNOWLEDGE_METRICS = PROJECT_ROOT / "knowledge" / "metrics"
 DEFAULT_DAILY_BUDGET_USD = 0.10
+DEFAULT_MODEL_ROUTES = {
+    "normal": "deepseek-v4-flash",
+    "deep": "deepseek-v4-pro",
+}
 
 
 def ensure_dirs() -> None:
@@ -64,6 +68,44 @@ def read_daily_budget(default: float = DEFAULT_DAILY_BUDGET_USD) -> float:
         return default
 
     return budget
+
+
+def read_model_routes() -> dict[str, str]:
+    """Read model routing config from environment variables."""
+    normal_model = (
+        os.getenv("AI_KB_ANALYSIS_MODEL")
+        or os.getenv("DEEPSEEK_ANALYSIS_MODEL")
+        or DEFAULT_MODEL_ROUTES["normal"]
+    ).strip()
+    deep_model = (
+        os.getenv("AI_KB_DEEP_ANALYSIS_MODEL")
+        or os.getenv("DEEPSEEK_DEEP_ANALYSIS_MODEL")
+        or DEFAULT_MODEL_ROUTES["deep"]
+    ).strip()
+
+    return {
+        "normal": normal_model or DEFAULT_MODEL_ROUTES["normal"],
+        "deep": deep_model or DEFAULT_MODEL_ROUTES["deep"],
+    }
+
+
+def normalize_analysis_depth(depth: str) -> str:
+    """Normalize analysis depth to a known model route."""
+    normalized = depth.strip().lower()
+    if normalized in DEFAULT_MODEL_ROUTES:
+        return normalized
+
+    logger.warning("Unknown analysis depth %r; using normal", depth)
+    return "normal"
+
+
+def select_analysis_model(
+    depth: str,
+    routes: dict[str, str] | None = None,
+) -> str:
+    """Select the model for a given analysis depth."""
+    model_routes = routes or read_model_routes()
+    return model_routes[normalize_analysis_depth(depth)]
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -169,6 +211,7 @@ def analyze_item(
     provider_name: str | None = None,
     source: str = "unknown",
     cost_tracker: Any | None = None,
+    model_name: str | None = None,
 ) -> dict[str, Any] | None:
     """Use LLM to analyze a collected item and produce structured output."""
     from pipeline.model_client import chat_with_retry, create_provider
@@ -190,7 +233,7 @@ def analyze_item(
 
     provider = None
     try:
-        provider = create_provider(provider_name)
+        provider = create_provider(provider_name, model_override=model_name)
         response = chat_with_retry(
             provider,
             messages=[
@@ -251,6 +294,7 @@ def analyze(
     items: list[dict[str, Any]],
     provider: str | None = None,
     cost_tracker: Any | None = None,
+    model_name: str | None = None,
 ) -> list[dict[str, Any]]:
     """Analyze collected items. Uses LLM if available, falls back to heuristic."""
     analyzed: list[dict[str, Any]] = []
@@ -262,6 +306,7 @@ def analyze(
             provider_name=provider,
             source=source,
             cost_tracker=cost_tracker,
+            model_name=model_name,
         )
         if result is not None:
             # LLM works – use it for all
@@ -283,6 +328,7 @@ def analyze(
                         provider_name=provider,
                         source=source,
                         cost_tracker=cost_tracker,
+                        model_name=model_name,
                     )
                     if r:
                         analyzed.append(r)
@@ -468,6 +514,7 @@ def run_pipeline(
     limit: int = 5,
     dry_run: bool = False,
     provider: str | None = None,
+    analysis_depth: str = "normal",
 ) -> dict[str, Any]:
     """Execute the full collect -> analyze -> organize -> save pipeline."""
     from pipeline.cost_tracker import CostTracker
@@ -476,7 +523,15 @@ def run_pipeline(
     collected_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     stats: dict[str, Any] = {}
     cost_tracker = CostTracker(budget_usd=read_daily_budget())
+    model_routes = read_model_routes()
+    normalized_depth = normalize_analysis_depth(analysis_depth)
+    analysis_model = select_analysis_model(normalized_depth, model_routes)
     logger.info("Daily LLM budget: $%.2f", cost_tracker.budget_usd)
+    logger.info(
+        "Analysis model route: depth=%s model=%s",
+        normalized_depth,
+        analysis_model,
+    )
 
     for source in sources:
         collector = COLLECTORS.get(source)
@@ -498,6 +553,7 @@ def run_pipeline(
             raw_items,
             provider=provider,
             cost_tracker=cost_tracker,
+            model_name=analysis_model,
         )
 
         # Step 3: Organize
@@ -525,6 +581,11 @@ def run_pipeline(
         "budget": cost_tracker.budget_status(),
         "total": cost_tracker.total(),
         "runs": cost_tracker.summarize_runs(),
+    }
+    stats["_model_route"] = {
+        "analysis_depth": normalized_depth,
+        "analysis_model": analysis_model,
+        "routes": model_routes,
     }
 
     return stats
@@ -565,6 +626,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="LLM provider for analysis (default: from env)",
     )
     parser.add_argument(
+        "--analysis-depth",
+        choices=["normal", "deep"],
+        default=os.getenv("AI_KB_ANALYSIS_DEPTH", "normal"),
+        help="Analysis model route: normal uses flash, deep uses pro",
+    )
+    parser.add_argument(
         "--verbose",
         "-v",
         action="store_true",
@@ -591,13 +658,14 @@ def main(argv: list[str] | None = None) -> int:
             limit=args.limit,
             dry_run=args.dry_run,
             provider=args.provider,
+            analysis_depth=args.analysis_depth,
         )
     except Exception:
         logger.exception("Pipeline failed")
         return 1
 
     # Print summary
-    source_stats = {src: value for src, value in stats.items() if src != "_cost"}
+    source_stats = {src: value for src, value in stats.items() if not src.startswith("_")}
     total_collected = sum(s["collected"] for s in source_stats.values())
     total_articles = sum(s["articles"] for s in source_stats.values())
     print(f"\nPipeline complete: {total_collected} collected, {total_articles} articles")
@@ -605,6 +673,14 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  {src}: {s['collected']} items -> {s['articles']} articles "
               f"{'(dry-run)' if args.dry_run else ''}")
         print(f"    raw: {s['raw_path']}")
+
+    model_route = stats.get("_model_route", {})
+    if model_route:
+        print("  model_route:")
+        print(
+            "    analysis: "
+            f"{model_route['analysis_depth']} -> {model_route['analysis_model']}"
+        )
 
     cost_stats = stats.get("_cost", {})
     if cost_stats:

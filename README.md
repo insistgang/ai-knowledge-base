@@ -45,6 +45,19 @@ AI_KB_DAILY_BUDGET_USD=0.10 python pipeline/pipeline.py --sources github --limit
 
 当本次运行的累计预估成本达到预算后，pipeline 会停止继续调用 LLM，并自动使用 fallback 分析。
 
+模型路由默认配置:
+
+```text
+normal → deepseek-v4-flash
+deep   → deepseek-v4-pro
+```
+
+每日自动采集使用 normal。需要手动做深度分析时:
+
+```bash
+python pipeline/pipeline.py --sources github --limit 5 --analysis-depth deep --verbose
+```
+
 ## 下一步
 
 1. 用 `@collector` 真实采集 GitHub Trending AI 相关 Top 5。

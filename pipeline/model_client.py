@@ -189,12 +189,16 @@ PROVIDER_CONFIG: dict[str, dict[str, str]] = {
 }
 
 
-def create_provider(provider_name: str | None = None) -> LLMProvider:
+def create_provider(
+    provider_name: str | None = None,
+    model_override: str | None = None,
+) -> LLMProvider:
     """Create an LLM provider from environment variables.
 
     Args:
         provider_name: Provider id: `deepseek`, `qwen`, or `openai`.
             Defaults to `LLM_PROVIDER`, then `deepseek`.
+        model_override: Optional model name for this provider instance.
 
     Returns:
         Configured provider instance.
@@ -214,7 +218,7 @@ def create_provider(provider_name: str | None = None) -> LLMProvider:
         raise RuntimeError(f"Missing API key env var: {config['api_key_env']}")
 
     base_url = os.getenv(config["base_url_env"], config["default_base_url"])
-    model = os.getenv(config["model_env"], config["default_model"])
+    model = model_override or os.getenv(config["model_env"], config["default_model"])
 
     logger.info("Creating LLM provider: provider=%s model=%s", name, model)
     return OpenAICompatibleProvider(
@@ -290,6 +294,7 @@ def quick_chat(
     prompt: str,
     system: str = "你是一个 AI 技术分析助手。",
     provider_name: str | None = None,
+    model: str | None = None,
     temperature: float = 0.2,
     max_tokens: int = 512,
 ) -> str:
@@ -298,7 +303,7 @@ def quick_chat(
         {"role": "system", "content": system},
         {"role": "user", "content": prompt},
     ]
-    provider = create_provider(provider_name)
+    provider = create_provider(provider_name, model_override=model)
     try:
         response = chat_with_retry(
             provider,
@@ -323,6 +328,7 @@ def chat(
     prompt: str,
     system: str = "你是一个 AI 技术分析助手。",
     provider: str | None = None,
+    model: str | None = None,
     temperature: float = 0.2,
     max_tokens: int = 512,
     max_retries: int = 3,
@@ -332,7 +338,7 @@ def chat(
         {"role": "system", "content": system},
         {"role": "user", "content": prompt},
     ]
-    llm = create_provider(provider)
+    llm = create_provider(provider, model_override=model)
     try:
         response = chat_with_retry(
             llm,
