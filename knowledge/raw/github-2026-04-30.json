@@ -1,12 +1,12 @@
 {
   "source": "github",
-  "collected_at": "2026-04-30T08:10:33Z",
+  "collected_at": "2026-04-30T09:04:05Z",
   "items": [
     {
       "name": "langchain-ai/langchain",
       "url": "https://github.com/langchain-ai/langchain",
       "summary": "The agent engineering platform",
-      "stars": 135451,
+      "stars": 135456,
       "language": "Python",
       "topics": [
         "agents",
@@ -34,7 +34,7 @@
       "name": "FoundationAgents/MetaGPT",
       "url": "https://github.com/FoundationAgents/MetaGPT",
       "summary": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
-      "stars": 67571,
+      "stars": 67572,
       "language": "Python",
       "topics": [
         "agent",
@@ -48,7 +48,7 @@
       "name": "microsoft/autogen",
       "url": "https://github.com/microsoft/autogen",
       "summary": "A programming framework for agentic AI",
-      "stars": 57593,
+      "stars": 57596,
       "language": "Python",
       "topics": [
         "agentic",
@@ -67,7 +67,7 @@
       "name": "crewAIInc/crewAI",
       "url": "https://github.com/crewAIInc/crewAI",
       "summary": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
-      "stars": 50327,
+      "stars": 50330,
       "language": "Python",
       "topics": [
         "agents",
@@ -81,7 +81,7 @@
       "name": "agno-agi/agno",
       "url": "https://github.com/agno-agi/agno",
       "summary": "Agno turns agents into production software. Build agents in any framework. Run as a service. Ship to real users.",
-      "stars": 39809,
+      "stars": 39811,
       "language": "Python",
       "topics": [
         "agents",
