@@ -1,0 +1,30 @@
+{
+  "id": "github-20260503-langchain-ai-langgraph",
+  "title": "langchain-ai/langgraph: 基于图结构构建弹性语言代理的框架，与LangChain深度集成，支持状态管理和多代理协作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/langchain-ai/langgraph",
+  "collected_at": "2026-05-03T09:20:39Z",
+  "summary": "基于图结构构建弹性语言代理的框架，与LangChain深度集成，支持状态管理和多代理协作。",
+  "analysis": {
+    "tech_highlights": [
+      "图结构代理设计，支持循环和条件分支",
+      "内置状态管理和持久化机制",
+      "与LangChain生态系统无缝集成"
+    ],
+    "relevance_score": 8,
+    "reason": "直接帮助开发者构建复杂、可复用的AI代理，尤其适合需要状态管理和多步骤推理的场景，对研究和实际应用均有显著价值",
+    "risks": []
+  },
+  "tags": [
+    "langgraph",
+    "agent-framework",
+    "graph-based",
+    "state-machine",
+    "llm-agents"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
