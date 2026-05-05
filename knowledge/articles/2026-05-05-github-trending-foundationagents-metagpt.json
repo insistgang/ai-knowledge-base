@@ -1,0 +1,29 @@
+{
+  "id": "github-20260505-foundationagents-metagpt",
+  "title": "FoundationAgents/MetaGPT: 多智能体框架模拟软件公司，通过LLM角色分工实现自然语言到代码的自动生成，提升开发效率。",
+  "source": "github-trending",
+  "source_url": "https://github.com/FoundationAgents/MetaGPT",
+  "collected_at": "2026-05-05T10:00:42Z",
+  "summary": "多智能体框架模拟软件公司，通过LLM角色分工实现自然语言到代码的自动生成，提升开发效率。",
+  "analysis": {
+    "tech_highlights": [
+      "模拟软件公司角色分工（产品经理、架构师、工程师等）",
+      "基于LLM的多智能体协作实现自然语言到代码生成"
+    ],
+    "relevance_score": 8,
+    "reason": "对软件开发和AI研究有直接实用价值，创新性地将多智能体应用于软件工程，可加速原型开发。",
+    "risks": []
+  },
+  "tags": [
+    "multi-agent",
+    "LLM",
+    "code-generation",
+    "software-engineering",
+    "AI-framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
