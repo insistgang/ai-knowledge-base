@@ -1,0 +1,28 @@
+{
+  "id": "github-20260506-astrbotdevs-astrbot",
+  "title": "AstrBotDevs/AstrBot: 集成多IM平台与大语言模型的AI Agent开发框架，可作为OpenClaw替代，支持插件、MCP和Docker部署。",
+  "source": "github-trending",
+  "source_url": "https://github.com/AstrBotDevs/AstrBot",
+  "collected_at": "2026-05-06T10:15:24Z",
+  "summary": "集成多IM平台与大语言模型的AI Agent开发框架，可作为OpenClaw替代，支持插件、MCP和Docker部署。",
+  "analysis": {
+    "tech_highlights": [
+      "跨平台IM集成（Discord、Telegram、QQ等）",
+      "支持多种LLM（GPT、Gemini、Llama等）与MCP协议"
+    ],
+    "relevance_score": 8,
+    "reason": "对构建跨平台AI Agent的开发者有直接帮助，框架成熟度高，生态丰富。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agent",
+    "chatbot",
+    "im-integration",
+    "llm-framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "github-20260506-foundationagents-metagpt",
+  "title": "FoundationAgents/MetaGPT: MetaGPT是一个多智能体框架，模拟软件公司角色，通过自然语言实现代码和文档的自动生成。",
+  "source": "github-trending",
+  "source_url": "https://github.com/FoundationAgents/MetaGPT",
+  "collected_at": "2026-05-06T10:15:24Z",
+  "summary": "MetaGPT是一个多智能体框架，模拟软件公司角色，通过自然语言实现代码和文档的自动生成。",
+  "analysis": {
+    "tech_highlights": [
+      "模拟产品经理、架构师、工程师等角色的协作流程",
+      "支持复杂软件项目的端到端自动开发"
+    ],
+    "relevance_score": 8,
+    "reason": "该框架为开发者提供了即用的多智能体协作方案，可直接提升编程效率并推动自然语言编程的落地，具有很高的实用价值。",
+    "risks": []
+  },
+  "tags": [
+    "multi-agent",
+    "llm",
+    "code-generation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
