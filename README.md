@@ -146,6 +146,10 @@ Python 3.12 · LangGraph · httpx · JSON-RPC 2.0 · MCP · GitHub Actions
 |:---:|:---:|:---:|
 | ![pipeline](docs/images/pipeline-run.png) | ![mcp](docs/images/mcp-query.png) | ![tests](docs/images/tests-pass.png) |
 
+| Telegram Bot 日报推送 | 成本统计 |
+|:---:|:---:|
+| ![telegram](docs/images/telegram-digest.png) | ![cost](docs/images/cost-stats.png) |
+
 ## 许可证
 
 MIT
