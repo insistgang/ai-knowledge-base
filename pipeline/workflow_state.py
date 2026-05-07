@@ -67,6 +67,31 @@ class KBState(TypedDict, total=False):
     errors: list[str]
     """Non-fatal error messages collected during execution."""
 
+    # ── Planning / iteration control (Section 11+) ────────────────────
+    plan: list[dict[str, Any]]
+    """Planner output: ordered task steps."""
+
+    analyses: list[dict[str, Any]]
+    """Merged analysis results across sources (flat list)."""
+
+    iteration: int
+    """Current review/revision loop iteration."""
+
+    max_iterations: int
+    """Hard ceiling for the review → revise loop."""
+
+    cost_tracker: dict[str, Any]
+    """Running tally of token usage and API cost."""
+
+    review_passed: bool
+    """Whether the last review passed the quality gate."""
+
+    review_feedback: dict[str, Any] | str
+    """Structured feedback from the reviewer node."""
+
+    needs_human_review: bool
+    """HumanFlag node sets this to ``True`` when the loop is exhausted."""
+
 
 def create_initial_state(
     sources: list[str] | None = None,

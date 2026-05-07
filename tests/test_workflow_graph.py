@@ -44,14 +44,14 @@ class BuildWorkflowGraphIntegrationTest(unittest.TestCase):
         graph = build_workflow_graph()
         self.assertIsNotNone(graph)
 
-    def test_graph_has_all_five_nodes(self) -> None:
+    def test_graph_has_all_nine_nodes(self) -> None:
         try:
             from pipeline.workflow_graph import build_workflow_graph
         except RuntimeError:
             self.skipTest("langgraph not installed – skipping integration test")
 
         graph = build_workflow_graph()
-        expected = {"collect", "analyze", "organize", "supervise", "save"}
+        expected = {"plan", "collect", "analyze", "review", "revise", "organize", "supervise", "save", "human_flag"}
         # CompiledGraph stores nodes in graph._all_nodes or graph.nodes
         node_names = set(getattr(graph, "nodes", {}).keys())
         missing = expected - node_names
@@ -68,6 +68,7 @@ class BuildWorkflowGraphIntegrationTest(unittest.TestCase):
         # Mock the collectors so we don't hit the network
         graph = build_workflow_graph()
         state = create_initial_state(sources=["github"], limit=1)
+        state["max_iterations"] = 3
 
         with patch("pipeline.workflow_nodes.COLLECTORS", {
             "github": lambda limit=5: [{"name": "test/repo", "url": "https://example.com",
@@ -93,8 +94,13 @@ class BuildWorkflowGraphIntegrationTest(unittest.TestCase):
             "tags": ["agent"],
             "audience": ["developer"],
         }]), patch("pipeline.workflow_nodes.save_raw", return_value="raw.json"), \
-           patch("pipeline.workflow_nodes.save_articles", return_value=["art.json"]):
-            result = graph.invoke(state, config={"recursion_limit": 10})
+           patch("pipeline.workflow_nodes.save_articles", return_value=["art.json"]), \
+           patch("workflows.reviewer.review_node", side_effect=lambda s, **kw: {
+               **s, "review_passed": True, "review_feedback": {"scores": {}},
+               "iteration": s.get("iteration", 0) + 1,
+               "cost_tracker": {"api_calls": 0},
+           }):
+            result = graph.invoke(state, config={"recursion_limit": 20})
 
         self.assertIsNotNone(result)
         self.assertEqual(result.get("review_status"), "pass")

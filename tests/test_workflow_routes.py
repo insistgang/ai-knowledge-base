@@ -42,10 +42,10 @@ class ShouldContinueAfterCollectTest(unittest.TestCase):
 
 class ShouldContinueAfterAnalyzeTest(unittest.TestCase):
 
-    def test_returns_organize_when_data_present(self) -> None:
+    def test_returns_review_when_data_present(self) -> None:
         state = create_initial_state()
         state["analyzed_items"] = {"github": [{"summary": "ok"}]}
-        self.assertEqual(should_continue_after_analyze(state), "organize")
+        self.assertEqual(should_continue_after_analyze(state), "review")
 
     def test_returns_supervise_when_errors_present(self) -> None:
         state = create_initial_state()

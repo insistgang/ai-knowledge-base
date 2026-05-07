@@ -50,7 +50,7 @@ def should_continue_after_analyze(state: KBState) -> str:
     Returns
     -------
     str
-        ``"organize"`` if analysis produced results,
+        ``"review"`` if analysis produced results,
         ``"supervise"`` otherwise.
     """
     if _has_errors(state):
@@ -58,7 +58,7 @@ def should_continue_after_analyze(state: KBState) -> str:
     analyzed_items = state.get("analyzed_items") or {}
     if not analyzed_items or not _source_items_non_empty(analyzed_items):
         return "supervise"
-    return "organize"
+    return "review"
 
 
 # ── route_after_supervisor ────────────────────────────────────────────
