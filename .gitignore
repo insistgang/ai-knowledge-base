@@ -10,3 +10,4 @@ node_modules/
 knowledge/raw/*.tmp
 *.log
 
+v4-production/openclaw/
