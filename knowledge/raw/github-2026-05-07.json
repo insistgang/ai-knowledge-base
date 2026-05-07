@@ -1,12 +1,12 @@
 {
   "source": "github",
-  "collected_at": "2026-05-07T07:59:13Z",
+  "collected_at": "2026-05-07T10:22:56Z",
   "items": [
     {
       "name": "langchain-ai/langchain",
       "url": "https://github.com/langchain-ai/langchain",
       "summary": "The agent engineering platform. Available in TypeScript!",
-      "stars": 135997,
+      "stars": 136012,
       "language": "Python",
       "topics": [
         "agents",
@@ -35,7 +35,7 @@
       "name": "FoundationAgents/MetaGPT",
       "url": "https://github.com/FoundationAgents/MetaGPT",
       "summary": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
-      "stars": 67747,
+      "stars": 67751,
       "language": "Python",
       "topics": [
         "agent",
@@ -49,7 +49,7 @@
       "name": "microsoft/autogen",
       "url": "https://github.com/microsoft/autogen",
       "summary": "A programming framework for agentic AI",
-      "stars": 57775,
+      "stars": 57784,
       "language": "Python",
       "topics": [
         "agentic",
@@ -62,6 +62,45 @@
         "framework",
         "llm-agent",
         "llm-framework"
+      ]
+    },
+    {
+      "name": "crewAIInc/crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "summary": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "stars": 50798,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "aiagentframework",
+        "llms"
+      ]
+    },
+    {
+      "name": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "summary": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+      "stars": 31527,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "chatbot",
+        "chatgpt",
+        "discord",
+        "docker",
+        "gemini",
+        "gpt",
+        "llama",
+        "llm",
+        "mcp",
+        "openai",
+        "python",
+        "qq",
+        "qqbot",
+        "telegram"
       ]
     }
   ]
