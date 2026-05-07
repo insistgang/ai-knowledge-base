@@ -1,0 +1,29 @@
+{
+  "id": "github-20260501-langchain-ai-langgraph",
+  "title": "langchain-ai/langgraph: LangGraph是LangChain推出的图框架，用于构建弹性的语言智能体，支持复杂状态和行为图。",
+  "source": "github-trending",
+  "source_url": "https://github.com/langchain-ai/langgraph",
+  "collected_at": "2026-05-01T09:44:26Z",
+  "summary": "LangGraph是LangChain推出的图框架，用于构建弹性的语言智能体，支持复杂状态和行为图。",
+  "analysis": {
+    "tech_highlights": [
+      "基于图的智能体架构，支持循环和条件逻辑",
+      "与LangChain生态深度集成，便于构建复杂多步骤AI应用",
+      "提供状态管理和可恢复性机制，增强智能体弹性"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发和研究有直接帮助，提供了结构化构建智能体的方法，适合复杂AI应用场景，但尚未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "agents",
+    "langchain",
+    "graph",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

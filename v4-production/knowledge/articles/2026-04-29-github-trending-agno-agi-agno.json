@@ -1,0 +1,28 @@
+{
+  "id": "github-20260429-005",
+  "title": "agno-agi/agno: Agno 是一个将 AI 智能体转化为生产级软件的框架，支持多种框架构建、服务化部署并交付给真实用户。",
+  "source": "github-trending",
+  "source_url": "https://github.com/agno-agi/agno",
+  "collected_at": "2026-04-29T18:39:48Z",
+  "summary": "Agno 是一个将 AI 智能体转化为生产级软件的框架，支持多种框架构建、服务化部署并交付给真实用户。",
+  "analysis": {
+    "tech_highlights": [
+      "支持在任意框架中构建智能体",
+      "提供服务化运行能力，便于部署",
+      "聚焦从原型到生产环境的完整流程"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接解决了AI智能体从实验到生产的关键痛点，提供框架无关性和服务化部署，对开发者和研究者有直接帮助，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "AI-agents",
+    "production-deployment",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

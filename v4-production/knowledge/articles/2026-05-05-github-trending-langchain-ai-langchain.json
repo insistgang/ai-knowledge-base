@@ -1,0 +1,29 @@
+{
+  "id": "github-20260505-langchain-ai-langchain",
+  "title": "langchain-ai/langchain: LLM应用开发框架，支持链、代理、多模型集成，提供TypeScript版本，简化AI应用构建。",
+  "source": "github-trending",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "collected_at": "2026-05-05T10:00:42Z",
+  "summary": "LLM应用开发框架，支持链、代理、多模型集成，提供TypeScript版本，简化AI应用构建。",
+  "analysis": {
+    "tech_highlights": [
+      "统一的LLM接口和链式组合",
+      "内置智能代理和多代理系统",
+      "支持RAG、工具调用和可扩展生态"
+    ],
+    "relevance_score": 8,
+    "reason": "作为LLM应用开发的基础框架，直接加速了AI应用的构建，对开发者和研究者有显著实用价值，但未根本改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "agents",
+    "framework",
+    "python"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

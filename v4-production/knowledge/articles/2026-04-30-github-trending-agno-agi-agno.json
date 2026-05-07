@@ -1,0 +1,27 @@
+{
+  "id": "github-20260430-agno-agi-agno",
+  "title": "agno-agi/agno: 将AI代理转化为生产级软件的工具，支持任意框架，可作为服务运行，直接交付用户。",
+  "source": "github-trending",
+  "source_url": "https://github.com/agno-agi/agno",
+  "collected_at": "2026-04-30T10:04:44Z",
+  "summary": "将AI代理转化为生产级软件的工具，支持任意框架，可作为服务运行，直接交付用户。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多种AI框架构建代理",
+      "一键部署为服务",
+      "专注生产环境与真实用户交付"
+    ],
+    "relevance_score": 8,
+    "reason": "对AI代理的工程化部署有直接帮助，降低从开发到生产的门槛，适合开发者快速落地代理应用。",
+    "risks": []
+  },
+  "tags": [
+    "agent-framework",
+    "production-deployment",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

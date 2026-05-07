@@ -1,0 +1,28 @@
+{
+  "id": "github-20260505-microsoft-autogen",
+  "title": "microsoft/autogen: 微软开源的多智能体AI编程框架，简化基于大语言模型的智能体构建与自动协作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/autogen",
+  "collected_at": "2026-05-05T10:00:42Z",
+  "summary": "微软开源的多智能体AI编程框架，简化基于大语言模型的智能体构建与自动协作。",
+  "analysis": {
+    "tech_highlights": [
+      "多智能体对话与自动协作机制",
+      "灵活支持多种LLM后端和工具集成",
+      "提供丰富的预构建Agent和对话模式"
+    ],
+    "relevance_score": 8,
+    "reason": "直接帮助开发者和研究者快速构建agentic AI应用，降低多智能体系统开发门槛，生态活跃。",
+    "risks": []
+  },
+  "tags": [
+    "agentic-ai",
+    "multi-agent",
+    "llm-framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

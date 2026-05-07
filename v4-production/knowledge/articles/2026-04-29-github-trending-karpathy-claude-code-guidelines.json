@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-001",
+  "title": "andrej-karpathy-skills: Karpathy 启发式 AI 编码行为规范",
+  "source": "github-trending",
+  "source_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "Karpathy 启发式 AI 编码行为规范，四原则让 Agent 学会反思、克制、精准、目标导向。",
+  "analysis": {
+    "tech_highlights": [
+      "四项原则体系化约束 LLM 编码行为：思考先行、极简优先、精准修改、目标驱动",
+      "支持 Claude Code Plugin 一键安装，同时兼容 Cursor 规则文件",
+      "核心仅一个 CLAUDE.md 文件，零依赖，可无缝合并到现有项目"
+    ],
+    "relevance_score": 7,
+    "reason": "对 AI 编码 Agent 的工程实践有直接指导价值，项目本身极简但思路可迁移到任何 Agent 框架，不足是仅作为提示词模板缺乏运行时约束。",
+    "risks": []
+  },
+  "tags": ["claude-code", "agent", "code-generation", "prompt-engineering"],
+  "audience": ["developer"],
+  "status": "draft"
+}

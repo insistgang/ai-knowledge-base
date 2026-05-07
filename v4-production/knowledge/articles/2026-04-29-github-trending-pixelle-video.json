@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-008",
+  "title": "Pixelle-Video: 阿里 AIDC AI 全自动短视频引擎",
+  "source": "github-trending",
+  "source_url": "https://github.com/AIDC-AI/Pixelle-Video",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "阿里 AI 全自动短视频引擎，输入主题即可完成文案→配图→语音→BGM→视频合成。",
+  "analysis": {
+    "tech_highlights": [
+      "全自动视频生产流水线：LLM 文案生成 + ComfyUI 工作流配图 + TTS 语音 + BGM 混音 + HTML 模板合成",
+      "基于 ComfyUI 架构的原子能力灵活组合，可替换生图模型、TTS 引擎，支持自定义工作流",
+      "Windows 一键整合包降低非技术用户门槛，本地 Ollama + ComfyUI 方案实现零成本运行"
+    ],
+    "relevance_score": 5,
+    "reason": "作为 AI 多模态应用的工程化实践案例有参考价值，ComfyUI 工作流编排思路可借鉴。但核心关注点在内容创作而非 AI Agent 基础设施，与知识库主线相关性偏低。",
+    "risks": []
+  },
+  "tags": ["aigc", "video-generation", "comfyui", "multimodal"],
+  "audience": ["developer", "product", "student"],
+  "status": "draft"
+}

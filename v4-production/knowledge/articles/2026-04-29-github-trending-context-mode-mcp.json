@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-007",
+  "title": "context-mode: AI 编码 Agent 上下文窗口优化 MCP 服务器",
+  "source": "github-trending",
+  "source_url": "https://github.com/mksglu/context-mode",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "AI 编码 Agent 上下文优化 MCP，沙箱化工具输出 98% token 压缩，14 平台适配。",
+  "analysis": {
+    "tech_highlights": [
+      "四维优化：上下文保存（沙箱化 98% 压缩）+ 会话连续性（SQLite FTS5 索引恢复）+ 代码化分析 + 输出压缩",
+      "支持 14 个 AI 编码平台（Claude Code、Gemini CLI、Cursor、OpenCode、VS Code Copilot 等），含平台特定 hook 适配",
+      "被 Microsoft、Google、Meta、NVIDIA 等大厂团队实际使用，HN #1 热度验证社群认可"
+    ],
+    "relevance_score": 8,
+    "reason": "四维上下文优化策略覆盖了 AI 编码 Agent 最核心的痛点，14 平台适配合广泛实用性，大厂使用背书增强了可信度。属于当前 Agent 工程化的基础设施。",
+    "risks": ["98% 压缩率是一个指标峰值还是稳态平均值未明确标注"]
+  },
+  "tags": ["mcp", "context-window", "ai-coding", "optimization", "agent"],
+  "audience": ["developer"],
+  "status": "draft"
+}

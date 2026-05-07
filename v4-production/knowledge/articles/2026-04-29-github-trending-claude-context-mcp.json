@@ -1,0 +1,21 @@
+{
+  "id": "github-20260429-005",
+  "title": "claude-context: MCP 语义代码搜索 —— 让 Agent 理解百万行代码库",
+  "source": "github-trending",
+  "source_url": "https://github.com/zilliztech/claude-context",
+  "collected_at": "2026-04-29T12:00:00Z",
+  "summary": "MCP 语义代码搜索，混合 BM25+向量检索，让 Agent 理解百万行代码库。",
+  "analysis": {
+    "tech_highlights": [
+      "BM25 + 密集向量混合检索，声称评估中同等检索质量下 token 消耗降低约 40%",
+      "AST 级代码分块 + Merkle 树增量索引，仅重索引变更文件",
+      "支持 OpenAI/VoyageAI/Ollama/Gemini 四种 Embedding provider，含 Milvus/Zilliz Cloud 向量数据库"
+    ],
+    "relevance_score": 8,
+    "reason": "直接解决 AI 编码 Agent 在大代码库中的上下文不足问题，AST 分块和增量索引设计实用性强，Zilliz 向量数据库背景保障了大规模扩展性。",
+    "risks": ["40% token 节省数据来自自评，缺乏第三方独立基准测试"]
+  },
+  "tags": ["mcp", "rag", "vector-database", "semantic-search", "code-search"],
+  "audience": ["developer"],
+  "status": "draft"
+}
