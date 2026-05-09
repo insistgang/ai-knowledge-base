@@ -1,0 +1,27 @@
+{
+  "id": "github-20260509-dmlc-dgl",
+  "title": "dmlc/dgl: 基于现有深度学习框架的图神经网络库，提供高效消息传递与丰富图操作API。",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-05-09T09:17:39Z",
+  "summary": "基于现有深度学习框架的图神经网络库，提供高效消息传递与丰富图操作API。",
+  "analysis": {
+    "tech_highlights": [
+      "在多后端（PyTorch、TensorFlow、MXNet）上提供统一且高效的图神经网络接口",
+      "内置消息传递自动优化和分布式训练支持"
+    ],
+    "relevance_score": 9,
+    "reason": "DGL 是图神经网络领域主流框架之一，大幅简化了 GNN 模型开发与部署，对相关研究和工程实践有直接且重要的推动。",
+    "risks": []
+  },
+  "tags": [
+    "graph-neural-networks",
+    "deep-learning",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
