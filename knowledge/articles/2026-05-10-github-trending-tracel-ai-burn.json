@@ -1,0 +1,28 @@
+{
+  "id": "github-20260510-tracel-ai-burn",
+  "title": "tracel-ai/burn: Burn 是一个基于 Rust 的新一代张量库和深度学习框架，兼顾灵活性、效率和跨平台部署。",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-05-10T09:27:04Z",
+  "summary": "Burn 是一个基于 Rust 的新一代张量库和深度学习框架，兼顾灵活性、效率和跨平台部署。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多种后端（CUDA、Metal、Vulkan、WebGPU、WASM），实现跨平台运行",
+      "内置自动微分与核融合优化，提升计算效率",
+      "兼容 ONNX 模型导入，与 PyTorch 等主流框架互操作"
+    ],
+    "relevance_score": 8,
+    "reason": "为 Rust 生态提供了成熟的深度学习框架，替代 PyTorch 用于生产级 AI 应用，对需要高性能、跨平台部署的开发者价值高。",
+    "risks": []
+  },
+  "tags": [
+    "Rust",
+    "deep-learning",
+    "tensor-library"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

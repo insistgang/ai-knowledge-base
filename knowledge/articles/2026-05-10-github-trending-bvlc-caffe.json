@@ -1,0 +1,29 @@
+{
+  "id": "github-20260510-bvlc-caffe",
+  "title": "BVLC/caffe: 经典深度学习框架，以速度和模块化著称，推动计算机视觉发展。",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-05-10T09:27:04Z",
+  "summary": "经典深度学习框架，以速度和模块化著称，推动计算机视觉发展。",
+  "analysis": {
+    "tech_highlights": [
+      "快速GPU计算支持",
+      "模块化架构设计",
+      "广泛用于图像识别任务"
+    ],
+    "relevance_score": 9,
+    "reason": "Caffe改变了深度学习在视觉领域的应用格局，是早期重要框架，虽被新工具取代但历史价值高。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "computer-vision",
+    "C++",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
