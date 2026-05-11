@@ -1,0 +1,30 @@
+{
+  "id": "github-20260511-tracel-ai-burn",
+  "title": "tracel-ai/burn: Burn是一个用Rust编写的下一代张量库和深度学习框架，强调灵活性、效率和可移植性，支持多种硬件后端。",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-05-11T10:59:30Z",
+  "summary": "Burn是一个用Rust编写的下一代张量库和深度学习框架，强调灵活性、效率和可移植性，支持多种硬件后端。",
+  "analysis": {
+    "tech_highlights": [
+      "Rust原生深度学习框架，结合高性能与内存安全",
+      "支持CUDA、Metal、Vulkan、WebGPU等多种后端，跨平台能力强",
+      "兼容ONNX和PyTorch模型，便于迁移和部署"
+    ],
+    "relevance_score": 8,
+    "reason": "对Rust生态和深度学习开发者有直接帮助，尤其适合需要高性能、可移植性和安全性的场景；支持主流硬件后端和模型导入，实用价值高。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "rust",
+    "tensor",
+    "gpu-computing",
+    "cross-platform"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

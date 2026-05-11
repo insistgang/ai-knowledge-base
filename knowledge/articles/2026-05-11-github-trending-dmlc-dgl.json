@@ -1,0 +1,28 @@
+{
+  "id": "github-20260511-dmlc-dgl",
+  "title": "dmlc/dgl: 用于简化图上深度学习的Python包，支持多种深度学习后端，提供高效的图操作和丰富的GNN模型库。",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-05-11T10:59:30Z",
+  "summary": "用于简化图上深度学习的Python包，支持多种深度学习后端，提供高效的图操作和丰富的GNN模型库。",
+  "analysis": {
+    "tech_highlights": [
+      "支持PyTorch、TensorFlow、MXNet等多后端",
+      "提供高效的消息传递和稀疏矩阵运算",
+      "内置丰富图神经网络模型和工具"
+    ],
+    "relevance_score": 9,
+    "reason": "作为图神经网络领域的事实标准库，极大降低了图深度学习门槛，直接推动研究和应用发展。",
+    "risks": []
+  },
+  "tags": [
+    "graph-neural-networks",
+    "deep-learning",
+    "python"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
