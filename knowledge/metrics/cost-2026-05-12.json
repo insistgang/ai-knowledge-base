@@ -1,0 +1,75 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T10:30:02Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00212719,
+    "remaining_usd": 0.09787281,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1417,
+      "completion_tokens": 1586,
+      "total_tokens": 3003,
+      "estimated_cost_usd": 0.00212719,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1417,
+    "completion_tokens": 1586,
+    "total_tokens": 3003,
+    "estimated_cost_usd": 0.00212719
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "BVLC/caffe",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 234,
+      "completion_tokens": 352,
+      "total_tokens": 586,
+      "estimated_cost_usd": 0.00045038
+    },
+    {
+      "source": "github",
+      "item_name": "d2l-ai/d2l-en",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 337,
+      "completion_tokens": 269,
+      "total_tokens": 606,
+      "estimated_cost_usd": 0.00038689
+    },
+    {
+      "source": "github",
+      "item_name": "PaddlePaddle/Paddle",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 288,
+      "completion_tokens": 362,
+      "total_tokens": 650,
+      "estimated_cost_usd": 0.00047596
+    },
+    {
+      "source": "github",
+      "item_name": "tracel-ai/burn",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 318,
+      "completion_tokens": 340,
+      "total_tokens": 658,
+      "estimated_cost_usd": 0.00045986
+    },
+    {
+      "source": "github",
+      "item_name": "dmlc/dgl",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 240,
+      "completion_tokens": 263,
+      "total_tokens": 503,
+      "estimated_cost_usd": 0.0003541
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260512-dmlc-dgl",
+  "title": "dmlc/dgl: 基于现有深度学习框架的图神经网络Python工具包，简化图深度学习开发。",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-05-12T10:30:02Z",
+  "summary": "基于现有深度学习框架的图神经网络Python工具包，简化图深度学习开发。",
+  "analysis": {
+    "tech_highlights": [
+      "提供高效图数据加载与变换接口",
+      "支持多种后端（PyTorch/TensorFlow/MXNet）",
+      "内置丰富图神经网络模型与算子"
+    ],
+    "relevance_score": 8,
+    "reason": "作为图神经网络领域的主流框架，极大降低了开发门槛，对研究和工程均有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "图神经网络",
+    "深度学习",
+    "Python"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
