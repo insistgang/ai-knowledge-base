@@ -1,0 +1,28 @@
+{
+  "id": "github-20260513-hiyouga-easyr1",
+  "title": "hiyouga/EasyR1: 基于veRL的高效多模态强化学习训练框架，支持DeepSeek、GPT、Qwen等模型，提供可扩展的RL训练方案。",
+  "source": "github-trending",
+  "source_url": "https://github.com/hiyouga/EasyR1",
+  "collected_at": "2026-05-13T10:24:42Z",
+  "summary": "基于veRL的高效多模态强化学习训练框架，支持DeepSeek、GPT、Qwen等模型，提供可扩展的RL训练方案。",
+  "analysis": {
+    "tech_highlights": [
+      "高效可扩展的多模态RL训练架构",
+      "基于veRL优化，支持大规模模型",
+      "集成主流大模型如DeepSeek、Qwen等"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接解决了多模态大模型强化学习训练的效率与扩展性问题，对LLM研究与应用有显著实用价值。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "llm",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

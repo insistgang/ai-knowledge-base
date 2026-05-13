@@ -1,0 +1,29 @@
+{
+  "id": "github-20260513-aurelio-labs-semantic-router",
+  "title": "aurelio-labs/semantic-router: 基于语义相似度的超快速AI决策引擎，用于智能处理多模态数据，可高效路由到不同处理模块。",
+  "source": "github-trending",
+  "source_url": "https://github.com/aurelio-labs/semantic-router",
+  "collected_at": "2026-05-13T10:24:42Z",
+  "summary": "基于语义相似度的超快速AI决策引擎，用于智能处理多模态数据，可高效路由到不同处理模块。",
+  "analysis": {
+    "tech_highlights": [
+      "语义路由代替传统规则匹配",
+      "支持多模态数据（文本、图像等）",
+      "低延迟决策处理"
+    ],
+    "relevance_score": 8,
+    "reason": "直接提升AI应用开发效率，简化意图识别与任务路由，适用于聊天机器人、多模态工作流等场景。",
+    "risks": []
+  },
+  "tags": [
+    "semantic-router",
+    "AI-decision",
+    "multi-modal",
+    "intent-routing"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
