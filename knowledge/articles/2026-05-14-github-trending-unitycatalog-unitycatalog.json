@@ -1,0 +1,31 @@
+{
+  "id": "github-20260514-unitycatalog-unitycatalog",
+  "title": "unitycatalog/unitycatalog: 开源统一数据与AI目录，支持多模态元数据管理，为数据治理和AI应用提供开放解决方案。",
+  "source": "github-trending",
+  "source_url": "https://github.com/unitycatalog/unitycatalog",
+  "collected_at": "2026-05-14T10:13:11Z",
+  "summary": "开源统一数据与AI目录，支持多模态元数据管理，为数据治理和AI应用提供开放解决方案。",
+  "analysis": {
+    "tech_highlights": [
+      "统一管理数据和AI资产的元数据",
+      "多模态支持（表、模型、文件等）",
+      "与Databricks生态深度兼容"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接解决数据治理与AI元数据管理需求，对数据平台和AI应用开发者具有实际帮助，开源模式降低了使用门槛。",
+    "risks": []
+  },
+  "tags": [
+    "数据目录",
+    "元数据管理",
+    "数据治理",
+    "AI",
+    "多模态"
+  ],
+  "audience": [
+    "data engineer",
+    "data scientist",
+    "platform developer"
+  ],
+  "status": "draft"
+}
