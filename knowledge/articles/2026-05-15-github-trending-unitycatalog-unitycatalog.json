@@ -1,0 +1,29 @@
+{
+  "id": "github-20260515-unitycatalog-unitycatalog",
+  "title": "unitycatalog/unitycatalog: Unity Catalog 是 Databricks 开源的统一多模态数据与 AI 目录，支持数据资产管理、发现与治理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/unitycatalog/unitycatalog",
+  "collected_at": "2026-05-15T10:21:17Z",
+  "summary": "Unity Catalog 是 Databricks 开源的统一多模态数据与 AI 目录，支持数据资产管理、发现与治理。",
+  "analysis": {
+    "tech_highlights": [
+      "开源统一目录，支持数据与 AI 模型等多样化资产",
+      "提供多模态元数据管理，兼容 Delta Lake 等多种格式"
+    ],
+    "relevance_score": 7,
+    "reason": "作为 Databricks 主导的开源项目，Unity Catalog 对现代数据平台的数据治理、发现与 AI 资产管理有直接帮助，适合生产环境集成。",
+    "risks": []
+  },
+  "tags": [
+    "data-catalog",
+    "data-governance",
+    "metadata-management",
+    "ai"
+  ],
+  "audience": [
+    "data-engineer",
+    "platform-architect",
+    "ai-engineer"
+  ],
+  "status": "draft"
+}
