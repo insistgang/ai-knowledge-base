@@ -1,0 +1,23 @@
+{
+  "id": "github-20260517-unitycatalog-unitycatalog",
+  "title": "unitycatalog/unitycatalog: GitHub 项目 unitycatalog/unitycatalog，Open, Multi-modal Catalo",
+  "source": "github-trending",
+  "source_url": "https://github.com/unitycatalog/unitycatalog",
+  "collected_at": "2026-05-17T09:45:11Z",
+  "summary": "GitHub 项目 unitycatalog/unitycatalog，Open, Multi-modal Catalog for Data & AI",
+  "analysis": {
+    "tech_highlights": [
+      "Java 项目, 3399 stars"
+    ],
+    "relevance_score": 6,
+    "reason": "基于热度(3399 stars)和标签()的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "open-source"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

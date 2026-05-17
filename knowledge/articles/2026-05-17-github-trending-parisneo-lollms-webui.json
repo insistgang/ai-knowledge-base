@@ -1,0 +1,28 @@
+{
+  "id": "github-20260517-parisneo-lollms-webui",
+  "title": "ParisNeo/lollms-webui: 为大型语言模型和多模态系统提供一站式Web界面，支持多种后端和插件，简化AI模型交互和部署。",
+  "source": "github-trending",
+  "source_url": "https://github.com/ParisNeo/lollms-webui",
+  "collected_at": "2026-05-17T09:45:11Z",
+  "summary": "为大型语言模型和多模态系统提供一站式Web界面，支持多种后端和插件，简化AI模型交互和部署。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多种LLM后端（如LlamaCpp、HuggingFace、OpenAI）",
+      "内置多模态能力和插件扩展系统",
+      "提供直观的Web界面，降低AI模型使用门槛"
+    ],
+    "relevance_score": 7,
+    "reason": "显著简化了LLM和多模态模型的交互与部署流程，对开发者和研究人员有直接帮助，但未突破性改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "web-ui",
+    "multi-modal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
