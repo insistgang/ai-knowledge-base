@@ -1,0 +1,75 @@
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T11:15:46Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00192126,
+    "remaining_usd": 0.09807874,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1298,
+      "completion_tokens": 1428,
+      "total_tokens": 2726,
+      "estimated_cost_usd": 0.00192126,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1298,
+    "completion_tokens": 1428,
+    "total_tokens": 2726,
+    "estimated_cost_usd": 0.00192126
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "hiyouga/EasyR1",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 270,
+      "completion_tokens": 293,
+      "total_tokens": 563,
+      "estimated_cost_usd": 0.0003952
+    },
+    {
+      "source": "github",
+      "item_name": "ParisNeo/lollms-webui",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 242,
+      "completion_tokens": 240,
+      "total_tokens": 482,
+      "estimated_cost_usd": 0.00032934
+    },
+    {
+      "source": "github",
+      "item_name": "ThilinaRajapakse/simpletransformers",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 293,
+      "completion_tokens": 289,
+      "total_tokens": 582,
+      "estimated_cost_usd": 0.00039701
+    },
+    {
+      "source": "github",
+      "item_name": "aurelio-labs/semantic-router",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 265,
+      "completion_tokens": 283,
+      "total_tokens": 548,
+      "estimated_cost_usd": 0.00038285
+    },
+    {
+      "source": "github",
+      "item_name": "unitycatalog/unitycatalog",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 228,
+      "completion_tokens": 323,
+      "total_tokens": 551,
+      "estimated_cost_usd": 0.00041686
+    }
+  ]
+}

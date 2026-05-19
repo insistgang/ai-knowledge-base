@@ -1,0 +1,28 @@
+{
+  "id": "github-20260519-aurelio-labs-semantic-router",
+  "title": "aurelio-labs/semantic-router: 基于语义的快速AI决策与多模态数据处理框架，支持路由和智能处理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/aurelio-labs/semantic-router",
+  "collected_at": "2026-05-19T11:15:46Z",
+  "summary": "基于语义的快速AI决策与多模态数据处理框架，支持路由和智能处理。",
+  "analysis": {
+    "tech_highlights": [
+      "语义路由实现快速决策",
+      "支持多模态数据（文本、图像等）",
+      "与AI/ML流水线集成高效"
+    ],
+    "relevance_score": 8,
+    "reason": "对构建智能代理、对话系统和多模态AI应用有直接帮助，性能突出。",
+    "risks": []
+  },
+  "tags": [
+    "semantic-routing",
+    "multi-modal",
+    "AI-decision-making"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "github-20260519-unitycatalog-unitycatalog",
+  "title": "unitycatalog/unitycatalog: 开放的多模态数据与AI目录，统一管理数据资产",
+  "source": "github-trending",
+  "source_url": "https://github.com/unitycatalog/unitycatalog",
+  "collected_at": "2026-05-19T11:15:46Z",
+  "summary": "开放的多模态数据与AI目录，统一管理数据资产",
+  "analysis": {
+    "tech_highlights": [
+      "支持多模态数据（结构化、半结构化和非结构化）",
+      "开放标准，易于集成",
+      "专为AI工作流设计"
+    ],
+    "relevance_score": 7,
+    "reason": "对数据治理和AI基础设施有直接帮助，但尚未达到改变技术格局的级别",
+    "risks": []
+  },
+  "tags": [
+    "data-catalog",
+    "data-governance",
+    "ai-infrastructure",
+    "open-source",
+    "multi-modal"
+  ],
+  "audience": [
+    "developer",
+    "data-scientist",
+    "data-engineer"
+  ],
+  "status": "draft"
+}
