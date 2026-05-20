@@ -1,0 +1,75 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T10:48:25Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00230661,
+    "remaining_usd": 0.09769339,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1393,
+      "completion_tokens": 1755,
+      "total_tokens": 3148,
+      "estimated_cost_usd": 0.00230661,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1393,
+    "completion_tokens": 1755,
+    "total_tokens": 3148,
+    "estimated_cost_usd": 0.00230661
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "langchain-ai/langchain",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 299,
+      "completion_tokens": 286,
+      "total_tokens": 585,
+      "estimated_cost_usd": 0.00039533
+    },
+    {
+      "source": "github",
+      "item_name": "FoundationAgents/MetaGPT",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 252,
+      "completion_tokens": 277,
+      "total_tokens": 529,
+      "estimated_cost_usd": 0.00037274
+    },
+    {
+      "source": "github",
+      "item_name": "microsoft/autogen",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 267,
+      "completion_tokens": 422,
+      "total_tokens": 689,
+      "estimated_cost_usd": 0.00053629
+    },
+    {
+      "source": "github",
+      "item_name": "crewAIInc/crewAI",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 264,
+      "completion_tokens": 287,
+      "total_tokens": 551,
+      "estimated_cost_usd": 0.00038698
+    },
+    {
+      "source": "github",
+      "item_name": "AstrBotDevs/AstrBot",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 311,
+      "completion_tokens": 483,
+      "total_tokens": 794,
+      "estimated_cost_usd": 0.00061527
+    }
+  ]
+}

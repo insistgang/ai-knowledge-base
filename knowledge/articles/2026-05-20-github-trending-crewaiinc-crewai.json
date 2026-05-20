@@ -1,0 +1,28 @@
+{
+  "id": "github-20260520-crewaiinc-crewai",
+  "title": "crewAIInc/crewAI: 用于编排角色扮演、自主AI代理的框架，通过协作智能处理复杂任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/crewAIInc/crewAI",
+  "collected_at": "2026-05-20T10:48:25Z",
+  "summary": "用于编排角色扮演、自主AI代理的框架，通过协作智能处理复杂任务。",
+  "analysis": {
+    "tech_highlights": [
+      "角色扮演代理编排",
+      "多代理协作机制",
+      "基于Python的灵活框架"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接提供多代理系统开发的实际工具，对构建复杂AI应用有显著帮助，且社区活跃，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "AI agents",
+    "multi-agent systems",
+    "LLM framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
