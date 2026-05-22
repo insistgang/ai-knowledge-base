@@ -1,0 +1,28 @@
+{
+  "id": "github-20260522-astrbotdevs-astrbot",
+  "title": "AstrBotDevs/AstrBot: GitHub 项目 AstrBotDevs/AstrBot，AI Agent Assistant & developme",
+  "source": "github-trending",
+  "source_url": "https://github.com/AstrBotDevs/AstrBot",
+  "collected_at": "2026-05-22T10:48:19Z",
+  "summary": "GitHub 项目 AstrBotDevs/AstrBot，AI Agent Assistant & development framework that integrates l",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 32820 stars",
+      "标签: agent, ai, chatbot"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(32820 stars)和标签(agent, ai, chatbot)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "ai",
+    "chatbot",
+    "chatgpt",
+    "discord"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

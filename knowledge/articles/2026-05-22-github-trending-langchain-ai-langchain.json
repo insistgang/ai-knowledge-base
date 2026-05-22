@@ -1,0 +1,30 @@
+{
+  "id": "github-20260522-langchain-ai-langchain",
+  "title": "langchain-ai/langchain: LLM应用开发框架，支持代理、RAG、多模型集成，简化AI应用构建。",
+  "source": "github-trending",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "collected_at": "2026-05-22T10:48:19Z",
+  "summary": "LLM应用开发框架，支持代理、RAG、多模型集成，简化AI应用构建。",
+  "analysis": {
+    "tech_highlights": [
+      "模块化链式架构与LangGraph集成",
+      "多模型抽象与统一接口",
+      "丰富的工具与代理生态"
+    ],
+    "relevance_score": 9,
+    "reason": "极大简化LLM应用开发，广泛使用且持续迭代，对开发者和研究者具有直接实用价值。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "framework",
+    "agents",
+    "rag",
+    "python"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
