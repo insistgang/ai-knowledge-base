@@ -1,0 +1,30 @@
+{
+  "id": "github-20260525-foundationagents-metagpt",
+  "title": "FoundationAgents/MetaGPT: 多智能体框架MetaGPT，通过模拟软件公司流程，实现自然语言编程，支持GPT等LLM协作开发。",
+  "source": "github-trending",
+  "source_url": "https://github.com/FoundationAgents/MetaGPT",
+  "collected_at": "2026-05-25T11:51:51Z",
+  "summary": "多智能体框架MetaGPT，通过模拟软件公司流程，实现自然语言编程，支持GPT等LLM协作开发。",
+  "analysis": {
+    "tech_highlights": [
+      "多智能体协作框架模拟软件公司角色",
+      "自然语言驱动编程与代码生成",
+      "基于LLM的智能体间通信与任务分配"
+    ],
+    "relevance_score": 7,
+    "reason": "直接加速AI原生软件开发流程，对开发者和研究者有实用价值，但框架性质创新程度中等，非颠覆性。",
+    "risks": []
+  },
+  "tags": [
+    "multi-agent",
+    "llm",
+    "framework",
+    "natural-language-programming",
+    "software-development"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
