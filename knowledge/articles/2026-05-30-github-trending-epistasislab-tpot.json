@@ -1,0 +1,28 @@
+{
+  "id": "github-20260530-epistasislab-tpot",
+  "title": "EpistasisLab/tpot: TPOT是一个基于遗传编程的自动化机器学习工具，能自动优化机器学习流水线，包括特征工程、模型选择和超参数调优。",
+  "source": "github-trending",
+  "source_url": "https://github.com/EpistasisLab/tpot",
+  "collected_at": "2026-05-30T09:58:48Z",
+  "summary": "TPOT是一个基于遗传编程的自动化机器学习工具，能自动优化机器学习流水线，包括特征工程、模型选择和超参数调优。",
+  "analysis": {
+    "tech_highlights": [
+      "使用遗传编程自动构建和优化机器学习管道",
+      "与scikit-learn无缝集成，支持多种模型和预处理",
+      "开源成熟度高，社区活跃，文档完善"
+    ],
+    "relevance_score": 8,
+    "reason": "TPOT是AutoML领域成熟且实用的工具，能显著降低机器学习建模门槛，对数据科学工作流有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "automl",
+    "genetic-programming",
+    "machine-learning-pipeline"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
