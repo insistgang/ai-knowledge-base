@@ -1,0 +1,28 @@
+{
+  "id": "github-20260531-epistasislab-tpot",
+  "title": "EpistasisLab/tpot: GitHub 项目 EpistasisLab/tpot，A Python Automated Machine Learn",
+  "source": "github-trending",
+  "source_url": "https://github.com/EpistasisLab/tpot",
+  "collected_at": "2026-05-31T10:13:49Z",
+  "summary": "GitHub 项目 EpistasisLab/tpot，A Python Automated Machine Learning tool that optimizes mach",
+  "analysis": {
+    "tech_highlights": [
+      "Jupyter Notebook 项目, 10048 stars",
+      "标签: adsp, ag066833, aiml"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(10048 stars)和标签(adsp, ag066833, aiml)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "adsp",
+    "ag066833",
+    "aiml",
+    "alzheimer",
+    "alzheimers"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
