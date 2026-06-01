@@ -1,0 +1,28 @@
+{
+  "id": "github-20260601-spandan-madan-deeplearningproject",
+  "title": "Spandan-Madan/DeepLearningProject: 从零开始的深度学习教程，覆盖完整机器学习流程，适合初学者入门。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Spandan-Madan/DeepLearningProject",
+  "collected_at": "2026-06-01T13:34:52Z",
+  "summary": "从零开始的深度学习教程，覆盖完整机器学习流程，适合初学者入门。",
+  "analysis": {
+    "tech_highlights": [
+      "完整机器学习管线教学",
+      "从零构建深度学习项目"
+    ],
+    "relevance_score": 8,
+    "reason": "对希望系统学习深度学习全流程的开发者有直接帮助，但非创新性技术。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "tutorial",
+    "machine-learning",
+    "educational"
+  ],
+  "audience": [
+    "developer",
+    "student"
+  ],
+  "status": "draft"
+}
