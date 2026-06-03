@@ -1,0 +1,29 @@
+{
+  "id": "github-20260603-microsoft-fara",
+  "title": "microsoft/fara: 微软开源的7B参数高效计算机使用代理模型，可自动操作GUI界面，降低Agent开发门槛。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-06-03T12:39:59Z",
+  "summary": "微软开源的7B参数高效计算机使用代理模型，可自动操作GUI界面，降低Agent开发门槛。",
+  "analysis": {
+    "tech_highlights": [
+      "7B参数模型，平衡效率与能力",
+      "专为计算机使用任务设计，支持浏览器和桌面操作"
+    ],
+    "relevance_score": 8,
+    "reason": "提供可直接部署的计算机使用Agent模型，显著减少开发成本，对自动化研究和工程有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "LLM",
+    "automation",
+    "microsoft"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
