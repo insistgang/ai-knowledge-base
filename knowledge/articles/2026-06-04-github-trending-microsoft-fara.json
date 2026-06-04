@@ -1,0 +1,29 @@
+{
+  "id": "github-20260604-microsoft-fara",
+  "title": "microsoft/fara: 微软推出的7B高效智能体模型Fara，专注于计算机使用（浏览器、桌面等），用于自动化UI交互任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-06-04T10:58:58Z",
+  "summary": "微软推出的7B高效智能体模型Fara，专注于计算机使用（浏览器、桌面等），用于自动化UI交互任务。",
+  "analysis": {
+    "tech_highlights": [
+      "7B参数高效模型，专为计算机使用场景设计",
+      "支持浏览器和桌面操作，实现智能体自动化"
+    ],
+    "relevance_score": 8,
+    "reason": "直接面向AI智能体与自动化领域，7B模型适合实际部署，对开发者和研究者有明确帮助，但尚未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "LLM",
+    "automation",
+    "microsoft"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

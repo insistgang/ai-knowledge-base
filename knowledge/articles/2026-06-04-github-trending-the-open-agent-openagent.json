@@ -1,0 +1,31 @@
+{
+  "id": "github-20260604-the-open-agent-openagent",
+  "title": "the-open-agent/openagent: 基于LLM、RAG和代理循环的个人AI助手框架，支持电脑使用、浏览器使用和编码agent，集成MCP和多代理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/the-open-agent/openagent",
+  "collected_at": "2026-06-04T10:58:58Z",
+  "summary": "基于LLM、RAG和代理循环的个人AI助手框架，支持电脑使用、浏览器使用和编码agent，集成MCP和多代理。",
+  "analysis": {
+    "tech_highlights": [
+      "支持电脑使用、浏览器使用和编码agent操作模式",
+      "基于模型上下文协议（MCP）和多代理架构",
+      "整合RAG知识库和LLM代理循环"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发个人AI助手有直接帮助，提供实用框架和多种场景支持，技术架构先进",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "personal-assistant",
+    "LLM",
+    "RAG",
+    "multi-agent",
+    "Go"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
