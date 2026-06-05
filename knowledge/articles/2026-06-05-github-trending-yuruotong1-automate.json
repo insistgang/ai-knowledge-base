@@ -1,0 +1,29 @@
+{
+  "id": "github-20260605-yuruotong1-automate",
+  "title": "yuruotong1/autoMate: 基于自然语言的本地计算机自动化代理，类似 Manus 和 Omniparser，支持多种AI模型实现自主操作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/yuruotong1/autoMate",
+  "collected_at": "2026-06-05T11:26:39Z",
+  "summary": "基于自然语言的本地计算机自动化代理，类似 Manus 和 Omniparser，支持多种AI模型实现自主操作。",
+  "analysis": {
+    "tech_highlights": [
+      "自然语言驱动计算机操作，类似 Manus 的智能体能力",
+      "支持 OpenAI、DeepSeek、Ollama 等多种模型灵活切换",
+      "集成 Omniparser 类似 UI 理解，实现跨界面自动化"
+    ],
+    "relevance_score": 7,
+    "reason": "提供可本地部署的计算机使用代理，对开发者自动化任务有直接帮助，但类似项目已存在，创新性中等。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "automation",
+    "RPA"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

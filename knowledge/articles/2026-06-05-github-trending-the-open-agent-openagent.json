@@ -1,0 +1,30 @@
+{
+  "id": "github-20260605-the-open-agent-openagent",
+  "title": "the-open-agent/openagent: 下一代个人AI助手，基于LLM、RAG和智能体循环，支持计算机使用、浏览器使用和编码智能体，集成MCP协议。",
+  "source": "github-trending",
+  "source_url": "https://github.com/the-open-agent/openagent",
+  "collected_at": "2026-06-05T11:26:39Z",
+  "summary": "下一代个人AI助手，基于LLM、RAG和智能体循环，支持计算机使用、浏览器使用和编码智能体，集成MCP协议。",
+  "analysis": {
+    "tech_highlights": [
+      "支持计算机使用、浏览器使用和编码智能体",
+      "集成模型上下文协议（MCP）",
+      "基于LLM、RAG和智能体循环的架构"
+    ],
+    "relevance_score": 8,
+    "reason": "项目构建了一个多功能的个人AI助手框架，涵盖多种智能体能力，对开发者在智能体应用开发、RAG集成、MCP协议实践等方面有直接帮助，且已有在线演示。",
+    "risks": []
+  },
+  "tags": [
+    "agent-framework",
+    "rag",
+    "llm-agent",
+    "mcp",
+    "personal-ai-assistant"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
