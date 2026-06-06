@@ -1,0 +1,28 @@
+{
+  "id": "github-20260606-simular-ai-agent-s",
+  "title": "simular-ai/Agent-S: 一个开放智能体框架，使AI能像人类一样操作计算机，支持规划、记忆和上下文强化学习。",
+  "source": "github-trending",
+  "source_url": "https://github.com/simular-ai/Agent-S",
+  "collected_at": "2026-06-06T10:01:58Z",
+  "summary": "一个开放智能体框架，使AI能像人类一样操作计算机，支持规划、记忆和上下文强化学习。",
+  "analysis": {
+    "tech_highlights": [
+      "基于MLLM的计算机使用代理（Computer Use Agent）",
+      "结合上下文强化学习和检索增强生成（RAG）的记忆机制",
+      "模拟人类操作的GUI智能体与规划能力"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接服务于构建能自主操作电脑的AI代理，对自动化、GUI智能体开发和生产效率提升有显著实用价值。",
+    "risks": []
+  },
+  "tags": [
+    "agent-computer-interface",
+    "ai-agents",
+    "computer-automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
