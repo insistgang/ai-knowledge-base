@@ -1,0 +1,30 @@
+{
+  "id": "github-20260607-trycua-cua",
+  "title": "trycua/cua: 开源基础设施，用于构建和评估控制完整桌面（macOS/Linux/Windows）的AI代理，包含沙箱、SDK和基准测试",
+  "source": "github-trending",
+  "source_url": "https://github.com/trycua/cua",
+  "collected_at": "2026-06-07T10:27:04Z",
+  "summary": "开源基础设施，用于构建和评估控制完整桌面（macOS/Linux/Windows）的AI代理，包含沙箱、SDK和基准测试。",
+  "analysis": {
+    "tech_highlights": [
+      "跨平台桌面控制支持（macOS、Linux、Windows）",
+      "内置沙箱和SDK，便于安全训练和评估",
+      "提供基准测试以标准化代理性能评估"
+    ],
+    "relevance_score": 8,
+    "reason": "直接为AI代理桌面自动化提供标准化基础设施和评估工具，对开发者和研究人员有实用价值，但尚处早期阶段。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use-agent",
+    "desktop-automation",
+    "sandbox",
+    "benchmark",
+    "agent-infrastructure"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
