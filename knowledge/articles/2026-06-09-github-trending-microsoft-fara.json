@@ -1,0 +1,29 @@
+{
+  "id": "github-20260609-microsoft-fara",
+  "title": "microsoft/fara: 微软推出的高效7B参数agent模型，专为计算机使用任务（如浏览器、桌面UI控制）设计，旨在提升自动化效率。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-06-09T10:58:29Z",
+  "summary": "微软推出的高效7B参数agent模型，专为计算机使用任务（如浏览器、桌面UI控制）设计，旨在提升自动化效率。",
+  "analysis": {
+    "tech_highlights": [
+      "7B参数高效agent模型，专注于计算机使用场景",
+      "支持浏览器和桌面自动化操作，面向实际应用"
+    ],
+    "relevance_score": 8,
+    "reason": "该模型直接面向开发者自动化需求，7B参数规模平衡性能与效率，对agent开发和研究有实际帮助，但未达到改变技术格局程度。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "LLM",
+    "automation",
+    "computer-use",
+    "browser-agent"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

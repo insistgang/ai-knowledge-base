@@ -1,0 +1,30 @@
+{
+  "id": "github-20260609-the-open-agent-openagent",
+  "title": "the-open-agent/openagent: 下一代个人AI助手，基于LLM、RAG和代理循环，支持计算机使用、浏览器和编码代理，使用Go语言实现。",
+  "source": "github-trending",
+  "source_url": "https://github.com/the-open-agent/openagent",
+  "collected_at": "2026-06-09T10:58:29Z",
+  "summary": "下一代个人AI助手，基于LLM、RAG和代理循环，支持计算机使用、浏览器和编码代理，使用Go语言实现。",
+  "analysis": {
+    "tech_highlights": [
+      "支持计算机、浏览器和编码等多种代理功能",
+      "集成RAG和模型上下文协议(MCP)",
+      "用Go实现，性能优良"
+    ],
+    "relevance_score": 7,
+    "reason": "对开发和研究AI助手有直接帮助，功能全面且实用，但短期不改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "AI Agent",
+    "RAG",
+    "Go",
+    "MCP",
+    "LLM"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
