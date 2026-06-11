@@ -1,0 +1,29 @@
+{
+  "id": "github-20260611-tracel-ai-burn",
+  "title": "tracel-ai/burn: Burn是一个用Rust构建的高性能深度学习框架，支持多后端（CUDA、Metal、Vulkan等），具备自动微分和内核",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-06-11T12:08:22Z",
+  "summary": "Burn是一个用Rust构建的高性能深度学习框架，支持多后端（CUDA、Metal、Vulkan等），具备自动微分和内核融合能力。",
+  "analysis": {
+    "tech_highlights": [
+      "纯Rust实现，兼具高性能和内存安全",
+      "支持CUDA、Metal、Vulkan、WebGPU等多样后端，跨平台能力强",
+      "内置内核融合和自动微分，优化计算效率"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为深度学习领域提供了一个高效、可移植的Rust解决方案，对开发者（尤其是Rust生态）和研究者有直接帮助，降低了跨平台部署难度，但仍在快速发展中，未完全成熟。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "rust",
+    "cross-platform",
+    "autodiff"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

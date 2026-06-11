@@ -1,0 +1,29 @@
+{
+  "id": "github-20260611-dmlc-dgl",
+  "title": "dmlc/dgl: DGL 是一个用于图深度学习的 Python 库，支持多种深度学习框架，简化图神经网络的开发与应用。",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-06-11T12:08:22Z",
+  "summary": "DGL 是一个用于图深度学习的 Python 库，支持多种深度学习框架，简化图神经网络的开发与应用。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 PyTorch、TensorFlow、MXNet 等多种后端",
+      "提供丰富的图神经网络模型和操作",
+      "针对大规模图的高效处理和分布式训练"
+    ],
+    "relevance_score": 8,
+    "reason": "图神经网络是当前深度学习热点，DGL 作为主流框架，对开发者和研究者有直接帮助，生态成熟。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "graph-neural-networks",
+    "python",
+    "pytorch"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

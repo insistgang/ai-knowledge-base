@@ -1,0 +1,100 @@
+{
+  "source": "github",
+  "collected_at": "2026-06-11T12:08:22Z",
+  "items": [
+    {
+      "name": "BVLC/caffe",
+      "url": "https://github.com/BVLC/caffe",
+      "summary": "Caffe: a fast open framework for deep learning.",
+      "stars": 34578,
+      "language": "C++",
+      "topics": [
+        "deep-learning",
+        "machine-learning",
+        "vision"
+      ]
+    },
+    {
+      "name": "d2l-ai/d2l-en",
+      "url": "https://github.com/d2l-ai/d2l-en",
+      "summary": "Interactive deep learning book with multi-framework code, math, and discussions. Adopted at 500 universities from 70 countries including Stanford, MIT, Harvard, and Cambridge.",
+      "stars": 28975,
+      "language": "Python",
+      "topics": [
+        "book",
+        "computer-vision",
+        "data-science",
+        "deep-learning",
+        "gaussian-processes",
+        "hyperparameter-optimization",
+        "jax",
+        "kaggle",
+        "keras",
+        "machine-learning",
+        "mxnet",
+        "natural-language-processing",
+        "notebook",
+        "python",
+        "pytorch",
+        "recommender-system",
+        "reinforcement-learning",
+        "tensorflow"
+      ]
+    },
+    {
+      "name": "PaddlePaddle/Paddle",
+      "url": "https://github.com/PaddlePaddle/Paddle",
+      "summary": "PArallel Distributed Deep LEarning: Machine Learning Framework from Industrial Practice （『飞桨』核心框架，深度学习&机器学习高性能单机、分布式训练和跨平台部署）",
+      "stars": 23944,
+      "language": "C++",
+      "topics": [
+        "deep-learning",
+        "distributed-training",
+        "efficiency",
+        "machine-learning",
+        "neural-network",
+        "paddlepaddle",
+        "python",
+        "scalability"
+      ]
+    },
+    {
+      "name": "tracel-ai/burn",
+      "url": "https://github.com/tracel-ai/burn",
+      "summary": "Burn is a next generation tensor library and Deep Learning Framework that doesn't compromise on flexibility, efficiency and portability.",
+      "stars": 15403,
+      "language": "Rust",
+      "topics": [
+        "autodiff",
+        "cross-platform",
+        "cuda",
+        "deep-learning",
+        "kernel-fusion",
+        "machine-learning",
+        "metal",
+        "ndarray",
+        "neural-network",
+        "onnx",
+        "pytorch",
+        "rocm",
+        "rust",
+        "scientific-computing",
+        "tensor",
+        "vulkan",
+        "wasm",
+        "webgpu"
+      ]
+    },
+    {
+      "name": "dmlc/dgl",
+      "url": "https://github.com/dmlc/dgl",
+      "summary": "Python package built to ease deep learning on graph, on top of existing DL frameworks.",
+      "stars": 14276,
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "graph-neural-networks"
+      ]
+    }
+  ]
+}
