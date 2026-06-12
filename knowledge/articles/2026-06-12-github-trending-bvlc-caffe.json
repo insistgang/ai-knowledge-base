@@ -1,0 +1,28 @@
+{
+  "id": "github-20260612-bvlc-caffe",
+  "title": "BVLC/caffe: Caffe是早期的深度学习框架，以速度和易用性著称，但已被更现代的框架取代。",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-06-12T11:42:02Z",
+  "summary": "Caffe是早期的深度学习框架，以速度和易用性著称，但已被更现代的框架取代。",
+  "analysis": {
+    "tech_highlights": [
+      "高效的卷积神经网络实现",
+      "清晰的模型定义方式（prototxt）",
+      "支持GPU加速和多种预训练模型"
+    ],
+    "relevance_score": 5,
+    "reason": "Caffe在深度学习历史上具有重要意义，但目前已不再活跃更新，主流社区已转向PyTorch和TensorFlow，短期价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "computer-vision",
+    "legacy-framework"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

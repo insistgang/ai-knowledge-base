@@ -1,0 +1,28 @@
+{
+  "id": "github-20260612-tracel-ai-burn",
+  "title": "tracel-ai/burn: Rust编写的下一代深度学习框架，支持自动微分、跨平台（CUDA/Metal/Vulkan/WebGPU）与ONNX，兼",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-06-12T11:42:02Z",
+  "summary": "Rust编写的下一代深度学习框架，支持自动微分、跨平台（CUDA/Metal/Vulkan/WebGPU）与ONNX，兼顾性能与可移植性。",
+  "analysis": {
+    "tech_highlights": [
+      "使用Rust实现，兼具内存安全和高性能",
+      "支持自动微分、内核融合和多种后端（CUDA/Metal/Vulkan/WebGPU）",
+      "兼容ONNX模型，便于与PyTorch生态互操作"
+    ],
+    "relevance_score": 8,
+    "reason": "为Rust生态提供成熟的深度学习方案，跨平台支持和性能优势对开发者和研究者有直接帮助",
+    "risks": []
+  },
+  "tags": [
+    "rust",
+    "deep-learning",
+    "cross-platform"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
