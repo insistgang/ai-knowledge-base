@@ -1,0 +1,30 @@
+{
+  "id": "github-20260613-d2l-ai-d2l-en",
+  "title": "d2l-ai/d2l-en: 一本交互式深度学习书籍，支持多框架代码和数学，被全球500多所大学采用，是学习深度学习的权威资源。",
+  "source": "github-trending",
+  "source_url": "https://github.com/d2l-ai/d2l-en",
+  "collected_at": "2026-06-13T10:26:41Z",
+  "summary": "一本交互式深度学习书籍，支持多框架代码和数学，被全球500多所大学采用，是学习深度学习的权威资源。",
+  "analysis": {
+    "tech_highlights": [
+      "多框架支持（PyTorch、TensorFlow、JAX、MXNet）",
+      "交互式Jupyter笔记本与实践案例",
+      "涵盖CV、NLP、强化学习等前沿领域"
+    ],
+    "relevance_score": 8,
+    "reason": "对深度学习学习和研究有直接帮助，提供统一的多框架实践，被顶尖高校采用，但非开创性技术突破。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "education",
+    "multi-framework",
+    "book"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "student"
+  ],
+  "status": "draft"
+}

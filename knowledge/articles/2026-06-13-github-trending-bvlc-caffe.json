@@ -1,0 +1,28 @@
+{
+  "id": "github-20260613-bvlc-caffe",
+  "title": "BVLC/caffe: Caffe 是一个快速开放的深度学习框架，专注于速度和模块化，广泛应用于计算机视觉领域。",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-06-13T10:26:41Z",
+  "summary": "Caffe 是一个快速开放的深度学习框架，专注于速度和模块化，广泛应用于计算机视觉领域。",
+  "analysis": {
+    "tech_highlights": [
+      "高速 C++ 实现与 GPU 支持",
+      "模块化架构便于扩展",
+      "丰富的预训练模型库 Model Zoo"
+    ],
+    "relevance_score": 6,
+    "reason": "经典框架，学术价值高，但已被现代框架（如PyTorch）取代，短期实用价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning-framework",
+    "computer-vision",
+    "cuda"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}
