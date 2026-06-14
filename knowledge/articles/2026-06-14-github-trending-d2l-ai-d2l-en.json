@@ -1,0 +1,27 @@
+{
+  "id": "github-20260614-d2l-ai-d2l-en",
+  "title": "d2l-ai/d2l-en: 一本交互式深度学习书籍，提供多框架代码、数学推导和讨论，被全球500多所大学采用。",
+  "source": "github-trending",
+  "source_url": "https://github.com/d2l-ai/d2l-en",
+  "collected_at": "2026-06-14T10:47:25Z",
+  "summary": "一本交互式深度学习书籍，提供多框架代码、数学推导和讨论，被全球500多所大学采用。",
+  "analysis": {
+    "tech_highlights": [
+      "支持PyTorch、TensorFlow、JAX等主流深度学习框架",
+      "内容涵盖计算机视觉、NLP、强化学习等核心领域"
+    ],
+    "relevance_score": 8,
+    "reason": "作为权威教育资源，对学习和研究有直接帮助，广泛采用且持续更新。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "educational",
+    "multi-framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

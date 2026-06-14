@@ -1,0 +1,27 @@
+{
+  "id": "github-20260614-bvlc-caffe",
+  "title": "BVLC/caffe: Caffe是一个快速、模块化的深度学习框架，由伯克利视觉与学习中心开发，主要用于图像分类和卷积神经网络。",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-06-14T10:47:25Z",
+  "summary": "Caffe是一个快速、模块化的深度学习框架，由伯克利视觉与学习中心开发，主要用于图像分类和卷积神经网络。",
+  "analysis": {
+    "tech_highlights": [
+      "高性能C++实现，支持GPU加速",
+      "模块化设计和表达式架构，易于扩展"
+    ],
+    "relevance_score": 6,
+    "reason": "Caffe曾是深度学习领域的重要框架，但已被PyTorch和TensorFlow取代，当前主要价值在于历史参考和学习基础概念，短期直接帮助有限。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "framework",
+    "C++"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
