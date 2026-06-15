@@ -1,0 +1,30 @@
+{
+  "id": "github-20260615-tracel-ai-burn",
+  "title": "tracel-ai/burn: 用Rust实现的高性能深度学习框架，支持多后端（CUDA/Vulkan/WebGPU），提供自动微分和ONNX兼容，旨在",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-06-15T13:52:44Z",
+  "summary": "用Rust实现的高性能深度学习框架，支持多后端（CUDA/Vulkan/WebGPU），提供自动微分和ONNX兼容，旨在成为PyTorch的Rust替代品。",
+  "analysis": {
+    "tech_highlights": [
+      "纯Rust实现，兼顾安全性与性能",
+      "多后端支持，包括CUDA、Metal、Vulkan、WebGPU和WASM",
+      "内置内核融合（kernel fusion）优化计算效率"
+    ],
+    "relevance_score": 8,
+    "reason": "为Rust生态提供了媲美PyTorch的深度学习能力，性能优越且跨平台，对Rust开发者有直接生产价值，但尚在早期阶段。",
+    "risks": []
+  },
+  "tags": [
+    "rust",
+    "deep-learning",
+    "tensor-library",
+    "cross-platform",
+    "automatic-differentiation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
