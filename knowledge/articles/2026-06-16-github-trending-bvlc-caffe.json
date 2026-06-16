@@ -1,0 +1,29 @@
+{
+  "id": "github-20260616-bvlc-caffe",
+  "title": "BVLC/caffe: 经典的深度学习框架，主攻计算机视觉，高速高效，但已被PyTorch等取代。",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-06-16T12:51:09Z",
+  "summary": "经典的深度学习框架，主攻计算机视觉，高速高效，但已被PyTorch等取代。",
+  "analysis": {
+    "tech_highlights": [
+      "模块化架构易于扩展",
+      "GPU加速训练速度快",
+      "Model Zoo提供丰富预训练模型"
+    ],
+    "relevance_score": 6,
+    "reason": "曾引领深度学习发展，但当前生态已迁移；对学习框架设计或维护遗留代码仍有参考价值。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "computer-vision",
+    "framework",
+    "C++"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

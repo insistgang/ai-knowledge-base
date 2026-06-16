@@ -1,0 +1,28 @@
+{
+  "id": "github-20260616-paddlepaddle-paddle",
+  "title": "PaddlePaddle/Paddle: 百度开源的深度学习框架，支持大规模分布式训练与跨平台部署，提供高效的计算图和产业级工具链。",
+  "source": "github-trending",
+  "source_url": "https://github.com/PaddlePaddle/Paddle",
+  "collected_at": "2026-06-16T12:51:09Z",
+  "summary": "百度开源的深度学习框架，支持大规模分布式训练与跨平台部署，提供高效的计算图和产业级工具链。",
+  "analysis": {
+    "tech_highlights": [
+      "高性能分布式训练与并行计算优化",
+      "静态图与动态图融合执行，提升灵活性与效率",
+      "丰富的产业级预训练模型库及部署工具链"
+    ],
+    "relevance_score": 8,
+    "reason": "飞桨框架在工业场景中表现成熟，分布式训练和部署效率突出，对依赖百度生态或追求性能优化的开发者有直接帮助，但相比PyTorch社区普及度略低。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning-framework",
+    "distributed-training",
+    "industrial-ai"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

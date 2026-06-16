@@ -1,0 +1,30 @@
+{
+  "id": "github-20260616-dmlc-dgl",
+  "title": "dmlc/dgl: DGL是简化图深度学习的Python库，支持PyTorch、TensorFlow等主流框架，提供高效图操作和丰富GNN模",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-06-16T12:51:09Z",
+  "summary": "DGL是简化图深度学习的Python库，支持PyTorch、TensorFlow等主流框架，提供高效图操作和丰富GNN模型。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多后端（PyTorch、TensorFlow、MXNet）",
+      "高效图计算与自动微分",
+      "内置大量GNN模型和数据集"
+    ],
+    "relevance_score": 8,
+    "reason": "GNN是深度学习热门方向，DGL极大降低开发和实验门槛，对研究者和开发者有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "graph-neural-networks",
+    "deep-learning",
+    "python",
+    "pytorch",
+    "tensorflow"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
