@@ -1,0 +1,28 @@
+{
+  "id": "github-20260617-parisneo-lollms-webui",
+  "title": "ParisNeo/lollms-webui: 为大型语言和多模态系统提供Web用户界面，便于管理和交互。",
+  "source": "github-trending",
+  "source_url": "https://github.com/ParisNeo/lollms-webui",
+  "collected_at": "2026-06-17T12:14:33Z",
+  "summary": "为大型语言和多模态系统提供Web用户界面，便于管理和交互。",
+  "analysis": {
+    "tech_highlights": [
+      "集成多种LLM模型",
+      "提供多模态支持",
+      "Web界面操作便捷"
+    ],
+    "relevance_score": 7,
+    "reason": "直接帮助开发者部署和使用LLM，提升效率，但创新性中等。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "web-ui",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
