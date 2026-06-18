@@ -1,0 +1,30 @@
+{
+  "id": "github-20260618-samuraigpt-generative-media-skills",
+  "title": "SamurAIGPT/Generative-Media-Skills: 为AI代理（Claude Code、Cursor等）提供多模态生成媒体技能，基于muapi.ai接口，支持图片、视频、音",
+  "source": "github-trending",
+  "source_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+  "collected_at": "2026-06-18T11:49:07Z",
+  "summary": "为AI代理（Claude Code、Cursor等）提供多模态生成媒体技能，基于muapi.ai接口，支持图片、视频、音频生成。",
+  "analysis": {
+    "tech_highlights": [
+      "将多模态生成能力封装为AI代理可调用的技能（MCP协议）",
+      "集成多种主流AI助手（Claude Code、Cursor、Gemini CLI）",
+      "支持高质量图片、视频、音频生成的一站式解决方案"
+    ],
+    "relevance_score": 7,
+    "reason": "直接提升AI代理的多模态交互能力，降低开发者集成成本，但依赖第三方服务，非基础创新。",
+    "risks": []
+  },
+  "tags": [
+    "multimodal-ai",
+    "agent-tools",
+    "MCP",
+    "generative-media",
+    "ai-integration"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

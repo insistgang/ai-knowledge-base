@@ -1,0 +1,75 @@
+{
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18T11:49:07Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.0019272,
+    "remaining_usd": 0.0980728,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1430,
+      "completion_tokens": 1401,
+      "total_tokens": 2831,
+      "estimated_cost_usd": 0.0019272,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1430,
+    "completion_tokens": 1401,
+    "total_tokens": 2831,
+    "estimated_cost_usd": 0.0019272
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "hiyouga/EasyR1",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 270,
+      "completion_tokens": 283,
+      "total_tokens": 553,
+      "estimated_cost_usd": 0.0003842
+    },
+    {
+      "source": "github",
+      "item_name": "ParisNeo/lollms-webui",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 242,
+      "completion_tokens": 242,
+      "total_tokens": 484,
+      "estimated_cost_usd": 0.00033154
+    },
+    {
+      "source": "github",
+      "item_name": "ThilinaRajapakse/simpletransformers",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 293,
+      "completion_tokens": 232,
+      "total_tokens": 525,
+      "estimated_cost_usd": 0.00033431
+    },
+    {
+      "source": "github",
+      "item_name": "aurelio-labs/semantic-router",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 265,
+      "completion_tokens": 212,
+      "total_tokens": 477,
+      "estimated_cost_usd": 0.00030475
+    },
+    {
+      "source": "github",
+      "item_name": "SamurAIGPT/Generative-Media-Skills",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 360,
+      "completion_tokens": 432,
+      "total_tokens": 792,
+      "estimated_cost_usd": 0.0005724
+    }
+  ]
+}
