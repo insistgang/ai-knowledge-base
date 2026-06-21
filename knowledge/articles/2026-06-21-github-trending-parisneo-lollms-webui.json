@@ -1,0 +1,29 @@
+{
+  "id": "github-20260621-parisneo-lollms-webui",
+  "title": "ParisNeo/lollms-webui: 为大型语言和多模态系统提供统一Web UI，支持多种模型、对话和文本生成，降低LLM使用门槛。",
+  "source": "github-trending",
+  "source_url": "https://github.com/ParisNeo/lollms-webui",
+  "collected_at": "2026-06-21T11:13:47Z",
+  "summary": "为大型语言和多模态系统提供统一Web UI，支持多种模型、对话和文本生成，降低LLM使用门槛。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多种主流LLM（如LLaMA、GPT-4等）和本地部署",
+      "集成多模态处理能力，如图像与文本交互",
+      "提供可定制的工作流和插件系统"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为开发者和研究者提供了一个便捷的Web界面来管理和交互多种LLM，显著降低了实验和部署成本，且具备多模态扩展能力，对当前AI应用开发有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "webui",
+    "multimodal",
+    "text-generation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
