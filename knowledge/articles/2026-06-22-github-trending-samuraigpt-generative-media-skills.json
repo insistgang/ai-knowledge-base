@@ -1,0 +1,28 @@
+{
+  "id": "github-20260622-samuraigpt-generative-media-skills",
+  "title": "SamurAIGPT/Generative-Media-Skills: GitHub 项目 SamurAIGPT/Generative-Media-Skills，Multi-modal Gen",
+  "source": "github-trending",
+  "source_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+  "collected_at": "2026-06-22T13:32:53Z",
+  "summary": "GitHub 项目 SamurAIGPT/Generative-Media-Skills，Multi-modal Generative Media Skills for AI Agents (Claude Co",
+  "analysis": {
+    "tech_highlights": [
+      "Shell 项目, 3603 stars",
+      "标签: agent-skills, agent-tools, ai-agents"
+    ],
+    "relevance_score": 6,
+    "reason": "基于热度(3603 stars)和标签(agent-skills, agent-tools, ai-agents)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agent-skills",
+    "agent-tools",
+    "ai-agents",
+    "ai-video",
+    "claude-code"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
