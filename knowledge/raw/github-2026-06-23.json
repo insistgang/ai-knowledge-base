@@ -1,0 +1,95 @@
+{
+  "source": "github",
+  "collected_at": "2026-06-23T11:14:01Z",
+  "items": [
+    {
+      "name": "hiyouga/EasyR1",
+      "url": "https://github.com/hiyouga/EasyR1",
+      "summary": "EasyR1: An Efficient, Scalable, Multi-Modality RL Training Framework based on veRL",
+      "stars": 5024,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "deepseek",
+        "gpt",
+        "llm",
+        "nlp",
+        "qwen",
+        "reinforcement-learning",
+        "rl"
+      ]
+    },
+    {
+      "name": "ParisNeo/lollms-webui",
+      "url": "https://github.com/ParisNeo/lollms-webui",
+      "summary": "Lord of Large Language and Multi modal Systems Web User Interface",
+      "stars": 4786,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "llm",
+        "text-generation"
+      ]
+    },
+    {
+      "name": "ThilinaRajapakse/simpletransformers",
+      "url": "https://github.com/ThilinaRajapakse/simpletransformers",
+      "summary": "Transformers for Information Retrieval, Text Classification, NER, QA, Language Modelling, Language Generation, T5, Multi-Modal, and Conversational AI",
+      "stars": 4248,
+      "language": "Python",
+      "topics": [
+        "conversational-ai",
+        "information-retrival",
+        "named-entity-recognition",
+        "question-answering",
+        "text-classification",
+        "transformers"
+      ]
+    },
+    {
+      "name": "aurelio-labs/semantic-router",
+      "url": "https://github.com/aurelio-labs/semantic-router",
+      "summary": "Superfast AI decision making and intelligent processing of multi-modal data.",
+      "stars": 3632,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "chatbot",
+        "computer-vision",
+        "generative-ai",
+        "machine-learning",
+        "nlp"
+      ]
+    },
+    {
+      "name": "SamurAIGPT/Generative-Media-Skills",
+      "url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+      "summary": "Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini CLI). High-quality image, video, and audio generation powered by muapi.ai.",
+      "stars": 3612,
+      "language": "Shell",
+      "topics": [
+        "agent-skills",
+        "agent-tools",
+        "ai-agents",
+        "ai-video",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "flux",
+        "generative-ai",
+        "image-generation",
+        "kling",
+        "mcp",
+        "midjourney",
+        "muapi",
+        "multimodal-ai",
+        "skills",
+        "suno",
+        "text-to-image",
+        "text-to-video",
+        "video-generation"
+      ]
+    }
+  ]
+}
