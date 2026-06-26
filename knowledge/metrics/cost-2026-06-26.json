@@ -1,0 +1,75 @@
+{
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26T10:49:05Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00223759,
+    "remaining_usd": 0.09776241,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1337,
+      "completion_tokens": 1706,
+      "total_tokens": 3043,
+      "estimated_cost_usd": 0.00223759,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1337,
+    "completion_tokens": 1706,
+    "total_tokens": 3043,
+    "estimated_cost_usd": 0.00223759
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "obra/superpowers",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 255,
+      "completion_tokens": 331,
+      "total_tokens": 586,
+      "estimated_cost_usd": 0.00043295
+    },
+    {
+      "source": "github",
+      "item_name": "langchain-ai/langchain",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 299,
+      "completion_tokens": 280,
+      "total_tokens": 579,
+      "estimated_cost_usd": 0.00038873
+    },
+    {
+      "source": "github",
+      "item_name": "FoundationAgents/MetaGPT",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 252,
+      "completion_tokens": 492,
+      "total_tokens": 744,
+      "estimated_cost_usd": 0.00060924
+    },
+    {
+      "source": "github",
+      "item_name": "microsoft/autogen",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 267,
+      "completion_tokens": 256,
+      "total_tokens": 523,
+      "estimated_cost_usd": 0.00035369
+    },
+    {
+      "source": "github",
+      "item_name": "crewAIInc/crewAI",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 264,
+      "completion_tokens": 347,
+      "total_tokens": 611,
+      "estimated_cost_usd": 0.00045298
+    }
+  ]
+}
