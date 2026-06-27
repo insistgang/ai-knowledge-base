@@ -1,0 +1,28 @@
+{
+  "id": "github-20260627-langchain-ai-langchain",
+  "title": "langchain-ai/langchain: GitHub 项目 langchain-ai/langchain，The agent engineering platf",
+  "source": "github-trending",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "collected_at": "2026-06-27T10:05:47Z",
+  "summary": "GitHub 项目 langchain-ai/langchain，The agent engineering platform.",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 140319 stars",
+      "标签: agents, ai, ai-agents"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(140319 stars)和标签(agents, ai, ai-agents)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "anthropic",
+    "chatgpt"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
