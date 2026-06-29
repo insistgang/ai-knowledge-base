@@ -1,0 +1,30 @@
+{
+  "id": "github-20260629-crewaiinc-crewai",
+  "title": "crewAIInc/crewAI: 一个用于编排角色扮演、自主AI智能体的框架，通过协作智能让多个智能体无缝协作处理复杂任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/crewAIInc/crewAI",
+  "collected_at": "2026-06-29T12:29:35Z",
+  "summary": "一个用于编排角色扮演、自主AI智能体的框架，通过协作智能让多个智能体无缝协作处理复杂任务。",
+  "analysis": {
+    "tech_highlights": [
+      "角色扮演智能体编排",
+      "多智能体协作与任务分配",
+      "集成LLM（如GPT-4）和工具调用"
+    ],
+    "relevance_score": 8,
+    "reason": "对构建多AI智能体协作系统有直接帮助，理念新颖且实用，但尚未改变整体技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "multi-agent-systems",
+    "llm-framework",
+    "python",
+    "collaboration"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
