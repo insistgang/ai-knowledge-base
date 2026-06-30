@@ -1,0 +1,29 @@
+{
+  "id": "github-20260630-microsoft-autogen",
+  "title": "microsoft/autogen: 微软开源的代理AI编程框架，支持多代理协作、任务自动化与代码执行。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/autogen",
+  "collected_at": "2026-06-30T10:55:02Z",
+  "summary": "微软开源的代理AI编程框架，支持多代理协作、任务自动化与代码执行。",
+  "analysis": {
+    "tech_highlights": [
+      "多代理对话与协作机制",
+      "自动代码执行与错误修复",
+      "可扩展的插件与工具集成"
+    ],
+    "relevance_score": 8,
+    "reason": "该框架直接降低了构建复杂AI代理系统的门槛，对开发和研究均有实用价值，目前社区活跃且生态完善。",
+    "risks": []
+  },
+  "tags": [
+    "agentic-ai",
+    "multi-agent",
+    "llm-framework",
+    "python"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

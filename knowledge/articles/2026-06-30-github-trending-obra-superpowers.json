@@ -1,0 +1,30 @@
+{
+  "id": "github-20260630-obra-superpowers",
+  "title": "obra/superpowers: 一个以子代理驱动的技能框架和软件开发方法论，结合AI实现高效编码与协作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/obra/superpowers",
+  "collected_at": "2026-06-30T10:55:02Z",
+  "summary": "一个以子代理驱动的技能框架和软件开发方法论，结合AI实现高效编码与协作。",
+  "analysis": {
+    "tech_highlights": [
+      "子代理驱动开发（Subagent-driven development）",
+      "结合AI的技能框架",
+      "高效的SDLC集成"
+    ],
+    "relevance_score": 7,
+    "reason": "提供实用的AI辅助开发方法论，对开发者有直接帮助，但仍在早期阶段，影响力有限。",
+    "risks": []
+  },
+  "tags": [
+    "ai",
+    "agent-framework",
+    "development-methodology",
+    "sdlc",
+    "shell"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
