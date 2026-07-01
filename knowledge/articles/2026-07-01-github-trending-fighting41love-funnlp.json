@@ -1,0 +1,28 @@
+{
+  "id": "github-20260701-fighting41love-funnlp",
+  "title": "fighting41love/funNLP: 一个综合性的自然语言处理（NLP）资源集合，包含大量数据集、工具、模型和代码，覆盖分词、NER、情感分析、知识图谱、语音",
+  "source": "github-trending",
+  "source_url": "https://github.com/fighting41love/funNLP",
+  "collected_at": "2026-07-01T11:21:43Z",
+  "summary": "一个综合性的自然语言处理（NLP）资源集合，包含大量数据集、工具、模型和代码，覆盖分词、NER、情感分析、知识图谱、语音识别等多种任务。",
+  "analysis": {
+    "tech_highlights": [
+      "涵盖了海量的NLP相关工具、数据集和模型，从基础分词到高级知识图谱",
+      "提供了中文特有的资源，如敏感词、人名库、古诗词等，实用性强"
+    ],
+    "relevance_score": 8,
+    "reason": "对NLP开发者和研究者有直接帮助，资源丰富全面，但非原创算法，整体价值高但非突破性",
+    "risks": []
+  },
+  "tags": [
+    "nlp",
+    "resources",
+    "dataset",
+    "tool"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
