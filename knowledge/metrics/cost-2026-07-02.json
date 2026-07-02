@@ -1,0 +1,75 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T10:35:46Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00321348,
+    "remaining_usd": 0.09678652,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 4434,
+      "completion_tokens": 1833,
+      "total_tokens": 6267,
+      "estimated_cost_usd": 0.00321348,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 4434,
+    "completion_tokens": 1833,
+    "total_tokens": 6267,
+    "estimated_cost_usd": 0.00321348
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "fighting41love/funNLP",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 3243,
+      "completion_tokens": 365,
+      "total_tokens": 3608,
+      "estimated_cost_usd": 0.00127711
+    },
+    {
+      "source": "github",
+      "item_name": "EpistasisLab/tpot",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 329,
+      "completion_tokens": 452,
+      "total_tokens": 781,
+      "estimated_cost_usd": 0.00058603
+    },
+    {
+      "source": "github",
+      "item_name": "Spandan-Madan/DeepLearningProject",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 254,
+      "completion_tokens": 308,
+      "total_tokens": 562,
+      "estimated_cost_usd": 0.00040738
+    },
+    {
+      "source": "github",
+      "item_name": "kubeflow/pipelines",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 261,
+      "completion_tokens": 380,
+      "total_tokens": 641,
+      "estimated_cost_usd": 0.00048847
+    },
+    {
+      "source": "github",
+      "item_name": "whylabs/whylogs",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 347,
+      "completion_tokens": 328,
+      "total_tokens": 675,
+      "estimated_cost_usd": 0.00045449
+    }
+  ]
+}
