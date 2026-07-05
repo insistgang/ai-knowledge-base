@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T10:10:21Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00143881,
+    "remaining_usd": 0.09856119,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 1,
+      "prompt_tokens": 3243,
+      "completion_tokens": 512,
+      "total_tokens": 3755,
+      "estimated_cost_usd": 0.00143881,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 1,
+    "prompt_tokens": 3243,
+    "completion_tokens": 512,
+    "total_tokens": 3755,
+    "estimated_cost_usd": 0.00143881
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "fighting41love/funNLP",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 3243,
+      "completion_tokens": 512,
+      "total_tokens": 3755,
+      "estimated_cost_usd": 0.00143881
+    }
+  ]
+}

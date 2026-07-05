@@ -1,0 +1,28 @@
+{
+  "id": "github-20260705-kubeflow-pipelines",
+  "title": "kubeflow/pipelines: GitHub 项目 kubeflow/pipelines，Machine Learning Pipelines for ",
+  "source": "github-trending",
+  "source_url": "https://github.com/kubeflow/pipelines",
+  "collected_at": "2026-07-05T10:10:21Z",
+  "summary": "GitHub 项目 kubeflow/pipelines，Machine Learning Pipelines for Kubeflow",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 4169 stars",
+      "标签: data-science, kubeflow, kubeflow-pipelines"
+    ],
+    "relevance_score": 6,
+    "reason": "基于热度(4169 stars)和标签(data-science, kubeflow, kubeflow-pipelines)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "data-science",
+    "kubeflow",
+    "kubeflow-pipelines",
+    "kubernetes",
+    "machine-learning"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

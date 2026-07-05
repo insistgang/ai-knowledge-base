@@ -1,0 +1,27 @@
+{
+  "id": "github-20260705-spandan-madan-deeplearningproject",
+  "title": "Spandan-Madan/DeepLearningProject: GitHub 项目 Spandan-Madan/DeepLearningProject，An in-depth mach",
+  "source": "github-trending",
+  "source_url": "https://github.com/Spandan-Madan/DeepLearningProject",
+  "collected_at": "2026-07-05T10:10:21Z",
+  "summary": "GitHub 项目 Spandan-Madan/DeepLearningProject，An in-depth machine learning tutorial introducing readers to",
+  "analysis": {
+    "tech_highlights": [
+      "HTML 项目, 4784 stars",
+      "标签: deep-learning, machine-learning, neural-networks"
+    ],
+    "relevance_score": 6,
+    "reason": "基于热度(4784 stars)和标签(deep-learning, machine-learning, neural-networks)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "machine-learning",
+    "neural-networks",
+    "tutorial"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
