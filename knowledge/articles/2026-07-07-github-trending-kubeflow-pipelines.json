@@ -1,0 +1,29 @@
+{
+  "id": "github-20260707-kubeflow-pipelines",
+  "title": "kubeflow/pipelines: Kubeflow Pipelines 是构建、部署和管理可复现机器学习流水线的核心组件，运行于 Kubernetes。",
+  "source": "github-trending",
+  "source_url": "https://github.com/kubeflow/pipelines",
+  "collected_at": "2026-07-07T10:53:12Z",
+  "summary": "Kubeflow Pipelines 是构建、部署和管理可复现机器学习流水线的核心组件，运行于 Kubernetes。",
+  "analysis": {
+    "tech_highlights": [
+      "提供 SDK 定义可组合、可复现的流水线",
+      "紧密集成 Kubeflow 和 Kubernetes 生态，支持扩展与自动化"
+    ],
+    "relevance_score": 7,
+    "reason": "对 MLOps 实践者价值高，直接提升机器学习工作流的效率与可复现性，但主要面向已有 Kubernetes 基础设施的团队。",
+    "risks": []
+  },
+  "tags": [
+    "mlops",
+    "kubernetes",
+    "pipeline",
+    "machine-learning",
+    "kubeflow"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
