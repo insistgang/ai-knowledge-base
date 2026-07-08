@@ -1,0 +1,29 @@
+{
+  "id": "github-20260708-simular-ai-agent-s",
+  "title": "simular-ai/Agent-S: Agent S 是一个开放的智能体框架，允许AI像人类一样操作计算机，集成视觉理解、规划和记忆。",
+  "source": "github-trending",
+  "source_url": "https://github.com/simular-ai/Agent-S",
+  "collected_at": "2026-07-08T10:14:06Z",
+  "summary": "Agent S 是一个开放的智能体框架，允许AI像人类一样操作计算机，集成视觉理解、规划和记忆。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态大模型（MLLM）驱动的视觉-行动循环",
+      "结合上下文强化学习与检索增强生成（RAG）的规划与记忆机制"
+    ],
+    "relevance_score": 8,
+    "reason": "项目提供了完整的计算机自动化框架，可直接用于开发GUI智能体，对研究和工程实践都有显著帮助。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agent",
+    "computer-use",
+    "automation",
+    "reinforcement-learning",
+    "gui-agents"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

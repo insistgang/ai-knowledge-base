@@ -1,0 +1,117 @@
+{
+  "source": "github",
+  "collected_at": "2026-07-08T10:14:06Z",
+  "items": [
+    {
+      "name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+      "stars": 19457,
+      "language": "HTML",
+      "topics": [
+        "agent",
+        "ai-agent",
+        "apple",
+        "computer-use",
+        "computer-use-agent",
+        "containerization",
+        "cua",
+        "desktop-automation",
+        "hacktoberfest",
+        "lume",
+        "macos",
+        "manus",
+        "operator",
+        "swift",
+        "virtualization",
+        "virtualization-framework",
+        "windows",
+        "windows-sandbox"
+      ]
+    },
+    {
+      "name": "simular-ai/Agent-S",
+      "url": "https://github.com/simular-ai/Agent-S",
+      "summary": "Agent S: an open agentic framework that uses computers like a human",
+      "stars": 11987,
+      "language": "Python",
+      "topics": [
+        "agent-computer-interface",
+        "ai-agents",
+        "computer-automation",
+        "computer-use",
+        "computer-use-agent",
+        "cua",
+        "grounding",
+        "gui-agents",
+        "in-context-reinforcement-learning",
+        "memory",
+        "mllm",
+        "planning",
+        "retrieval-augmented-generation"
+      ]
+    },
+    {
+      "name": "microsoft/fara",
+      "url": "https://github.com/microsoft/fara",
+      "summary": "Fara-7B: An Efficient Agentic Model for Computer Use",
+      "stars": 5985,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "browser-use",
+        "computer-use",
+        "computer-use-agent",
+        "cua"
+      ]
+    },
+    {
+      "name": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "summary": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
+      "stars": 5361,
+      "language": "Go",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-ai",
+        "agi",
+        "chatbot",
+        "chatgpt",
+        "gpt",
+        "harness",
+        "hermes-agent",
+        "knowledge-base",
+        "langchain",
+        "llm",
+        "mcp",
+        "model-context-protocol",
+        "multi-agent",
+        "openagent",
+        "openai",
+        "openclaw",
+        "rag"
+      ]
+    },
+    {
+      "name": "yuruotong1/autoMate",
+      "url": "https://github.com/yuruotong1/autoMate",
+      "summary": "Like Manus, Computer Use Agent(CUA) and Omniparser, we are computer-using agents.AI-driven local automation assistant that uses natural language to make computers work by themselves",
+      "stars": 3929,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "computeruse",
+        "deepseek",
+        "manus",
+        "ollama",
+        "omniparser",
+        "openai",
+        "openmanus",
+        "response",
+        "rpa"
+      ]
+    }
+  ]
+}
