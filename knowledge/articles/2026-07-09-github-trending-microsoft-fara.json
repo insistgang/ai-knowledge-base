@@ -1,0 +1,27 @@
+{
+  "id": "github-20260709-microsoft-fara",
+  "title": "microsoft/fara: 微软开源的7B参数高效计算机使用智能体模型，让AI代理操作浏览器和桌面应用。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-07-09T10:52:12Z",
+  "summary": "微软开源的7B参数高效计算机使用智能体模型，让AI代理操作浏览器和桌面应用。",
+  "analysis": {
+    "tech_highlights": [
+      "7B参数高效模型，专注计算机使用任务",
+      "支持浏览器和桌面应用自动化操作"
+    ],
+    "relevance_score": 7,
+    "reason": "对开发自动化代理和计算机操作AI有直接帮助，但参数规模和架构创新有限，非颠覆性。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "LLM"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

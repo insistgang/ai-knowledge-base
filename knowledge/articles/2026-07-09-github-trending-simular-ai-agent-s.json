@@ -1,0 +1,30 @@
+{
+  "id": "github-20260709-simular-ai-agent-s",
+  "title": "simular-ai/Agent-S: Agent S 是一个开源代理框架，让 AI 像人类一样操作计算机，支持 GUI 交互、规划、记忆和检索增强生成。",
+  "source": "github-trending",
+  "source_url": "https://github.com/simular-ai/Agent-S",
+  "collected_at": "2026-07-09T10:52:12Z",
+  "summary": "Agent S 是一个开源代理框架，让 AI 像人类一样操作计算机，支持 GUI 交互、规划、记忆和检索增强生成。",
+  "analysis": {
+    "tech_highlights": [
+      "基于多模态大模型（MLLM）的计算机操作代理",
+      "结合上下文强化学习与检索增强生成进行规划",
+      "集成交互式记忆系统提升长期任务执行"
+    ],
+    "relevance_score": 8,
+    "reason": "直接解决了 AI 代理自主操作计算机的核心挑战，提供开源实现和模块化设计，对开发者和研究者有实用价值，但尚处于早期阶段。",
+    "risks": []
+  },
+  "tags": [
+    "agent-computer-interface",
+    "ai-agents",
+    "computer-automation",
+    "GUI-agents",
+    "reinforcement-learning"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
