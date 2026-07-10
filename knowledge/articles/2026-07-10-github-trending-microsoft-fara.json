@@ -1,0 +1,29 @@
+{
+  "id": "github-20260710-microsoft-fara",
+  "title": "microsoft/fara: 微软推出的7B参数高效代理模型Fara-7B，专用于计算机和浏览器自动化操作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-07-10T10:50:41Z",
+  "summary": "微软推出的7B参数高效代理模型Fara-7B，专用于计算机和浏览器自动化操作。",
+  "analysis": {
+    "tech_highlights": [
+      "7B参数规模兼顾效率与性能",
+      "专注于计算机使用代理（CUA）和浏览器自动化"
+    ],
+    "relevance_score": 8,
+    "reason": "对于需要构建计算机操作智能体的开发者具有直接帮助，微软出品且模型轻量高效，但尚处于早期。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "LLM",
+    "browser-automation",
+    "efficient-model"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
