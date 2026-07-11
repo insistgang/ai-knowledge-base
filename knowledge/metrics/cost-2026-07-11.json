@@ -1,0 +1,75 @@
+{
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T09:26:16Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00247873,
+    "remaining_usd": 0.09752127,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1509,
+      "completion_tokens": 1883,
+      "total_tokens": 3392,
+      "estimated_cost_usd": 0.00247873,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1509,
+    "completion_tokens": 1883,
+    "total_tokens": 3392,
+    "estimated_cost_usd": 0.00247873
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "trycua/cua",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 330,
+      "completion_tokens": 443,
+      "total_tokens": 773,
+      "estimated_cost_usd": 0.0005764
+    },
+    {
+      "source": "github",
+      "item_name": "simular-ai/Agent-S",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 302,
+      "completion_tokens": 423,
+      "total_tokens": 725,
+      "estimated_cost_usd": 0.00054684
+    },
+    {
+      "source": "github",
+      "item_name": "microsoft/fara",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 246,
+      "completion_tokens": 268,
+      "total_tokens": 514,
+      "estimated_cost_usd": 0.00036122
+    },
+    {
+      "source": "github",
+      "item_name": "the-open-agent/openagent",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 332,
+      "completion_tokens": 360,
+      "total_tokens": 692,
+      "estimated_cost_usd": 0.00048564
+    },
+    {
+      "source": "github",
+      "item_name": "yuruotong1/autoMate",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 299,
+      "completion_tokens": 389,
+      "total_tokens": 688,
+      "estimated_cost_usd": 0.00050863
+    }
+  ]
+}
