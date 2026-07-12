@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T09:48:34Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0,
+    "remaining_usd": 0.1,
+    "exceeded": false
+  },
+  "runs": [],
+  "total": {
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0
+  },
+  "calls": []
+}
