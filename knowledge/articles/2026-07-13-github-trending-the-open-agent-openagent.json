@@ -1,0 +1,28 @@
+{
+  "id": "github-20260713-the-open-agent-openagent",
+  "title": "the-open-agent/openagent: GitHub 项目 the-open-agent/openagent，⚡️next-generation persona",
+  "source": "github-trending",
+  "source_url": "https://github.com/the-open-agent/openagent",
+  "collected_at": "2026-07-13T10:57:47Z",
+  "summary": "GitHub 项目 the-open-agent/openagent，⚡️next-generation personal AI assistant powered by LLM, RAG ",
+  "analysis": {
+    "tech_highlights": [
+      "Go 项目, 5391 stars",
+      "标签: agent, agentic, agentic-ai"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(5391 stars)和标签(agent, agentic, agentic-ai)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "agentic",
+    "agentic-ai",
+    "agi",
+    "chatbot"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
