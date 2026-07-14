@@ -1,0 +1,28 @@
+{
+  "id": "github-20260714-trycua-cua",
+  "title": "trycua/cua: GitHub 项目 trycua/cua，Open-source infrastructure for Computer",
+  "source": "github-trending",
+  "source_url": "https://github.com/trycua/cua",
+  "collected_at": "2026-07-14T09:55:33Z",
+  "summary": "GitHub 项目 trycua/cua，Open-source infrastructure for Computer-Use Agents. Sandboxe",
+  "analysis": {
+    "tech_highlights": [
+      "HTML 项目, 19648 stars",
+      "标签: agent, ai-agent, apple"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(19648 stars)和标签(agent, ai-agent, apple)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "ai-agent",
+    "apple",
+    "computer-use",
+    "computer-use-agent"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
