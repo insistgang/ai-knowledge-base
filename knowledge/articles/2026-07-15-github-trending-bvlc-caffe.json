@@ -1,0 +1,26 @@
+{
+  "id": "github-20260715-bvlc-caffe",
+  "title": "BVLC/caffe: GitHub 项目 BVLC/caffe，Caffe: a fast open framework for deep l",
+  "source": "github-trending",
+  "source_url": "https://github.com/BVLC/caffe",
+  "collected_at": "2026-07-15T09:59:55Z",
+  "summary": "GitHub 项目 BVLC/caffe，Caffe: a fast open framework for deep learning.",
+  "analysis": {
+    "tech_highlights": [
+      "C++ 项目, 34573 stars",
+      "标签: deep-learning, machine-learning, vision"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(34573 stars)和标签(deep-learning, machine-learning, vision)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "machine-learning",
+    "vision"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
