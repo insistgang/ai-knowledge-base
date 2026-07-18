@@ -1,0 +1,28 @@
+{
+  "id": "github-20260718-paddlepaddle-paddle",
+  "title": "PaddlePaddle/Paddle: GitHub 项目 PaddlePaddle/Paddle，PArallel Distributed Deep LEar",
+  "source": "github-trending",
+  "source_url": "https://github.com/PaddlePaddle/Paddle",
+  "collected_at": "2026-07-18T09:21:59Z",
+  "summary": "GitHub 项目 PaddlePaddle/Paddle，PArallel Distributed Deep LEarning: Machine Learning Framewo",
+  "analysis": {
+    "tech_highlights": [
+      "C++ 项目, 24019 stars",
+      "标签: deep-learning, distributed-training, efficiency"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(24019 stars)和标签(deep-learning, distributed-training, efficiency)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "distributed-training",
+    "efficiency",
+    "machine-learning",
+    "neural-network"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

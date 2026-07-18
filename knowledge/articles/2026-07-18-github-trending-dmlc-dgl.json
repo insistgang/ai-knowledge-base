@@ -1,0 +1,25 @@
+{
+  "id": "github-20260718-dmlc-dgl",
+  "title": "dmlc/dgl: GitHub 项目 dmlc/dgl，Python package built to ease deep learnin",
+  "source": "github-trending",
+  "source_url": "https://github.com/dmlc/dgl",
+  "collected_at": "2026-07-18T09:21:59Z",
+  "summary": "GitHub 项目 dmlc/dgl，Python package built to ease deep learning on graph, on top ",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 14284 stars",
+      "标签: deep-learning, graph-neural-networks"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(14284 stars)和标签(deep-learning, graph-neural-networks)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "graph-neural-networks"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
