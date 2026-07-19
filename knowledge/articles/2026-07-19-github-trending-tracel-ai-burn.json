@@ -1,0 +1,28 @@
+{
+  "id": "github-20260719-tracel-ai-burn",
+  "title": "tracel-ai/burn: GitHub 项目 tracel-ai/burn，Burn is a next generation tensor li",
+  "source": "github-trending",
+  "source_url": "https://github.com/tracel-ai/burn",
+  "collected_at": "2026-07-19T09:49:32Z",
+  "summary": "GitHub 项目 tracel-ai/burn，Burn is a next generation tensor library and Deep Learning F",
+  "analysis": {
+    "tech_highlights": [
+      "Rust 项目, 15604 stars",
+      "标签: autodiff, cross-platform, cuda"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(15604 stars)和标签(autodiff, cross-platform, cuda)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "autodiff",
+    "cross-platform",
+    "cuda",
+    "deep-learning",
+    "kernel-fusion"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
