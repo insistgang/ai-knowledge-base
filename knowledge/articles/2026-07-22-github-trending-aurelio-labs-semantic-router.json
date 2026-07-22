@@ -1,0 +1,28 @@
+{
+  "id": "github-20260722-aurelio-labs-semantic-router",
+  "title": "aurelio-labs/semantic-router: GitHub 项目 aurelio-labs/semantic-router，Superfast AI decision",
+  "source": "github-trending",
+  "source_url": "https://github.com/aurelio-labs/semantic-router",
+  "collected_at": "2026-07-22T10:22:57Z",
+  "summary": "GitHub 项目 aurelio-labs/semantic-router，Superfast AI decision making and intelligent processing of m",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 3733 stars",
+      "标签: ai, artificial-intelligence, chatbot"
+    ],
+    "relevance_score": 6,
+    "reason": "基于热度(3733 stars)和标签(ai, artificial-intelligence, chatbot)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "ai",
+    "artificial-intelligence",
+    "chatbot",
+    "computer-vision",
+    "generative-ai"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
