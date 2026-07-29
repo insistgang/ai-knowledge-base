@@ -1,0 +1,28 @@
+{
+  "id": "github-20260729-foundationagents-metagpt",
+  "title": "FoundationAgents/MetaGPT: GitHub 项目 FoundationAgents/MetaGPT，🌟 The Multi-Agent Framewo",
+  "source": "github-trending",
+  "source_url": "https://github.com/FoundationAgents/MetaGPT",
+  "collected_at": "2026-07-29T10:35:46Z",
+  "summary": "GitHub 项目 FoundationAgents/MetaGPT，🌟 The Multi-Agent Framework: First AI Software Company, Towa",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 69579 stars",
+      "标签: agent, gpt, llm"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(69579 stars)和标签(agent, gpt, llm)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "gpt",
+    "llm",
+    "metagpt",
+    "multi-agent"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260729-obra-superpowers",
+  "title": "obra/superpowers: GitHub 项目 obra/superpowers，An agentic skills framework & sof",
+  "source": "github-trending",
+  "source_url": "https://github.com/obra/superpowers",
+  "collected_at": "2026-07-29T10:35:46Z",
+  "summary": "GitHub 项目 obra/superpowers，An agentic skills framework & software development methodolo",
+  "analysis": {
+    "tech_highlights": [
+      "Shell 项目, 262997 stars",
+      "标签: ai, brainstorming, coding"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(262997 stars)和标签(ai, brainstorming, coding)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "ai",
+    "brainstorming",
+    "coding",
+    "obra",
+    "sdlc"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
