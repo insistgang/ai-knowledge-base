@@ -1,0 +1,28 @@
+{
+  "id": "github-20260730-crewaiinc-crewai",
+  "title": "crewAIInc/crewAI: GitHub 项目 crewAIInc/crewAI，Framework for orchestrating role-",
+  "source": "github-trending",
+  "source_url": "https://github.com/crewAIInc/crewAI",
+  "collected_at": "2026-07-30T10:22:15Z",
+  "summary": "GitHub 项目 crewAIInc/crewAI，Framework for orchestrating role-playing, autonomous AI agen",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 56372 stars",
+      "标签: agents, ai, ai-agents"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(56372 stars)和标签(agents, ai, ai-agents)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "aiagentframework",
+    "llms"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
