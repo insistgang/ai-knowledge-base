@@ -1,0 +1,28 @@
+{
+  "id": "github-20260731-microsoft-autogen",
+  "title": "microsoft/autogen: GitHub 项目 microsoft/autogen，A programming framework for agen",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/autogen",
+  "collected_at": "2026-07-31T10:35:48Z",
+  "summary": "GitHub 项目 microsoft/autogen，A programming framework for agentic AI",
+  "analysis": {
+    "tech_highlights": [
+      "Python 项目, 60127 stars",
+      "标签: agentic, agentic-agi, agents"
+    ],
+    "relevance_score": 7,
+    "reason": "基于热度(60127 stars)和标签(agentic, agentic-agi, agents)的启发式评分。",
+    "risks": []
+  },
+  "tags": [
+    "agentic",
+    "agentic-agi",
+    "agents",
+    "ai",
+    "autogen"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
