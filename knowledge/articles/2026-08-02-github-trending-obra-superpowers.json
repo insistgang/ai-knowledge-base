@@ -1,0 +1,28 @@
+{
+  "id": "github-20260802-obra-superpowers",
+  "title": "obra/superpowers: Superpowers 是一个 agentic 技能框架与软件开发方法论，强调子代理驱动开发，旨在提升 AI 编程协作效",
+  "source": "github-trending",
+  "source_url": "https://github.com/obra/superpowers",
+  "collected_at": "2026-08-02T09:53:24Z",
+  "summary": "Superpowers 是一个 agentic 技能框架与软件开发方法论，强调子代理驱动开发，旨在提升 AI 编程协作效率。",
+  "analysis": {
+    "tech_highlights": [
+      "提出 subagent-driven development 方法论",
+      "将 AI 技能结构化，支持可复用工作流",
+      "结合头脑风暴与编码实践，覆盖 SDLC"
+    ],
+    "relevance_score": 8,
+    "reason": "为 AI 辅助开发提供系统化方法，对开发者直接有用，但尚在早期阶段，未达到格局改变级别。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "development-methodology",
+    "sdlc"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
