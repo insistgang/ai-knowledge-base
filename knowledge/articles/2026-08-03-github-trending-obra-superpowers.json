@@ -1,0 +1,28 @@
+{
+  "id": "github-20260803-obra-superpowers",
+  "title": "obra/superpowers: 一个 agentic skills 框架与软件开发方法论，强调子代理驱动开发，支持头脑风暴和编码，旨在提升 AI 协作效",
+  "source": "github-trending",
+  "source_url": "https://github.com/obra/superpowers",
+  "collected_at": "2026-08-03T11:19:43Z",
+  "summary": "一个 agentic skills 框架与软件开发方法论，强调子代理驱动开发，支持头脑风暴和编码，旨在提升 AI 协作效率。",
+  "analysis": {
+    "tech_highlights": [
+      "提出 subagent-driven development 模式",
+      "将技能框架与 SDLC 方法论结合",
+      "基于 Shell 实现，易于集成"
+    ],
+    "relevance_score": 8,
+    "reason": "对 AI 辅助开发和团队协作有直接参考价值，方法新颖且实用，但尚未到改变格局程度。",
+    "risks": []
+  },
+  "tags": [
+    "agentic-ai",
+    "skill-framework",
+    "software-development"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
