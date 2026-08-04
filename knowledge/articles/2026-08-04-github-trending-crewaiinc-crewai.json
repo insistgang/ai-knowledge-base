@@ -1,0 +1,28 @@
+{
+  "id": "github-20260804-crewaiinc-crewai",
+  "title": "crewAIInc/crewAI: CrewAI 是一个编排角色扮演自主 AI 代理的框架，通过协作智能让多个代理无缝合作，处理复杂任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/crewAIInc/crewAI",
+  "collected_at": "2026-08-04T10:35:23Z",
+  "summary": "CrewAI 是一个编排角色扮演自主 AI 代理的框架，通过协作智能让多个代理无缝合作，处理复杂任务。",
+  "analysis": {
+    "tech_highlights": [
+      "基于角色扮演的多代理协作框架",
+      "支持自主 AI 代理编排复杂任务",
+      "促进代理间协同智能，提升任务处理效率"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发多代理 AI 系统有直接帮助，降低编排复杂度，适合当前 AI 代理研发热点",
+    "risks": []
+  },
+  "tags": [
+    "multi-agent",
+    "ai-framework",
+    "orchestration"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
