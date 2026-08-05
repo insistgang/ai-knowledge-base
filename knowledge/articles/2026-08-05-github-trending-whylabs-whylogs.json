@@ -1,0 +1,30 @@
+{
+  "id": "github-20260805-whylabs-whylogs",
+  "title": "whylabs/whylogs: whylogs 是一个面向机器学习模型和数据管道的数据日志库，提供数据质量与模型性能的持续可见性，并支持隐私保护的数据采",
+  "source": "github-trending",
+  "source_url": "https://github.com/whylabs/whylogs",
+  "collected_at": "2026-08-05T10:31:20Z",
+  "summary": "whylogs 是一个面向机器学习模型和数据管道的数据日志库，提供数据质量与模型性能的持续可见性，并支持隐私保护的数据采集。",
+  "analysis": {
+    "tech_highlights": [
+      "数据质量与模型性能的实时监控",
+      "支持近似统计和隐私保护的数据采集",
+      "无缝集成到 ML 和数据处理管道"
+    ],
+    "relevance_score": 8,
+    "reason": "对实施 MLOps 和保障数据质量的开发者具有直接实用价值，能有效提升模型监控与可观测性。",
+    "risks": []
+  },
+  "tags": [
+    "MLOps",
+    "data-quality",
+    "data-logging",
+    "python",
+    "monitoring"
+  ],
+  "audience": [
+    "developer",
+    "data-scientist"
+  ],
+  "status": "draft"
+}
