@@ -1,0 +1,27 @@
+{
+  "id": "github-20260806-fighting41love-funnlp",
+  "title": "fighting41love/funNLP: funNLP是中文NLP资源大合集，涵盖语料、工具、模型、知识图谱等，为自然语言处理开发者提供一站式参考。",
+  "source": "github-trending",
+  "source_url": "https://github.com/fighting41love/funNLP",
+  "collected_at": "2026-08-06T10:35:35Z",
+  "summary": "funNLP是中文NLP资源大合集，涵盖语料、工具、模型、知识图谱等，为自然语言处理开发者提供一站式参考。",
+  "analysis": {
+    "tech_highlights": [
+      "收录数百个NLP相关资源，覆盖面极广",
+      "包含丰富的语料、预训练模型及实用工具"
+    ],
+    "relevance_score": 8,
+    "reason": "对NLP开发和研究有直接帮助，资源整理全面且实用",
+    "risks": []
+  },
+  "tags": [
+    "NLP",
+    "中文处理",
+    "资源合集"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
