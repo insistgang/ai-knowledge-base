@@ -32,6 +32,8 @@ class Usage:
 
     prompt_tokens: int = 0
     completion_tokens: int = 0
+    prompt_cache_hit_tokens: int = 0
+    prompt_cache_miss_tokens: int = 0
 
     @property
     def total_tokens(self) -> int:
@@ -44,6 +46,8 @@ class Usage:
             "prompt_tokens": self.prompt_tokens,
             "completion_tokens": self.completion_tokens,
             "total_tokens": self.total_tokens,
+            "prompt_cache_hit_tokens": self.prompt_cache_hit_tokens,
+            "prompt_cache_miss_tokens": self.prompt_cache_miss_tokens,
         }
 
 
@@ -64,13 +68,19 @@ class LLMResponse:
         }
 
 
-# Prices are USD per 1K tokens. They are rough estimates for local cost tracking
-# and are intentionally easy to update as provider pricing changes.
+# Prices are USD per 1K tokens. DeepSeek V4 input pricing distinguishes
+# context-cache hits from misses; other providers use a single input rate.
 PRICING: dict[str, dict[str, float]] = {
-    "deepseek-chat": {"input": 0.00027, "output": 0.00110},
-    "deepseek-reasoner": {"input": 0.00055, "output": 0.00219},
-    "deepseek-v4-flash": {"input": 0.00027, "output": 0.00110},
-    "deepseek-v4-pro": {"input": 0.00055, "output": 0.00219},
+    "deepseek-v4-flash": {
+        "input_cache_hit": 0.0000028,
+        "input_cache_miss": 0.00014,
+        "output": 0.00028,
+    },
+    "deepseek-v4-pro": {
+        "input_cache_hit": 0.000003625,
+        "input_cache_miss": 0.000435,
+        "output": 0.00087,
+    },
     "qwen-plus": {"input": 0.00040, "output": 0.00120},
     "qwen-turbo": {"input": 0.00005, "output": 0.00020},
     "gpt-4o-mini": {"input": 0.00015, "output": 0.00060},
@@ -89,19 +99,49 @@ def estimate_cost(model: str, usage: Usage) -> float:
         Estimated cost in USD.
     """
     prices = PRICING.get(model, {"input": 0.00100, "output": 0.00300})
-    return (
-        usage.prompt_tokens / 1000 * prices["input"]
-        + usage.completion_tokens / 1000 * prices["output"]
+    output_cost = usage.completion_tokens / 1000 * prices["output"]
+
+    if "input_cache_miss" not in prices:
+        return usage.prompt_tokens / 1000 * prices["input"] + output_cost
+
+    cache_hit_tokens = max(
+        0,
+        min(usage.prompt_cache_hit_tokens, usage.prompt_tokens),
     )
+    cache_miss_tokens = max(
+        0,
+        min(
+            usage.prompt_cache_miss_tokens,
+            usage.prompt_tokens - cache_hit_tokens,
+        ),
+    )
+    unclassified_tokens = max(
+        0,
+        usage.prompt_tokens - cache_hit_tokens - cache_miss_tokens,
+    )
+    input_cost = (
+        cache_hit_tokens / 1000 * prices["input_cache_hit"]
+        + (cache_miss_tokens + unclassified_tokens) / 1000 * prices["input_cache_miss"]
+    )
+    return input_cost + output_cost
 
 
 class LLMProvider(ABC):
     """Abstract base class for chat providers."""
 
-    def __init__(self, api_key: str, base_url: str, model: str) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        base_url: str,
+        model: str,
+        supports_thinking: bool = False,
+        default_thinking: bool | None = None,
+    ) -> None:
         self.api_key = api_key
         self.base_url = base_url.rstrip("/")
         self.model = model
+        self.supports_thinking = supports_thinking
+        self.default_thinking = default_thinking
         self.client = httpx.Client(timeout=60.0)
 
     @abstractmethod
@@ -110,6 +150,7 @@ class LLMProvider(ABC):
         messages: list[dict[str, str]],
         temperature: float = 0.7,
         max_tokens: int = 2000,
+        thinking: bool | None = None,
     ) -> LLMResponse:
         """Send a chat completion request."""
 
@@ -126,6 +167,7 @@ class OpenAICompatibleProvider(LLMProvider):
         messages: list[dict[str, str]],
         temperature: float = 0.7,
         max_tokens: int = 2000,
+        thinking: bool | None = None,
     ) -> LLMResponse:
         """Call `/chat/completions` and normalize the provider response."""
         url = f"{self.base_url}/chat/completions"
@@ -133,12 +175,18 @@ class OpenAICompatibleProvider(LLMProvider):
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
         }
-        payload = {
+        payload: dict[str, Any] = {
             "model": self.model,
             "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
+        if self.supports_thinking:
+            thinking_enabled = self.default_thinking if thinking is None else thinking
+            if thinking_enabled is not None:
+                payload["thinking"] = {
+                    "type": "enabled" if thinking_enabled else "disabled"
+                }
 
         response = self.client.post(url, json=payload, headers=headers)
         response.raise_for_status()
@@ -156,6 +204,12 @@ class OpenAICompatibleProvider(LLMProvider):
         usage = Usage(
             prompt_tokens=int(usage_data.get("prompt_tokens", 0) or 0),
             completion_tokens=int(usage_data.get("completion_tokens", 0) or 0),
+            prompt_cache_hit_tokens=int(
+                usage_data.get("prompt_cache_hit_tokens", 0) or 0
+            ),
+            prompt_cache_miss_tokens=int(
+                usage_data.get("prompt_cache_miss_tokens", 0) or 0
+            ),
         )
         return LLMResponse(
             content=content,
@@ -164,13 +218,15 @@ class OpenAICompatibleProvider(LLMProvider):
         )
 
 
-PROVIDER_CONFIG: dict[str, dict[str, str]] = {
+PROVIDER_CONFIG: dict[str, dict[str, Any]] = {
     "deepseek": {
         "api_key_env": "DEEPSEEK_API_KEY",
         "base_url_env": "DEEPSEEK_BASE_URL",
         "model_env": "DEEPSEEK_MODEL",
-        "default_base_url": "https://api.deepseek.com/v1",
-        "default_model": "deepseek-chat",
+        "default_base_url": "https://api.deepseek.com",
+        "default_model": "deepseek-v4-flash",
+        "supports_thinking": True,
+        "default_thinking": False,
     },
     "qwen": {
         "api_key_env": "QWEN_API_KEY",
@@ -187,6 +243,8 @@ PROVIDER_CONFIG: dict[str, dict[str, str]] = {
         "default_model": "gpt-4o-mini",
     },
 }
+
+RETIRED_DEEPSEEK_MODELS = {"deepseek-chat", "deepseek-reasoner"}
 
 
 def create_provider(
@@ -219,12 +277,19 @@ def create_provider(
 
     base_url = os.getenv(config["base_url_env"], config["default_base_url"])
     model = model_override or os.getenv(config["model_env"], config["default_model"])
+    if name == "deepseek" and model in RETIRED_DEEPSEEK_MODELS:
+        raise ValueError(
+            f"DeepSeek model '{model}' was retired on 2026-07-24; "
+            "use deepseek-v4-flash or deepseek-v4-pro."
+        )
 
     logger.info("Creating LLM provider: provider=%s model=%s", name, model)
     return OpenAICompatibleProvider(
         api_key=api_key,
         base_url=base_url,
         model=model,
+        supports_thinking=bool(config.get("supports_thinking", False)),
+        default_thinking=config.get("default_thinking"),
     )
 
 
@@ -235,6 +300,7 @@ def chat_with_retry(
     max_tokens: int = 2000,
     max_retries: int = 3,
     backoff_base: float = 2.0,
+    thinking: bool | None = None,
 ) -> LLMResponse:
     """Call chat with retry and exponential backoff.
 
@@ -245,6 +311,7 @@ def chat_with_retry(
         max_tokens: Maximum generated tokens.
         max_retries: Maximum attempts, including the first call.
         backoff_base: Exponential backoff base in seconds.
+        thinking: Optional provider reasoning-mode override.
 
     Returns:
         Normalized LLM response.
@@ -264,6 +331,7 @@ def chat_with_retry(
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
+                thinking=thinking,
             )
         except retryable as exc:
             last_error = exc
@@ -297,6 +365,7 @@ def quick_chat(
     model: str | None = None,
     temperature: float = 0.2,
     max_tokens: int = 512,
+    thinking: bool | None = None,
 ) -> str:
     """Call the configured model with one prompt and return text only."""
     messages = [
@@ -310,6 +379,7 @@ def quick_chat(
             messages,
             temperature=temperature,
             max_tokens=max_tokens,
+            thinking=thinking,
         )
         cost = estimate_cost(response.model or provider.model, response.usage)
         logger.info(
@@ -332,6 +402,7 @@ def chat(
     temperature: float = 0.2,
     max_tokens: int = 512,
     max_retries: int = 3,
+    thinking: bool | None = None,
 ) -> dict[str, Any]:
     """Convenience function returning content and usage as a dictionary."""
     messages = [
@@ -346,6 +417,7 @@ def chat(
             temperature=temperature,
             max_tokens=max_tokens,
             max_retries=max_retries,
+            thinking=thinking,
         )
         result = response.to_dict()
         result["estimated_cost_usd"] = estimate_cost(

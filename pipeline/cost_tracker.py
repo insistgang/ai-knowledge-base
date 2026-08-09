@@ -18,6 +18,8 @@ class CostEntry:
     model: str
     prompt_tokens: int
     completion_tokens: int
+    prompt_cache_hit_tokens: int
+    prompt_cache_miss_tokens: int
     total_tokens: int
     estimated_cost_usd: float
 
@@ -29,6 +31,8 @@ class CostEntry:
             "model": self.model,
             "prompt_tokens": self.prompt_tokens,
             "completion_tokens": self.completion_tokens,
+            "prompt_cache_hit_tokens": self.prompt_cache_hit_tokens,
+            "prompt_cache_miss_tokens": self.prompt_cache_miss_tokens,
             "total_tokens": self.total_tokens,
             "estimated_cost_usd": round(self.estimated_cost_usd, 8),
         }
@@ -62,6 +66,8 @@ class CostTracker:
                 model=normalized_model,
                 prompt_tokens=usage.prompt_tokens,
                 completion_tokens=usage.completion_tokens,
+                prompt_cache_hit_tokens=usage.prompt_cache_hit_tokens,
+                prompt_cache_miss_tokens=usage.prompt_cache_miss_tokens,
                 total_tokens=usage.total_tokens,
                 estimated_cost_usd=estimate_cost(normalized_model, usage),
             )
@@ -74,6 +80,8 @@ class CostTracker:
                 "calls": 0,
                 "prompt_tokens": 0,
                 "completion_tokens": 0,
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 0,
                 "total_tokens": 0,
                 "estimated_cost_usd": 0.0,
             }
@@ -86,6 +94,8 @@ class CostTracker:
             row["calls"] += 1
             row["prompt_tokens"] += entry.prompt_tokens
             row["completion_tokens"] += entry.completion_tokens
+            row["prompt_cache_hit_tokens"] += entry.prompt_cache_hit_tokens
+            row["prompt_cache_miss_tokens"] += entry.prompt_cache_miss_tokens
             row["total_tokens"] += entry.total_tokens
             row["estimated_cost_usd"] += entry.estimated_cost_usd
 
@@ -100,6 +110,12 @@ class CostTracker:
         """Return total costs across all recorded calls."""
         prompt_tokens = sum(entry.prompt_tokens for entry in self._entries)
         completion_tokens = sum(entry.completion_tokens for entry in self._entries)
+        prompt_cache_hit_tokens = sum(
+            entry.prompt_cache_hit_tokens for entry in self._entries
+        )
+        prompt_cache_miss_tokens = sum(
+            entry.prompt_cache_miss_tokens for entry in self._entries
+        )
         total_tokens = sum(entry.total_tokens for entry in self._entries)
         estimated_cost = sum(entry.estimated_cost_usd for entry in self._entries)
 
@@ -107,6 +123,8 @@ class CostTracker:
             "calls": len(self._entries),
             "prompt_tokens": prompt_tokens,
             "completion_tokens": completion_tokens,
+            "prompt_cache_hit_tokens": prompt_cache_hit_tokens,
+            "prompt_cache_miss_tokens": prompt_cache_miss_tokens,
             "total_tokens": total_tokens,
             "estimated_cost_usd": round(estimated_cost, 8),
         }

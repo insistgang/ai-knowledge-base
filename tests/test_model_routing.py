@@ -39,7 +39,10 @@ class ModelRoutingTest(unittest.TestCase):
     def test_create_provider_accepts_model_override(self) -> None:
         with patch.dict(
             os.environ,
-            {"DEEPSEEK_API_KEY": "test-key", "DEEPSEEK_MODEL": "deepseek-chat"},
+            {
+                "DEEPSEEK_API_KEY": "test-key",
+                "DEEPSEEK_MODEL": "deepseek-v4-flash",
+            },
             clear=True,
         ):
             provider = create_provider("deepseek", model_override="deepseek-v4-flash")

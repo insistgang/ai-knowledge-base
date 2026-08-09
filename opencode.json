@@ -7,7 +7,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "DeepSeek",
       "options": {
-        "baseURL": "https://api.deepseek.com/v1",
+        "baseURL": "https://api.deepseek.com",
         "apiKey": "{env:DEEPSEEK_API_KEY}"
       },
       "models": {
@@ -16,12 +16,6 @@
         },
         "deepseek-v4-pro": {
           "name": "DeepSeek V4 Pro"
-        },
-        "deepseek-chat": {
-          "name": "DeepSeek Chat (compatibility)"
-        },
-        "deepseek-reasoner": {
-          "name": "DeepSeek Reasoner (compatibility)"
         }
       }
     }

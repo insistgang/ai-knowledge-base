@@ -16,13 +16,13 @@ class CostTrackerTest(unittest.TestCase):
         tracker.add_call(
             source="github",
             item_name="owner/repo-a",
-            model="deepseek-chat",
+            model="deepseek-v4-flash",
             usage=Usage(prompt_tokens=1000, completion_tokens=1000),
         )
         tracker.add_call(
             source="github",
             item_name="owner/repo-b",
-            model="deepseek-chat",
+            model="deepseek-v4-flash",
             usage=Usage(prompt_tokens=500, completion_tokens=250),
         )
         tracker.add_call(
@@ -48,27 +48,28 @@ class CostTrackerTest(unittest.TestCase):
         self.assertEqual(len(payload["calls"]), 3)
 
         github_run = next(
-            run for run in payload["runs"]
-            if run["source"] == "github" and run["model"] == "deepseek-chat"
+            run
+            for run in payload["runs"]
+            if run["source"] == "github" and run["model"] == "deepseek-v4-flash"
         )
         self.assertEqual(github_run["calls"], 2)
         self.assertEqual(github_run["total_tokens"], 2750)
-        self.assertAlmostEqual(github_run["estimated_cost_usd"], 0.00178)
+        self.assertAlmostEqual(github_run["estimated_cost_usd"], 0.00056)
 
     def test_budget_exceeded_when_cost_reaches_threshold(self) -> None:
-        tracker = CostTracker(budget_usd=0.001)
+        tracker = CostTracker(budget_usd=0.0004)
 
         self.assertFalse(tracker.is_budget_exceeded())
         tracker.add_call(
             source="github",
             item_name="owner/repo",
-            model="deepseek-chat",
+            model="deepseek-v4-flash",
             usage=Usage(prompt_tokens=1000, completion_tokens=1000),
         )
 
         self.assertTrue(tracker.is_budget_exceeded())
         status = tracker.budget_status()
-        self.assertEqual(status["budget_usd"], 0.001)
+        self.assertEqual(status["budget_usd"], 0.0004)
         self.assertEqual(status["remaining_usd"], 0.0)
 
 

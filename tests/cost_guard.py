@@ -7,17 +7,16 @@ and raises BudgetExceededError when the alert threshold is crossed.
 from __future__ import annotations
 
 import json
-import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-# Price USD per 1K tokens (rough estimates, easy to update)
+# Price USD per 1K tokens. DeepSeek input uses the conservative cache-miss
+# rate because this standalone guard receives no cache-token breakdown.
 PRICE_TABLE: dict[str, dict[str, float]] = {
-    "deepseek-chat": {"input": 0.00027, "output": 0.00110},
-    "deepseek-v4-flash": {"input": 0.00027, "output": 0.00110},
-    "deepseek-v4-pro": {"input": 0.00055, "output": 0.00219},
+    "deepseek-v4-flash": {"input": 0.00014, "output": 0.00028},
+    "deepseek-v4-pro": {"input": 0.000435, "output": 0.00087},
     "qwen-plus": {"input": 0.00040, "output": 0.00120},
     "gpt-4o-mini": {"input": 0.00015, "output": 0.00060},
 }
@@ -217,10 +216,10 @@ if __name__ == "__main__":
     guard = CostGuard(budget_yuan=1.0, alert_threshold=0.8)
 
     # Simulate a few LLM calls
-    guard.record("analyze", {"prompt_tokens": 500, "completion_tokens": 200}, "deepseek-chat")
-    guard.record("analyze", {"prompt_tokens": 300, "completion_tokens": 150}, "deepseek-chat")
+    guard.record("analyze", {"prompt_tokens": 500, "completion_tokens": 200}, "deepseek-v4-flash")
+    guard.record("analyze", {"prompt_tokens": 300, "completion_tokens": 150}, "deepseek-v4-flash")
     guard.record("review", {"prompt_tokens": 200, "completion_tokens": 100}, "deepseek-v4-pro")
-    guard.record("revise", {"prompt_tokens": 400, "completion_tokens": 250}, "deepseek-chat")
+    guard.record("revise", {"prompt_tokens": 400, "completion_tokens": 250}, "deepseek-v4-flash")
 
     status = guard.check()
     print("Check:", json.dumps(status, indent=2))
