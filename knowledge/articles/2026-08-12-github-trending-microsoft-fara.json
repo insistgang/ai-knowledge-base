@@ -1,0 +1,30 @@
+{
+  "id": "github-20260812-microsoft-fara",
+  "title": "microsoft/fara: 微软发布的Fara1.5系列前沿计算机使用代理模型，支持浏览器和桌面操作，推动智能体自动化发展。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/fara",
+  "collected_at": "2026-08-12T09:08:11Z",
+  "summary": "微软发布的Fara1.5系列前沿计算机使用代理模型，支持浏览器和桌面操作，推动智能体自动化发展。",
+  "analysis": {
+    "tech_highlights": [
+      "前沿计算机使用代理模型",
+      "支持浏览器和桌面自动化",
+      "微软官方发布，技术实力强"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发智能体应用和自动化研究有直接帮助，但尚未改变技术格局，评分8分。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "computer-use",
+    "browser-use",
+    "automation",
+    "AI"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

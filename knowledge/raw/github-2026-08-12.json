@@ -1,0 +1,120 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-12T09:08:11Z",
+  "items": [
+    {
+      "name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "stars": 21246,
+      "language": "HTML",
+      "topics": [
+        "agent",
+        "ai-agent",
+        "apple",
+        "computer-use",
+        "computer-use-agent",
+        "containerization",
+        "cua",
+        "desktop-automation",
+        "hacktoberfest",
+        "lume",
+        "macos",
+        "manus",
+        "operator",
+        "swift",
+        "virtualization",
+        "virtualization-framework",
+        "windows",
+        "windows-sandbox"
+      ]
+    },
+    {
+      "name": "NanmiCoder/cc-haha",
+      "url": "https://github.com/NanmiCoder/cc-haha",
+      "summary": "Local-first cross-platform desktop workspace for Claude Code / agents: multi-agent, Git worktrees, code diffs, skill marketplace, multi-model, Computer Use, task-aware desktop pets, with WeChat, Feishu, DingTalk, Telegram, WhatsApp and H5 access.",
+      "stars": 14044,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "coding-agent",
+        "computer-use",
+        "desktop-app",
+        "electron",
+        "llm",
+        "mcp",
+        "react",
+        "typescript"
+      ]
+    },
+    {
+      "name": "simular-ai/Agent-S",
+      "url": "https://github.com/simular-ai/Agent-S",
+      "summary": "Agent S: an open agentic framework that uses computers like a human",
+      "stars": 12149,
+      "language": "Python",
+      "topics": [
+        "agent-computer-interface",
+        "ai-agents",
+        "computer-automation",
+        "computer-use",
+        "computer-use-agent",
+        "cua",
+        "grounding",
+        "gui-agents",
+        "in-context-reinforcement-learning",
+        "memory",
+        "mllm",
+        "planning",
+        "retrieval-augmented-generation"
+      ]
+    },
+    {
+      "name": "microsoft/fara",
+      "url": "https://github.com/microsoft/fara",
+      "summary": "Fara1.5 – A family of frontier computer use agent models",
+      "stars": 6139,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "browser-use",
+        "computer-use",
+        "computer-use-agent",
+        "cua"
+      ]
+    },
+    {
+      "name": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "summary": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
+      "stars": 5511,
+      "language": "Go",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-ai",
+        "agi",
+        "chatbot",
+        "chatgpt",
+        "gpt",
+        "harness",
+        "hermes-agent",
+        "knowledge-base",
+        "langchain",
+        "llm",
+        "mcp",
+        "model-context-protocol",
+        "multi-agent",
+        "openagent",
+        "openai",
+        "openclaw",
+        "rag"
+      ]
+    }
+  ]
+}

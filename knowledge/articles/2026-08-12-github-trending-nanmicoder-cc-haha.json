@@ -1,0 +1,31 @@
+{
+  "id": "github-20260812-nanmicoder-cc-haha",
+  "title": "NanmiCoder/cc-haha: cc-haha 是一个本地优先的跨平台桌面工作区，用于 Claude Code 和 AI 代理，支持多代理、Git wo",
+  "source": "github-trending",
+  "source_url": "https://github.com/NanmiCoder/cc-haha",
+  "collected_at": "2026-08-12T09:08:11Z",
+  "summary": "cc-haha 是一个本地优先的跨平台桌面工作区，用于 Claude Code 和 AI 代理，支持多代理、Git worktree、代码差异、技能市场、多模型、Computer Use 以及多种通讯工具接入。",
+  "analysis": {
+    "tech_highlights": [
+      "多代理协作与 Git worktree 集成",
+      "技能市场与多模型支持",
+      "Computer Use 与桌面宠物等创新交互",
+      "支持微信、飞书、钉钉、Telegram、WhatsApp 和 H5 访问"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为 AI 编码代理提供了完整的桌面工作环境，直接提升开发效率，集成多种通讯工具和技能市场，对开发者和研究者有实际帮助。",
+    "risks": []
+  },
+  "tags": [
+    "claude-code",
+    "multi-agent",
+    "desktop-app",
+    "git-worktree",
+    "computer-use"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

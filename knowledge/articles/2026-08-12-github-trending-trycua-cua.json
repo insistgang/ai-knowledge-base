@@ -1,0 +1,28 @@
+{
+  "id": "github-20260812-trycua-cua",
+  "title": "trycua/cua: 开源计算机使用2.0驱动，支持跨操作系统设备群，用于训练、评估和数据生成的基准测试。",
+  "source": "github-trending",
+  "source_url": "https://github.com/trycua/cua",
+  "collected_at": "2026-08-12T09:08:11Z",
+  "summary": "开源计算机使用2.0驱动，支持跨操作系统设备群，用于训练、评估和数据生成的基准测试。",
+  "analysis": {
+    "tech_highlights": [
+      "跨OS设备群管理",
+      "开源驱动与基准测试",
+      "支持macOS和Windows沙箱"
+    ],
+    "relevance_score": 8,
+    "reason": "为AI代理的计算机使用提供标准化基础设施，直接助力开发与训练，但尚未改变格局。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use",
+    "agent",
+    "virtualization"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
