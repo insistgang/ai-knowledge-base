@@ -17,9 +17,10 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit, urlunsplit
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +35,8 @@ DEFAULT_MODEL_ROUTES = {
     "normal": "deepseek-v4-flash",
     "deep": "deepseek-v4-pro",
 }
+GITHUB_ACTIVE_WINDOW_DAYS = 90
+MAX_MODEL_DESCRIPTION_CHARS = 1200
 
 
 def ensure_dirs() -> None:
@@ -133,26 +136,156 @@ def _get_week_index() -> int:
     return (datetime.now(timezone.utc).timetuple().tm_yday // 7) % len(GITHUB_SEARCH_QUERIES)
 
 
-def collect_github(limit: int = 5) -> list[dict[str, Any]]:
-    """Collect trending AI/LLM/Agent repos from GitHub Search API."""
+def normalize_source_url(url: str) -> str:
+    """Normalize a source URL for stable duplicate comparisons.
+
+    Args:
+        url: Source URL from an article or collector candidate.
+
+    Returns:
+        Canonical URL without query, fragment, or a trailing slash.
+    """
+    raw_url = str(url or "").strip()
+    if not raw_url:
+        return ""
+    if "://" not in raw_url:
+        raw_url = f"https://{raw_url.lstrip('/')}"
+
+    try:
+        parts = urlsplit(raw_url)
+        hostname = (parts.hostname or "").lower()
+        parsed_port = parts.port
+    except ValueError:
+        return ""
+
+    scheme = parts.scheme.lower() or "https"
+    if not hostname:
+        return ""
+
+    port = f":{parsed_port}" if parsed_port is not None else ""
+    path = re.sub(r"/{2,}", "/", parts.path).rstrip("/")
+    if hostname == "github.com":
+        scheme = "https"
+        path = path.lower()
+
+    return urlunsplit((scheme, f"{hostname}{port}", path, "", ""))
+
+
+def load_existing_source_urls(article_dir: Path = KNOWLEDGE_ARTICLES) -> set[str]:
+    """Load normalized source URLs from existing article JSON files.
+
+    Args:
+        article_dir: Directory containing saved knowledge article JSON files.
+
+    Returns:
+        Normalized, non-empty source URLs found in valid article files.
+    """
+    source_urls: set[str] = set()
+    if not article_dir.exists():
+        return source_urls
+
+    for path in article_dir.glob("*.json"):
+        try:
+            article = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            logger.warning("Skipping unreadable article while deduplicating: %s", path)
+            continue
+
+        normalized = normalize_source_url(str(article.get("source_url", "")))
+        if normalized:
+            source_urls.add(normalized)
+    return source_urls
+
+
+def select_balanced_repositories(
+    candidate_groups: list[list[dict[str, Any]]],
+    limit: int,
+    excluded_urls: set[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Select unique repositories from query groups in round-robin order.
+
+    Args:
+        candidate_groups: Ordered GitHub Search results for each query.
+        limit: Maximum number of repositories to return.
+        excluded_urls: Historical source URLs that must not be selected.
+
+    Returns:
+        Unique repository candidates, balanced across successful queries.
+    """
+    if limit <= 0:
+        return []
+
+    seen_urls = {
+        normalized
+        for url in (excluded_urls or set())
+        if (normalized := normalize_source_url(url))
+    }
+    positions = [0] * len(candidate_groups)
+    selected: list[dict[str, Any]] = []
+
+    while len(selected) < limit:
+        made_progress = False
+        for group_index, candidates in enumerate(candidate_groups):
+            while positions[group_index] < len(candidates):
+                candidate = candidates[positions[group_index]]
+                positions[group_index] += 1
+                repository_name = str(candidate.get("full_name") or "").strip()
+                if not repository_name:
+                    continue
+                candidate_url = normalize_source_url(
+                    str(candidate.get("html_url") or candidate.get("url") or "")
+                )
+                if not candidate_url or candidate_url in seen_urls:
+                    continue
+
+                seen_urls.add(candidate_url)
+                selected.append(candidate)
+                made_progress = True
+                break
+
+            if len(selected) >= limit:
+                break
+
+        if not made_progress:
+            break
+
+    return selected
+
+
+def collect_github(
+    limit: int = 5,
+    now: datetime | None = None,
+) -> list[dict[str, Any]]:
+    """Collect recent, historically unique repos from GitHub Search API.
+
+    Args:
+        limit: Maximum number of repositories to return.
+        now: Optional UTC reference time used to build the activity window.
+
+    Returns:
+        Repository metadata ready for analysis and raw persistence.
+    """
     import httpx
 
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    items: list[dict[str, Any]] = []
-    seen: set[str] = set()
+    if limit <= 0:
+        return []
 
+    reference_time = now or datetime.now(timezone.utc)
+    if reference_time.tzinfo is None:
+        reference_time = reference_time.replace(tzinfo=timezone.utc)
+    active_since = (reference_time - timedelta(days=GITHUB_ACTIVE_WINDOW_DAYS)).date()
     queries = GITHUB_SEARCH_QUERIES[_get_week_index()]
+    candidate_groups: list[list[dict[str, Any]]] = []
+    per_page = 100
 
     for query in queries:
-        if len(items) >= limit:
-            break
         try:
             url = "https://api.github.com/search/repositories"
             params = {
-                "q": query,
+                "q": f"{query} pushed:>={active_since.isoformat()}",
                 "sort": "stars",
                 "order": "desc",
-                "per_page": min(limit, 10),
+                "per_page": per_page,
             }
             headers = {"Accept": "application/vnd.github+json"}
             token = os.getenv("GITHUB_TOKEN", "")
@@ -162,27 +295,34 @@ def collect_github(limit: int = 5) -> list[dict[str, Any]]:
             resp = httpx.get(url, params=params, headers=headers, timeout=30.0)
             resp.raise_for_status()
             data = resp.json()
-
-            for repo in data.get("items", []):
-                name = repo.get("full_name", "")
-                if name in seen:
-                    continue
-                seen.add(name)
-
-                items.append({
-                    "name": name,
-                    "url": repo.get("html_url", ""),
-                    "summary": repo.get("description") or "",
-                    "stars": repo.get("stargazers_count", 0),
-                    "language": repo.get("language") or "unknown",
-                    "topics": repo.get("topics", []),
-                })
-                if len(items) >= limit:
-                    break
+            candidate_groups.append(list(data.get("items", [])))
         except Exception:
             logger.warning("GitHub search query '%s' failed", query, exc_info=True)
+            candidate_groups.append([])
 
-    logger.info("Collected %d GitHub repos", len(items))
+    existing_urls = load_existing_source_urls()
+    selected_repositories = select_balanced_repositories(
+        candidate_groups,
+        limit=limit,
+        excluded_urls=existing_urls,
+    )
+    items = [
+        {
+            "name": repo.get("full_name", ""),
+            "url": repo.get("html_url", ""),
+            "summary": repo.get("description") or "",
+            "stars": repo.get("stargazers_count", 0),
+            "language": repo.get("language") or "unknown",
+            "topics": repo.get("topics", []),
+        }
+        for repo in selected_repositories
+    ]
+
+    logger.info(
+        "Collected %d historically unique GitHub repos from %d query groups",
+        len(items),
+        len(candidate_groups),
+    )
     return items
 
 
@@ -241,7 +381,9 @@ def analyze_item(
     prompt = json.dumps({
         "name": item.get("name", ""),
         "url": item.get("url", ""),
-        "description": item.get("summary", ""),
+        "description": str(item.get("summary", ""))[
+            :MAX_MODEL_DESCRIPTION_CHARS
+        ],
         "language": item.get("language", ""),
         "topics": item.get("topics", []),
     }, ensure_ascii=False)
