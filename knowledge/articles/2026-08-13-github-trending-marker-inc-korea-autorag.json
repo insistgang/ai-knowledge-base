@@ -1,0 +1,28 @@
+{
+  "id": "github-20260813-marker-inc-korea-autorag",
+  "title": "Marker-Inc-Korea/AutoRAG: AutoRAG 是一个自动化 RAG 管道优化工具，支持基准测试、评估和文档解析，帮助用户快速构建和优化检索增强生成系统",
+  "source": "github-trending",
+  "source_url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+  "collected_at": "2026-08-13T09:08:39Z",
+  "summary": "AutoRAG 是一个自动化 RAG 管道优化工具，支持基准测试、评估和文档解析，帮助用户快速构建和优化检索增强生成系统。",
+  "analysis": {
+    "tech_highlights": [
+      "自动化 RAG 管道优化，减少手动调参",
+      "内置基准测试和评估模块，支持多维度性能对比",
+      "支持多种文档解析和嵌入模型，灵活集成"
+    ],
+    "relevance_score": 8,
+    "reason": "对 RAG 开发和研究有直接帮助，提供自动化优化和评估能力，节省时间并提升效果。",
+    "risks": []
+  },
+  "tags": [
+    "RAG",
+    "AutoML",
+    "LLM"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

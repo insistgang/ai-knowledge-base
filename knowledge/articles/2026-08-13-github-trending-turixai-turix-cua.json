@@ -1,0 +1,28 @@
+{
+  "id": "github-20260813-turixai-turix-cua",
+  "title": "TurixAI/TuriX-CUA: TuriX-CUA 是一个基于 Qwen3-VL 的计算机使用代理（CUA）项目，旨在通过视觉语言模型实现 GUI 自动",
+  "source": "github-trending",
+  "source_url": "https://github.com/TurixAI/TuriX-CUA",
+  "collected_at": "2026-08-13T09:08:39Z",
+  "summary": "TuriX-CUA 是一个基于 Qwen3-VL 的计算机使用代理（CUA）项目，旨在通过视觉语言模型实现 GUI 自动化操作，提供官方网站和 Python 实现。",
+  "analysis": {
+    "tech_highlights": [
+      "结合 Qwen3-VL 视觉语言模型进行 GUI 理解与操作",
+      "支持 MCP（模型上下文协议），便于集成外部工具",
+      "面向计算机自动化与浏览器操作，具备实际应用潜力"
+    ],
+    "relevance_score": 7,
+    "reason": "该项目直接面向计算机使用代理这一前沿方向，结合视觉语言模型，对开发者和研究者有直接参考价值，但尚处于早期阶段，影响力有限。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use-agent",
+    "GUI-automation",
+    "vision-language-model"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

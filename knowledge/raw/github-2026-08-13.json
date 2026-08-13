@@ -1,0 +1,131 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-13T09:08:39Z",
+  "items": [
+    {
+      "name": "Marker-Inc-Korea/AutoRAG",
+      "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+      "summary": "AutoRAG: Now your agent can find anything in your computer. It gets smarter if you are using it frequently.",
+      "stars": 5022,
+      "language": "TypeScript",
+      "topics": [
+        "analysis",
+        "automl",
+        "benchmarking",
+        "document-parser",
+        "embeddings",
+        "evaluation",
+        "llm",
+        "llm-evaluation",
+        "llm-ops",
+        "open-source",
+        "ops",
+        "optimization",
+        "pipeline",
+        "python",
+        "qa",
+        "rag",
+        "rag-evaluation",
+        "retrieval-augmented-generation"
+      ]
+    },
+    {
+      "name": "shuvonsec/claude-bug-bounty",
+      "url": "https://github.com/shuvonsec/claude-bug-bounty",
+      "summary": "AI-powered bug bounty hunting from your terminal - recon, 20 vuln classes,   autonomous hunting, and report generation. All inside Claude Code.",
+      "stars": 4201,
+      "language": "Python",
+      "topics": [
+        "ai-security",
+        "bug-bounty",
+        "bugcrowd",
+        "claude-ai",
+        "claude-code",
+        "cti",
+        "ethical-hacking",
+        "hackerone",
+        "hacking",
+        "hacking-tool",
+        "penetration-testing",
+        "recon",
+        "vulnerability-scanner"
+      ]
+    },
+    {
+      "name": "Unstructured-IO/unstructured",
+      "url": "https://github.com/Unstructured-IO/unstructured",
+      "summary": "Convert documents to structured data effortlessly. Unstructured is open-source ETL solution for transforming complex documents into clean, structured formats for language models.  Visit our website to learn more about our enterprise grade Platform product for production grade workflows, partitioning, enrichments, chunking and embedding.",
+      "stars": 15308,
+      "language": "HTML",
+      "topics": [
+        "data-pipelines",
+        "deep-learning",
+        "document-image-analysis",
+        "document-image-processing",
+        "document-parser",
+        "document-parsing",
+        "docx",
+        "donut",
+        "information-retrieval",
+        "langchain",
+        "llm",
+        "machine-learning",
+        "ml",
+        "natural-language-processing",
+        "nlp",
+        "ocr",
+        "pdf",
+        "pdf-to-json",
+        "pdf-to-text",
+        "preprocessing"
+      ]
+    },
+    {
+      "name": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "stars": 167079,
+      "language": "HTML",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts",
+        "claude",
+        "gemini",
+        "gpt",
+        "gpt-4",
+        "llm",
+        "machine-learning",
+        "nextjs",
+        "open-source",
+        "openai",
+        "prompt-engineering",
+        "prompts",
+        "prompts-chat",
+        "typescript"
+      ]
+    },
+    {
+      "name": "TurixAI/TuriX-CUA",
+      "url": "https://github.com/TurixAI/TuriX-CUA",
+      "summary": "This is the official website for TuriX Computer-use-Agent",
+      "stars": 3152,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai-agents",
+        "browser-use",
+        "computer-automation",
+        "computer-use",
+        "computer-use-agent",
+        "cua",
+        "gui-agent",
+        "gui-operator",
+        "mcp",
+        "qwen3-vl"
+      ]
+    }
+  ]
+}

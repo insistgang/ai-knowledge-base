@@ -1,0 +1,28 @@
+{
+  "id": "github-20260813-shuvonsec-claude-bug-bounty",
+  "title": "shuvonsec/claude-bug-bounty: 基于Claude Code的终端AI漏洞赏金工具，支持侦察、20类漏洞检测、自主狩猎和报告生成，集成HackerOne/",
+  "source": "github-trending",
+  "source_url": "https://github.com/shuvonsec/claude-bug-bounty",
+  "collected_at": "2026-08-13T09:08:39Z",
+  "summary": "基于Claude Code的终端AI漏洞赏金工具，支持侦察、20类漏洞检测、自主狩猎和报告生成，集成HackerOne/Bugcrowd。",
+  "analysis": {
+    "tech_highlights": [
+      "AI驱动自动化漏洞挖掘流程",
+      "覆盖20种漏洞类别，集成主流赏金平台",
+      "终端内自主狩猎与报告生成"
+    ],
+    "relevance_score": 8,
+    "reason": "对安全研究人员和渗透测试者有直接实用价值，提升漏洞挖掘效率，但依赖特定AI平台，通用性有限。",
+    "risks": []
+  },
+  "tags": [
+    "ai-security",
+    "bug-bounty",
+    "penetration-testing"
+  ],
+  "audience": [
+    "security-researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

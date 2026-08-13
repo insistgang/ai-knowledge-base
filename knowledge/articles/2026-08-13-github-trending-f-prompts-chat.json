@@ -1,0 +1,28 @@
+{
+  "id": "github-20260813-f-prompts-chat",
+  "title": "f/prompts.chat: 社区驱动的ChatGPT提示词集合，支持分享、发现和收集，可自托管，注重隐私。",
+  "source": "github-trending",
+  "source_url": "https://github.com/f/prompts.chat",
+  "collected_at": "2026-08-13T09:08:39Z",
+  "summary": "社区驱动的ChatGPT提示词集合，支持分享、发现和收集，可自托管，注重隐私。",
+  "analysis": {
+    "tech_highlights": [
+      "社区共享提示词库",
+      "支持自托管部署",
+      "覆盖多种LLM模型"
+    ],
+    "relevance_score": 7,
+    "reason": "对提示词工程实践有直接参考价值，但技术深度有限，主要作为资源库。",
+    "risks": []
+  },
+  "tags": [
+    "prompt-engineering",
+    "chatgpt",
+    "llm"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
