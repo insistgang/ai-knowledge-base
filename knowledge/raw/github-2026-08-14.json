@@ -1,0 +1,106 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-14T09:04:11Z",
+  "items": [
+    {
+      "name": "e2b-dev/open-computer-use",
+      "url": "https://github.com/e2b-dev/open-computer-use",
+      "summary": "AI computer use powered by open source LLMs and E2B Desktop Sandbox",
+      "stars": 2201,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "anthropic",
+        "claude",
+        "computer-use",
+        "llm"
+      ]
+    },
+    {
+      "name": "Devin-AXIS/iPolloWork",
+      "url": "https://github.com/Devin-AXIS/iPolloWork",
+      "summary": "A next-generation, source-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video—a Codex alternative that integrates DeepSeek Harness for subagent delegation, combining iPolloWork’s complete AI workbench with DSH’s specialized agents and both plugin ecosystems in one workflow.",
+      "stars": 3822,
+      "language": "HTML",
+      "topics": [
+        "agent-collaboration",
+        "agent-skills",
+        "ai-agents",
+        "ai-work",
+        "claude-code",
+        "codex",
+        "deepseek-harness",
+        "dsh-plugin",
+        "enterprise-agent-workspace",
+        "hermes-agent",
+        "openclaw",
+        "opencode",
+        "opencode-plugin",
+        "self-evolving-ai",
+        "visual-editor"
+      ]
+    },
+    {
+      "name": "PaddlePaddle/PaddleNLP",
+      "url": "https://github.com/PaddlePaddle/PaddleNLP",
+      "summary": "Easy-to-use and powerful LLM and SLM library with awesome model zoo.",
+      "stars": 12965,
+      "language": "Python",
+      "topics": [
+        "bert",
+        "compression",
+        "distributed-training",
+        "document-intelligence",
+        "embedding",
+        "ernie",
+        "information-extraction",
+        "llama",
+        "llm",
+        "neural-search",
+        "nlp",
+        "paddlenlp",
+        "pretrained-models",
+        "question-answering",
+        "search-engine",
+        "semantic-analysis",
+        "sentiment-analysis",
+        "transformers",
+        "uie"
+      ]
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "summary": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "stars": 132574,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "llms",
+        "python",
+        "rag"
+      ]
+    },
+    {
+      "name": "mediar-ai/terminator",
+      "url": "https://github.com/mediar-ai/terminator",
+      "summary": "playwright for windows computer use ",
+      "stars": 1618,
+      "language": "Rust",
+      "topics": [
+        "agent",
+        "agents",
+        "ai",
+        "llm",
+        "ml",
+        "native",
+        "py",
+        "rust",
+        "ts",
+        "vercel",
+        "vercel-ai-sdk"
+      ]
+    }
+  ]
+}

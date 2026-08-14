@@ -1,0 +1,28 @@
+{
+  "id": "github-20260814-mediar-ai-terminator",
+  "title": "mediar-ai/terminator: Terminator 是一个用 Rust 编写的 Windows 计算机控制工具，类似 Playwright，支持 AI",
+  "source": "github-trending",
+  "source_url": "https://github.com/mediar-ai/terminator",
+  "collected_at": "2026-08-14T09:04:11Z",
+  "summary": "Terminator 是一个用 Rust 编写的 Windows 计算机控制工具，类似 Playwright，支持 AI 代理操作桌面应用，集成 Vercel AI SDK。",
+  "analysis": {
+    "tech_highlights": [
+      "Rust 实现，性能高效",
+      "支持 AI 代理控制 Windows 桌面",
+      "集成 Vercel AI SDK，便于构建智能体"
+    ],
+    "relevance_score": 7,
+    "reason": "为 AI 代理提供原生 Windows 控制能力，对开发桌面自动化智能体有直接帮助，但生态尚新，短期影响有限。",
+    "risks": []
+  },
+  "tags": [
+    "Rust",
+    "AI Agent",
+    "Windows Automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

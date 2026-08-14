@@ -1,0 +1,28 @@
+{
+  "id": "github-20260814-devin-axis-ipollowork",
+  "title": "Devin-AXIS/iPolloWork: 下一代可获取源码的AI工作空间，具备自进化代理运行时，支持代码、设计、演示、网站和视频编辑，集成DeepSeek Har",
+  "source": "github-trending",
+  "source_url": "https://github.com/Devin-AXIS/iPolloWork",
+  "collected_at": "2026-08-14T09:04:11Z",
+  "summary": "下一代可获取源码的AI工作空间，具备自进化代理运行时，支持代码、设计、演示、网站和视频编辑，集成DeepSeek Harness进行子代理委派，是Codex的替代方案。",
+  "analysis": {
+    "tech_highlights": [
+      "自进化代理运行时，支持多类型内容编辑",
+      "集成DeepSeek Harness实现子代理委派",
+      "统一插件生态，兼容多个代理系统"
+    ],
+    "relevance_score": 7,
+    "reason": "对AI代理工作流和集成开发有直接帮助，但项目处于早期，影响有限。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "workspace",
+    "codex-alternative"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260814-e2b-dev-open-computer-use",
+  "title": "e2b-dev/open-computer-use: 基于开源LLM和E2B桌面沙箱的AI计算机使用项目，实现类似Claude的计算机操作能力。",
+  "source": "github-trending",
+  "source_url": "https://github.com/e2b-dev/open-computer-use",
+  "collected_at": "2026-08-14T09:04:11Z",
+  "summary": "基于开源LLM和E2B桌面沙箱的AI计算机使用项目，实现类似Claude的计算机操作能力。",
+  "analysis": {
+    "tech_highlights": [
+      "利用开源LLM实现计算机使用功能，降低对专有模型的依赖",
+      "集成E2B桌面沙箱，提供安全的执行环境"
+    ],
+    "relevance_score": 7,
+    "reason": "对AI代理开发有直接帮助，提供开源替代方案，但依赖特定沙箱，短期影响有限。",
+    "risks": []
+  },
+  "tags": [
+    "AI-agent",
+    "computer-use",
+    "sandbox",
+    "open-source-llm"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
