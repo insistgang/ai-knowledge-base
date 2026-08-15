@@ -1,0 +1,28 @@
+{
+  "id": "github-20260815-markdown-viewer-skills",
+  "title": "markdown-viewer/skills: 为AI编码代理提供技能，使其能在Markdown中直接创建图表和可视化，扩展代理在图表生成、数据可视化和技术文档方面的能",
+  "source": "github-trending",
+  "source_url": "https://github.com/markdown-viewer/skills",
+  "collected_at": "2026-08-15T08:23:45Z",
+  "summary": "为AI编码代理提供技能，使其能在Markdown中直接创建图表和可视化，扩展代理在图表生成、数据可视化和技术文档方面的能力。",
+  "analysis": {
+    "tech_highlights": [
+      "为AI代理提供Markdown内嵌图表生成技能",
+      "覆盖数据可视化和技术文档场景",
+      "可能基于Mermaid等现有工具链"
+    ],
+    "relevance_score": 7,
+    "reason": "对AI辅助开发有直接帮助，提升文档生成效率，但属于工具类增强，未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "AI-agents",
+    "markdown",
+    "visualization"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

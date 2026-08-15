@@ -1,0 +1,26 @@
+{
+  "id": "github-20260815-chen0416ccc-cpu-codex-windows-fast-patch-skill",
+  "title": "chen0416ccc-cpu/codex-windows-fast-patch-skill: 提供Windows上恢复Codex Desktop升级后失效的本地补丁和功能开关的skills，支持自动更新，解决多项功",
+  "source": "github-trending",
+  "source_url": "https://github.com/chen0416ccc-cpu/codex-windows-fast-patch-skill",
+  "collected_at": "2026-08-15T08:23:45Z",
+  "summary": "提供Windows上恢复Codex Desktop升级后失效的本地补丁和功能开关的skills，支持自动更新，解决多项功能问题。",
+  "analysis": {
+    "tech_highlights": [
+      "针对Codex Desktop升级后补丁失效的自动化修复方案",
+      "支持自动更新skills至最新版本，确保兼容性"
+    ],
+    "relevance_score": 6,
+    "reason": "对Codex Desktop用户有直接帮助，但适用范围较窄，非通用技术，短期价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "Codex",
+    "Windows",
+    "补丁修复"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

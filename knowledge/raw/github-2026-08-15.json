@@ -1,0 +1,78 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-15T08:23:45Z",
+  "items": [
+    {
+      "name": "chen0416ccc-cpu/codex-windows-fast-patch-skill",
+      "url": "https://github.com/chen0416ccc-cpu/codex-windows-fast-patch-skill",
+      "summary": "此skills用于指导智能体在 Windows 上恢复 Codex Desktop 升级后失效的本地补丁和能力开关。（Computer Use，插件，破限，codex强制汉化，fast mode，手机远控，会话消失等问题）支持每次使用前自动将skills更新到最新版。/These skills are designed to guide the agent in restoring local patches and feature toggles that have been disabled or invalidated following a Codex Desktop upgrade on Windows. Supports auto-updating translations.",
+      "stars": 1093,
+      "language": "PowerShell",
+      "topics": []
+    },
+    {
+      "name": "markdown-viewer/skills",
+      "url": "https://github.com/markdown-viewer/skills",
+      "summary": "Opinionated skills for AI coding agents to create stunning diagrams and visualizations directly in Markdown. These skills extend agent capabilities across diagram generation, data visualization, and technical documentation.",
+      "stars": 3131,
+      "language": "unknown",
+      "topics": []
+    },
+    {
+      "name": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "summary": "How Python does AI: agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end.",
+      "stars": 19302,
+      "language": "Python",
+      "topics": [
+        "agent-framework",
+        "genai",
+        "harness",
+        "harness-engineering",
+        "llm",
+        "pydantic",
+        "python"
+      ]
+    },
+    {
+      "name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "summary": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "stars": 88480,
+      "language": "Go",
+      "topics": [
+        "agent-harness",
+        "agentic-ai",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-engineering",
+        "context-management",
+        "harness-engineering",
+        "knowledge-compilation",
+        "llm-apps",
+        "rag",
+        "retrieval-augmented-generation"
+      ]
+    },
+    {
+      "name": "e2b-dev/surf",
+      "url": "https://github.com/e2b-dev/surf",
+      "summary": "Surf is a computer use AI agent powered by OpenAI that interacts with a E2B's virtual desktop environment through natural language instructions",
+      "stars": 844,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "automation",
+        "cua",
+        "desktop",
+        "e2b",
+        "openai",
+        "sandbox",
+        "virtual-desktop"
+      ]
+    }
+  ]
+}

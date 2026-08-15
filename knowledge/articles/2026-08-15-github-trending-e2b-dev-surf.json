@@ -1,0 +1,28 @@
+{
+  "id": "github-20260815-e2b-dev-surf",
+  "title": "e2b-dev/surf: Surf 是一个基于 OpenAI 的计算机使用 AI 代理，通过自然语言指令在 E2B 虚拟桌面环境中执行操作，实现桌",
+  "source": "github-trending",
+  "source_url": "https://github.com/e2b-dev/surf",
+  "collected_at": "2026-08-15T08:23:45Z",
+  "summary": "Surf 是一个基于 OpenAI 的计算机使用 AI 代理，通过自然语言指令在 E2B 虚拟桌面环境中执行操作，实现桌面自动化。",
+  "analysis": {
+    "tech_highlights": [
+      "自然语言驱动桌面交互",
+      "基于 E2B 沙箱环境，安全隔离",
+      "集成 OpenAI 模型，智能决策"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为开发者提供了将 AI 代理应用于实际桌面任务的参考实现，对自动化领域有直接帮助，且技术栈现代，易于借鉴。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use",
+    "ai-agent",
+    "desktop-automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
