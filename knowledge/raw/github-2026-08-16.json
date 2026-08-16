@@ -1,0 +1,108 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-16T08:25:00Z",
+  "items": [
+    {
+      "name": "xlang-ai/OpenCUA",
+      "url": "https://github.com/xlang-ai/OpenCUA",
+      "summary": "[NeurIPS 2025 Spotlight] OpenCUA: Open Foundations for Computer-Use Agents",
+      "stars": 820,
+      "language": "Python",
+      "topics": [
+        "benchmark",
+        "computer-use-agent",
+        "dataset",
+        "foundation-models",
+        "gui",
+        "vision-language-model"
+      ]
+    },
+    {
+      "name": "leofan90/Awesome-World-Models",
+      "url": "https://github.com/leofan90/Awesome-World-Models",
+      "summary": "A comprehensive list of papers for the definition of World Models and using World Models for General Video Generation, Embodied AI, and Autonomous Driving, including papers, codes, and related websites.",
+      "stars": 1961,
+      "language": "Python",
+      "topics": [
+        "artificial-intelligence",
+        "autonomous-driving",
+        "awesome",
+        "deep-learning",
+        "embodied-ai",
+        "future-prediction",
+        "video-prediction",
+        "world-model"
+      ]
+    },
+    {
+      "name": "cvxpy/cvxpy",
+      "url": "https://github.com/cvxpy/cvxpy",
+      "summary": "A Python-embedded modeling language for convex optimization problems.",
+      "stars": 6301,
+      "language": "C++",
+      "topics": [
+        "convex-optimization",
+        "cvxpy",
+        "mathematical-optimization",
+        "modeling-language",
+        "numerical-optimization",
+        "optimization",
+        "optimization-modeling",
+        "python"
+      ]
+    },
+    {
+      "name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "summary": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "stars": 80071,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "deep-research",
+        "harness",
+        "langchain",
+        "langgraph",
+        "langmanus",
+        "llm",
+        "multi-agent",
+        "nodejs",
+        "podcast",
+        "python",
+        "superagent",
+        "typescript"
+      ]
+    },
+    {
+      "name": "AMAP-ML/LongHorizon-Harness",
+      "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+      "summary": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making reliable progress on complex workflows. Features fresh-context execution, durable verified state, independent auditing, recoverable progress, and native Claude Code / Codex / OpenClaw integration.",
+      "stars": 746,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "claude",
+        "claude-code",
+        "claude-plugin",
+        "cli",
+        "codex",
+        "codex-desktop",
+        "codex-plugin",
+        "cua",
+        "deepseek-harness",
+        "gui",
+        "harness",
+        "long-horizon",
+        "long-horizon-agents",
+        "longhorizon-harness",
+        "loop",
+        "loop-engineering"
+      ]
+    }
+  ]
+}

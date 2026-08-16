@@ -1,0 +1,29 @@
+{
+  "id": "github-20260816-leofan90-awesome-world-models",
+  "title": "leofan90/Awesome-World-Models: 汇集世界模型相关论文、代码与网站，覆盖视频生成、具身AI与自动驾驶，是跟踪该领域进展的全面资源。",
+  "source": "github-trending",
+  "source_url": "https://github.com/leofan90/Awesome-World-Models",
+  "collected_at": "2026-08-16T08:25:00Z",
+  "summary": "汇集世界模型相关论文、代码与网站，覆盖视频生成、具身AI与自动驾驶，是跟踪该领域进展的全面资源。",
+  "analysis": {
+    "tech_highlights": [
+      "系统整理世界模型定义及在视频生成、具身AI、自动驾驶中的应用",
+      "包含论文、代码和网站，便于快速查阅与复现"
+    ],
+    "relevance_score": 7,
+    "reason": "对研究世界模型或相关应用的开发者/研究者有直接参考价值，但作为资源列表，短期实用性强，不改变技术格局",
+    "risks": []
+  },
+  "tags": [
+    "world-models",
+    "awesome-list",
+    "video-generation",
+    "embodied-ai",
+    "autonomous-driving"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

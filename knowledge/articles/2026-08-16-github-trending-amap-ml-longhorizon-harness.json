@@ -1,0 +1,30 @@
+{
+  "id": "github-20260816-amap-ml-longhorizon-harness",
+  "title": "AMAP-ML/LongHorizon-Harness: LongHorizon-Harness 是一个用于长时间运行 AI 代理的框架，支持桌面应用和 CLI，具备状态持久化、",
+  "source": "github-trending",
+  "source_url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+  "collected_at": "2026-08-16T08:25:00Z",
+  "summary": "LongHorizon-Harness 是一个用于长时间运行 AI 代理的框架，支持桌面应用和 CLI，具备状态持久化、可验证状态、独立审计和恢复能力，集成 Claude Code、Codex 等。",
+  "analysis": {
+    "tech_highlights": [
+      "支持长时间运行代理，保持任务状态和可靠进度",
+      "提供新鲜上下文执行、持久化验证状态和独立审计",
+      "原生集成 Claude Code、Codex 和 OpenClaw"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发复杂 AI 代理工作流有直接帮助，解决长时任务中的状态管理和可靠性问题，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "long-horizon",
+    "harness",
+    "claude",
+    "codex"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

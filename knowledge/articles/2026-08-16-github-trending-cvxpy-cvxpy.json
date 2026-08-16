@@ -1,0 +1,28 @@
+{
+  "id": "github-20260816-cvxpy-cvxpy",
+  "title": "cvxpy/cvxpy: CVXPY 是 Python 凸优化建模语言，提供简洁 API 描述优化问题，自动转换并求解，广泛应用于科研与工程。",
+  "source": "github-trending",
+  "source_url": "https://github.com/cvxpy/cvxpy",
+  "collected_at": "2026-08-16T08:25:00Z",
+  "summary": "CVXPY 是 Python 凸优化建模语言，提供简洁 API 描述优化问题，自动转换并求解，广泛应用于科研与工程。",
+  "analysis": {
+    "tech_highlights": [
+      "声明式建模，自动转换问题为规范形式",
+      "支持多种求解器后端，如 SCS、ECOS、OSQP",
+      "与 NumPy 深度集成，易于使用"
+    ],
+    "relevance_score": 8,
+    "reason": "对优化领域开发者和研究者有直接帮助，是标准工具，但非颠覆性创新。",
+    "risks": []
+  },
+  "tags": [
+    "optimization",
+    "python",
+    "convex-optimization"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

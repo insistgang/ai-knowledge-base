@@ -1,0 +1,29 @@
+{
+  "id": "github-20260816-xlang-ai-opencua",
+  "title": "xlang-ai/OpenCUA: OpenCUA 是 NeurIPS 2025 Spotlight 项目，为计算机使用智能体提供开放基础，包含基准、数据集",
+  "source": "github-trending",
+  "source_url": "https://github.com/xlang-ai/OpenCUA",
+  "collected_at": "2026-08-16T08:25:00Z",
+  "summary": "OpenCUA 是 NeurIPS 2025 Spotlight 项目，为计算机使用智能体提供开放基础，包含基准、数据集和视觉语言模型，推动 GUI 自动化研究。",
+  "analysis": {
+    "tech_highlights": [
+      "提供全面的计算机使用智能体基准测试",
+      "包含大规模数据集和基础模型，支持 GUI 自动化研究"
+    ],
+    "relevance_score": 8,
+    "reason": "对计算机使用智能体领域的研究和开发有直接帮助，提供开放资源和基准，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use-agent",
+    "benchmark",
+    "vision-language-model",
+    "GUI-automation",
+    "dataset"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}
