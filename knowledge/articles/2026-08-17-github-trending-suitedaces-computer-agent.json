@@ -1,0 +1,28 @@
+{
+  "id": "github-20260817-suitedaces-computer-agent",
+  "title": "suitedaces/computer-agent: 用AI控制电脑的桌面应用，支持终端、浏览器、鼠标键盘操作，基于Rust和React构建。",
+  "source": "github-trending",
+  "source_url": "https://github.com/suitedaces/computer-agent",
+  "collected_at": "2026-08-17T08:39:12Z",
+  "summary": "用AI控制电脑的桌面应用，支持终端、浏览器、鼠标键盘操作，基于Rust和React构建。",
+  "analysis": {
+    "tech_highlights": [
+      "集成Claude多版本模型",
+      "跨平台桌面GUI",
+      "AI驱动自动化操作"
+    ],
+    "relevance_score": 7,
+    "reason": "对AI自动化开发有直接参考价值，但依赖特定模型，通用性有限。",
+    "risks": []
+  },
+  "tags": [
+    "AI",
+    "自动化",
+    "桌面应用"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

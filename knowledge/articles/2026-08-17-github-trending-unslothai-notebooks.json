@@ -1,0 +1,28 @@
+{
+  "id": "github-20260817-unslothai-notebooks",
+  "title": "unslothai/notebooks: 提供250+微调和强化学习笔记本，覆盖文本、视觉、音频、嵌入和TTS模型，基于Unsloth库，适合快速上手。",
+  "source": "github-trending",
+  "source_url": "https://github.com/unslothai/notebooks",
+  "collected_at": "2026-08-17T08:39:12Z",
+  "summary": "提供250+微调和强化学习笔记本，覆盖文本、视觉、音频、嵌入和TTS模型，基于Unsloth库，适合快速上手。",
+  "analysis": {
+    "tech_highlights": [
+      "250+覆盖多模态的微调与RL笔记本",
+      "基于Unsloth，优化训练速度与内存",
+      "适合快速实验与学习"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发者直接提供可运行的微调示例，覆盖多模态，实用性强，但依赖特定库，短期价值高。",
+    "risks": []
+  },
+  "tags": [
+    "fine-tuning",
+    "notebooks",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

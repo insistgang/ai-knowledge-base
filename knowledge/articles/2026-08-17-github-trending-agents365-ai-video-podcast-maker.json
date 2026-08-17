@@ -1,0 +1,30 @@
+{
+  "id": "github-20260817-agents365-ai-video-podcast-maker",
+  "title": "Agents365-ai/video-podcast-maker: 将主题自动转化为带旁白的4K视频，支持多TTS平台、字幕同步和Remotion合成，面向编码智能体。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Agents365-ai/video-podcast-maker",
+  "collected_at": "2026-08-17T08:39:12Z",
+  "summary": "将主题自动转化为带旁白的4K视频，支持多TTS平台、字幕同步和Remotion合成，面向编码智能体。",
+  "analysis": {
+    "tech_highlights": [
+      "集成11种TTS平台，含MiniMax声音克隆和原生词级字幕同步",
+      "基于manifest的资源引擎与Remotion视频合成",
+      "成本门控的AI生成流程，适配编码智能体工作流"
+    ],
+    "relevance_score": 7,
+    "reason": "对视频生成和智能体自动化开发有直接帮助，技术集成全面，但非核心AI模型创新，短期价值高。",
+    "risks": []
+  },
+  "tags": [
+    "video-generation",
+    "tts",
+    "agent-workflow",
+    "remotion",
+    "ai-content"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

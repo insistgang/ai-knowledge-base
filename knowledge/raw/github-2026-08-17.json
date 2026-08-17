@@ -1,0 +1,93 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-17T08:39:12Z",
+  "items": [
+    {
+      "name": "suitedaces/computer-agent",
+      "url": "https://github.com/suitedaces/computer-agent",
+      "summary": "Desktop app to control your computer with AI using your terminal, browser, mouse & keyboard",
+      "stars": 674,
+      "language": "Rust",
+      "topics": [
+        "ai",
+        "ai-tools",
+        "anthropic",
+        "claude-3-5-sonnet",
+        "claude-4-5-opus",
+        "claude-4-5-sonnet",
+        "claude-4-6-opus",
+        "computer-use",
+        "gui",
+        "react",
+        "reactjs",
+        "rust",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Agents365-ai/video-podcast-maker",
+      "url": "https://github.com/Agents365-ai/video-podcast-maker",
+      "summary": "Topic → 4K narrated video for coding agents. v4.0: all TTS via the ttsCN engine component (11 platforms incl. MiniMax voice clone, native word-level subtitle sync), manifest-based Asset Engine, Remotion composition, cost-gated AI generation",
+      "stars": 1559,
+      "language": "Python",
+      "topics": [
+        "agent-skill",
+        "ai-video",
+        "bilibili",
+        "claude-code",
+        "hyperframes",
+        "idea-to-video",
+        "remotion",
+        "text-to-speech",
+        "video-generation"
+      ]
+    },
+    {
+      "name": "unslothai/notebooks",
+      "url": "https://github.com/unslothai/notebooks",
+      "summary": "250+ Fine-tuning & RL Notebooks for text, vision, audio, embedding, TTS models.",
+      "stars": 5588,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "unsloth"
+      ]
+    },
+    {
+      "name": "unclecode/crawl4ai",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "summary": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+      "stars": 78434,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "macOS26/Agent",
+      "url": "https://github.com/macOS26/Agent",
+      "summary": "Mac Agent for macOS 26: the agentic AI harness for your Mac Desktop. Computer use, automation, scripting, coding, and more. Powered by 18+ providers across local and cloud LLMs.",
+      "stars": 573,
+      "language": "Swift",
+      "topics": [
+        "accessibility",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "ai-agent",
+        "apple-intelligence",
+        "applescript",
+        "automation",
+        "claude",
+        "imessage",
+        "javascript",
+        "jxa",
+        "llm",
+        "macos",
+        "mcp",
+        "ollama",
+        "swift",
+        "swiftui",
+        "xcode",
+        "xpc"
+      ]
+    }
+  ]
+}

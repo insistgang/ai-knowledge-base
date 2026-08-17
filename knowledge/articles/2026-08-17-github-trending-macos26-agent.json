@@ -1,0 +1,30 @@
+{
+  "id": "github-20260817-macos26-agent",
+  "title": "macOS26/Agent: macOS 26 的代理 AI 工具，支持桌面自动化、脚本、编码，集成 18+ 本地与云端 LLM 提供商，基于 Swi",
+  "source": "github-trending",
+  "source_url": "https://github.com/macOS26/Agent",
+  "collected_at": "2026-08-17T08:39:12Z",
+  "summary": "macOS 26 的代理 AI 工具，支持桌面自动化、脚本、编码，集成 18+ 本地与云端 LLM 提供商，基于 Swift 构建。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 18+ LLM 提供商，覆盖本地与云端模型",
+      "集成 AppleScript、JXA、JavaScript 实现深度桌面自动化",
+      "基于 SwiftUI 和 XPC 构建，原生 macOS 体验"
+    ],
+    "relevance_score": 8,
+    "reason": "对 macOS 开发者和自动化爱好者有直接实用价值，提供多模型支持和系统级集成，但生态尚新，未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "macos",
+    "ai-agent",
+    "automation",
+    "swift",
+    "llm"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
