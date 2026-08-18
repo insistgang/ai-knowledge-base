@@ -1,0 +1,30 @@
+{
+  "id": "github-20260818-agent-sh-computer-use-linux",
+  "title": "agent-sh/computer-use-linux: 基于MCP的Linux桌面控制工具，支持AT-SPI、GNOME Shell、Wayland portals和ydoto",
+  "source": "github-trending",
+  "source_url": "https://github.com/agent-sh/computer-use-linux",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "summary": "基于MCP的Linux桌面控制工具，支持AT-SPI、GNOME Shell、Wayland portals和ydotool，为AI代理提供桌面操作能力。",
+  "analysis": {
+    "tech_highlights": [
+      "通过MCP协议集成多种Linux桌面技术，实现跨组件控制",
+      "支持GNOME Shell和Wayland portals，覆盖现代Linux桌面环境",
+      "使用Rust开发，性能和安全性强"
+    ],
+    "relevance_score": 8,
+    "reason": "为AI代理提供Linux桌面控制能力，对开发智能体自动化工具的研究者和开发者有直接帮助，且技术栈现代，集成方式创新。",
+    "risks": []
+  },
+  "tags": [
+    "MCP",
+    "Linux桌面",
+    "AI代理",
+    "Rust",
+    "自动化"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

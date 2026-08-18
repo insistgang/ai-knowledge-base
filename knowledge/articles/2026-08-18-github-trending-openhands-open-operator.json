@@ -1,0 +1,30 @@
+{
+  "id": "github-20260818-openhands-open-operator",
+  "title": "OpenHands/open-operator: OpenHands 团队发布的计算机使用智能体开源资源库，汇集相关论文、工具和教程，助力开发者构建能操作电脑的AI代理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/OpenHands/open-operator",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "summary": "OpenHands 团队发布的计算机使用智能体开源资源库，汇集相关论文、工具和教程，助力开发者构建能操作电脑的AI代理。",
+  "analysis": {
+    "tech_highlights": [
+      "聚焦计算机使用智能体，涵盖GUI操作、浏览器自动化等前沿方向",
+      "由知名OpenHands项目团队维护，资源质量有保障",
+      "开源资源集合，便于快速入门和深入研究"
+    ],
+    "relevance_score": 7,
+    "reason": "对从事智能体、自动化或人机交互研究的开发者有直接参考价值，但资源库性质，非具体工具，短期实用价值中等。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use",
+    "agents",
+    "open-source",
+    "resources",
+    "automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

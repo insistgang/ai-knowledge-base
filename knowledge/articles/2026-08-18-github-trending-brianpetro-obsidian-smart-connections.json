@@ -1,0 +1,30 @@
+{
+  "id": "github-20260818-brianpetro-obsidian-smart-connections",
+  "title": "brianpetro/obsidian-smart-connections: Obsidian智能连接插件，利用本地嵌入模型实现语义搜索，自动推荐相关笔记，无需API密钥，零配置。",
+  "source": "github-trending",
+  "source_url": "https://github.com/brianpetro/obsidian-smart-connections",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "summary": "Obsidian智能连接插件，利用本地嵌入模型实现语义搜索，自动推荐相关笔记，无需API密钥，零配置。",
+  "analysis": {
+    "tech_highlights": [
+      "本地嵌入模型驱动语义搜索，保护隐私",
+      "自动推荐相关笔记，提升知识管理效率",
+      "支持多种AI模型（ChatGPT、Claude、Gemini）集成"
+    ],
+    "relevance_score": 8,
+    "reason": "对知识工作者和开发者有直接帮助，实现本地语义搜索，降低使用门槛，提升笔记关联效率。",
+    "risks": []
+  },
+  "tags": [
+    "obsidian",
+    "semantic-search",
+    "embeddings",
+    "knowledge-management",
+    "plugin"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

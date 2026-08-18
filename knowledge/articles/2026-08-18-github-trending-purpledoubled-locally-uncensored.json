@@ -1,0 +1,31 @@
+{
+  "id": "github-20260818-purpledoubled-locally-uncensored",
+  "title": "PurpleDoubleD/locally-uncensored: 本地AI工作室，支持无审查聊天、图像视频生成及编码代理，离线运行abliterated LLM和ComfyUI，一键安装",
+  "source": "github-trending",
+  "source_url": "https://github.com/PurpleDoubleD/locally-uncensored",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "summary": "本地AI工作室，支持无审查聊天、图像视频生成及编码代理，离线运行abliterated LLM和ComfyUI，一键安装，无需Docker或云服务。",
+  "analysis": {
+    "tech_highlights": [
+      "集成abliterated模型实现无审查对话",
+      "结合ComfyUI支持图像和视频生成",
+      "基于Tauri构建，轻量级桌面应用",
+      "完全离线运行，保护隐私"
+    ],
+    "relevance_score": 7,
+    "reason": "对本地AI开发者和隐私敏感用户有直接帮助，提供一体化解决方案，但技术新颖性有限，属于工具整合类项目。",
+    "risks": []
+  },
+  "tags": [
+    "local-ai",
+    "uncensored",
+    "comfyui",
+    "tauri",
+    "offline"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

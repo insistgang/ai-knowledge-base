@@ -1,0 +1,28 @@
+{
+  "id": "github-20260818-mempalace-mempalace",
+  "title": "MemPalace/mempalace: MemPalace 是开源 AI 记忆系统，号称性能最佳且免费，基于 Python 和 ChromaDB，支持 MCP ",
+  "source": "github-trending",
+  "source_url": "https://github.com/MemPalace/mempalace",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "summary": "MemPalace 是开源 AI 记忆系统，号称性能最佳且免费，基于 Python 和 ChromaDB，支持 MCP 协议。",
+  "analysis": {
+    "tech_highlights": [
+      "最佳基准测试的 AI 记忆系统",
+      "集成 MCP 协议",
+      "基于 ChromaDB 向量数据库"
+    ],
+    "relevance_score": 7,
+    "reason": "对 AI 应用开发者有直接帮助，提供可用的记忆解决方案，但尚未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "AI memory",
+    "MCP",
+    "ChromaDB"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

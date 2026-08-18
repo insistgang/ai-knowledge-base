@@ -1,0 +1,105 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-18T08:32:58Z",
+  "items": [
+    {
+      "name": "OpenHands/open-operator",
+      "url": "https://github.com/OpenHands/open-operator",
+      "summary": "Open-source resources on agents for computer use.",
+      "stars": 427,
+      "language": "unknown",
+      "topics": []
+    },
+    {
+      "name": "PurpleDoubleD/locally-uncensored",
+      "url": "https://github.com/PurpleDoubleD/locally-uncensored",
+      "summary": "Plug-and-play local AI studio: uncensored chat, image & video generation, coding agent. Runs abliterated LLMs + ComfyUI 100% offline. One installer, no Docker, no cloud.",
+      "stars": 1088,
+      "language": "TypeScript",
+      "topics": [
+        "abliterated",
+        "agent-mode",
+        "ai",
+        "ai-chat",
+        "comfyui",
+        "desktop-app",
+        "gemma4",
+        "gguf",
+        "image-generation",
+        "llm",
+        "local-ai",
+        "local-llm",
+        "ollama",
+        "privacy",
+        "self-hosted",
+        "stable-diffusion",
+        "tauri",
+        "uncensored",
+        "uncensored-ai",
+        "video-generation"
+      ]
+    },
+    {
+      "name": "brianpetro/obsidian-smart-connections",
+      "url": "https://github.com/brianpetro/obsidian-smart-connections",
+      "summary": "Find related notes and excerpts while writing. Your link building copilot displays relevant content in graph + list view. A local embedding model powers semantic search. Zero setup. No API key.",
+      "stars": 5372,
+      "language": "JavaScript",
+      "topics": [
+        "chatgpt",
+        "claude",
+        "embeddings",
+        "gemini",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-plugin",
+        "related-items",
+        "semantic-search",
+        "vectors"
+      ]
+    },
+    {
+      "name": "MemPalace/mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "summary": "The best-benchmarked open-source AI memory system. And it's free.",
+      "stars": 58436,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "chromadb",
+        "llm",
+        "mcp",
+        "memory",
+        "python"
+      ]
+    },
+    {
+      "name": "agent-sh/computer-use-linux",
+      "url": "https://github.com/agent-sh/computer-use-linux",
+      "summary": "Linux desktop control over MCP — AT-SPI, GNOME Shell, Wayland portals, ydotool",
+      "stars": 407,
+      "language": "Rust",
+      "topics": [
+        "agent",
+        "ai",
+        "cargo",
+        "claude",
+        "codex",
+        "computer-use",
+        "gnome",
+        "hermes",
+        "linux",
+        "llm",
+        "mcp",
+        "npm",
+        "oss",
+        "rust",
+        "shell",
+        "skill",
+        "tools",
+        "wayland",
+        "ydotool"
+      ]
+    }
+  ]
+}
