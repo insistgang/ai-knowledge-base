@@ -1,0 +1,122 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "items": [
+    {
+      "name": "ludwig-ai/ludwig",
+      "url": "https://github.com/ludwig-ai/ludwig",
+      "summary": "Low-code framework for building custom LLMs, neural networks, and other AI models",
+      "stars": 11748,
+      "language": "Python",
+      "topics": [
+        "computer-vision",
+        "data-centric",
+        "data-science",
+        "deep",
+        "deep-learning",
+        "deeplearning",
+        "fine-tuning",
+        "learning",
+        "llama",
+        "llama2",
+        "llm",
+        "llm-training",
+        "machine-learning",
+        "machinelearning",
+        "mistral",
+        "ml",
+        "natural-language",
+        "natural-language-processing",
+        "neural-network",
+        "pytorch"
+      ]
+    },
+    {
+      "name": "restoriolefall/Claude-Ai-JailBreak",
+      "url": "https://github.com/restoriolefall/Claude-Ai-JailBreak",
+      "summary": "Claude 5.0 AI Jailbreak Prompt safety research. Evaluation of system prompt bypasses, guardrails & red-teaming vectors for Claude 5 Sonnet/Opus models. Educational repository analysis of LLM vulnerabilities, defense benchmarks & alignment leaks.",
+      "stars": 121,
+      "language": "unknown",
+      "topics": [
+        "ai-jailbreak",
+        "claude-ai-jailbreak",
+        "claude-code-prompts",
+        "jailbreak-ai",
+        "jailbreak-ai-vibe-coding",
+        "jailbreak-claude",
+        "jailbreak-claude-ai",
+        "jailbreak-prompt",
+        "jailbreak-testing",
+        "no-censorship-ai",
+        "unfiltered-ai"
+      ]
+    },
+    {
+      "name": "AutoArk/TinyEngram",
+      "url": "https://github.com/AutoArk/TinyEngram",
+      "summary": "Research of DeepSeek Engram Architecture based on Qwen-3 and Stable Diffusion series.",
+      "stars": 1087,
+      "language": "Python",
+      "topics": [
+        "deepseek",
+        "deepseek-ai",
+        "engram",
+        "fine-tuning",
+        "llm",
+        "llm-memory",
+        "lora",
+        "memory-injection",
+        "peft",
+        "pytorch",
+        "qwen",
+        "stable-diffusion",
+        "tinyengram",
+        "transformer"
+      ]
+    },
+    {
+      "name": "deepspeedai/DeepSpeed",
+      "url": "https://github.com/deepspeedai/DeepSpeed",
+      "summary": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
+      "stars": 42958,
+      "language": "Python",
+      "topics": [
+        "billion-parameters",
+        "compression",
+        "data-parallelism",
+        "deep-learning",
+        "gpu",
+        "inference",
+        "machine-learning",
+        "mixture-of-experts",
+        "model-parallelism",
+        "pipeline-parallelism",
+        "pytorch",
+        "trillion-parameters",
+        "zero"
+      ]
+    },
+    {
+      "name": "deepjavalibrary/djl",
+      "url": "https://github.com/deepjavalibrary/djl",
+      "summary": "An Engine-Agnostic Deep Learning Framework in Java",
+      "stars": 4838,
+      "language": "Java",
+      "topics": [
+        "ai",
+        "autograd",
+        "deep-learning",
+        "deep-neural-networks",
+        "djl",
+        "java",
+        "machine-learning",
+        "ml",
+        "mxnet",
+        "neural-network",
+        "onnxruntime",
+        "pytorch",
+        "tensorflow"
+      ]
+    }
+  ]
+}

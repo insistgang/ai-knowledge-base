@@ -1,0 +1,28 @@
+{
+  "id": "github-20260819-deepjavalibrary-djl",
+  "title": "deepjavalibrary/djl: DJL 是 Java 生态中引擎无关的深度学习框架，支持 PyTorch、TensorFlow、MXNet 等，简化模型",
+  "source": "github-trending",
+  "source_url": "https://github.com/deepjavalibrary/djl",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "summary": "DJL 是 Java 生态中引擎无关的深度学习框架，支持 PyTorch、TensorFlow、MXNet 等，简化模型训练与部署。",
+  "analysis": {
+    "tech_highlights": [
+      "引擎无关设计，统一 API 支持多后端",
+      "原生 Java 实现，便于集成到 JVM 应用",
+      "提供模型 zoo 和推理优化工具"
+    ],
+    "relevance_score": 8,
+    "reason": "为 Java 开发者提供深度学习能力，降低 JVM 项目集成 ML 门槛，对生产部署有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "java",
+    "deep-learning",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

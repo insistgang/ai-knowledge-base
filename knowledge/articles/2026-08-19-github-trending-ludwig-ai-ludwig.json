@@ -1,0 +1,28 @@
+{
+  "id": "github-20260819-ludwig-ai-ludwig",
+  "title": "ludwig-ai/ludwig: Ludwig 是一个低代码框架，用于构建自定义大语言模型、神经网络及其他 AI 模型，支持视觉、NLP 等任务，简化训练",
+  "source": "github-trending",
+  "source_url": "https://github.com/ludwig-ai/ludwig",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "summary": "Ludwig 是一个低代码框架，用于构建自定义大语言模型、神经网络及其他 AI 模型，支持视觉、NLP 等任务，简化训练和微调流程。",
+  "analysis": {
+    "tech_highlights": [
+      "低代码接口，无需深入编程即可构建复杂模型",
+      "支持多种模型类型，包括 LLM 微调和传统深度学习",
+      "基于 PyTorch，提供数据驱动和可配置的训练流程"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发者和研究者有直接帮助，能快速原型化和部署 AI 模型，降低入门门槛，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "low-code",
+    "LLM",
+    "deep-learning"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260819-autoark-tinyengram",
+  "title": "AutoArk/TinyEngram: 基于Qwen-3和Stable Diffusion的DeepSeek Engram架构研究项目，探索LLM记忆注入与微调",
+  "source": "github-trending",
+  "source_url": "https://github.com/AutoArk/TinyEngram",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "summary": "基于Qwen-3和Stable Diffusion的DeepSeek Engram架构研究项目，探索LLM记忆注入与微调技术。",
+  "analysis": {
+    "tech_highlights": [
+      "结合LLM与图像生成模型研究记忆架构",
+      "使用LoRA和PEFT进行高效微调",
+      "实现记忆注入机制，可能提升模型上下文理解"
+    ],
+    "relevance_score": 7,
+    "reason": "对LLM记忆增强和微调研究有直接参考价值，但尚处研究阶段，短期应用有限。",
+    "risks": []
+  },
+  "tags": [
+    "LLM",
+    "memory-injection",
+    "fine-tuning"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

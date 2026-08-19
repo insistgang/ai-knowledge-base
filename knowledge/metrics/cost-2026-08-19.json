@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T08:33:33Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00036635,
+    "remaining_usd": 0.09963365,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1566,
+      "completion_tokens": 839,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 926,
+      "total_tokens": 2405,
+      "estimated_cost_usd": 0.00036635,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1566,
+    "completion_tokens": 839,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 926,
+    "total_tokens": 2405,
+    "estimated_cost_usd": 0.00036635
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "ludwig-ai/ludwig",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 319,
+      "completion_tokens": 175,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 191,
+      "total_tokens": 494,
+      "estimated_cost_usd": 7.61e-05
+    },
+    {
+      "source": "github",
+      "item_name": "restoriolefall/Claude-Ai-JailBreak",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 363,
+      "completion_tokens": 177,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 235,
+      "total_tokens": 540,
+      "estimated_cost_usd": 8.282e-05
+    },
+    {
+      "source": "github",
+      "item_name": "AutoArk/TinyEngram",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 299,
+      "completion_tokens": 157,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 171,
+      "total_tokens": 456,
+      "estimated_cost_usd": 6.826e-05
+    },
+    {
+      "source": "github",
+      "item_name": "deepspeedai/DeepSpeed",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 303,
+      "completion_tokens": 171,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 175,
+      "total_tokens": 474,
+      "estimated_cost_usd": 7.274e-05
+    },
+    {
+      "source": "github",
+      "item_name": "deepjavalibrary/djl",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 282,
+      "completion_tokens": 159,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 154,
+      "total_tokens": 441,
+      "estimated_cost_usd": 6.644e-05
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "github-20260819-restoriolefall-claude-ai-jailbreak",
+  "title": "restoriolefall/Claude-Ai-JailBreak: 针对Claude 5.0模型的越狱提示词研究仓库，评估系统提示绕过、护栏及红队测试向量，属教育性LLM漏洞分析。",
+  "source": "github-trending",
+  "source_url": "https://github.com/restoriolefall/Claude-Ai-JailBreak",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "summary": "针对Claude 5.0模型的越狱提示词研究仓库，评估系统提示绕过、护栏及红队测试向量，属教育性LLM漏洞分析。",
+  "analysis": {
+    "tech_highlights": [
+      "系统提示绕过技术分析",
+      "Claude 5 Sonnet/Opus模型红队测试",
+      "防御基准与对齐泄漏研究"
+    ],
+    "relevance_score": 6,
+    "reason": "对AI安全研究者和红队工程师有直接参考价值，但内容可能涉及伦理风险，且非主流开发工具，短期实用价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "ai-safety",
+    "jailbreak",
+    "red-teaming",
+    "llm-security",
+    "claude"
+  ],
+  "audience": [
+    "researcher",
+    "security-engineer"
+  ],
+  "status": "draft"
+}

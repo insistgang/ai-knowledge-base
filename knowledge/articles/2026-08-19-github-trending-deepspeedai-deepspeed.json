@@ -1,0 +1,30 @@
+{
+  "id": "github-20260819-deepspeedai-deepspeed",
+  "title": "deepspeedai/DeepSpeed: DeepSpeed是微软开源的深度学习优化库，支持大规模分布式训练与推理，实现高效、易用，可训练万亿参数模型。",
+  "source": "github-trending",
+  "source_url": "https://github.com/deepspeedai/DeepSpeed",
+  "collected_at": "2026-08-19T08:33:33Z",
+  "summary": "DeepSpeed是微软开源的深度学习优化库，支持大规模分布式训练与推理，实现高效、易用，可训练万亿参数模型。",
+  "analysis": {
+    "tech_highlights": [
+      "ZeRO优化器大幅降低显存占用，支持万亿参数训练",
+      "提供混合精度、梯度压缩、MoE等多项优化技术",
+      "支持训练与推理全流程，兼容PyTorch"
+    ],
+    "relevance_score": 9,
+    "reason": "DeepSpeed是深度学习分布式训练的核心工具，对大规模模型训练有直接帮助，技术影响力大，是AI基础设施的重要部分。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "distributed-training",
+    "optimization",
+    "pytorch",
+    "large-model"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
