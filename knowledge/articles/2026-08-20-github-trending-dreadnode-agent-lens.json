@@ -1,0 +1,28 @@
+{
+  "id": "github-20260820-dreadnode-agent-lens",
+  "title": "dreadnode/agent-lens: Agent Lens 是面向 AI 安全与可解释性研究的智能体可观测性与回放工具，帮助研究者深入理解智能体行为。",
+  "source": "github-trending",
+  "source_url": "https://github.com/dreadnode/agent-lens",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "summary": "Agent Lens 是面向 AI 安全与可解释性研究的智能体可观测性与回放工具，帮助研究者深入理解智能体行为。",
+  "analysis": {
+    "tech_highlights": [
+      "提供智能体行为观测与回放功能",
+      "专为 AI 安全与可解释性研究设计",
+      "基于 Python 实现，易于集成"
+    ],
+    "relevance_score": 8,
+    "reason": "对 AI 安全与可解释性研究有直接帮助，填补了智能体观测工具的空白，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "AI安全",
+    "可解释性",
+    "智能体观测"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

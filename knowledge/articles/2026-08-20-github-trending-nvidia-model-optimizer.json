@@ -1,0 +1,27 @@
+{
+  "id": "github-20260820-nvidia-model-optimizer",
+  "title": "NVIDIA/Model-Optimizer: NVIDIA推出的统一模型优化库，集成量化、蒸馏、剪枝、神经架构搜索、投机解码等SOTA技术，压缩深度学习模型以适配Te",
+  "source": "github-trending",
+  "source_url": "https://github.com/NVIDIA/Model-Optimizer",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "summary": "NVIDIA推出的统一模型优化库，集成量化、蒸馏、剪枝、神经架构搜索、投机解码等SOTA技术，压缩深度学习模型以适配TensorRT-LLM、vLLM等部署框架，提升推理速度。",
+  "analysis": {
+    "tech_highlights": [
+      "集成多种SOTA优化技术，覆盖模型压缩全流程",
+      "支持主流部署框架，如TensorRT-LLM、vLLM，实用性强"
+    ],
+    "relevance_score": 8,
+    "reason": "对AI开发者和研究者有直接帮助，提供一站式优化方案，显著提升推理性能，但未改变技术格局，属于实用工具类。",
+    "risks": []
+  },
+  "tags": [
+    "model-optimization",
+    "quantization",
+    "inference"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

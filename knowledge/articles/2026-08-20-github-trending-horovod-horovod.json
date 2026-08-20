@@ -1,0 +1,28 @@
+{
+  "id": "github-20260820-horovod-horovod",
+  "title": "horovod/horovod: Horovod 是 Uber 开源的分布式深度学习训练框架，支持 TensorFlow、Keras、PyTorch 和 ",
+  "source": "github-trending",
+  "source_url": "https://github.com/horovod/horovod",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "summary": "Horovod 是 Uber 开源的分布式深度学习训练框架，支持 TensorFlow、Keras、PyTorch 和 MXNet，基于 MPI 实现高效并行训练。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 MPI 的分布式训练，通信效率高",
+      "支持多种主流深度学习框架",
+      "与 Spark、Ray 集成，易于部署"
+    ],
+    "relevance_score": 8,
+    "reason": "对分布式训练有直接帮助，是业界标准工具，但已被 PyTorch DDP 等替代部分场景。",
+    "risks": []
+  },
+  "tags": [
+    "distributed-training",
+    "deep-learning",
+    "mpi"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

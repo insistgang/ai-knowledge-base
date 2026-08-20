@@ -1,0 +1,80 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "items": [
+    {
+      "name": "NVIDIA/Model-Optimizer",
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "summary": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
+      "stars": 3458,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "dreadnode/agent-lens",
+      "url": "https://github.com/dreadnode/agent-lens",
+      "summary": "Agent observability and replay tooling for AI safety & interpretability research.",
+      "stars": 113,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "alignment",
+        "interpretability",
+        "observability",
+        "safety"
+      ]
+    },
+    {
+      "name": "OpenMOSS/MOSS-Audio-Tokenizer",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio-Tokenizer",
+      "summary": "MOSS-Audio-Tokenizer is a Causal Transformer-based audio tokenizer built on the CAT architecture. Trained on 3M hours of diverse audio, it supports streaming and variable bitrates, delivering SOTA reconstruction and strong performance in generation and understanding—serving as a unified interface for next-generation native audio language models.",
+      "stars": 249,
+      "language": "Python",
+      "topics": [
+        "audio",
+        "music",
+        "speech",
+        "speech-representation",
+        "tokenizer",
+        "tts",
+        "unified"
+      ]
+    },
+    {
+      "name": "horovod/horovod",
+      "url": "https://github.com/horovod/horovod",
+      "summary": "Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.",
+      "stars": 14689,
+      "language": "Python",
+      "topics": [
+        "baidu",
+        "deep-learning",
+        "deeplearning",
+        "keras",
+        "machine-learning",
+        "machinelearning",
+        "mpi",
+        "mxnet",
+        "pytorch",
+        "ray",
+        "spark",
+        "tensorflow",
+        "uber"
+      ]
+    },
+    {
+      "name": "Jittor/jittor",
+      "url": "https://github.com/Jittor/jittor",
+      "summary": "Jittor is a high-performance deep learning framework based on JIT compiling and meta-operators.",
+      "stars": 3229,
+      "language": "Python",
+      "topics": [
+        "cuda",
+        "deep-learning",
+        "gpu",
+        "jittor",
+        "python"
+      ]
+    }
+  ]
+}

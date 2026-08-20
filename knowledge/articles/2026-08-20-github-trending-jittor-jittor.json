@@ -1,0 +1,29 @@
+{
+  "id": "github-20260820-jittor-jittor",
+  "title": "Jittor/jittor: Jittor是一个基于JIT编译和元操作符的高性能深度学习框架，支持GPU加速，旨在提供灵活高效的模型开发体验。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Jittor/jittor",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "summary": "Jittor是一个基于JIT编译和元操作符的高性能深度学习框架，支持GPU加速，旨在提供灵活高效的模型开发体验。",
+  "analysis": {
+    "tech_highlights": [
+      "JIT编译优化",
+      "元操作符设计",
+      "高性能GPU支持"
+    ],
+    "relevance_score": 7,
+    "reason": "对深度学习研究和开发有直接帮助，提供新的框架选择，但生态和普及度不及主流框架。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "JIT",
+    "GPU",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

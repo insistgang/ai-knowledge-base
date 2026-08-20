@@ -1,0 +1,28 @@
+{
+  "id": "github-20260820-openmoss-moss-audio-tokenizer",
+  "title": "OpenMOSS/MOSS-Audio-Tokenizer: 基于因果Transformer的音频分词器，支持流式与可变比特率，在3M小时音频上训练，实现SOTA重建与生成理解性能，",
+  "source": "github-trending",
+  "source_url": "https://github.com/OpenMOSS/MOSS-Audio-Tokenizer",
+  "collected_at": "2026-08-20T08:34:25Z",
+  "summary": "基于因果Transformer的音频分词器，支持流式与可变比特率，在3M小时音频上训练，实现SOTA重建与生成理解性能，为原生音频语言模型提供统一接口。",
+  "analysis": {
+    "tech_highlights": [
+      "因果Transformer架构支持流式处理",
+      "可变比特率适应不同场景",
+      "统一接口支持生成与理解任务"
+    ],
+    "relevance_score": 8,
+    "reason": "对音频AI开发有直接帮助，提供高效统一的分词方案，但未改变技术格局",
+    "risks": []
+  },
+  "tags": [
+    "audio-tokenizer",
+    "streaming",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
