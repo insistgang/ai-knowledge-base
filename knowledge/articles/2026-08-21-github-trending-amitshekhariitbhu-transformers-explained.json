@@ -1,0 +1,28 @@
+{
+  "id": "github-20260821-amitshekhariitbhu-transformers-explained",
+  "title": "amitshekhariitbhu/transformers-explained: Transformer架构逐步详解，涵盖完整架构、注意力变体、位置编码及每一层，适合学习LLM基础。",
+  "source": "github-trending",
+  "source_url": "https://github.com/amitshekhariitbhu/transformers-explained",
+  "collected_at": "2026-08-21T08:36:46Z",
+  "summary": "Transformer架构逐步详解，涵盖完整架构、注意力变体、位置编码及每一层，适合学习LLM基础。",
+  "analysis": {
+    "tech_highlights": [
+      "逐步解释完整Transformer架构",
+      "覆盖所有注意力变体和位置嵌入",
+      "面向LLM学习者的系统教程"
+    ],
+    "relevance_score": 7,
+    "reason": "对理解现代LLM核心机制有直接帮助，适合开发者和研究者快速掌握Transformer细节，但非创新性内容。",
+    "risks": []
+  },
+  "tags": [
+    "transformer",
+    "llm",
+    "tutorial"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,89 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-21T08:36:46Z",
+  "items": [
+    {
+      "name": "NVIDIA/physicsnemo",
+      "url": "https://github.com/NVIDIA/physicsnemo",
+      "summary": "Open-source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods",
+      "stars": 3181,
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "machine-learning",
+        "nvidia-gpu",
+        "nvidia-warp",
+        "physics",
+        "pytorch"
+      ]
+    },
+    {
+      "name": "myylogic/cevahir-ai",
+      "url": "https://github.com/myylogic/cevahir-ai",
+      "summary": "Full-stack open-source AI engine for building language models — tokenizer training, transformer architecture, cognitive reasoning and chat pipeline.",
+      "stars": 199,
+      "language": "Python",
+      "topics": [
+        "ai-",
+        "ai-engine",
+        "bpe",
+        "cognitive-ai-",
+        "conversational-ai",
+        "deep-learning",
+        "language-model",
+        "llm",
+        "llm-engine-",
+        "llm-training",
+        "machine-learning",
+        "nlp",
+        "open-source",
+        "rag",
+        "tokenizer",
+        "transformer",
+        "turkish-nlp"
+      ]
+    },
+    {
+      "name": "NVIDIA/apex",
+      "url": "https://github.com/NVIDIA/apex",
+      "summary": "A PyTorch Extension:  Tools for easy mixed precision and distributed training in Pytorch",
+      "stars": 8990,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "torch-points3d/torch-points3d",
+      "url": "https://github.com/torch-points3d/torch-points3d",
+      "summary": "Pytorch framework for doing deep learning on point clouds.",
+      "stars": 2710,
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "kpconv",
+        "minkowskiengine",
+        "point-cloud",
+        "pointnet",
+        "pytorch",
+        "s3dis",
+        "scannet",
+        "segmentation"
+      ]
+    },
+    {
+      "name": "amitshekhariitbhu/transformers-explained",
+      "url": "https://github.com/amitshekhariitbhu/transformers-explained",
+      "summary": "Transformer architecture explained step by step - the full architecture, every attention variant, positional embeddings, and every layer inside a Transformer.",
+      "stars": 181,
+      "language": "unknown",
+      "topics": [
+        "architecture",
+        "attention-is-all-you-need",
+        "attention-mechanism",
+        "large-language-models",
+        "llm",
+        "llms",
+        "transformers"
+      ]
+    }
+  ]
+}

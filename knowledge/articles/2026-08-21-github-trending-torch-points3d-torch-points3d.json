@@ -1,0 +1,30 @@
+{
+  "id": "github-20260821-torch-points3d-torch-points3d",
+  "title": "torch-points3d/torch-points3d: 基于PyTorch的点云深度学习框架，集成多种模型与数据集，支持分割、分类等任务，提供模块化组件和高效训练流程。",
+  "source": "github-trending",
+  "source_url": "https://github.com/torch-points3d/torch-points3d",
+  "collected_at": "2026-08-21T08:36:46Z",
+  "summary": "基于PyTorch的点云深度学习框架，集成多种模型与数据集，支持分割、分类等任务，提供模块化组件和高效训练流程。",
+  "analysis": {
+    "tech_highlights": [
+      "模块化设计，支持多种点云模型（PointNet、KPConv等）",
+      "集成常用数据集（S3DIS、ScanNet）和预处理工具",
+      "基于PyTorch，易于扩展和定制"
+    ],
+    "relevance_score": 8,
+    "reason": "对点云深度学习研究和开发有直接帮助，提供现成框架和工具，节省时间，但非颠覆性创新。",
+    "risks": []
+  },
+  "tags": [
+    "point-cloud",
+    "pytorch",
+    "deep-learning",
+    "3d-vision",
+    "segmentation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260821-myylogic-cevahir-ai",
+  "title": "myylogic/cevahir-ai: 开源全栈AI引擎，涵盖分词器训练、Transformer架构、认知推理与聊天流程，支持土耳其语NLP。",
+  "source": "github-trending",
+  "source_url": "https://github.com/myylogic/cevahir-ai",
+  "collected_at": "2026-08-21T08:36:46Z",
+  "summary": "开源全栈AI引擎，涵盖分词器训练、Transformer架构、认知推理与聊天流程，支持土耳其语NLP。",
+  "analysis": {
+    "tech_highlights": [
+      "端到端语言模型构建流程",
+      "集成RAG与认知推理",
+      "支持土耳其语NLP"
+    ],
+    "relevance_score": 7,
+    "reason": "提供完整的LLM构建工具链，对开发和研究有直接帮助，但非颠覆性创新。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "transformer",
+    "nlp"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

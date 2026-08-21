@@ -1,0 +1,28 @@
+{
+  "id": "github-20260821-nvidia-physicsnemo",
+  "title": "NVIDIA/physicsnemo: NVIDIA开源深度学习框架，用于构建、训练和微调物理机器学习模型，集成先进Physics-ML方法，支持GPU加速。",
+  "source": "github-trending",
+  "source_url": "https://github.com/NVIDIA/physicsnemo",
+  "collected_at": "2026-08-21T08:36:46Z",
+  "summary": "NVIDIA开源深度学习框架，用于构建、训练和微调物理机器学习模型，集成先进Physics-ML方法，支持GPU加速。",
+  "analysis": {
+    "tech_highlights": [
+      "集成NVIDIA Warp实现GPU加速物理模拟",
+      "支持物理信息神经网络等先进方法",
+      "基于PyTorch，易于扩展和定制"
+    ],
+    "relevance_score": 8,
+    "reason": "为物理机器学习研究和应用提供直接工具，降低开发门槛，对相关领域开发者有显著帮助。",
+    "risks": []
+  },
+  "tags": [
+    "physics-ml",
+    "deep-learning",
+    "nvidia"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
