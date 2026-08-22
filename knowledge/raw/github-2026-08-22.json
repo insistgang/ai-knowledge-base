@@ -1,0 +1,106 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "items": [
+    {
+      "name": "azavea/raster-vision",
+      "url": "https://github.com/azavea/raster-vision",
+      "summary": "An open source library and framework for deep learning on satellite and aerial imagery.",
+      "stars": 2240,
+      "language": "Python",
+      "topics": [
+        "classification",
+        "computer-vision",
+        "deep-learning",
+        "geospatial",
+        "machine-learning",
+        "object-detection",
+        "pytorch",
+        "remote-sensing",
+        "semantic-segmentation"
+      ]
+    },
+    {
+      "name": "Ali-hey-0/audio-ai-field-guide",
+      "url": "https://github.com/Ali-hey-0/audio-ai-field-guide",
+      "summary": "A mental-model-first field guide to Audio AI — from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
+      "stars": 96,
+      "language": "unknown",
+      "topics": [
+        "asr",
+        "audio-classification",
+        "audio-processing",
+        "deep-learning",
+        "huggingface",
+        "learning-notes",
+        "meachine-learning",
+        "mental-models",
+        "nlp",
+        "persian",
+        "pytorch",
+        "speaker-diarization",
+        "speech-recognition",
+        "speech-to-text",
+        "text-to-speech",
+        "transformers",
+        "tts",
+        "voice-assistant",
+        "wav2vec2",
+        "whisper"
+      ]
+    },
+    {
+      "name": "kubeflow/trainer",
+      "url": "https://github.com/kubeflow/trainer",
+      "summary": "Distributed AI Model Training and LLM Fine-Tuning on Kubernetes",
+      "stars": 2193,
+      "language": "Go",
+      "topics": [
+        "ai",
+        "distributed",
+        "fine-tuning",
+        "gpu",
+        "huggingface",
+        "jax",
+        "kubeflow",
+        "kubernetes",
+        "llm",
+        "machine-learning",
+        "mlops",
+        "python",
+        "pytorch",
+        "tensorflow",
+        "xgboost"
+      ]
+    },
+    {
+      "name": "fangwei123456/spikingjelly",
+      "url": "https://github.com/fangwei123456/spikingjelly",
+      "summary": "SpikingJelly is an open-source deep learning framework for Spiking Neural Network (SNN) based on PyTorch.",
+      "stars": 2106,
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "dvs",
+        "machine-learning",
+        "pytorch",
+        "snn",
+        "spiking-neural-networks"
+      ]
+    },
+    {
+      "name": "stanford-star/relational-transformer",
+      "url": "https://github.com/stanford-star/relational-transformer",
+      "summary": "The Relational Transformer architecture for Relational Foundation Models",
+      "stars": 90,
+      "language": "Python",
+      "topics": [
+        "relational-data",
+        "relational-deep-learning",
+        "relational-foundation-models",
+        "tabular-data",
+        "tabular-foundation-models"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260822-azavea-raster-vision",
+  "title": "azavea/raster-vision: 开源深度学习框架，专为卫星与航空影像分析设计，支持分类、目标检测和语义分割等任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/azavea/raster-vision",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "summary": "开源深度学习框架，专为卫星与航空影像分析设计，支持分类、目标检测和语义分割等任务。",
+  "analysis": {
+    "tech_highlights": [
+      "集成PyTorch，提供端到端的影像处理流程",
+      "支持多种地理空间数据格式和标注工具",
+      "内置预训练模型和评估指标，便于快速实验"
+    ],
+    "relevance_score": 8,
+    "reason": "对遥感与计算机视觉交叉领域的开发和研究有直接帮助，提供完整工具链，但适用范围相对特定。",
+    "risks": []
+  },
+  "tags": [
+    "remote-sensing",
+    "deep-learning",
+    "geospatial"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

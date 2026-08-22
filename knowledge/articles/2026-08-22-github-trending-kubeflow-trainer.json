@@ -1,0 +1,28 @@
+{
+  "id": "github-20260822-kubeflow-trainer",
+  "title": "kubeflow/trainer: Kubeflow Trainer 是 Kubernetes 上的分布式 AI 模型训练和 LLM 微调工具，支持多种框架",
+  "source": "github-trending",
+  "source_url": "https://github.com/kubeflow/trainer",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "summary": "Kubeflow Trainer 是 Kubernetes 上的分布式 AI 模型训练和 LLM 微调工具，支持多种框架，简化 MLOps 流程。",
+  "analysis": {
+    "tech_highlights": [
+      "统一训练 API，支持 PyTorch、TensorFlow、JAX 等",
+      "原生集成 HuggingFace 和 LLM 微调",
+      "基于 Kubernetes 的弹性资源调度和 GPU 管理"
+    ],
+    "relevance_score": 8,
+    "reason": "对需要大规模模型训练和微调的开发/研究团队有直接帮助，是 Kubeflow 生态核心组件，但非全新突破。",
+    "risks": []
+  },
+  "tags": [
+    "kubeflow",
+    "distributed-training",
+    "llm-finetuning"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

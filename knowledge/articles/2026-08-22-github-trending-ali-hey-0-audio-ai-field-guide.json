@@ -1,0 +1,30 @@
+{
+  "id": "github-20260822-ali-hey-0-audio-ai-field-guide",
+  "title": "Ali-hey-0/audio-ai-field-guide: 音频AI领域指南，从波形到生产级语音系统，覆盖ASR、TTS、Transformer架构及微调，双语（英/波斯语），注重",
+  "source": "github-trending",
+  "source_url": "https://github.com/Ali-hey-0/audio-ai-field-guide",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "summary": "音频AI领域指南，从波形到生产级语音系统，覆盖ASR、TTS、Transformer架构及微调，双语（英/波斯语），注重心智模型。",
+  "analysis": {
+    "tech_highlights": [
+      "心智模型优先的教学方法，帮助理解复杂音频AI概念",
+      "覆盖从基础波形到生产级语音系统的完整流程",
+      "双语内容（英语/波斯语），扩大受众范围"
+    ],
+    "relevance_score": 6,
+    "reason": "作为学习指南，对开发者有直接参考价值，但非创新性技术，短期价值中等。",
+    "risks": []
+  },
+  "tags": [
+    "audio-ai",
+    "asr",
+    "tts",
+    "learning-guide",
+    "transformers"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

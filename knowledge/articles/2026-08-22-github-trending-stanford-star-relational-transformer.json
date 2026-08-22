@@ -1,0 +1,28 @@
+{
+  "id": "github-20260822-stanford-star-relational-transformer",
+  "title": "stanford-star/relational-transformer: 斯坦福提出的关系型Transformer架构，用于关系型基础模型，处理表格与关系数据，提升深度学习对结构化数据的建模能力",
+  "source": "github-trending",
+  "source_url": "https://github.com/stanford-star/relational-transformer",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "summary": "斯坦福提出的关系型Transformer架构，用于关系型基础模型，处理表格与关系数据，提升深度学习对结构化数据的建模能力。",
+  "analysis": {
+    "tech_highlights": [
+      "关系型基础模型新架构",
+      "针对表格与关系数据优化",
+      "斯坦福团队出品"
+    ],
+    "relevance_score": 8,
+    "reason": "对处理结构化数据的开发者和研究者有直接帮助，架构创新有潜力，但尚需验证。",
+    "risks": []
+  },
+  "tags": [
+    "relational-deep-learning",
+    "tabular-data",
+    "transformer"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

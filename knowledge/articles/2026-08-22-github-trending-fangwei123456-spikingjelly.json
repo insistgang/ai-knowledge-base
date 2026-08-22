@@ -1,0 +1,28 @@
+{
+  "id": "github-20260822-fangwei123456-spikingjelly",
+  "title": "fangwei123456/spikingjelly: SpikingJelly 是一个基于 PyTorch 的开源脉冲神经网络（SNN）深度学习框架，提供丰富的工具和模型，支",
+  "source": "github-trending",
+  "source_url": "https://github.com/fangwei123456/spikingjelly",
+  "collected_at": "2026-08-22T08:25:12Z",
+  "summary": "SpikingJelly 是一个基于 PyTorch 的开源脉冲神经网络（SNN）深度学习框架，提供丰富的工具和模型，支持事件驱动数据（DVS），促进 SNN 研究与开发。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 PyTorch，无缝集成现有深度学习生态",
+      "提供多种 SNN 神经元模型和训练方法（如代理梯度）",
+      "支持 DVS 事件数据，便于处理神经形态视觉任务"
+    ],
+    "relevance_score": 8,
+    "reason": "对 SNN 研究和开发有直接帮助，提供易用框架和工具，但受众相对小众，未改变整体技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "spiking-neural-networks",
+    "pytorch",
+    "neuromorphic"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}
