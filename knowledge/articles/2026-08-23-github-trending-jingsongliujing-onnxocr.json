@@ -1,0 +1,30 @@
+{
+  "id": "github-20260823-jingsongliujing-onnxocr",
+  "title": "jingsongliujing/OnnxOCR: 基于PaddleOCR重构的轻量级OCR，脱离PaddlePaddle框架，使用ONNX Runtime推理，速度超快，",
+  "source": "github-trending",
+  "source_url": "https://github.com/jingsongliujing/OnnxOCR",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "summary": "基于PaddleOCR重构的轻量级OCR，脱离PaddlePaddle框架，使用ONNX Runtime推理，速度超快，支持文档版面分析、表格识别、车牌识别等。",
+  "analysis": {
+    "tech_highlights": [
+      "脱离PaddlePaddle训练框架，仅用ONNX Runtime推理，部署轻量",
+      "支持通用OCR、表格识别、文档版面分析、车牌识别等多种任务",
+      "推理速度超快，适合生产环境部署"
+    ],
+    "relevance_score": 8,
+    "reason": "对OCR开发者和部署工程师有直接帮助，提供轻量级高性能替代方案，且功能全面，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "OCR",
+    "ONNX",
+    "轻量级",
+    "推理加速",
+    "文档分析"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

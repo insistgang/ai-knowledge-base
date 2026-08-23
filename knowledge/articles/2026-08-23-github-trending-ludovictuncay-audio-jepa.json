@@ -1,0 +1,29 @@
+{
+  "id": "github-20260823-ludovictuncay-audio-jepa",
+  "title": "LudovicTuncay/Audio-JEPA: Audio-JEPA 将 JEPA 自监督学习架构应用于音频表征，基于 I-JEPA 范式，用 ViT 预测掩码频谱图块",
+  "source": "github-trending",
+  "source_url": "https://github.com/LudovicTuncay/Audio-JEPA",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "summary": "Audio-JEPA 将 JEPA 自监督学习架构应用于音频表征，基于 I-JEPA 范式，用 ViT 预测掩码频谱图块的潜在表示。",
+  "analysis": {
+    "tech_highlights": [
+      "将 JEPA 架构从视觉扩展到音频领域",
+      "采用 ViT 骨干网络处理频谱图",
+      "自监督学习，无需标注数据"
+    ],
+    "relevance_score": 7,
+    "reason": "对音频表征学习研究和开发有直接参考价值，但项目较新，生态和文档可能不完善。",
+    "risks": []
+  },
+  "tags": [
+    "audio",
+    "self-supervised-learning",
+    "JEPA",
+    "ViT"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

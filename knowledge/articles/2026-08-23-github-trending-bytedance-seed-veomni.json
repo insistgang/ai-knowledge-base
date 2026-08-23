@@ -1,0 +1,28 @@
+{
+  "id": "github-20260823-bytedance-seed-veomni",
+  "title": "ByteDance-Seed/VeOmni: 字节跳动开源的VeOmni，提供面向任意模态模型训练的分布式配方库，以模型为中心扩展训练规模。",
+  "source": "github-trending",
+  "source_url": "https://github.com/ByteDance-Seed/VeOmni",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "summary": "字节跳动开源的VeOmni，提供面向任意模态模型训练的分布式配方库，以模型为中心扩展训练规模。",
+  "analysis": {
+    "tech_highlights": [
+      "模型中心化设计，支持任意模态",
+      "分布式训练配方库，降低扩展门槛",
+      "来自字节跳动，实战验证"
+    ],
+    "relevance_score": 8,
+    "reason": "对多模态模型训练和分布式系统开发者有直接帮助，提供可复用的训练方案，但尚未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "multi-modal",
+    "distributed-training",
+    "model-training"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

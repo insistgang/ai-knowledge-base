@@ -1,0 +1,80 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "items": [
+    {
+      "name": "jingsongliujing/OnnxOCR",
+      "url": "https://github.com/jingsongliujing/OnnxOCR",
+      "summary": "基于PaddleOCR重构，并且脱离PaddlePaddle深度学习训练框架的轻量级OCR，推理速度超快   ——  A lightweight OCR system based on PaddleOCR, decoupled from the PaddlePaddle deep learning training framework, with ultra-fast inference speed.",
+      "stars": 1857,
+      "language": "Python",
+      "topics": [
+        "document-layout-analysis",
+        "general-ocr",
+        "license-plate-recognition",
+        "ocr",
+        "onnx-models",
+        "onnxocr",
+        "onnxruntime",
+        "structured-ocr",
+        "tablerecognition"
+      ]
+    },
+    {
+      "name": "wyg5208/nct",
+      "url": "https://github.com/wyg5208/nct",
+      "summary": "🧠 NeuroConscious Transformer (NCT) - A next-generation neuromorphic consciousness architecture integrating Transformer with Global Workspace Theory, Predictive Coding, and IIT. | 下一代神经形态意识架构，融合Transformer与全局工作空间、预测编码、整合信息理论。",
+      "stars": 90,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "ByteDance-Seed/VeOmni",
+      "url": "https://github.com/ByteDance-Seed/VeOmni",
+      "summary": "VeOmni: Scaling Any Modality Model Training with Model-Centric Distributed Recipe Zoo",
+      "stars": 2167,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "yoshitomo-matsubara/torchdistill",
+      "url": "https://github.com/yoshitomo-matsubara/torchdistill",
+      "summary": "A coding-free framework built on PyTorch for reproducible deep learning studies. PyTorch Ecosystem. 🏆26 knowledge distillation methods presented at TPAMI, CVPR, ICLR, ECCV, NeurIPS, ICCV, AAAI, etc are implemented so far. 🎁 Trained models, training logs and configurations are available for ensuring the reproducibiliy and benchmark.",
+      "stars": 1629,
+      "language": "Python",
+      "topics": [
+        "amazon-sagemaker-lab",
+        "cifar10",
+        "cifar100",
+        "coco",
+        "colab-notebook",
+        "glue",
+        "google-colab",
+        "image-classification",
+        "imagenet",
+        "knowledge-distillation",
+        "natural-language-processing",
+        "nlp",
+        "object-detection",
+        "pascal-voc",
+        "pytorch",
+        "pytorch-ecosystem",
+        "semantic-segmentation",
+        "text-classification",
+        "transformer"
+      ]
+    },
+    {
+      "name": "LudovicTuncay/Audio-JEPA",
+      "url": "https://github.com/LudovicTuncay/Audio-JEPA",
+      "summary": "Audio-JEPA is an adaptation of the Joint-Embedding Predictive Architecture (JEPA) for self-supervised audio representation learning. Built upon the I-JEPA paradigm, it uses a Vision Transformer (ViT) backbone to predict latent representations of masked spectrogram patches. ",
+      "stars": 66,
+      "language": "Python",
+      "topics": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260823-yoshitomo-matsubara-torchdistill",
+  "title": "yoshitomo-matsubara/torchdistill: 基于PyTorch的无代码深度学习框架，实现26种知识蒸馏方法，支持图像分类、目标检测、NLP等任务，提供预训练模型和配",
+  "source": "github-trending",
+  "source_url": "https://github.com/yoshitomo-matsubara/torchdistill",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "summary": "基于PyTorch的无代码深度学习框架，实现26种知识蒸馏方法，支持图像分类、目标检测、NLP等任务，提供预训练模型和配置确保可复现性。",
+  "analysis": {
+    "tech_highlights": [
+      "实现26种知识蒸馏方法，覆盖TPAMI、CVPR等顶会论文",
+      "无代码配置驱动，支持多种任务和数据集",
+      "提供预训练模型和训练日志，确保可复现性"
+    ],
+    "relevance_score": 8,
+    "reason": "对知识蒸馏研究和应用有直接帮助，提供丰富方法和可复现基准，适合快速实验和对比。",
+    "risks": []
+  },
+  "tags": [
+    "knowledge-distillation",
+    "pytorch",
+    "reproducibility"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

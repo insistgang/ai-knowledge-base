@@ -1,0 +1,27 @@
+{
+  "id": "github-20260823-wyg5208-nct",
+  "title": "wyg5208/nct: NCT项目提出神经形态意识架构，融合Transformer与全局工作空间、预测编码和整合信息理论，探索下一代AI认知模型",
+  "source": "github-trending",
+  "source_url": "https://github.com/wyg5208/nct",
+  "collected_at": "2026-08-23T08:25:30Z",
+  "summary": "NCT项目提出神经形态意识架构，融合Transformer与全局工作空间、预测编码和整合信息理论，探索下一代AI认知模型。",
+  "analysis": {
+    "tech_highlights": [
+      "跨学科融合：将神经科学理论（GWT、预测编码、IIT）与Transformer架构结合",
+      "创新架构设计：面向意识模拟的神经形态计算框架"
+    ],
+    "relevance_score": 7,
+    "reason": "对AI研究和神经科学交叉领域有直接启发，但尚处早期探索阶段，短期实用价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "neuroscience",
+    "transformer",
+    "consciousness"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}
