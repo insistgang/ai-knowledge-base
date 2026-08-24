@@ -1,0 +1,28 @@
+{
+  "id": "github-20260824-kengz-slm-lab",
+  "title": "kengz/SLM-Lab: SLM-Lab 是一个模块化深度强化学习框架，基于 PyTorch，是《深度强化学习基础》一书的配套库，支持多种算法和基",
+  "source": "github-trending",
+  "source_url": "https://github.com/kengz/SLM-Lab",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "summary": "SLM-Lab 是一个模块化深度强化学习框架，基于 PyTorch，是《深度强化学习基础》一书的配套库，支持多种算法和基准测试。",
+  "analysis": {
+    "tech_highlights": [
+      "模块化设计，便于扩展和实验",
+      "集成多种经典RL算法（A2C、PPO、SAC等）",
+      "提供基准测试环境，适合教学和研究"
+    ],
+    "relevance_score": 7,
+    "reason": "对深度强化学习研究和开发有直接帮助，尤其适合教学和快速原型验证，但非颠覆性创新。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "pytorch",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260824-flexflow-flexflow-train",
+  "title": "flexflow/flexflow-train: FlexFlow 自动发现分布式深度神经网络训练的高效并行化策略，支持数据、模型和流水线并行，优化大规模训练性能。",
+  "source": "github-trending",
+  "source_url": "https://github.com/flexflow/flexflow-train",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "summary": "FlexFlow 自动发现分布式深度神经网络训练的高效并行化策略，支持数据、模型和流水线并行，优化大规模训练性能。",
+  "analysis": {
+    "tech_highlights": [
+      "自动搜索并行化策略，无需人工设计",
+      "支持多种并行模式，适应不同模型和硬件",
+      "基于性能预测和搜索算法，提升训练效率"
+    ],
+    "relevance_score": 8,
+    "reason": "对分布式训练和深度学习研究者有直接帮助，能显著简化并行化配置并提升性能，但主要面向特定场景，非通用开发工具。",
+    "risks": []
+  },
+  "tags": [
+    "distributed-training",
+    "deep-learning",
+    "parallelization"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

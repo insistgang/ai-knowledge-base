@@ -1,0 +1,29 @@
+{
+  "id": "github-20260824-nvidia-earth2studio",
+  "title": "NVIDIA/earth2studio: NVIDIA开源深度学习框架，用于构建和部署AI天气与气候工作流，支持探索与部署。",
+  "source": "github-trending",
+  "source_url": "https://github.com/NVIDIA/earth2studio",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "summary": "NVIDIA开源深度学习框架，用于构建和部署AI天气与气候工作流，支持探索与部署。",
+  "analysis": {
+    "tech_highlights": [
+      "专为天气气候设计",
+      "支持端到端工作流",
+      "基于深度学习"
+    ],
+    "relevance_score": 8,
+    "reason": "对气候AI研究和应用有直接帮助，框架成熟，但非通用技术。",
+    "risks": []
+  },
+  "tags": [
+    "weather",
+    "climate",
+    "deep-learning",
+    "NVIDIA"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

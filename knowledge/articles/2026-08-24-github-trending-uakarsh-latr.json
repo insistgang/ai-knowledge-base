@@ -1,0 +1,27 @@
+{
+  "id": "github-20260824-uakarsh-latr",
+  "title": "uakarsh/latr: LaTr 是场景文本视觉问答（STVQA）的多模态架构实现，结合布局感知与预训练模型，提升文本理解能力。",
+  "source": "github-trending",
+  "source_url": "https://github.com/uakarsh/latr",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "summary": "LaTr 是场景文本视觉问答（STVQA）的多模态架构实现，结合布局感知与预训练模型，提升文本理解能力。",
+  "analysis": {
+    "tech_highlights": [
+      "布局感知的 Transformer 架构，融合文本、视觉和布局信息",
+      "基于预训练模型（如 T5）进行场景文本理解，减少对 OCR 的依赖"
+    ],
+    "relevance_score": 7,
+    "reason": "对多模态和文档理解领域的研究者有直接参考价值，但应用范围较窄，短期实用价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "STVQA",
+    "multimodal",
+    "layout-aware"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

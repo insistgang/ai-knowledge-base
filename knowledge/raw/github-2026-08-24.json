@@ -1,0 +1,77 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "items": [
+    {
+      "name": "kengz/SLM-Lab",
+      "url": "https://github.com/kengz/SLM-Lab",
+      "summary": "Modular Deep Reinforcement Learning framework in PyTorch. Companion library of the book \"Foundations of Deep Reinforcement Learning\".",
+      "stars": 1362,
+      "language": "Python",
+      "topics": [
+        "a2c",
+        "a3c",
+        "benchmark",
+        "deep-reinforcement-learning",
+        "dqn",
+        "policy-gradient",
+        "ppo",
+        "pytorch",
+        "reinforcement-learning",
+        "sac"
+      ]
+    },
+    {
+      "name": "Sudharsanselvaraj/Token-Print",
+      "url": "https://github.com/Sudharsanselvaraj/Token-Print",
+      "summary": "Interactive 3D visualization platform for exploring transformer architectures, tensors, and real-time LLM inference.",
+      "stars": 62,
+      "language": "TypeScript",
+      "topics": [
+        "3d",
+        "gguf-model-support",
+        "huggingface",
+        "large-language-models",
+        "llm",
+        "open-source",
+        "threejs",
+        "transformer-visualization",
+        "transformers",
+        "visualization",
+        "webgl"
+      ]
+    },
+    {
+      "name": "flexflow/flexflow-train",
+      "url": "https://github.com/flexflow/flexflow-train",
+      "summary": "Automatically Discovering Fast Parallelization Strategies for Distributed Deep Neural Network Training",
+      "stars": 1898,
+      "language": "C++",
+      "topics": []
+    },
+    {
+      "name": "NVIDIA/earth2studio",
+      "url": "https://github.com/NVIDIA/earth2studio",
+      "summary": "Open-source deep-learning framework for exploring, building and deploying AI weather/climate workflows.",
+      "stars": 1093,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "climate-science",
+        "deep-learning",
+        "weather"
+      ]
+    },
+    {
+      "name": "uakarsh/latr",
+      "url": "https://github.com/uakarsh/latr",
+      "summary": "Implementation of LaTr: Layout-aware transformer for scene-text VQA,a novel multimodal architecture for Scene Text Visual Question Answering (STVQA)",
+      "stars": 56,
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "pytorch"
+      ]
+    }
+  ]
+}

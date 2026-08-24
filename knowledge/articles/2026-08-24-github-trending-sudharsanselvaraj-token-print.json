@@ -1,0 +1,30 @@
+{
+  "id": "github-20260824-sudharsanselvaraj-token-print",
+  "title": "Sudharsanselvaraj/Token-Print: 交互式3D可视化平台，用于探索Transformer架构、张量及实时LLM推理过程，支持GGUF模型和HuggingFa",
+  "source": "github-trending",
+  "source_url": "https://github.com/Sudharsanselvaraj/Token-Print",
+  "collected_at": "2026-08-24T08:44:00Z",
+  "summary": "交互式3D可视化平台，用于探索Transformer架构、张量及实时LLM推理过程，支持GGUF模型和HuggingFace集成。",
+  "analysis": {
+    "tech_highlights": [
+      "基于Three.js/WebGL实现3D可视化",
+      "支持GGUF模型和HuggingFace集成",
+      "实时展示LLM推理过程"
+    ],
+    "relevance_score": 8,
+    "reason": "对理解Transformer内部机制和LLM推理有直接帮助，适合教育、研究和调试场景，技术实现有参考价值。",
+    "risks": []
+  },
+  "tags": [
+    "transformer",
+    "visualization",
+    "llm",
+    "threejs",
+    "webgl"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
