@@ -1,0 +1,28 @@
+{
+  "id": "github-20260825-chili-lab-lt2",
+  "title": "chili-lab/LT2: LT2 是线性时间循环 Transformer 的官方代码库，提出高效架构，降低计算复杂度，适用于长序列建模。",
+  "source": "github-trending",
+  "source_url": "https://github.com/chili-lab/LT2",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "summary": "LT2 是线性时间循环 Transformer 的官方代码库，提出高效架构，降低计算复杂度，适用于长序列建模。",
+  "analysis": {
+    "tech_highlights": [
+      "线性时间复杂度的循环机制",
+      "官方实现，便于复现",
+      "针对长序列优化"
+    ],
+    "relevance_score": 8,
+    "reason": "对长序列建模有直接帮助，架构创新可能影响后续研究，代码库实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "transformer",
+    "efficient-architecture",
+    "long-sequence"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

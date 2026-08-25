@@ -1,0 +1,28 @@
+{
+  "id": "github-20260825-cfregly-ai-performance-engineering",
+  "title": "cfregly/ai-performance-engineering: O'Reilly AI系统性能工程配套代码与实验，涵盖GPU优化、分布式训练、推理扩展及全栈调优。",
+  "source": "github-trending",
+  "source_url": "https://github.com/cfregly/ai-performance-engineering",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "summary": "O'Reilly AI系统性能工程配套代码与实验，涵盖GPU优化、分布式训练、推理扩展及全栈调优。",
+  "analysis": {
+    "tech_highlights": [
+      "提供GPU优化和分布式训练的实战代码",
+      "覆盖推理扩展与全栈性能调优",
+      "配套O'Reilly书籍，系统性强"
+    ],
+    "relevance_score": 8,
+    "reason": "对AI工程师和研究者有直接帮助，提供可操作的性能优化实践，紧跟当前AI基础设施热点。",
+    "risks": []
+  },
+  "tags": [
+    "performance-engineering",
+    "gpu-optimization",
+    "distributed-training"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

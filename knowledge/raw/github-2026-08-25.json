@@ -1,0 +1,55 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "items": [
+    {
+      "name": "gnina/gnina",
+      "url": "https://github.com/gnina/gnina",
+      "summary": "A deep learning framework for molecular docking",
+      "stars": 964,
+      "language": "C++",
+      "topics": [
+        "cheminformatics",
+        "computational-chemistry",
+        "convolutional-neural-networks",
+        "drug-discovery",
+        "molecular-modeling"
+      ]
+    },
+    {
+      "name": "jaimeirazabal1/rag-architectures",
+      "url": "https://github.com/jaimeirazabal1/rag-architectures",
+      "summary": "Sistema RAG con 6 arquitecturas implementadas como microservicios independientes en FastAPI + Docker: Naïve RAG, Advanced RAG, Modular RAG, GraphRAG, Agentic RAG y Hybrid RAG. Cada una incluye embeddings locales con sentence-transformers y se conecta a cualquier LLM vía API compatible OpenAI. Ideal para aprender, comparar y prototipar patrones RAG.",
+      "stars": 53,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "cfregly/ai-performance-engineering",
+      "url": "https://github.com/cfregly/ai-performance-engineering",
+      "summary": "Code, labs, and resources for O'Reilly AI Systems Performance Engineering: GPU optimization, distributed training, inference scaling, and full-stack tuning.",
+      "stars": 1855,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "Esri/deep-learning-frameworks",
+      "url": "https://github.com/Esri/deep-learning-frameworks",
+      "summary": "Installation support for Deep Learning Frameworks for the ArcGIS System",
+      "stars": 644,
+      "language": "unknown",
+      "topics": []
+    },
+    {
+      "name": "chili-lab/LT2",
+      "url": "https://github.com/chili-lab/LT2",
+      "summary": "Official Codebase: LT2: Linear-Time Looped Transformers.",
+      "stars": 52,
+      "language": "Python",
+      "topics": [
+        "architecture",
+        "language-model"
+      ]
+    }
+  ]
+}

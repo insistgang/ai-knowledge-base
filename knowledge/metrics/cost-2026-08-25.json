@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T08:38:06Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00030727,
+    "remaining_usd": 0.09969273,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1288,
+      "completion_tokens": 767,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 648,
+      "total_tokens": 2055,
+      "estimated_cost_usd": 0.00030727,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1288,
+    "completion_tokens": 767,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 648,
+    "total_tokens": 2055,
+    "estimated_cost_usd": 0.00030727
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "gnina/gnina",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 252,
+      "completion_tokens": 146,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 124,
+      "total_tokens": 398,
+      "estimated_cost_usd": 5.86e-05
+    },
+    {
+      "source": "github",
+      "item_name": "jaimeirazabal1/rag-architectures",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 317,
+      "completion_tokens": 202,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 189,
+      "total_tokens": 519,
+      "estimated_cost_usd": 8.338e-05
+    },
+    {
+      "source": "github",
+      "item_name": "cfregly/ai-performance-engineering",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 250,
+      "completion_tokens": 152,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 122,
+      "total_tokens": 402,
+      "estimated_cost_usd": 6e-05
+    },
+    {
+      "source": "github",
+      "item_name": "Esri/deep-learning-frameworks",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 234,
+      "completion_tokens": 135,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 106,
+      "total_tokens": 369,
+      "estimated_cost_usd": 5.3e-05
+    },
+    {
+      "source": "github",
+      "item_name": "chili-lab/LT2",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 235,
+      "completion_tokens": 132,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 107,
+      "total_tokens": 367,
+      "estimated_cost_usd": 5.23e-05
+    }
+  ]
+}

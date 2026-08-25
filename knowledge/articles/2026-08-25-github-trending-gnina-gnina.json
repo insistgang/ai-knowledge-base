@@ -1,0 +1,29 @@
+{
+  "id": "github-20260825-gnina-gnina",
+  "title": "gnina/gnina: gnina 是一个基于深度学习的分子对接框架，利用卷积神经网络加速和优化药物发现中的分子对接过程。",
+  "source": "github-trending",
+  "source_url": "https://github.com/gnina/gnina",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "summary": "gnina 是一个基于深度学习的分子对接框架，利用卷积神经网络加速和优化药物发现中的分子对接过程。",
+  "analysis": {
+    "tech_highlights": [
+      "将 CNN 应用于分子对接评分",
+      "支持 GPU 加速，提升对接效率",
+      "集成多种对接和评分功能"
+    ],
+    "relevance_score": 8,
+    "reason": "对计算化学和药物发现领域有直接帮助，提供深度学习驱动的对接工具，但主要面向特定领域，非通用技术。",
+    "risks": []
+  },
+  "tags": [
+    "molecular-docking",
+    "deep-learning",
+    "drug-discovery",
+    "cheminformatics"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

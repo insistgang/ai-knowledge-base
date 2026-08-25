@@ -1,0 +1,27 @@
+{
+  "id": "github-20260825-esri-deep-learning-frameworks",
+  "title": "Esri/deep-learning-frameworks: Esri 提供的深度学习框架安装支持，用于 ArcGIS 系统，帮助用户在 GIS 环境中配置深度学习工具。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Esri/deep-learning-frameworks",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "summary": "Esri 提供的深度学习框架安装支持，用于 ArcGIS 系统，帮助用户在 GIS 环境中配置深度学习工具。",
+  "analysis": {
+    "tech_highlights": [
+      "针对 ArcGIS 系统的深度学习框架安装指南",
+      "集成 GIS 与深度学习工作流"
+    ],
+    "relevance_score": 5,
+    "reason": "对使用 ArcGIS 进行地理空间深度学习的研究者或开发者有直接帮助，但适用范围较窄，非通用技术。",
+    "risks": []
+  },
+  "tags": [
+    "GIS",
+    "deep-learning",
+    "ArcGIS"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

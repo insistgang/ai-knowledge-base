@@ -1,0 +1,31 @@
+{
+  "id": "github-20260825-jaimeirazabal1-rag-architectures",
+  "title": "jaimeirazabal1/rag-architectures: 提供6种RAG架构的独立FastAPI微服务实现，支持本地嵌入和任意OpenAI兼容LLM，便于学习、比较和原型开发。",
+  "source": "github-trending",
+  "source_url": "https://github.com/jaimeirazabal1/rag-architectures",
+  "collected_at": "2026-08-25T08:38:06Z",
+  "summary": "提供6种RAG架构的独立FastAPI微服务实现，支持本地嵌入和任意OpenAI兼容LLM，便于学习、比较和原型开发。",
+  "analysis": {
+    "tech_highlights": [
+      "涵盖Naïve、Advanced、Modular、Graph、Agentic和Hybrid六种RAG架构",
+      "每个架构作为独立微服务，使用FastAPI和Docker部署",
+      "使用sentence-transformers本地嵌入，支持任意OpenAI兼容API",
+      "适合教学和快速原型验证"
+    ],
+    "relevance_score": 8,
+    "reason": "对RAG开发者和研究者有直接参考价值，提供多种架构的完整实现，便于对比和选择，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "RAG",
+    "FastAPI",
+    "microservices",
+    "LLM",
+    "embeddings"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
