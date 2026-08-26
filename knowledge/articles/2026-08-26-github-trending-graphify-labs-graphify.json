@@ -1,0 +1,31 @@
+{
+  "id": "github-20260826-graphify-labs-graphify",
+  "title": "Graphify-Labs/graphify: 将代码库、文档、SQL 模式等转换为可查询知识图谱的工具，支持多种 AI 编程助手，使用确定性 AST 解析，无需向量存",
+  "source": "github-trending",
+  "source_url": "https://github.com/Graphify-Labs/graphify",
+  "collected_at": "2026-08-26T08:39:04Z",
+  "summary": "将代码库、文档、SQL 模式等转换为可查询知识图谱的工具，支持多种 AI 编程助手，使用确定性 AST 解析，无需向量存储。",
+  "analysis": {
+    "tech_highlights": [
+      "本地确定性 AST 解析，无需向量数据库",
+      "支持 Claude Code、Cursor、Codex、Gemini CLI 等多种 AI 工具",
+      "每个边都有解释，增强可解释性",
+      "集成 GraphRAG 和 Leiden 算法"
+    ],
+    "relevance_score": 8,
+    "reason": "直接提升 AI 编程助手的代码理解能力，对开发者有实际帮助，且技术方案新颖（无向量存储），具有较高参考价值。",
+    "risks": []
+  },
+  "tags": [
+    "knowledge-graph",
+    "code-analysis",
+    "ai-agents",
+    "graphrag",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

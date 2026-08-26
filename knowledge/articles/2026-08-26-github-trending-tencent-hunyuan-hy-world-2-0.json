@@ -1,0 +1,28 @@
+{
+  "id": "github-20260826-tencent-hunyuan-hy-world-2-0",
+  "title": "Tencent-Hunyuan/HY-World-2.0: 腾讯混元发布的HY-World 2.0多模态世界模型，用于重建、生成和模拟3D世界，支持从视频生成可交互3D场景。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+  "collected_at": "2026-08-26T08:39:04Z",
+  "summary": "腾讯混元发布的HY-World 2.0多模态世界模型，用于重建、生成和模拟3D世界，支持从视频生成可交互3D场景。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态世界模型，融合视频与3D重建",
+      "支持3D世界生成与模拟，面向具身智能",
+      "基于腾讯混元大模型技术栈"
+    ],
+    "relevance_score": 8,
+    "reason": "该模型直接推动3D内容生成与仿真，对AI研究者和开发者有显著实用价值，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "world-model",
+    "3d-generation",
+    "multimodal"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

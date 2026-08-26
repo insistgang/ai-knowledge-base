@@ -1,0 +1,28 @@
+{
+  "id": "github-20260826-iliashad-edit-mind",
+  "title": "IliasHad/edit-mind: 本地优先的视频知识库，通过多模态分析（YOLO、DeepFace、Whisper）索引视频库，支持自然语言语义搜索，Do",
+  "source": "github-trending",
+  "source_url": "https://github.com/IliasHad/edit-mind",
+  "collected_at": "2026-08-26T08:39:04Z",
+  "summary": "本地优先的视频知识库，通过多模态分析（YOLO、DeepFace、Whisper）索引视频库，支持自然语言语义搜索，Docker 部署。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态视频分析集成",
+      "自然语言语义搜索",
+      "本地优先与 Docker 就绪"
+    ],
+    "relevance_score": 7,
+    "reason": "对视频处理与检索开发有直接帮助，集成多种模型，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "video-indexing",
+    "multimodal",
+    "semantic-search"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

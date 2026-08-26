@@ -1,0 +1,28 @@
+{
+  "id": "github-20260826-promptfoo-promptfoo",
+  "title": "promptfoo/promptfoo: promptfoo 是一个用于测试和评估 LLM 提示、代理和 RAG 系统的开源工具，支持红队安全测试和漏洞扫描，可比",
+  "source": "github-trending",
+  "source_url": "https://github.com/promptfoo/promptfoo",
+  "collected_at": "2026-08-26T08:39:04Z",
+  "summary": "promptfoo 是一个用于测试和评估 LLM 提示、代理和 RAG 系统的开源工具，支持红队安全测试和漏洞扫描，可比较多个模型性能，集成 CLI 和 CI/CD。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多模型对比（GPT、Claude、Gemini、DeepSeek 等）",
+      "提供红队/渗透测试和漏洞扫描功能",
+      "声明式配置，易于集成到 CI/CD 流程"
+    ],
+    "relevance_score": 9,
+    "reason": "该项目为 LLM 应用开发提供关键测试和评估能力，被 OpenAI 和 Anthropic 使用，直接提升开发效率和安全性，对 AI 工程实践有重大影响。",
+    "risks": []
+  },
+  "tags": [
+    "LLM测试",
+    "红队安全",
+    "CI/CD"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

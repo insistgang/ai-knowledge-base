@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T08:39:04Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00037167,
+    "remaining_usd": 0.09962833,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1568,
+      "completion_tokens": 857,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 928,
+      "total_tokens": 2425,
+      "estimated_cost_usd": 0.00037167,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1568,
+    "completion_tokens": 857,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 928,
+    "total_tokens": 2425,
+    "estimated_cost_usd": 0.00037167
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "Tencent-Hunyuan/HY-World-2.0",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 266,
+      "completion_tokens": 164,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 138,
+      "total_tokens": 430,
+      "estimated_cost_usd": 6.56e-05
+    },
+    {
+      "source": "github",
+      "item_name": "Unity-Technologies/ml-agents",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 290,
+      "completion_tokens": 156,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 162,
+      "total_tokens": 446,
+      "estimated_cost_usd": 6.672e-05
+    },
+    {
+      "source": "github",
+      "item_name": "promptfoo/promptfoo",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 365,
+      "completion_tokens": 198,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 237,
+      "total_tokens": 563,
+      "estimated_cost_usd": 8.898e-05
+    },
+    {
+      "source": "github",
+      "item_name": "Graphify-Labs/graphify",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 355,
+      "completion_tokens": 196,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 227,
+      "total_tokens": 551,
+      "estimated_cost_usd": 8.702e-05
+    },
+    {
+      "source": "github",
+      "item_name": "IliasHad/edit-mind",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 292,
+      "completion_tokens": 143,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 164,
+      "total_tokens": 435,
+      "estimated_cost_usd": 6.336e-05
+    }
+  ]
+}
