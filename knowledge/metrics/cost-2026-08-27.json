@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:48:55Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00034913,
+    "remaining_usd": 0.09965087,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1503,
+      "completion_tokens": 809,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 863,
+      "total_tokens": 2312,
+      "estimated_cost_usd": 0.00034913,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1503,
+    "completion_tokens": 809,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 863,
+    "total_tokens": 2312,
+    "estimated_cost_usd": 0.00034913
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "microsoft/farmvibes-ai",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 280,
+      "completion_tokens": 131,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 152,
+      "total_tokens": 411,
+      "estimated_cost_usd": 5.832e-05
+    },
+    {
+      "source": "github",
+      "item_name": "huggingface/trl",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 223,
+      "completion_tokens": 164,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 95,
+      "total_tokens": 387,
+      "estimated_cost_usd": 5.958e-05
+    },
+    {
+      "source": "github",
+      "item_name": "evidentlyai/evidently",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 329,
+      "completion_tokens": 185,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 201,
+      "total_tokens": 514,
+      "estimated_cost_usd": 8.03e-05
+    },
+    {
+      "source": "github",
+      "item_name": "Egonex-AI/Understand-Anything",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 364,
+      "completion_tokens": 166,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 236,
+      "total_tokens": 530,
+      "estimated_cost_usd": 7.988e-05
+    },
+    {
+      "source": "github",
+      "item_name": "kyegomez/MultiModalMamba",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 307,
+      "completion_tokens": 163,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 179,
+      "total_tokens": 470,
+      "estimated_cost_usd": 7.106e-05
+    }
+  ]
+}

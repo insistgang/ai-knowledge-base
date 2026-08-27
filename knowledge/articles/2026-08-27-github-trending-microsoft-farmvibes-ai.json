@@ -1,0 +1,28 @@
+{
+  "id": "github-20260827-microsoft-farmvibes-ai",
+  "title": "microsoft/farmvibes-ai: 微软开源的农业多模态地理空间机器学习框架，整合遥感、天气与土壤数据，支持可持续农业分析。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/farmvibes-ai",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "summary": "微软开源的农业多模态地理空间机器学习框架，整合遥感、天气与土壤数据，支持可持续农业分析。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态地理空间数据融合",
+      "基于STAC标准的数据管理",
+      "面向农业与可持续性的ML模型"
+    ],
+    "relevance_score": 7,
+    "reason": "对农业科技和遥感研究有直接帮助，提供完整工具链，但应用领域相对垂直。",
+    "risks": []
+  },
+  "tags": [
+    "geospatial",
+    "agriculture",
+    "machine-learning"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

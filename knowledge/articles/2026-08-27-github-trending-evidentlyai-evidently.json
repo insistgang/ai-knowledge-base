@@ -1,0 +1,30 @@
+{
+  "id": "github-20260827-evidentlyai-evidently",
+  "title": "evidentlyai/evidently: Evidently 是开源 ML 和 LLM 可观测性框架，提供 100+ 指标，用于评估、测试和监控 AI 系统及数据",
+  "source": "github-trending",
+  "source_url": "https://github.com/evidentlyai/evidently",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "summary": "Evidently 是开源 ML 和 LLM 可观测性框架，提供 100+ 指标，用于评估、测试和监控 AI 系统及数据管道，从表格数据到生成式 AI。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 LLM 和传统 ML 的统一可观测性",
+      "100+ 指标覆盖数据漂移、质量、模型性能",
+      "生成 HTML 报告，集成 Jupyter Notebook"
+    ],
+    "relevance_score": 8,
+    "reason": "对 ML/LLM 开发者和研究者有直接帮助，提供全面的监控和评估工具，实用性强，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "mlops",
+    "llmops",
+    "observability",
+    "data-drift",
+    "model-monitoring"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

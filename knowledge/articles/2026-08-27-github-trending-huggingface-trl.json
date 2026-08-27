@@ -1,0 +1,28 @@
+{
+  "id": "github-20260827-huggingface-trl",
+  "title": "huggingface/trl: Hugging Face 的 TRL 库，用于通过强化学习训练 transformer 语言模型，支持 PPO、DPO ",
+  "source": "github-trending",
+  "source_url": "https://github.com/huggingface/trl",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "summary": "Hugging Face 的 TRL 库，用于通过强化学习训练 transformer 语言模型，支持 PPO、DPO 等对齐技术。",
+  "analysis": {
+    "tech_highlights": [
+      "集成多种 RL 算法（PPO、DPO、KTO）",
+      "与 Hugging Face 生态无缝集成",
+      "支持大规模分布式训练"
+    ],
+    "relevance_score": 9,
+    "reason": "RLHF 是当前 LLM 对齐的核心技术，TRL 是该领域最主流的工具库，对开发者和研究者都有直接帮助。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "llm",
+    "rlhf"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

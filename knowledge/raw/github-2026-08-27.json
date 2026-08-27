@@ -1,0 +1,102 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "items": [
+    {
+      "name": "microsoft/farmvibes-ai",
+      "url": "https://github.com/microsoft/farmvibes-ai",
+      "summary": "FarmVibes.AI: Multi-Modal GeoSpatial ML Models for Agriculture and Sustainability",
+      "stars": 895,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "agriculture",
+        "ai",
+        "geospatial",
+        "geospatial-analytics",
+        "multi-modal",
+        "remote-sensing",
+        "stac",
+        "sustainability",
+        "weather"
+      ]
+    },
+    {
+      "name": "huggingface/trl",
+      "url": "https://github.com/huggingface/trl",
+      "summary": "Train transformer language models with reinforcement learning.",
+      "stars": 19160,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "evidentlyai/evidently",
+      "url": "https://github.com/evidentlyai/evidently",
+      "summary": "Evidently is ​​an open-source ML and LLM observability framework. Evaluate, test, and monitor any AI-powered system or data pipeline. From tabular data to Gen AI. 100+ metrics.",
+      "stars": 7852,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "data-drift",
+        "data-quality",
+        "data-science",
+        "data-validation",
+        "generative-ai",
+        "hacktoberfest",
+        "html-report",
+        "jupyter-notebook",
+        "llm",
+        "llmops",
+        "machine-learning",
+        "mlops",
+        "model-monitoring",
+        "pandas-dataframe"
+      ]
+    },
+    {
+      "name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "summary": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "stars": 80753,
+      "language": "TypeScript",
+      "topics": [
+        "antigravity-skills",
+        "business-knowledge",
+        "claude-code",
+        "claude-skills",
+        "codebase-analysis",
+        "codex",
+        "codex-skills",
+        "developer-tools-ai-agent",
+        "gemini-cli-skills",
+        "karpathy-llm-wiki",
+        "knowledge-base",
+        "knowledge-graph",
+        "memory",
+        "opencode-skills",
+        "pi-agent",
+        "understandcode",
+        "vibe-coding"
+      ]
+    },
+    {
+      "name": "kyegomez/MultiModalMamba",
+      "url": "https://github.com/kyegomez/MultiModalMamba",
+      "summary": "A novel implementation of fusing ViT with Mamba into a fast, agile, and high performance Multi-Modal Model. Powered by Zeta, the simplest AI framework ever.",
+      "stars": 474,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "attention-mechanism",
+        "machine-learning",
+        "mamba",
+        "ml",
+        "pytorch",
+        "ssm",
+        "torch",
+        "transformer-architecture",
+        "transformers",
+        "zeta"
+      ]
+    }
+  ]
+}

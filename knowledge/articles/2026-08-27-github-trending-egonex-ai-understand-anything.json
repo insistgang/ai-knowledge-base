@@ -1,0 +1,28 @@
+{
+  "id": "github-20260827-egonex-ai-understand-anything",
+  "title": "Egonex-AI/Understand-Anything: 将任意代码转换为可交互的知识图谱，支持探索、搜索和提问，兼容多种AI编程工具，帮助开发者理解代码库。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Egonex-AI/Understand-Anything",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "summary": "将任意代码转换为可交互的知识图谱，支持探索、搜索和提问，兼容多种AI编程工具，帮助开发者理解代码库。",
+  "analysis": {
+    "tech_highlights": [
+      "将代码库转化为交互式知识图谱，支持自然语言查询",
+      "兼容Claude Code、Codex、Cursor等主流AI编程工具",
+      "提供可视化探索和搜索功能，降低代码理解门槛"
+    ],
+    "relevance_score": 8,
+    "reason": "直接提升开发效率和代码理解能力，对使用AI编程工具的开发者有实际帮助，且技术新颖，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "knowledge-graph",
+    "code-analysis",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

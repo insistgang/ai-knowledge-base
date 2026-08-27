@@ -1,0 +1,28 @@
+{
+  "id": "github-20260827-kyegomez-multimodalmamba",
+  "title": "kyegomez/MultiModalMamba: 将ViT与Mamba融合的多模态模型实现，基于Zeta框架，追求高性能与快速推理，适合图像与文本联合处理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/kyegomez/MultiModalMamba",
+  "collected_at": "2026-08-27T18:48:55Z",
+  "summary": "将ViT与Mamba融合的多模态模型实现，基于Zeta框架，追求高性能与快速推理，适合图像与文本联合处理。",
+  "analysis": {
+    "tech_highlights": [
+      "创新融合ViT与Mamba架构，兼顾视觉与序列建模",
+      "基于Zeta框架，简化AI模型开发流程",
+      "面向多模态任务，提升推理速度与性能"
+    ],
+    "relevance_score": 7,
+    "reason": "对多模态AI研究和开发有直接参考价值，架构新颖，但尚需验证实际效果和生态成熟度。",
+    "risks": []
+  },
+  "tags": [
+    "multi-modal",
+    "mamba",
+    "vision-transformer"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}
