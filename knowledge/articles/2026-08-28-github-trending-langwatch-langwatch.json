@@ -1,0 +1,28 @@
+{
+  "id": "github-20260828-langwatch-langwatch",
+  "title": "langwatch/langwatch: LangWatch 是一个用于 LLM 评估和 AI 代理测试的平台，提供可观测性、数据集管理和低代码工具，支持 Ope",
+  "source": "github-trending",
+  "source_url": "https://github.com/langwatch/langwatch",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "summary": "LangWatch 是一个用于 LLM 评估和 AI 代理测试的平台，提供可观测性、数据集管理和低代码工具，支持 OpenAI、DSPy 等。",
+  "analysis": {
+    "tech_highlights": [
+      "LLM 评估与可观测性一体化",
+      "支持 AI 代理测试",
+      "低代码界面"
+    ],
+    "relevance_score": 8,
+    "reason": "对 LLM 开发者和研究者有直接帮助，提供评估和测试工具，提升开发效率。",
+    "risks": []
+  },
+  "tags": [
+    "LLM",
+    "evaluation",
+    "observability"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

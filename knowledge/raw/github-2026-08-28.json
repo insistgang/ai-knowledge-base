@@ -1,0 +1,95 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "items": [
+    {
+      "name": "microsoft/content-processing-solution-accelerator",
+      "url": "https://github.com/microsoft/content-processing-solution-accelerator",
+      "summary": "Programmatically extract data and apply schemas to unstructured documents across text-based and multi-modal content using Azure AI Foundry, Azure OpenAI, Azure AI Content Understanding, and Cosmos DB.",
+      "stars": 247,
+      "language": "Python",
+      "topics": [
+        "ai-azd-templates",
+        "ai-foundry",
+        "azd-templates",
+        "azure-ai-content-understanding",
+        "azure-ai-foundry",
+        "azure-ai-services",
+        "azure-openai",
+        "cosmos-db"
+      ]
+    },
+    {
+      "name": "MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning",
+      "url": "https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning",
+      "summary": "This is the homepage of a new book entitled \"Mathematical Foundations of Reinforcement Learning.\"",
+      "stars": 17603,
+      "language": "MATLAB",
+      "topics": [
+        "artificial-intelligence",
+        "book",
+        "courses",
+        "reinforcement-learning",
+        "tutorials"
+      ]
+    },
+    {
+      "name": "langwatch/langwatch",
+      "url": "https://github.com/langwatch/langwatch",
+      "summary": "The platform for LLM evaluations and AI agent testing",
+      "stars": 3516,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "analytics",
+        "datasets",
+        "dspy",
+        "evaluation",
+        "gpt",
+        "llm",
+        "llm-ops",
+        "llmops",
+        "low-code",
+        "observability",
+        "openai",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "name": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "summary": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "stars": 68495,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "XortexAI/XMem",
+      "url": "https://github.com/XortexAI/XMem",
+      "summary": "Xmem is a India's First open source multi-modal, multi-agentic long‑term memory layer for AI agents. ",
+      "stars": 234,
+      "language": "Python",
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "chatgpt",
+        "claude",
+        "cursor",
+        "developer-tools",
+        "graph-rag",
+        "llm",
+        "long-term-memory",
+        "mcp",
+        "memory",
+        "memory-as-a-service",
+        "memory-layer",
+        "mongodb",
+        "neo4j",
+        "open-source",
+        "pinecone",
+        "rag",
+        "vector-database"
+      ]
+    }
+  ]
+}

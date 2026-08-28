@@ -1,0 +1,30 @@
+{
+  "id": "github-20260828-xortexai-xmem",
+  "title": "XortexAI/XMem: XMem 是印度首个开源多模态、多智能体长期记忆层，为 AI 代理提供持久记忆服务，支持多种向量数据库和 MCP 协议。",
+  "source": "github-trending",
+  "source_url": "https://github.com/XortexAI/XMem",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "summary": "XMem 是印度首个开源多模态、多智能体长期记忆层，为 AI 代理提供持久记忆服务，支持多种向量数据库和 MCP 协议。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态与多智能体记忆层设计",
+      "支持 MCP 协议，集成多种向量数据库（MongoDB、Neo4j、Pinecone）",
+      "结合 Graph RAG 技术增强记忆检索"
+    ],
+    "relevance_score": 7,
+    "reason": "为 AI 代理提供长期记忆基础设施，对开发智能体应用有直接帮助，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "memory-layer",
+    "ai-agents",
+    "mcp",
+    "graph-rag",
+    "vector-database"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

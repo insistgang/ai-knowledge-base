@@ -1,0 +1,30 @@
+{
+  "id": "github-20260828-microsoft-content-processing-solution-accelerator",
+  "title": "microsoft/content-processing-solution-accelerator: 微软推出的内容处理加速器，利用Azure AI Foundry、OpenAI和内容理解服务，从非结构化文档中提取数据并应",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/content-processing-solution-accelerator",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "summary": "微软推出的内容处理加速器，利用Azure AI Foundry、OpenAI和内容理解服务，从非结构化文档中提取数据并应用模式，支持文本和多模态内容。",
+  "analysis": {
+    "tech_highlights": [
+      "集成Azure AI Foundry和Content Understanding，实现多模态数据提取",
+      "提供完整的解决方案模板，便于快速部署和扩展",
+      "使用Cosmos DB存储，支持灵活的数据模式应用"
+    ],
+    "relevance_score": 7,
+    "reason": "对需要处理非结构化文档的开发者有直接帮助，提供现成的Azure解决方案，但依赖特定云服务，通用性有限。",
+    "risks": []
+  },
+  "tags": [
+    "azure",
+    "content-processing",
+    "ai",
+    "document-extraction",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

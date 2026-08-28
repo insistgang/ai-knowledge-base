@@ -1,0 +1,28 @@
+{
+  "id": "github-20260828-colbymchenry-codegraph",
+  "title": "colbymchenry/codegraph: codegraph 为代码构建预索引知识图谱，自动同步变更，支持多种 AI 编程工具，减少 token 和工具调用，完全",
+  "source": "github-trending",
+  "source_url": "https://github.com/colbymchenry/codegraph",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "summary": "codegraph 为代码构建预索引知识图谱，自动同步变更，支持多种 AI 编程工具，减少 token 和工具调用，完全本地化。",
+  "analysis": {
+    "tech_highlights": [
+      "预索引代码知识图谱，提升 AI 工具上下文效率",
+      "自动同步代码变更，保持图谱实时性",
+      "支持多种主流 AI 编程工具，兼容性强"
+    ],
+    "relevance_score": 8,
+    "reason": "直接提升 AI 编程工具的效率和成本，对开发者有实际帮助，且本地化保护隐私。",
+    "risks": []
+  },
+  "tags": [
+    "code-graph",
+    "ai-tools",
+    "local"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

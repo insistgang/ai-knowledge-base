@@ -1,0 +1,28 @@
+{
+  "id": "github-20260828-mathfoundationrl-book-mathematical-foundation-of-reinforcement-learning",
+  "title": "MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning: 《强化学习的数学基础》书籍主页，提供MATLAB代码示例，涵盖RL核心数学理论，适合教学与自学。",
+  "source": "github-trending",
+  "source_url": "https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning",
+  "collected_at": "2026-08-28T19:52:36Z",
+  "summary": "《强化学习的数学基础》书籍主页，提供MATLAB代码示例，涵盖RL核心数学理论，适合教学与自学。",
+  "analysis": {
+    "tech_highlights": [
+      "系统化数学推导",
+      "配套MATLAB实现",
+      "面向教学与自学"
+    ],
+    "relevance_score": 7,
+    "reason": "对RL学习与研究有直接帮助，数学基础扎实，但MATLAB语言限制部分受众。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "mathematics",
+    "education"
+  ],
+  "audience": [
+    "researcher",
+    "student"
+  ],
+  "status": "draft"
+}
