@@ -1,0 +1,28 @@
+{
+  "id": "github-20260829-ai4finance-foundation-finrl",
+  "title": "AI4Finance-Foundation/FinRL: FinRL是首个面向金融强化学习的开源框架，提供从数据获取到策略回测的完整流程，支持多种DRL算法和交易任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/AI4Finance-Foundation/FinRL",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "summary": "FinRL是首个面向金融强化学习的开源框架，提供从数据获取到策略回测的完整流程，支持多种DRL算法和交易任务。",
+  "analysis": {
+    "tech_highlights": [
+      "首个标准化金融强化学习框架，覆盖数据、环境、智能体、回测全流程",
+      "集成多种DRL算法（PPO、SAC、A2C等）和真实市场数据接口",
+      "支持多智能体学习和自定义交易环境，基于OpenAI Gym接口"
+    ],
+    "relevance_score": 8,
+    "reason": "对金融AI研究和量化交易开发有直接帮助，提供完整工具链和大量示例，但主要面向金融领域，通用性有限。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "finance",
+    "quantitative-trading"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

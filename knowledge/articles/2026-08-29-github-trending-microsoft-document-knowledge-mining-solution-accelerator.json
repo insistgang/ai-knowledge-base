@@ -1,0 +1,30 @@
+{
+  "id": "github-20260829-microsoft-document-knowledge-mining-solution-accelerator",
+  "title": "microsoft/Document-Knowledge-Mining-Solution-Accelerator: 微软推出的文档知识挖掘解决方案加速器，基于Azure OpenAI和文档智能，从非结构化多模态文档中提取摘要、实体和元数",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "summary": "微软推出的文档知识挖掘解决方案加速器，基于Azure OpenAI和文档智能，从非结构化多模态文档中提取摘要、实体和元数据，支持搜索和对话。",
+  "analysis": {
+    "tech_highlights": [
+      "集成Azure OpenAI与文档智能，实现多模态文档处理",
+      "提供完整的解决方案加速器，便于快速部署",
+      "支持文档搜索和聊天交互，提升知识利用效率"
+    ],
+    "relevance_score": 7,
+    "reason": "对需要构建文档知识库或智能问答系统的开发者有直接帮助，但依赖Azure生态，通用性受限。",
+    "risks": []
+  },
+  "tags": [
+    "Azure",
+    "文档处理",
+    "知识挖掘",
+    "OpenAI",
+    "解决方案加速器"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

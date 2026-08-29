@@ -1,0 +1,31 @@
+{
+  "id": "github-20260829-abhigyanpatwari-gitnexus",
+  "title": "abhigyanpatwari/GitNexus: GitNexus 是一个纯浏览器端的代码智能引擎，通过构建知识图谱和内置 Graph RAG Agent，帮助开发者交互",
+  "source": "github-trending",
+  "source_url": "https://github.com/abhigyanpatwari/GitNexus",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "summary": "GitNexus 是一个纯浏览器端的代码智能引擎，通过构建知识图谱和内置 Graph RAG Agent，帮助开发者交互式探索代码库。",
+  "analysis": {
+    "tech_highlights": [
+      "零服务器架构，完全在浏览器中运行",
+      "支持多种 Git 仓库和 ZIP 文件导入",
+      "内置 Graph RAG Agent 用于代码问答",
+      "交互式知识图谱可视化"
+    ],
+    "relevance_score": 8,
+    "reason": "对代码探索和理解的直接帮助，尤其适合大型代码库的快速上手，Graph RAG 技术具有创新性，但可能受限于浏览器性能。",
+    "risks": []
+  },
+  "tags": [
+    "code-exploration",
+    "knowledge-graph",
+    "graph-rag",
+    "client-side",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

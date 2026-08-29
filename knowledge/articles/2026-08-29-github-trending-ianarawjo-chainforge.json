@@ -1,0 +1,30 @@
+{
+  "id": "github-20260829-ianarawjo-chainforge",
+  "title": "ianarawjo/ChainForge: ChainForge 是一个开源的可视化编程环境，用于对大型语言模型（LLM）的提示进行压力测试和评估，支持多种模型和自",
+  "source": "github-trending",
+  "source_url": "https://github.com/ianarawjo/ChainForge",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "summary": "ChainForge 是一个开源的可视化编程环境，用于对大型语言模型（LLM）的提示进行压力测试和评估，支持多种模型和自定义评估。",
+  "analysis": {
+    "tech_highlights": [
+      "可视化编程界面，无需代码即可构建提示评估流程",
+      "支持多种LLM提供商，便于对比不同模型的响应",
+      "内置评估指标和自定义评估逻辑，可批量测试提示变体"
+    ],
+    "relevance_score": 8,
+    "reason": "直接帮助开发者和研究者系统化评估和优化提示，提升LLM应用的可靠性和性能，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "prompt-engineering",
+    "evaluation",
+    "visual-programming",
+    "llmops"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "items": [
+    {
+      "name": "microsoft/Document-Knowledge-Mining-Solution-Accelerator",
+      "url": "https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator",
+      "summary": "Solution accelerator built on Azure OpenAI Service and Azure AI Document Intelligence to process and extract summaries, entities, and metadata from unstructured, multi-modal documents and enable searching and chatting over this data.",
+      "stars": 233,
+      "language": "C#",
+      "topics": []
+    },
+    {
+      "name": "AI4Finance-Foundation/FinRL",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL",
+      "summary": "FinRL®:  Financial Reinforcement Learning. 🔥",
+      "stars": 16135,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "algorithmic-trading",
+        "deep-reinforcement-learning",
+        "drl-algorithms",
+        "drl-framework",
+        "drl-trading-agents",
+        "finance",
+        "fintech",
+        "multi-agent-learning",
+        "openai-gym",
+        "pythorch",
+        "stock-markets",
+        "stock-trading",
+        "tensorflow2",
+        "trading-tasks"
+      ]
+    },
+    {
+      "name": "ianarawjo/ChainForge",
+      "url": "https://github.com/ianarawjo/ChainForge",
+      "summary": "An open-source visual programming environment for battle-testing prompts to LLMs.",
+      "stars": 3028,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "evaluation",
+        "large-language-models",
+        "llmops",
+        "llms",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "summary": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "stars": 46295,
+      "language": "TypeScript",
+      "topics": []
+    },
+    {
+      "name": "withceleste/celeste-python",
+      "url": "https://github.com/withceleste/celeste-python",
+      "summary": "Open source, type-safe primitives for multi-modal AI. All modelities, all providers, one interface 🌟",
+      "stars": 219,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "async",
+        "developer-tools",
+        "multimodal",
+        "python",
+        "sdk",
+        "streaming",
+        "type-safe"
+      ]
+    }
+  ]
+}

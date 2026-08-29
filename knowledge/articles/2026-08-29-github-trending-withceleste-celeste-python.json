@@ -1,0 +1,27 @@
+{
+  "id": "github-20260829-withceleste-celeste-python",
+  "title": "withceleste/celeste-python: Celeste Python 提供类型安全的多模态 AI 原语，统一接口支持多种模型和提供商，简化开发。",
+  "source": "github-trending",
+  "source_url": "https://github.com/withceleste/celeste-python",
+  "collected_at": "2026-08-29T13:36:16Z",
+  "summary": "Celeste Python 提供类型安全的多模态 AI 原语，统一接口支持多种模型和提供商，简化开发。",
+  "analysis": {
+    "tech_highlights": [
+      "类型安全设计",
+      "统一多模态接口",
+      "支持异步与流式"
+    ],
+    "relevance_score": 8,
+    "reason": "直接帮助开发者集成多模态 AI，提升开发效率，类型安全减少错误。",
+    "risks": []
+  },
+  "tags": [
+    "multimodal-ai",
+    "python-sdk",
+    "type-safe"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}
