@@ -1,0 +1,29 @@
+{
+  "id": "github-20260830-gunpal5-google-generativeai",
+  "title": "gunpal5/Google_GenerativeAI: 最完整的C# .NET SDK，用于Google Generative AI和Vertex AI（Gemini），支持函",
+  "source": "github-trending",
+  "source_url": "https://github.com/gunpal5/Google_GenerativeAI",
+  "collected_at": "2026-08-30T13:31:04Z",
+  "summary": "最完整的C# .NET SDK，用于Google Generative AI和Vertex AI（Gemini），支持函数调用、JSON模式、多模态实时流和聊天会话。",
+  "analysis": {
+    "tech_highlights": [
+      "最完整的C# SDK，覆盖Gemini和Vertex AI",
+      "支持函数调用和简易JSON模式",
+      "多模态实时流和聊天会话"
+    ],
+    "relevance_score": 8,
+    "reason": "为C#开发者提供直接可用的AI集成工具，功能全面，提升开发效率，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "C#",
+    "Google Gemini",
+    "SDK",
+    "AI",
+    "Vertex AI"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "draft"
+}

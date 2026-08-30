@@ -1,0 +1,115 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-30T13:31:04Z",
+  "items": [
+    {
+      "name": "gunpal5/Google_GenerativeAI",
+      "url": "https://github.com/gunpal5/Google_GenerativeAI",
+      "summary": "Most complete C# .Net SDK for Google Generative AI and Vertex AI (Google Gemini), featuring function calling, easiest JSON Mode, multi-modal live streaming, chat sessions, and more!",
+      "stars": 173,
+      "language": "C#",
+      "topics": []
+    },
+    {
+      "name": "DLR-RM/stable-baselines3",
+      "url": "https://github.com/DLR-RM/stable-baselines3",
+      "summary": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. ",
+      "stars": 13739,
+      "language": "Python",
+      "topics": [
+        "baselines",
+        "gsde",
+        "gym",
+        "machine-learning",
+        "openai",
+        "python",
+        "pytorch",
+        "reinforcement-learning",
+        "reinforcement-learning-algorithms",
+        "robotics",
+        "sb3",
+        "sde",
+        "stable-baselines",
+        "toolbox"
+      ]
+    },
+    {
+      "name": "rudrankriyam/Foundation-Models-Framework-Lab",
+      "url": "https://github.com/rudrankriyam/Foundation-Models-Framework-Lab",
+      "summary": "A practical lab for building, testing, and evaluating apps with Apple's Foundation Models framework.",
+      "stars": 1177,
+      "language": "Swift",
+      "topics": [
+        "ai",
+        "apple-foundation-models",
+        "apple-intelligence",
+        "foundation-models",
+        "foundation-models-framework",
+        "generative-ai",
+        "healthkit",
+        "ios",
+        "large-language-models",
+        "llm",
+        "macos",
+        "multilingual",
+        "on-device-ai",
+        "rag",
+        "speech-recognition",
+        "swift",
+        "swiftui",
+        "text-to-speech",
+        "tool-calling",
+        "xcode"
+      ]
+    },
+    {
+      "name": "logseq/logseq",
+      "url": "https://github.com/logseq/logseq",
+      "summary": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc_ggEV",
+      "stars": 44685,
+      "language": "Clojure",
+      "topics": [
+        "clojure",
+        "clojurescript",
+        "git",
+        "graph",
+        "knowledge-base",
+        "knowledge-graph",
+        "local-first",
+        "markdown",
+        "note-taking",
+        "org-mode",
+        "pkm"
+      ]
+    },
+    {
+      "name": "AmanPriyanshu/Awesome-AI-For-Security",
+      "url": "https://github.com/AmanPriyanshu/Awesome-AI-For-Security",
+      "summary": "A curated list of tools, papers, and datasets for applying AI to cybersecurity tasks. This list primarily focuses on modern AI technologies like Large Language Models (LLMs), Agents, and Multi-Modal systems and their applications in security operations.",
+      "stars": 147,
+      "language": "unknown",
+      "topics": [
+        "agent",
+        "agents",
+        "ai",
+        "ai-for-security",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "awesome-readme",
+        "awesome-resources",
+        "cyber-security",
+        "cybersecurity",
+        "cybersecurity-education",
+        "llm",
+        "llm-agent",
+        "llm-agents",
+        "llm-inference",
+        "llms",
+        "security",
+        "security-automation",
+        "security-tools"
+      ]
+    }
+  ]
+}

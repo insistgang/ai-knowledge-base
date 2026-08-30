@@ -1,0 +1,28 @@
+{
+  "id": "github-20260830-amanpriyanshu-awesome-ai-for-security",
+  "title": "AmanPriyanshu/Awesome-AI-For-Security: 精选AI在网络安全中应用的资源列表，涵盖工具、论文和数据集，聚焦LLM、Agent及多模态技术在安全运营中的实践。",
+  "source": "github-trending",
+  "source_url": "https://github.com/AmanPriyanshu/Awesome-AI-For-Security",
+  "collected_at": "2026-08-30T13:31:04Z",
+  "summary": "精选AI在网络安全中应用的资源列表，涵盖工具、论文和数据集，聚焦LLM、Agent及多模态技术在安全运营中的实践。",
+  "analysis": {
+    "tech_highlights": [
+      "聚焦LLM与Agent在安全领域的应用",
+      "整合工具、论文和数据集，资源全面",
+      "面向安全运营的现代AI技术实践"
+    ],
+    "relevance_score": 7,
+    "reason": "对安全研究人员和开发者有直接参考价值，但作为资源列表，不提供新方法或工具，短期价值中等偏高。",
+    "risks": []
+  },
+  "tags": [
+    "cybersecurity",
+    "llm",
+    "awesome-list"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T13:31:04Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00037321,
+    "remaining_usd": 0.09962679,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1575,
+      "completion_tokens": 859,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 935,
+      "total_tokens": 2434,
+      "estimated_cost_usd": 0.00037321,
+      "source": "github",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1575,
+    "completion_tokens": 859,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 935,
+    "total_tokens": 2434,
+    "estimated_cost_usd": 0.00037321
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "gunpal5/Google_GenerativeAI",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 260,
+      "completion_tokens": 155,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 132,
+      "total_tokens": 415,
+      "estimated_cost_usd": 6.224e-05
+    },
+    {
+      "source": "github",
+      "item_name": "DLR-RM/stable-baselines3",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 301,
+      "completion_tokens": 174,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 173,
+      "total_tokens": 475,
+      "estimated_cost_usd": 7.33e-05
+    },
+    {
+      "source": "github",
+      "item_name": "rudrankriyam/Foundation-Models-Framework-Lab",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 343,
+      "completion_tokens": 188,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 215,
+      "total_tokens": 531,
+      "estimated_cost_usd": 8.31e-05
+    },
+    {
+      "source": "github",
+      "item_name": "logseq/logseq",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 302,
+      "completion_tokens": 186,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 174,
+      "total_tokens": 488,
+      "estimated_cost_usd": 7.68e-05
+    },
+    {
+      "source": "github",
+      "item_name": "AmanPriyanshu/Awesome-AI-For-Security",
+      "model": "deepseek-v4-flash",
+      "prompt_tokens": 369,
+      "completion_tokens": 156,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 241,
+      "total_tokens": 525,
+      "estimated_cost_usd": 7.778e-05
+    }
+  ]
+}

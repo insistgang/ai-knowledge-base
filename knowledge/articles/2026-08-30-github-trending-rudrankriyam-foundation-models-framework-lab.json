@@ -1,0 +1,30 @@
+{
+  "id": "github-20260830-rudrankriyam-foundation-models-framework-lab",
+  "title": "rudrankriyam/Foundation-Models-Framework-Lab: 一个基于Apple Foundation Models框架的实践实验室，用于构建、测试和评估AI应用，涵盖RAG、工具调",
+  "source": "github-trending",
+  "source_url": "https://github.com/rudrankriyam/Foundation-Models-Framework-Lab",
+  "collected_at": "2026-08-30T13:31:04Z",
+  "summary": "一个基于Apple Foundation Models框架的实践实验室，用于构建、测试和评估AI应用，涵盖RAG、工具调用、语音识别等，支持iOS/macOS。",
+  "analysis": {
+    "tech_highlights": [
+      "基于Apple最新Foundation Models框架，提供实际应用构建与评估",
+      "集成RAG、工具调用、语音识别、文本转语音等多项AI能力",
+      "支持HealthKit、多语言，面向设备端AI开发"
+    ],
+    "relevance_score": 8,
+    "reason": "对Apple生态开发者有直接帮助，提供实践指南和示例，紧跟最新框架，但受众限于Apple平台，非通用AI开发。",
+    "risks": []
+  },
+  "tags": [
+    "Apple",
+    "Foundation Models",
+    "Swift",
+    "On-device AI",
+    "RAG"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

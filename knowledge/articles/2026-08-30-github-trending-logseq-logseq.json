@@ -1,0 +1,28 @@
+{
+  "id": "github-20260830-logseq-logseq",
+  "title": "logseq/logseq: Logseq 是一个隐私优先的开源知识管理和协作平台，支持 Markdown 和 Org-mode，基于本地优先的图谱结",
+  "source": "github-trending",
+  "source_url": "https://github.com/logseq/logseq",
+  "collected_at": "2026-08-30T13:31:04Z",
+  "summary": "Logseq 是一个隐私优先的开源知识管理和协作平台，支持 Markdown 和 Org-mode，基于本地优先的图谱结构，提供强大的笔记和双向链接功能。",
+  "analysis": {
+    "tech_highlights": [
+      "本地优先架构，数据完全由用户掌控，支持离线使用",
+      "基于知识图谱的双向链接和可视化，提升信息关联性",
+      "支持 Markdown 和 Org-mode 两种主流笔记格式，兼容性强"
+    ],
+    "relevance_score": 8,
+    "reason": "Logseq 对知识管理领域有直接帮助，其本地优先和开源特性对开发者和研究者有实际价值，但未改变技术格局，故评分为8。",
+    "risks": []
+  },
+  "tags": [
+    "knowledge-management",
+    "local-first",
+    "note-taking"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
