@@ -10,6 +10,8 @@ import json
 import logging
 from typing import Any
 
+from pipeline.cost_tracker import CostTracker
+from pipeline.model_client import Usage
 from pipeline.workflow_state import KBState
 
 logger = logging.getLogger(__name__)
@@ -75,6 +77,7 @@ def chat_json(
     try:
         response = chat_with_retry(llm, messages, temperature=temperature, max_tokens=1024)
         usage = response.usage.to_dict()
+        usage["model"] = response.model or llm.model
         usage["estimated_cost_usd"] = estimate_cost(response.model or llm.model, response.usage)
 
         raw = response.content.strip()
@@ -97,6 +100,33 @@ def accumulate_usage(tracker: dict[str, Any], usage: dict[str, Any]) -> dict[str
     t["total_cost_usd"] = t.get("total_cost_usd", 0.0) + usage.get("estimated_cost_usd", 0.0)
     t["api_calls"] = t.get("api_calls", 0) + 1
     return t
+
+
+def record_shared_cost(
+    state: KBState,
+    usage: dict[str, Any],
+    item_name: str,
+) -> None:
+    """Record a workflow LLM call in the shared pipeline CostTracker."""
+    tracker = state.get("llm_cost_tracker")
+    if not isinstance(tracker, CostTracker):
+        return
+
+    tracker.add_call(
+        source="workflow",
+        item_name=item_name,
+        model=str(usage.get("model", "unknown")),
+        usage=Usage(
+            prompt_tokens=int(usage.get("prompt_tokens", 0) or 0),
+            completion_tokens=int(usage.get("completion_tokens", 0) or 0),
+            prompt_cache_hit_tokens=int(
+                usage.get("prompt_cache_hit_tokens", 0) or 0
+            ),
+            prompt_cache_miss_tokens=int(
+                usage.get("prompt_cache_miss_tokens", 0) or 0
+            ),
+        ),
+    )
 
 
 def _recalculate_weighted(scores: dict[str, int]) -> float:
@@ -143,16 +173,52 @@ def review_node(state: KBState, provider: str | None = None) -> KBState:
     analyses: list[dict[str, Any]] = state.get("analyses", [])
     iteration: int = state.get("iteration", 0) + 1
     cost_tracker: dict[str, Any] = dict(state.get("cost_tracker") or {})
+    selected_provider = provider or state.get("provider")
 
     # No analyses to review
     if not analyses:
         logger.info("Reviewer: no analyses found, auto-pass")
-        return _build_result(state, True, "No analyses to review", iteration, cost_tracker)
+        return _build_result(
+            state,
+            True,
+            "No analyses to review",
+            iteration,
+            cost_tracker,
+            review_verified=False,
+        )
+
+    shared_tracker = state.get("llm_cost_tracker")
+    if isinstance(shared_tracker, CostTracker) and shared_tracker.is_budget_exceeded():
+        logger.warning("Reviewer: budget exhausted, using rule-based gate only")
+        feedback = {
+            "scores": {dim: 7 for dim in SCORE_DIMENSIONS},
+            "overall_comment": "LLM review skipped because the run budget was exhausted.",
+            "issues": [],
+            "strengths": [],
+            "_computed": {
+                "weighted_total": 7.0,
+                "pass_threshold": PASS_THRESHOLD,
+                "reviewed_count": 0,
+                "total_count": len(analyses),
+            },
+        }
+        return _build_result(
+            state,
+            True,
+            feedback,
+            iteration,
+            cost_tracker,
+            review_verified=False,
+        )
 
     # Limit to first 5
     subset = analyses[:MAX_REVIEW_ITEMS]
     if len(analyses) > MAX_REVIEW_ITEMS:
-        logger.info("Reviewer: limiting to first %d of %d analyses", MAX_REVIEW_ITEMS, len(analyses))
+        logger.info(
+            "Reviewer: limiting to first %d of %d analyses",
+            MAX_REVIEW_ITEMS,
+            len(analyses),
+        )
 
     # ── LLM review ────────────────────────────────────────────────────
     try:
@@ -161,9 +227,10 @@ def review_node(state: KBState, provider: str | None = None) -> KBState:
             prompt=prompt,
             system=REVIEWER_SYSTEM,
             temperature=0.1,
-            provider=provider,
+            provider=selected_provider,
         )
         cost_tracker = accumulate_usage(cost_tracker, usage)
+        record_shared_cost(state, usage, "review")
 
         # Recalculate weighted total in code (never trust LLM)
         scores = feedback.get("scores", {})
@@ -185,6 +252,9 @@ def review_node(state: KBState, provider: str | None = None) -> KBState:
         }
         weighted_total = 7.0
         review_passed = True
+        review_verified = False
+    else:
+        review_verified = True
 
     # Attach computed totals to feedback for downstream consumers
     feedback["_computed"] = {
@@ -194,7 +264,14 @@ def review_node(state: KBState, provider: str | None = None) -> KBState:
         "total_count": len(analyses),
     }
 
-    return _build_result(state, review_passed, feedback, iteration, cost_tracker)
+    return _build_result(
+        state,
+        review_passed,
+        feedback,
+        iteration,
+        cost_tracker,
+        review_verified=review_verified,
+    )
 
 
 def _build_result(
@@ -203,12 +280,14 @@ def _build_result(
     feedback: dict[str, Any] | str,
     iteration: int,
     cost_tracker: dict[str, Any],
+    review_verified: bool,
 ) -> KBState:
     """Pack review results back into a KBState-compat dict."""
     return {
         **state,  # type: ignore[typeddict-item]
         "review_passed": review_passed,
         "review_feedback": feedback,
+        "review_verified": review_verified,
         "iteration": iteration,
         "cost_tracker": cost_tracker,
     }

@@ -9,15 +9,21 @@ from __future__ import annotations
 
 from typing import Any
 
+from pipeline.cost_tracker import CostTracker
 from pipeline.workflow_state import KBState
 
 # Reuse existing pipeline internals without duplicating logic.
 from pipeline.pipeline import (  # noqa: E402
     COLLECTORS,
     analyze,
+    normalize_analysis_depth,
     organize,
+    read_daily_budget,
+    read_model_routes,
     save_articles,
+    save_cost_metrics,
     save_raw,
+    select_analysis_model,
 )
 
 REQUIRED_ARTICLE_FIELDS = ["id", "title", "source_url", "summary", "status"]
@@ -59,6 +65,15 @@ def analyze_node(state: KBState) -> KBState:
     stats: dict[str, Any] = dict(state.get("stats") or {})
     errors: list[str] = list(state.get("errors") or [])
     provider: str | None = state.get("provider")
+    tracker = state.get("llm_cost_tracker")
+    if not isinstance(tracker, CostTracker):
+        tracker = CostTracker(budget_usd=read_daily_budget())
+
+    analysis_depth = normalize_analysis_depth(
+        str(state.get("analysis_depth", "normal"))
+    )
+    model_routes = read_model_routes(provider)
+    analysis_model = select_analysis_model(analysis_depth, model_routes)
 
     for source, items in raw_items.items():
         if not items:
@@ -66,14 +81,38 @@ def analyze_node(state: KBState) -> KBState:
             stats.setdefault(source, {})["analyzed"] = 0
             continue
         try:
-            result = analyze(source, items, provider=provider)
+            result = analyze(
+                source,
+                items,
+                provider=provider,
+                cost_tracker=tracker,
+                model_name=analysis_model,
+            )
             analyzed_items[source] = result
             stats.setdefault(source, {})["analyzed"] = len(result)
         except Exception as exc:
             errors.append(f"Analysis failed for {source}: {exc}")
             stats.setdefault(source, {})["analyzed"] = 0
 
-    return {**state, "analyzed_items": analyzed_items, "stats": stats, "errors": errors}
+    analyses = [
+        analysis
+        for source in raw_items
+        for analysis in analyzed_items.get(source, [])
+    ]
+    stats["_model_route"] = {
+        "analysis_depth": analysis_depth,
+        "analysis_model": analysis_model,
+        "routes": model_routes,
+    }
+
+    return {
+        **state,
+        "analyzed_items": analyzed_items,
+        "analyses": analyses,
+        "llm_cost_tracker": tracker,
+        "stats": stats,
+        "errors": errors,
+    }
 
 
 # ── organize_node ─────────────────────────────────────────────────────
@@ -145,7 +184,7 @@ def supervise_node(state: KBState) -> KBState:
 # ── save_node ─────────────────────────────────────────────────────────
 
 def save_node(state: KBState) -> KBState:
-    """Write raw data and articles to disk if review passed."""
+    """Write reviewed raw data, articles, and cost metrics to disk."""
     review_status: str = state.get("review_status", "pending")
     if review_status != "pass":
         errors: list[str] = list(state.get("errors") or [])
@@ -158,6 +197,23 @@ def save_node(state: KBState) -> KBState:
     collected_at: str = state.get("collected_at", "")
     dry_run: bool = state.get("dry_run", False)
     saved_paths: list[str] = list(state.get("saved_paths") or [])
+    errors: list[str] = list(state.get("errors") or [])
+    stats: dict[str, Any] = dict(state.get("stats") or {})
+    review_verified = bool(state.get("review_verified", False))
+    review_passed = bool(state.get("review_passed", False))
+
+    articles_to_save: dict[str, list[dict[str, Any]]] = {}
+    for source, source_articles in articles.items():
+        articles_to_save[source] = []
+        for article in source_articles:
+            normalized = dict(article)
+            if (
+                review_verified
+                and review_passed
+                and normalized.get("status") == "draft"
+            ):
+                normalized["status"] = "reviewed"
+            articles_to_save[source].append(normalized)
 
     for source in sources:
         if source in raw_items and raw_items[source]:
@@ -165,15 +221,42 @@ def save_node(state: KBState) -> KBState:
                 raw_path = save_raw(source, collected_at, raw_items[source], dry_run=dry_run)
                 saved_paths.append(str(raw_path))
             except Exception as exc:
-                saved_paths.append(f"ERROR: raw save failed for {source}: {exc}")
+                errors.append(f"Raw save failed for {source}: {exc}")
 
-        if source in articles and articles[source]:
+        if source in articles_to_save and articles_to_save[source]:
             try:
                 article_paths = save_articles(
-                    source, collected_at, articles[source], dry_run=dry_run
+                    source,
+                    collected_at,
+                    articles_to_save[source],
+                    dry_run=dry_run,
                 )
                 saved_paths.extend(str(p) for p in article_paths)
             except Exception as exc:
-                saved_paths.append(f"ERROR: article save failed for {source}: {exc}")
+                errors.append(f"Article save failed for {source}: {exc}")
 
-    return {**state, "saved_paths": saved_paths}
+    tracker = state.get("llm_cost_tracker")
+    if isinstance(tracker, CostTracker):
+        try:
+            metrics_path = save_cost_metrics(
+                collected_at=collected_at,
+                cost_tracker=tracker,
+                dry_run=dry_run,
+            )
+            saved_paths.append(str(metrics_path))
+            stats["_cost"] = {
+                "metrics_path": str(metrics_path),
+                "budget": tracker.budget_status(),
+                "total": tracker.total(),
+                "runs": tracker.summarize_runs(),
+            }
+        except Exception as exc:
+            errors.append(f"Cost metrics save failed: {exc}")
+
+    return {
+        **state,
+        "articles": articles_to_save,
+        "saved_paths": saved_paths,
+        "stats": stats,
+        "errors": errors,
+    }

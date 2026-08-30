@@ -20,13 +20,17 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlsplit, urlunsplit
+
+# Support both ``python -m pipeline.pipeline`` and ``python pipeline/pipeline.py``.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from pipeline.article_store import normalize_source_url
 
 logger = logging.getLogger(__name__)
 
 # ── Project root discovery ────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
 KNOWLEDGE_RAW = PROJECT_ROOT / "knowledge" / "raw"
 KNOWLEDGE_ARTICLES = PROJECT_ROOT / "knowledge" / "articles"
 KNOWLEDGE_METRICS = PROJECT_ROOT / "knowledge" / "metrics"
@@ -73,8 +77,42 @@ def read_daily_budget(default: float = DEFAULT_DAILY_BUDGET_USD) -> float:
     return budget
 
 
-def read_model_routes() -> dict[str, str]:
-    """Read model routing config from environment variables."""
+def read_model_routes(provider_name: str | None = None) -> dict[str, str]:
+    """Read model routing config for the selected provider."""
+    provider = (
+        provider_name
+        or os.getenv("LLM_PROVIDER", "deepseek")
+    ).strip().lower()
+
+    if provider == "qwen":
+        default_model = os.getenv("QWEN_MODEL", "qwen-plus").strip() or "qwen-plus"
+        return {
+            "normal": (
+                os.getenv("AI_KB_QWEN_ANALYSIS_MODEL", default_model).strip()
+                or default_model
+            ),
+            "deep": (
+                os.getenv("AI_KB_QWEN_DEEP_ANALYSIS_MODEL", default_model).strip()
+                or default_model
+            ),
+        }
+
+    if provider == "openai":
+        default_model = (
+            os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip()
+            or "gpt-4o-mini"
+        )
+        return {
+            "normal": (
+                os.getenv("AI_KB_OPENAI_ANALYSIS_MODEL", default_model).strip()
+                or default_model
+            ),
+            "deep": (
+                os.getenv("AI_KB_OPENAI_DEEP_ANALYSIS_MODEL", default_model).strip()
+                or default_model
+            ),
+        }
+
     normal_model = (
         os.getenv("AI_KB_ANALYSIS_MODEL")
         or os.getenv("DEEPSEEK_ANALYSIS_MODEL")
@@ -134,41 +172,6 @@ def _get_week_index() -> int:
     from datetime import datetime, timezone
 
     return (datetime.now(timezone.utc).timetuple().tm_yday // 7) % len(GITHUB_SEARCH_QUERIES)
-
-
-def normalize_source_url(url: str) -> str:
-    """Normalize a source URL for stable duplicate comparisons.
-
-    Args:
-        url: Source URL from an article or collector candidate.
-
-    Returns:
-        Canonical URL without query, fragment, or a trailing slash.
-    """
-    raw_url = str(url or "").strip()
-    if not raw_url:
-        return ""
-    if "://" not in raw_url:
-        raw_url = f"https://{raw_url.lstrip('/')}"
-
-    try:
-        parts = urlsplit(raw_url)
-        hostname = (parts.hostname or "").lower()
-        parsed_port = parts.port
-    except ValueError:
-        return ""
-
-    scheme = parts.scheme.lower() or "https"
-    if not hostname:
-        return ""
-
-    port = f":{parsed_port}" if parsed_port is not None else ""
-    path = re.sub(r"/{2,}", "/", parts.path).rstrip("/")
-    if hostname == "github.com":
-        scheme = "https"
-        path = path.lower()
-
-    return urlunsplit((scheme, f"{hostname}{port}", path, "", ""))
 
 
 def load_existing_source_urls(article_dir: Path = KNOWLEDGE_ARTICLES) -> set[str]:
@@ -680,7 +683,7 @@ def run_pipeline(
     collected_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     stats: dict[str, Any] = {}
     cost_tracker = CostTracker(budget_usd=read_daily_budget())
-    model_routes = read_model_routes()
+    model_routes = read_model_routes(provider)
     normalized_depth = normalize_analysis_depth(analysis_depth)
     analysis_model = select_analysis_model(normalized_depth, model_routes)
     logger.info("Daily LLM budget: $%.2f", cost_tracker.budget_usd)

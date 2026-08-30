@@ -36,6 +36,22 @@ class ModelRoutingTest(unittest.TestCase):
         self.assertEqual(routes["normal"], "cheap-model")
         self.assertEqual(routes["deep"], "strong-model")
 
+    def test_qwen_route_never_receives_a_deepseek_model(self) -> None:
+        with patch.dict(
+            os.environ,
+            {
+                "LLM_PROVIDER": "qwen",
+                "QWEN_MODEL": "qwen-plus",
+                "AI_KB_ANALYSIS_MODEL": "deepseek-v4-flash",
+                "AI_KB_DEEP_ANALYSIS_MODEL": "deepseek-v4-pro",
+            },
+            clear=True,
+        ):
+            routes = read_model_routes("qwen")
+
+        self.assertEqual(routes["normal"], "qwen-plus")
+        self.assertEqual(routes["deep"], "qwen-plus")
+
     def test_create_provider_accepts_model_override(self) -> None:
         with patch.dict(
             os.environ,

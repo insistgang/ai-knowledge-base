@@ -56,6 +56,9 @@ class KBState(TypedDict, total=False):
     review_findings: list[dict[str, Any]]
     """List of findings dicts from the Supervisor agent."""
 
+    review_verified: bool
+    """Whether the LLM review completed successfully instead of degrading."""
+
     # ── Outputs ───────────────────────────────────────────────────────
     saved_paths: list[str]
     """File-system paths where articles were written."""
@@ -68,8 +71,8 @@ class KBState(TypedDict, total=False):
     """Non-fatal error messages collected during execution."""
 
     # ── Planning / iteration control (Section 11+) ────────────────────
-    plan: list[dict[str, Any]]
-    """Planner output: ordered task steps."""
+    plan: dict[str, Any]
+    """Planner output: selected collection and review strategy."""
 
     analyses: list[dict[str, Any]]
     """Merged analysis results across sources (flat list)."""
@@ -82,6 +85,9 @@ class KBState(TypedDict, total=False):
 
     cost_tracker: dict[str, Any]
     """Running tally of token usage and API cost."""
+
+    llm_cost_tracker: Any
+    """In-memory CostTracker shared by analysis, review, revision, and save."""
 
     review_passed: bool
     """Whether the last review passed the quality gate."""
@@ -117,7 +123,17 @@ def create_initial_state(
         articles={},
         review_status="pending",
         review_findings=[],
+        review_verified=False,
         saved_paths=[],
         stats={},
         errors=[],
+        plan={},
+        analyses=[],
+        iteration=0,
+        max_iterations=3,
+        cost_tracker={},
+        llm_cost_tracker=None,
+        review_passed=False,
+        review_feedback={},
+        needs_human_review=False,
     )

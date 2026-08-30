@@ -11,6 +11,7 @@ import json
 import logging
 from typing import Any
 
+from pipeline.cost_tracker import CostTracker
 from pipeline.workflow_state import KBState
 
 logger = logging.getLogger(__name__)
@@ -76,31 +77,48 @@ def revise_node(state: KBState, provider: str | None = None) -> KBState:
         analyses or feedback are missing/empty.
     """
     analyses: list[dict[str, Any]] = state.get("analyses", [])
-    feedback: dict[str, Any] = state.get("review_feedback", {})
+    feedback = state.get("review_feedback", {})
 
     if not analyses:
         logger.info("Reviser: no analyses found, skipping")
-        return {}  # type: ignore[return-value]
+        return state
 
-    if not feedback:
+    if not isinstance(feedback, dict) or not feedback:
         logger.info("Reviser: no review feedback, skipping")
-        return {}  # type: ignore[return-value]
+        return state
 
     cost_tracker: dict[str, Any] = dict(state.get("cost_tracker") or {})
+    selected_provider = provider or state.get("provider")
+    shared_tracker = state.get("llm_cost_tracker")
+    if isinstance(shared_tracker, CostTracker) and shared_tracker.is_budget_exceeded():
+        logger.warning("Reviser: budget exhausted, keeping original analyses")
+        return state
 
     try:
-        from workflows.reviewer import accumulate_usage, chat_json
+        from workflows.reviewer import (
+            accumulate_usage,
+            chat_json,
+            record_shared_cost,
+        )
 
         prompt = _build_revision_prompt(analyses, feedback)
         revised, usage = chat_json(
             prompt=prompt,
             system=REVISION_SYSTEM,
             temperature=0.4,
-            provider=provider,
+            provider=selected_provider,
         )
         cost_tracker = accumulate_usage(cost_tracker, usage)
+        record_shared_cost(state, usage, "revise")
 
         improved = revised.get("analyses", analyses)
+        if not isinstance(improved, list) or len(improved) != len(analyses):
+            logger.warning(
+                "Reviser: expected %d analyses, received %s; keeping originals",
+                len(analyses),
+                len(improved) if isinstance(improved, list) else type(improved).__name__,
+            )
+            improved = analyses
         changes = revised.get("changes_summary", "")
         logger.info("Reviser: %d analyses revised — %s", len(improved), changes)
 
@@ -108,8 +126,16 @@ def revise_node(state: KBState, provider: str | None = None) -> KBState:
         logger.warning("Reviser: LLM call failed, returning original analyses", exc_info=True)
         improved = analyses
 
+    analyzed_items: dict[str, list[dict[str, Any]]] = {}
+    offset = 0
+    for source, source_items in (state.get("analyzed_items") or {}).items():
+        item_count = len(source_items)
+        analyzed_items[source] = improved[offset:offset + item_count]
+        offset += item_count
+
     return {
         **state,  # type: ignore[typeddict-item]
         "analyses": improved,
+        "analyzed_items": analyzed_items,
         "cost_tracker": cost_tracker,
     }

@@ -42,8 +42,6 @@ def human_flag_node(state: KBState) -> KBState:
         Updated state with ``needs_human_review`` set and the flag
         file path appended to ``saved_paths``.
     """
-    PENDING_DIR.mkdir(parents=True, exist_ok=True)
-
     analyses = state.get("analyses", [])
     review_feedback = state.get("review_feedback", {})
     iteration = state.get("iteration", 0)
@@ -59,15 +57,23 @@ def human_flag_node(state: KBState) -> KBState:
     }
 
     path = PENDING_DIR / _flag_filename()
-    path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
-    logger.warning(
-        "HumanFlag: written %d analyses to %s for manual review",
-        len(analyses), path,
-    )
+    if state.get("dry_run", False):
+        logger.warning(
+            "HumanFlag: dry-run would write %d analyses to %s",
+            len(analyses),
+            path,
+        )
+    else:
+        PENDING_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        logger.warning(
+            "HumanFlag: written %d analyses to %s for manual review",
+            len(analyses),
+            path,
+        )
 
     saved_paths: list[str] = list(state.get("saved_paths") or [])
     saved_paths.append(str(path))

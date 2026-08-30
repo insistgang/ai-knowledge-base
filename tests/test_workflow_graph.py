@@ -66,11 +66,23 @@ class BuildWorkflowGraphIntegrationTest(unittest.TestCase):
         from pipeline.workflow_state import create_initial_state
 
         # Mock the collectors so we don't hit the network
-        graph = build_workflow_graph()
-        state = create_initial_state(sources=["github"], limit=1)
+        state = create_initial_state(sources=["github"], limit=1, dry_run=True)
         state["max_iterations"] = 3
+        reviewed_analyses = []
 
-        with patch("pipeline.workflow_nodes.COLLECTORS", {
+        def fake_review(current_state, **_kwargs):
+            reviewed_analyses.extend(current_state.get("analyses", []))
+            return {
+                **current_state,
+                "review_passed": True,
+                "review_verified": True,
+                "review_feedback": {"scores": {}},
+                "iteration": current_state.get("iteration", 0) + 1,
+                "cost_tracker": {"api_calls": 0},
+            }
+
+        with patch("pipeline.workflow_graph.review_node", side_effect=fake_review), \
+           patch("pipeline.workflow_nodes.COLLECTORS", {
             "github": lambda limit=5: [{"name": "test/repo", "url": "https://example.com",
                                          "summary": "ok", "stars": 1, "language": "Python",
                                          "topics": ["agent"]}]
@@ -95,15 +107,13 @@ class BuildWorkflowGraphIntegrationTest(unittest.TestCase):
             "audience": ["developer"],
         }]), patch("pipeline.workflow_nodes.save_raw", return_value="raw.json"), \
            patch("pipeline.workflow_nodes.save_articles", return_value=["art.json"]), \
-           patch("workflows.reviewer.review_node", side_effect=lambda s, **kw: {
-               **s, "review_passed": True, "review_feedback": {"scores": {}},
-               "iteration": s.get("iteration", 0) + 1,
-               "cost_tracker": {"api_calls": 0},
-           }):
+           patch("pipeline.workflow_nodes.save_cost_metrics", return_value="cost.json"):
+            graph = build_workflow_graph()
             result = graph.invoke(state, config={"recursion_limit": 20})
 
         self.assertIsNotNone(result)
         self.assertEqual(result.get("review_status"), "pass")
+        self.assertEqual(reviewed_analyses[0]["summary"], "A test project")
 
 
 if __name__ == "__main__":

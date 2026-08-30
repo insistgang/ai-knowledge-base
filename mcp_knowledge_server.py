@@ -20,31 +20,39 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from pipeline.article_store import select_canonical_articles
+
 ARTICLES_DIR = Path(__file__).resolve().parent / "knowledge" / "articles"
 
 # ─── Article Cache ───────────────────────────────────────────────────
 _articles: list[dict[str, Any]] = []
 _articles_by_id: dict[str, dict[str, Any]] = {}
+_raw_article_count = 0
 
 
 def _load_articles() -> None:
-    """Load all article JSON files from knowledge/articles/ into memory."""
-    global _articles, _articles_by_id
+    """Load a canonical, source-URL-deduplicated article view into memory."""
+    global _articles, _articles_by_id, _raw_article_count
     if _articles:
         return
-    _articles = []
+    raw_articles: list[dict[str, Any]] = []
     _articles_by_id = {}
+    _raw_article_count = 0
     if not ARTICLES_DIR.is_dir():
         return
     for path in sorted(ARTICLES_DIR.glob("*.json")):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
-            _articles.append(data)
-            aid = data.get("id", "")
-            if aid:
-                _articles_by_id[aid] = data
+            raw_articles.append(data)
         except (json.JSONDecodeError, OSError):
             pass
+
+    _raw_article_count = len(raw_articles)
+    _articles = select_canonical_articles(raw_articles)
+    for article in _articles:
+        article_id = str(article.get("id", "")).strip()
+        if article_id:
+            _articles_by_id[article_id] = article
 
 
 def _score_item(article: dict[str, Any], keyword: str) -> float:
@@ -143,6 +151,8 @@ def handle_knowledge_stats(_params: dict[str, Any]) -> dict[str, Any]:
 
     return {
         "total_articles": len(_articles),
+        "raw_total_articles": _raw_article_count,
+        "duplicates_hidden": max(0, _raw_article_count - len(_articles)),
         "by_source": sources,
         "by_status": statuses,
         "score_distribution": {

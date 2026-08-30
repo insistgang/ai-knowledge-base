@@ -61,9 +61,9 @@ def plan_strategy(target_count: int | None = None) -> dict[str, Any]:
         plan = dict(STRATEGIES["full"])
 
     plan["target_count"] = target_count
-    logger.info("Planner: strategy=%s target=%d limit=%d",
+    logger.info("Planner: strategy=%s target=%d",
                 "lite" if target_count < 10 else "standard" if target_count < 20 else "full",
-                target_count, plan["per_source_limit"])
+                target_count)
 
     return plan
 
@@ -74,8 +74,18 @@ def planner_node(state: KBState) -> KBState:
     Reads ``state["limit"]`` as the target count (or falls back to
     ``PLANNER_TARGET_COUNT`` / ``10``).
     """
-    target = state.get("limit", DEFAULT_TARGET)
-    plan = plan_strategy(target)
+    requested_limit = max(0, int(state.get("limit", DEFAULT_TARGET)))
+    plan = plan_strategy(requested_limit)
+    plan["per_source_limit"] = min(
+        requested_limit,
+        int(plan["per_source_limit"]),
+    )
+    logger.info(
+        "Planner: requested_limit=%d effective_limit=%d max_iterations=%d",
+        requested_limit,
+        plan["per_source_limit"],
+        plan["max_iterations"],
+    )
 
     return {
         **state,  # type: ignore[typeddict-item]
