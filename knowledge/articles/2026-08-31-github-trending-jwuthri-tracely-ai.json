@@ -1,0 +1,31 @@
+{
+  "id": "github-20260831-jwuthri-tracely-ai",
+  "title": "Jwuthri/Tracely-ai: Tracely-ai 为 AI 代理提供原生 CI/CD，将生产故障自动转化为回归测试并阻断 PR，支持零成本回放。",
+  "source": "github-trending",
+  "source_url": "https://github.com/Jwuthri/Tracely-ai",
+  "collected_at": "2026-08-31T15:49:28Z",
+  "summary": "Tracely-ai 为 AI 代理提供原生 CI/CD，将生产故障自动转化为回归测试并阻断 PR，支持零成本回放。",
+  "analysis": {
+    "tech_highlights": [
+      "自动检测并聚类生产故障，生成可复现的回归测试",
+      "基于 OpenTelemetry 和 ClickHouse 实现可观测性与追踪",
+      "零成本在 CI 中回放故障场景，集成 LLM 评估"
+    ],
+    "relevance_score": 8,
+    "reason": "直接解决 AI 代理生产环境可靠性问题，提供自动化回归测试闭环，对开发运维有显著帮助。",
+    "risks": []
+  },
+  "tags": [
+    "AI-agent",
+    "CI/CD",
+    "LLM-observability",
+    "regression-testing",
+    "self-hosted"
+  ],
+  "audience": [
+    "developer",
+    "devops",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

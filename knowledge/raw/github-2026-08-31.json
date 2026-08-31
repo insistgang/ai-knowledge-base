@@ -1,0 +1,115 @@
+{
+  "source": "github",
+  "collected_at": "2026-08-31T15:49:28Z",
+  "items": [
+    {
+      "name": "kyegomez/MORPHEUS-1",
+      "url": "https://github.com/kyegomez/MORPHEUS-1",
+      "summary": "Implementation of \"MORPHEUS-1\" from Prophetic AI and \"The world’s first multi-modal generative ultrasonic transformer designed to induce and stabilize lucid dreams. \"",
+      "stars": 135,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "machine-learning",
+        "medical",
+        "ml",
+        "neural-networks"
+      ]
+    },
+    {
+      "name": "kmario23/deep-learning-drizzle",
+      "url": "https://github.com/kmario23/deep-learning-drizzle",
+      "summary": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!",
+      "stars": 12939,
+      "language": "HTML",
+      "topics": [
+        "artificial-intelligence-algorithms",
+        "artificial-neural-networks",
+        "bayesian-statistics",
+        "computer-vision",
+        "deep-learning",
+        "deep-neural-networks",
+        "deep-reinforcement-learning",
+        "explainable-ai",
+        "geometric-deep-learning",
+        "graph-neural-networks",
+        "machine-learning",
+        "medical-imaging",
+        "natural-language-processing",
+        "optimization",
+        "pattern-recognition",
+        "probabilistic-graphical-models",
+        "probability",
+        "reinforcement-learning",
+        "speech-recognition",
+        "visual-recognition"
+      ]
+    },
+    {
+      "name": "Jwuthri/Tracely-ai",
+      "url": "https://github.com/Jwuthri/Tracely-ai",
+      "summary": "Trace-native CI/CD for AI agents — production failures become regression tests that block the PR. Auto-detect, cluster, freeze into hermetic cases, replay in CI for $0.",
+      "stars": 1163,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agent-observability",
+        "ai-agents",
+        "ci-cd",
+        "clickhouse",
+        "evals",
+        "evaluation",
+        "llm",
+        "llm-as-judge",
+        "llm-evaluation",
+        "llm-observability",
+        "llm-ops",
+        "llmops",
+        "mcp",
+        "monitoring",
+        "opentelemetry",
+        "python",
+        "self-hosted",
+        "tracing"
+      ]
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "stars": 41462,
+      "language": "C",
+      "topics": [
+        "aider",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-intelligence",
+        "codex",
+        "cursor",
+        "cypher",
+        "developer-tools",
+        "gemini-cli",
+        "graph-visualization",
+        "kilocode",
+        "knowledge-graph",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "opencode",
+        "sqlite",
+        "tree-sitter",
+        "windsurf"
+      ]
+    },
+    {
+      "name": "muxinc/ai",
+      "url": "https://github.com/muxinc/ai",
+      "summary": "A typescript library for connecting videos in your Mux account to multi-modal LLMs.",
+      "stars": 71,
+      "language": "TypeScript",
+      "topics": []
+    }
+  ]
+}

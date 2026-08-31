@@ -1,0 +1,27 @@
+{
+  "id": "github-20260831-kyegomez-morpheus-1",
+  "title": "kyegomez/MORPHEUS-1: MORPHEUS-1 是首个多模态生成式超声变压器，旨在诱导和稳定清醒梦，基于 Prophetic AI 的研究实现。",
+  "source": "github-trending",
+  "source_url": "https://github.com/kyegomez/MORPHEUS-1",
+  "collected_at": "2026-08-31T15:49:28Z",
+  "summary": "MORPHEUS-1 是首个多模态生成式超声变压器，旨在诱导和稳定清醒梦，基于 Prophetic AI 的研究实现。",
+  "analysis": {
+    "tech_highlights": [
+      "多模态生成式超声技术",
+      "针对清醒梦诱导的专用模型",
+      "开源实现前沿 AI 研究"
+    ],
+    "relevance_score": 6,
+    "reason": "该项目具有创新性和研究价值，但应用场景小众，对大多数开发者短期帮助有限。",
+    "risks": []
+  },
+  "tags": [
+    "ultrasound",
+    "lucid-dreaming",
+    "multimodal"
+  ],
+  "audience": [
+    "researcher"
+  ],
+  "status": "reviewed"
+}

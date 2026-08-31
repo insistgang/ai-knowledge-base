@@ -1,0 +1,28 @@
+{
+  "id": "github-20260831-kmario23-deep-learning-drizzle",
+  "title": "kmario23/deep-learning-drizzle: 汇集深度学习、强化学习、机器学习、计算机视觉和NLP等领域的免费大学课程讲座资源，涵盖从基础到前沿的丰富内容。",
+  "source": "github-trending",
+  "source_url": "https://github.com/kmario23/deep-learning-drizzle",
+  "collected_at": "2026-08-31T15:49:28Z",
+  "summary": "汇集深度学习、强化学习、机器学习、计算机视觉和NLP等领域的免费大学课程讲座资源，涵盖从基础到前沿的丰富内容。",
+  "analysis": {
+    "tech_highlights": [
+      "涵盖多个AI子领域，资源全面",
+      "包含前沿主题如几何深度学习、图神经网络",
+      "提供免费的高质量大学课程链接"
+    ],
+    "relevance_score": 7,
+    "reason": "对学习和研究有直接帮助，提供系统性的学习路径，但本身不包含代码或新算法，属于资源聚合项目。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "education",
+    "curated-list"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

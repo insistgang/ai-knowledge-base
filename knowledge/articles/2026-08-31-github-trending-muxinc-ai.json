@@ -1,0 +1,29 @@
+{
+  "id": "github-20260831-muxinc-ai",
+  "title": "muxinc/ai: Mux 的 TypeScript 库，将 Mux 账户中的视频连接到多模态大语言模型，便于视频内容分析和处理。",
+  "source": "github-trending",
+  "source_url": "https://github.com/muxinc/ai",
+  "collected_at": "2026-08-31T15:49:28Z",
+  "summary": "Mux 的 TypeScript 库，将 Mux 账户中的视频连接到多模态大语言模型，便于视频内容分析和处理。",
+  "analysis": {
+    "tech_highlights": [
+      "连接视频与多模态 LLM 的桥梁",
+      "TypeScript 实现，类型安全",
+      "针对 Mux 视频平台优化"
+    ],
+    "relevance_score": 6,
+    "reason": "对使用 Mux 视频服务的开发者有直接帮助，但适用范围有限，非通用视频 AI 工具。",
+    "risks": []
+  },
+  "tags": [
+    "video",
+    "multimodal",
+    "LLM",
+    "Mux",
+    "TypeScript"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "reviewed"
+}
