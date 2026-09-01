@@ -1,0 +1,73 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "items": [
+    {
+      "name": "smthemex/ComfyUI_JoyAI_Echo",
+      "url": "https://github.com/smthemex/ComfyUI_JoyAI_Echo",
+      "summary": "Pushing the Frontier of Long Video Generation  Standalone, inference-only release for minute-level multi-shot audio-video generation with a distilled DMD generator, paired cross-modal memory, and story-level consistency.",
+      "stars": 57,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "Farama-Foundation/Gymnasium",
+      "url": "https://github.com/Farama-Foundation/Gymnasium",
+      "summary": "A standard API for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym)",
+      "stars": 12445,
+      "language": "Python",
+      "topics": [
+        "api",
+        "gym",
+        "reinforcement-learning"
+      ]
+    },
+    {
+      "name": "rogue-security/rogue",
+      "url": "https://github.com/rogue-security/rogue",
+      "summary": "AI Agent Evaluator & Red Team Platform",
+      "stars": 1058,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "e2e-testing",
+        "llm",
+        "testing",
+        "testing-framework"
+      ]
+    },
+    {
+      "name": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "summary": "Build Real-Time Knowledge Graphs for AI Agents",
+      "stars": 30485,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "graph",
+        "llms",
+        "rag"
+      ]
+    },
+    {
+      "name": "OpenPipe/ART",
+      "url": "https://github.com/OpenPipe/ART",
+      "summary": "Agent Reinforcement Trainer: train multi-step agents for real-world tasks using GRPO. Give your agents on-the-job training. Reinforcement learning for Qwen3.6, GPT-OSS, Llama, and more!",
+      "stars": 10684,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "grpo",
+        "llms",
+        "lora",
+        "qwen",
+        "qwen3",
+        "reinforcement-learning",
+        "rl"
+      ]
+    }
+  ]
+}

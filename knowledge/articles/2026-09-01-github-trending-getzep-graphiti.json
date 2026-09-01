@@ -1,0 +1,28 @@
+{
+  "id": "github-20260901-getzep-graphiti",
+  "title": "getzep/graphiti: Graphiti 为 AI 代理构建实时知识图谱，支持动态更新与时间感知，增强 RAG 与代理记忆能力。",
+  "source": "github-trending",
+  "source_url": "https://github.com/getzep/graphiti",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "summary": "Graphiti 为 AI 代理构建实时知识图谱，支持动态更新与时间感知，增强 RAG 与代理记忆能力。",
+  "analysis": {
+    "tech_highlights": [
+      "实时增量更新知识图谱",
+      "时间感知的图模型",
+      "专为 AI 代理设计"
+    ],
+    "relevance_score": 8,
+    "reason": "直接解决代理记忆与知识更新痛点，对开发智能代理有显著帮助，但尚未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "knowledge-graph",
+    "ai-agents",
+    "rag"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

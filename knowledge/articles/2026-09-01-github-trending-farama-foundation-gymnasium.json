@@ -1,0 +1,28 @@
+{
+  "id": "github-20260901-farama-foundation-gymnasium",
+  "title": "Farama-Foundation/Gymnasium: Gymnasium 是强化学习标准 API，提供单智能体环境接口和常用参考环境，前身为 OpenAI Gym，广泛用于 ",
+  "source": "github-trending",
+  "source_url": "https://github.com/Farama-Foundation/Gymnasium",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "summary": "Gymnasium 是强化学习标准 API，提供单智能体环境接口和常用参考环境，前身为 OpenAI Gym，广泛用于 RL 研究和开发。",
+  "analysis": {
+    "tech_highlights": [
+      "标准化的环境 API，兼容 Gym 生态",
+      "丰富的参考环境集合，便于基准测试",
+      "活跃维护，社区支持广泛"
+    ],
+    "relevance_score": 8,
+    "reason": "作为 RL 领域事实标准，对研究和开发有直接帮助，但非颠覆性创新",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "api",
+    "environments"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "github-20260901-smthemex-comfyui-joyai-echo",
+  "title": "smthemex/ComfyUI_JoyAI_Echo: ComfyUI_JoyAI_Echo 是 JoyAI Echo 的独立推理版本，支持分钟级多镜头音视频生成，采用蒸馏 D",
+  "source": "github-trending",
+  "source_url": "https://github.com/smthemex/ComfyUI_JoyAI_Echo",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "summary": "ComfyUI_JoyAI_Echo 是 JoyAI Echo 的独立推理版本，支持分钟级多镜头音视频生成，采用蒸馏 DMD 生成器与跨模态记忆，实现故事级一致性。",
+  "analysis": {
+    "tech_highlights": [
+      "分钟级多镜头音视频生成",
+      "蒸馏 DMD 生成器",
+      "跨模态记忆与故事级一致性"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目直接推动长视频生成技术，对视频生成研究和开发有直接帮助，且提供独立推理版本，易于集成。",
+    "risks": []
+  },
+  "tags": [
+    "video-generation",
+    "audio-video",
+    "diffusion",
+    "comfyui",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

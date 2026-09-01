@@ -1,0 +1,28 @@
+{
+  "id": "github-20260901-rogue-security-rogue",
+  "title": "rogue-security/rogue: Rogue 是一个 AI 代理评估与红队平台，用于测试和评估 LLM 代理的安全性与可靠性，提供端到端测试框架。",
+  "source": "github-trending",
+  "source_url": "https://github.com/rogue-security/rogue",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "summary": "Rogue 是一个 AI 代理评估与红队平台，用于测试和评估 LLM 代理的安全性与可靠性，提供端到端测试框架。",
+  "analysis": {
+    "tech_highlights": [
+      "专为 AI 代理设计的红队测试平台",
+      "支持端到端测试，覆盖安全与功能",
+      "聚焦 LLM 代理的评估与漏洞发现"
+    ],
+    "relevance_score": 8,
+    "reason": "对 AI 代理开发者和安全研究人员有直接帮助，填补了代理安全测试的空白，实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "AI安全",
+    "红队测试",
+    "LLM评估"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "github-20260901-openpipe-art",
+  "title": "OpenPipe/ART: ART 是一个用于训练多步骤智能体的强化学习工具，基于 GRPO 算法，支持 Qwen、Llama 等模型，提供在职训练",
+  "source": "github-trending",
+  "source_url": "https://github.com/OpenPipe/ART",
+  "collected_at": "2026-09-01T13:04:08Z",
+  "summary": "ART 是一个用于训练多步骤智能体的强化学习工具，基于 GRPO 算法，支持 Qwen、Llama 等模型，提供在职训练能力。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 GRPO 的强化学习训练框架",
+      "支持多种主流 LLM 模型",
+      "面向真实世界任务的智能体训练"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为智能体训练提供实用工具，对开发者和研究者有直接帮助，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "reinforcement-learning",
+    "agent",
+    "GRPO"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}
