@@ -1,0 +1,28 @@
+{
+  "id": "github-20260909-juliaai-mlj-jl",
+  "title": "JuliaAI/MLJ.jl: MLJ.jl 是 Julia 语言的机器学习框架，提供统一接口、管道和超参数调优，支持分类、回归、聚类等任务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/JuliaAI/MLJ.jl",
+  "collected_at": "2026-09-09T12:43:25Z",
+  "summary": "MLJ.jl 是 Julia 语言的机器学习框架，提供统一接口、管道和超参数调优，支持分类、回归、聚类等任务。",
+  "analysis": {
+    "tech_highlights": [
+      "统一模型接口，支持多种算法",
+      "内置管道和超参数调优功能",
+      "与 Julia 生态深度集成"
+    ],
+    "relevance_score": 7,
+    "reason": "对 Julia 开发者有直接帮助，提供完整的 ML 工作流，但受众相对小众，影响有限。",
+    "risks": []
+  },
+  "tags": [
+    "julia",
+    "machine-learning",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

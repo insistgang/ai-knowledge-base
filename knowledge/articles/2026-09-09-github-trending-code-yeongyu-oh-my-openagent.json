@@ -1,0 +1,28 @@
+{
+  "id": "github-20260909-code-yeongyu-oh-my-openagent",
+  "title": "code-yeongyu/oh-my-openagent: OmO 是一个 TypeScript 编写的 AI 代理编排工具，通过关键词触发图工程能力，支持多模型集成，提供 TUI",
+  "source": "github-trending",
+  "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+  "collected_at": "2026-09-09T12:43:25Z",
+  "summary": "OmO 是一个 TypeScript 编写的 AI 代理编排工具，通过关键词触发图工程能力，支持多模型集成，提供 TUI 界面。",
+  "analysis": {
+    "tech_highlights": [
+      "支持多模型（Anthropic, OpenAI, Gemini）集成",
+      "提供 TUI 交互界面，提升开发体验",
+      "通过关键词触发复杂图工程操作，简化 AI 代理工作流"
+    ],
+    "relevance_score": 7,
+    "reason": "对 AI 代理编排和图工程有直接帮助，但项目较新，生态和文档可能不完善，短期价值中等偏高。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "orchestration",
+    "typescript"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

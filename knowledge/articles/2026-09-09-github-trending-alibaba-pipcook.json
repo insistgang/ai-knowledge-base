@@ -1,0 +1,28 @@
+{
+  "id": "github-20260909-alibaba-pipcook",
+  "title": "alibaba/pipcook: 阿里开源面向Web开发者的机器学习平台，提供声明式流水线，简化模型训练与部署流程。",
+  "source": "github-trending",
+  "source_url": "https://github.com/alibaba/pipcook",
+  "collected_at": "2026-09-09T12:43:25Z",
+  "summary": "阿里开源面向Web开发者的机器学习平台，提供声明式流水线，简化模型训练与部署流程。",
+  "analysis": {
+    "tech_highlights": [
+      "面向Web开发者，降低ML门槛",
+      "声明式流水线设计",
+      "基于TensorFlow.js"
+    ],
+    "relevance_score": 7,
+    "reason": "对Web开发者直接有用，但生态尚不成熟，短期价值中等偏高。",
+    "risks": []
+  },
+  "tags": [
+    "machine-learning",
+    "web",
+    "pipeline",
+    "tensorflow"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "status": "reviewed"
+}

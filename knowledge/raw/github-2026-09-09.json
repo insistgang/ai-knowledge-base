@@ -1,0 +1,124 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-09T12:43:25Z",
+  "items": [
+    {
+      "name": "alibaba/pipcook",
+      "url": "https://github.com/alibaba/pipcook",
+      "summary": "Machine learning platform for Web developers",
+      "stars": 2596,
+      "language": "TypeScript",
+      "topics": [
+        "js",
+        "machine-learning",
+        "pipeline",
+        "tensorflow"
+      ]
+    },
+    {
+      "name": "redis/redis",
+      "url": "https://github.com/redis/redis",
+      "summary": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
+      "stars": 76287,
+      "language": "C",
+      "topics": [
+        "cache",
+        "caching",
+        "database",
+        "distributed-systems",
+        "in-memory",
+        "in-memory-database",
+        "json",
+        "key-value",
+        "key-value-store",
+        "message-broker",
+        "message-queue",
+        "no-sql",
+        "nosql",
+        "open-source",
+        "real-time",
+        "realtime",
+        "redis",
+        "time-series",
+        "vector-databases",
+        "vector-search"
+      ]
+    },
+    {
+      "name": "hiyouga/LlamaFactory",
+      "url": "https://github.com/hiyouga/LlamaFactory",
+      "summary": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+      "stars": 74672,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "deepseek",
+        "fine-tuning",
+        "gemma",
+        "gpt",
+        "instruction-tuning",
+        "large-language-models",
+        "llama",
+        "llama3",
+        "llm",
+        "lora",
+        "moe",
+        "nlp",
+        "peft",
+        "qlora",
+        "quantization",
+        "qwen",
+        "rlhf",
+        "transformers"
+      ]
+    },
+    {
+      "name": "code-yeongyu/oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "summary": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
+      "stars": 68843,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-skills",
+        "codex",
+        "cursor",
+        "gemini",
+        "ide",
+        "openai",
+        "opencode",
+        "orchestration",
+        "tui",
+        "typescript"
+      ]
+    },
+    {
+      "name": "JuliaAI/MLJ.jl",
+      "url": "https://github.com/JuliaAI/MLJ.jl",
+      "summary": "A Julia machine learning framework",
+      "stars": 1939,
+      "language": "Julia",
+      "topics": [
+        "classification",
+        "clustering",
+        "data-science",
+        "ensemble-learning",
+        "julia",
+        "machine-learning",
+        "pipeline",
+        "pipelines",
+        "predictive-modeling",
+        "regression",
+        "stacking",
+        "statistics",
+        "tuning",
+        "tuning-parameters"
+      ]
+    }
+  ]
+}

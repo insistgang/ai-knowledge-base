@@ -1,0 +1,28 @@
+{
+  "id": "github-20260909-redis-redis",
+  "title": "redis/redis: Redis是高性能内存数据存储，支持缓存、消息队列、文档和向量查询，广泛用于实时应用。",
+  "source": "github-trending",
+  "source_url": "https://github.com/redis/redis",
+  "collected_at": "2026-09-09T12:43:25Z",
+  "summary": "Redis是高性能内存数据存储，支持缓存、消息队列、文档和向量查询，广泛用于实时应用。",
+  "analysis": {
+    "tech_highlights": [
+      "支持丰富数据结构",
+      "内置向量搜索",
+      "高吞吐低延迟"
+    ],
+    "relevance_score": 9,
+    "reason": "Redis是基础设施级项目，对开发有直接帮助，影响广泛",
+    "risks": []
+  },
+  "tags": [
+    "cache",
+    "database",
+    "real-time"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}
