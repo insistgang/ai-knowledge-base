@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T11:57:42Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00438,
+    "remaining_usd": 0.09562,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1446,
+      "completion_tokens": 978,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 934,
+      "total_tokens": 2424,
+      "estimated_cost_usd": 0.00438,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1446,
+    "completion_tokens": 978,
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 934,
+    "total_tokens": 2424,
+    "estimated_cost_usd": 0.00438
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "GoogleCloudPlatform/vertex-ai-samples",
+      "model": "deepseek-flash",
+      "prompt_tokens": 341,
+      "completion_tokens": 247,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 213,
+      "total_tokens": 588,
+      "estimated_cost_usd": 0.001082
+    },
+    {
+      "source": "github",
+      "item_name": "milvus-io/milvus",
+      "model": "deepseek-flash",
+      "prompt_tokens": 324,
+      "completion_tokens": 190,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 196,
+      "total_tokens": 514,
+      "estimated_cost_usd": 0.000894
+    },
+    {
+      "source": "github",
+      "item_name": "huggingface/peft",
+      "model": "deepseek-flash",
+      "prompt_tokens": 274,
+      "completion_tokens": 195,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 146,
+      "total_tokens": 469,
+      "estimated_cost_usd": 0.000859
+    },
+    {
+      "source": "github",
+      "item_name": "anthropics/prompt-eng-interactive-tutorial",
+      "model": "deepseek-flash",
+      "prompt_tokens": 236,
+      "completion_tokens": 177,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 236,
+      "total_tokens": 413,
+      "estimated_cost_usd": 0.000767
+    },
+    {
+      "source": "github",
+      "item_name": "kedro-org/kedro-viz",
+      "model": "deepseek-flash",
+      "prompt_tokens": 271,
+      "completion_tokens": 169,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 143,
+      "total_tokens": 440,
+      "estimated_cost_usd": 0.000778
+    }
+  ]
+}

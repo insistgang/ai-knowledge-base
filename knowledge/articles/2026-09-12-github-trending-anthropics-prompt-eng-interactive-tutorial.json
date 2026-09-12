@@ -1,0 +1,30 @@
+{
+  "id": "github-20260912-anthropics-prompt-eng-interactive-tutorial",
+  "title": "anthropics/prompt-eng-interactive-tutorial: Anthropic 官方推出的交互式提示工程教程，通过 Jupyter Notebook 手把手教授 Claude 提示",
+  "source": "github-trending",
+  "source_url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "summary": "Anthropic 官方推出的交互式提示工程教程，通过 Jupyter Notebook 手把手教授 Claude 提示词编写技巧，涵盖基础到进阶实践。",
+  "analysis": {
+    "tech_highlights": [
+      "Anthropic 官方出品，权威性强",
+      "交互式 Jupyter Notebook 形式，边学边练",
+      "系统覆盖提示工程核心技巧与最佳实践"
+    ],
+    "relevance_score": 7,
+    "reason": "官方权威教程，对使用 Claude 及大模型提示工程有直接帮助，但内容偏教学而非工具/框架，技术突破性有限。",
+    "risks": []
+  },
+  "tags": [
+    "prompt-engineering",
+    "llm",
+    "anthropic",
+    "tutorial",
+    "claude"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

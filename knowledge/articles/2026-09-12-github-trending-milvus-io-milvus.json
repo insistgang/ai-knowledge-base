@@ -1,0 +1,31 @@
+{
+  "id": "github-20260912-milvus-io-milvus",
+  "title": "milvus-io/milvus: Milvus 是高性能云原生向量数据库，支持大规模向量近似最近邻搜索，广泛用于 RAG、图像检索等 AI 场景。",
+  "source": "github-trending",
+  "source_url": "https://github.com/milvus-io/milvus",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "summary": "Milvus 是高性能云原生向量数据库，支持大规模向量近似最近邻搜索，广泛用于 RAG、图像检索等 AI 场景。",
+  "analysis": {
+    "tech_highlights": [
+      "云原生分布式架构，支持水平扩展与存算分离",
+      "集成多种 ANN 索引（HNSW、DiskANN、Faiss 等）",
+      "面向 LLM/RAG 的向量存储与相似度检索能力"
+    ],
+    "relevance_score": 9,
+    "reason": "作为主流开源向量数据库，是 LLM/RAG 与向量检索基础设施的关键组件，对开发者和研究者有直接且广泛的价值。",
+    "risks": []
+  },
+  "tags": [
+    "vector-database",
+    "anns",
+    "rag",
+    "cloud-native",
+    "golang"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "data-engineer"
+  ],
+  "status": "draft"
+}

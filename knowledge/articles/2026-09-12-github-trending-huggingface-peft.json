@@ -1,0 +1,30 @@
+{
+  "id": "github-20260912-huggingface-peft",
+  "title": "huggingface/peft: Hugging Face 出品的参数高效微调库，支持 LoRA、Adapter、Prompt Tuning 等方法，大幅",
+  "source": "github-trending",
+  "source_url": "https://github.com/huggingface/peft",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "summary": "Hugging Face 出品的参数高效微调库，支持 LoRA、Adapter、Prompt Tuning 等方法，大幅降低大模型微调成本。",
+  "analysis": {
+    "tech_highlights": [
+      "集成 LoRA、Prefix Tuning、IA3 等多种主流 PEFT 方法",
+      "与 Transformers、Diffusers 生态无缝兼容",
+      "显著降低显存占用与训练成本，支持消费级 GPU 微调大模型"
+    ],
+    "relevance_score": 9,
+    "reason": "PEFT 已成为大模型微调的事实标准工具，被广泛集成于主流训练框架，对 LLM 应用开发与学术研究均有直接且重大的价值。",
+    "risks": []
+  },
+  "tags": [
+    "peft",
+    "lora",
+    "fine-tuning",
+    "llm",
+    "pytorch"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

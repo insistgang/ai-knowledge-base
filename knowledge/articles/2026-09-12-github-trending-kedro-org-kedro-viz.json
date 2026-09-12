@@ -1,0 +1,31 @@
+{
+  "id": "github-20260912-kedro-org-kedro-viz",
+  "title": "kedro-org/kedro-viz: Kedro-Viz 是 Kedro 数据与机器学习管道的可视化插件，支持管道结构展示和实验跟踪，基于 React 构建。",
+  "source": "github-trending",
+  "source_url": "https://github.com/kedro-org/kedro-viz",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "summary": "Kedro-Viz 是 Kedro 数据与机器学习管道的可视化插件，支持管道结构展示和实验跟踪，基于 React 构建。",
+  "analysis": {
+    "tech_highlights": [
+      "交互式可视化 Kedro 数据与 ML 管道",
+      "集成实验跟踪功能",
+      "基于 React 的现代化前端架构"
+    ],
+    "relevance_score": 7,
+    "reason": "对使用 Kedro 框架的开发者有直接帮助，能提升管道调试与实验管理效率，但受众相对特定。",
+    "risks": []
+  },
+  "tags": [
+    "kedro",
+    "data-visualization",
+    "experiment-tracking",
+    "react",
+    "python"
+  ],
+  "audience": [
+    "developer",
+    "data-scientist",
+    "ml-engineer"
+  ],
+  "status": "draft"
+}

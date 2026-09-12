@@ -1,0 +1,31 @@
+{
+  "id": "github-20260912-googlecloudplatform-vertex-ai-samples",
+  "title": "GoogleCloudPlatform/vertex-ai-samples: Google Cloud Vertex AI 官方示例库，提供大量 Jupyter Notebook、代码示例和应用，覆",
+  "source": "github-trending",
+  "source_url": "https://github.com/GoogleCloudPlatform/vertex-ai-samples",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "summary": "Google Cloud Vertex AI 官方示例库，提供大量 Jupyter Notebook、代码示例和应用，覆盖 AutoML、Gemini、生成式 AI、MLOps 与流水线等机器学习工作流。",
+  "analysis": {
+    "tech_highlights": [
+      "覆盖 Vertex AI 全栈能力：AutoML、Model Garden、Gemini API、Pipelines、Workbench",
+      "官方维护的 Notebook 与示例应用，可直接在 Colab / Colab Enterprise 运行",
+      "涵盖生成式 AI 与 MLOps 端到端实践，含模型训练、部署与预测"
+    ],
+    "relevance_score": 8,
+    "reason": "官方权威示例集合，对使用 Google Cloud Vertex AI 进行 ML/GenAI 开发的工程师与研究者有直接参考价值，能显著降低上手成本，但属于示例资源而非框架或工具本身，故未达 9-10。",
+    "risks": []
+  },
+  "tags": [
+    "vertex-ai",
+    "google-cloud",
+    "generative-ai",
+    "mlops",
+    "gemini"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "data-scientist"
+  ],
+  "status": "draft"
+}

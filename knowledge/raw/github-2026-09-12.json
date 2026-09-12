@@ -1,0 +1,104 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-12T11:57:42Z",
+  "items": [
+    {
+      "name": "GoogleCloudPlatform/vertex-ai-samples",
+      "url": "https://github.com/GoogleCloudPlatform/vertex-ai-samples",
+      "summary": "Notebooks, code samples, sample apps, and other resources that demonstrate how to use, develop and manage machine learning and generative AI workflows using Google Cloud Vertex AI.",
+      "stars": 787,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "automl",
+        "colab",
+        "colab-enterprise",
+        "gemini",
+        "gemini-api",
+        "genai",
+        "generative-ai",
+        "google-cloud-platform",
+        "ml",
+        "mlops",
+        "model",
+        "model-garden",
+        "notebook",
+        "pipeline",
+        "predictions",
+        "samples",
+        "vertex-ai",
+        "vertexai",
+        "workbench"
+      ]
+    },
+    {
+      "name": "milvus-io/milvus",
+      "url": "https://github.com/milvus-io/milvus",
+      "summary": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+      "stars": 46067,
+      "language": "Go",
+      "topics": [
+        "anns",
+        "cloud-native",
+        "diskann",
+        "distributed",
+        "embedding-database",
+        "embedding-similarity",
+        "embedding-store",
+        "faiss",
+        "golang",
+        "hnsw",
+        "image-search",
+        "llm",
+        "nearest-neighbor-search",
+        "rag",
+        "vector-database",
+        "vector-search",
+        "vector-similarity",
+        "vector-store"
+      ]
+    },
+    {
+      "name": "huggingface/peft",
+      "url": "https://github.com/huggingface/peft",
+      "summary": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+      "stars": 21661,
+      "language": "Python",
+      "topics": [
+        "adapter",
+        "diffusion",
+        "fine-tuning",
+        "llm",
+        "lora",
+        "parameter-efficient-learning",
+        "peft",
+        "python",
+        "pytorch",
+        "transformers"
+      ]
+    },
+    {
+      "name": "anthropics/prompt-eng-interactive-tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "summary": "Anthropic's Interactive Prompt Engineering Tutorial",
+      "stars": 38144,
+      "language": "Jupyter Notebook",
+      "topics": []
+    },
+    {
+      "name": "kedro-org/kedro-viz",
+      "url": "https://github.com/kedro-org/kedro-viz",
+      "summary": "Visualise your Kedro data and machine-learning pipelines and track your experiments. ",
+      "stars": 760,
+      "language": "JavaScript",
+      "topics": [
+        "data-visualization",
+        "experiment-tracking",
+        "hacktoberfest",
+        "kedro",
+        "kedro-plugin",
+        "python",
+        "react"
+      ]
+    }
+  ]
+}
