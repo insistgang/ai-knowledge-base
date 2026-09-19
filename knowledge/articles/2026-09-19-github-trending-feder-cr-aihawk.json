@@ -1,0 +1,31 @@
+{
+  "id": "github-20260919-feder-cr-aihawk",
+  "title": "feder-cr/AIHawk: AIHawk 是一个开源 MCP 服务器，提供反检测浏览器与网页浏览代理，支持 AI 网页抓取和计算机使用代理，无需处理",
+  "source": "github-trending",
+  "source_url": "https://github.com/feder-cr/AIHawk",
+  "collected_at": "2026-09-19T12:15:51Z",
+  "summary": "AIHawk 是一个开源 MCP 服务器，提供反检测浏览器与网页浏览代理，支持 AI 网页抓取和计算机使用代理，无需处理验证码。",
+  "analysis": {
+    "tech_highlights": [
+      "反检测浏览器技术，绕过网站机器人识别",
+      "MCP 服务器架构，可集成 Claude Code、Gemini CLI 等 AI 工具",
+      "支持 AI 网页抓取与计算机使用代理，无需验证码",
+      "面向求职、线索生成、市场调研等自动化场景"
+    ],
+    "relevance_score": 7,
+    "reason": "该项目将反检测浏览器与 MCP 协议结合，为 AI 代理提供无阻碍的网页浏览能力，对开发自动化代理和网页抓取有直接帮助，但反检测技术存在伦理与合规风险，且生态尚在早期。",
+    "risks": []
+  },
+  "tags": [
+    "mcp-server",
+    "browser-agent",
+    "web-scraping",
+    "anti-detect",
+    "ai-automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

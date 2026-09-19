@@ -1,0 +1,32 @@
+{
+  "id": "github-20260919-cactus-compute-needle",
+  "title": "cactus-compute/needle: 面向微型设备的自动化基础模型，2-bit 量化仅 8-29MB，可在手机、可穿戴、智能家居、机器人和微控制器上实现工具调",
+  "source": "github-trending",
+  "source_url": "https://github.com/cactus-compute/needle",
+  "collected_at": "2026-09-19T12:15:51Z",
+  "summary": "面向微型设备的自动化基础模型，2-bit 量化仅 8-29MB，可在手机、可穿戴、智能家居、机器人和微控制器上实现工具调用、结构化提取与嵌入。",
+  "analysis": {
+    "tech_highlights": [
+      "2-bit 极致量化，模型体积仅 8-29MB，适配微控制器等极端资源受限设备",
+      "在端侧原生支持工具调用（function calling）与结构化信息提取",
+      "覆盖手机、可穿戴、智能家居、机器人、汽车到 MCU 的广泛边缘场景",
+      "提供端侧嵌入能力，可作为 TinyML 场景的自动化基础模型"
+    ],
+    "relevance_score": 8,
+    "reason": "将基础模型能力压缩到 2-bit 并落地到 MCU 级别设备，同时保留工具调用与结构化输出，对端侧 AI 与 TinyML 开发者有直接实用价值，属于边缘智能方向的重要工程进展。",
+    "risks": []
+  },
+  "tags": [
+    "edge-ai",
+    "tinyml",
+    "quantization",
+    "function-calling",
+    "on-device-llm"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "embedded-engineer"
+  ],
+  "status": "draft"
+}

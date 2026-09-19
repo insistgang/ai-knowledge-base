@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T12:15:51Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.005303,
+    "remaining_usd": 0.094697,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1646,
+      "completion_tokens": 1219,
+      "prompt_cache_hit_tokens": 762,
+      "prompt_cache_miss_tokens": 884,
+      "total_tokens": 2865,
+      "estimated_cost_usd": 0.005303,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1646,
+    "completion_tokens": 1219,
+    "prompt_cache_hit_tokens": 762,
+    "prompt_cache_miss_tokens": 884,
+    "total_tokens": 2865,
+    "estimated_cost_usd": 0.005303
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "feder-cr/AIHawk",
+      "model": "deepseek-flash",
+      "prompt_tokens": 351,
+      "completion_tokens": 232,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 223,
+      "total_tokens": 583,
+      "estimated_cost_usd": 0.001047
+    },
+    {
+      "source": "github",
+      "item_name": "ToolJet/ToolJet",
+      "model": "deepseek-flash",
+      "prompt_tokens": 352,
+      "completion_tokens": 253,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 224,
+      "total_tokens": 605,
+      "estimated_cost_usd": 0.001111
+    },
+    {
+      "source": "github",
+      "item_name": "cactus-compute/needle",
+      "model": "deepseek-flash",
+      "prompt_tokens": 297,
+      "completion_tokens": 259,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 169,
+      "total_tokens": 556,
+      "estimated_cost_usd": 0.001074
+    },
+    {
+      "source": "github",
+      "item_name": "aaif-goose/goose",
+      "model": "deepseek-flash",
+      "prompt_tokens": 260,
+      "completion_tokens": 207,
+      "prompt_cache_hit_tokens": 126,
+      "prompt_cache_miss_tokens": 134,
+      "total_tokens": 467,
+      "estimated_cost_usd": 0.000881
+    },
+    {
+      "source": "github",
+      "item_name": "skalesapp/skales",
+      "model": "deepseek-flash",
+      "prompt_tokens": 386,
+      "completion_tokens": 268,
+      "prompt_cache_hit_tokens": 252,
+      "prompt_cache_miss_tokens": 134,
+      "total_tokens": 654,
+      "estimated_cost_usd": 0.00119
+    }
+  ]
+}

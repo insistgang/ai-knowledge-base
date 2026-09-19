@@ -1,0 +1,32 @@
+{
+  "id": "github-20260919-tooljet-tooljet",
+  "title": "ToolJet/ToolJet: ToolJet 是开源企业级低代码平台，可通过可视化、提示词或 MCP 协议从 Claude Code、Codex、Cu",
+  "source": "github-trending",
+  "source_url": "https://github.com/ToolJet/ToolJet",
+  "collected_at": "2026-09-19T12:15:51Z",
+  "summary": "ToolJet 是开源企业级低代码平台，可通过可视化、提示词或 MCP 协议从 Claude Code、Codex、Cursor 等 AI 工具生成内部工具、仪表盘、工作流和 AI Agent。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 MCP 协议，可被 Claude Code、Codex、Cursor 等 AI 编码工具直接驱动生成应用",
+      "可视化拖拽 + 提示词双模式构建内部工具、仪表盘与工作流",
+      "自托管、Docker/Kubernetes 部署，企业级可扩展架构",
+      "集成 AI Agent 与工作流自动化能力"
+    ],
+    "relevance_score": 8,
+    "reason": "作为成熟的开源低代码平台，ToolJet 通过 MCP 与主流 AI 编码工具深度集成，显著降低企业内部工具开发门槛，对开发者与团队有直接生产力价值，但并非底层技术范式变革。",
+    "risks": []
+  },
+  "tags": [
+    "low-code",
+    "mcp",
+    "ai-agent",
+    "internal-tools",
+    "self-hosted"
+  ],
+  "audience": [
+    "developer",
+    "enterprise",
+    "product-manager"
+  ],
+  "status": "draft"
+}

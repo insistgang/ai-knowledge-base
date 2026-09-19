@@ -1,0 +1,121 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-19T12:15:51Z",
+  "items": [
+    {
+      "name": "feder-cr/AIHawk",
+      "url": "https://github.com/feder-cr/AIHawk",
+      "summary": "Anti detect browser and web browsing agent: an open-source MCP server for undetected browsing, AI web scraping and computer use agents. No captchas.",
+      "stars": 31593,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "ai-agent",
+        "ai-automation",
+        "autonomous-agents",
+        "browser",
+        "browser-agent",
+        "claude-code-plugin",
+        "computer-use",
+        "gemini-cli-extension",
+        "job-hunting",
+        "job-search",
+        "lead-generation",
+        "llm-agent",
+        "market-research",
+        "price-monitoring",
+        "productivity",
+        "task-automation",
+        "web-agent",
+        "web-automation",
+        "web-research"
+      ]
+    },
+    {
+      "name": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "summary": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP 🚀",
+      "stars": 40940,
+      "language": "JavaScript",
+      "topics": [
+        "ai-app-builder",
+        "docker",
+        "internal-applications",
+        "internal-project",
+        "internal-tool",
+        "internal-tools",
+        "javascript",
+        "kubernetes",
+        "low-code",
+        "low-code-development-platform",
+        "low-code-framework",
+        "no-code",
+        "nodejs",
+        "reactjs",
+        "self-hosted",
+        "typescript",
+        "web-development-tools",
+        "workflow-automation"
+      ]
+    },
+    {
+      "name": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "summary": "Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers.",
+      "stars": 11414,
+      "language": "Python",
+      "topics": [
+        "cactus",
+        "edge-ai",
+        "foundation-model",
+        "function-calling",
+        "llm",
+        "on-device-ai",
+        "tinyml",
+        "tool-calling"
+      ]
+    },
+    {
+      "name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+      "stars": 54458,
+      "language": "Rust",
+      "topics": [
+        "acp",
+        "ai",
+        "ai-agents",
+        "mcp"
+      ]
+    },
+    {
+      "name": "skalesapp/skales",
+      "url": "https://github.com/skalesapp/skales",
+      "summary": "Personal AI agent for macOS, Windows, Linux, Android & iOS. Set a goal, it works alone: coding (Skales Code), desktop + browser automation, autonomous scheduled Tasks. Teams of agents and humans across paired desktops. Agent2Agent, MCP, computer use, voice, local LLMs (Ollama), Agent Skills (SKILL.md). 26 AI providers, BYOK. No Docker, no terminal.",
+      "stars": 1905,
+      "language": "unknown",
+      "topics": [
+        "agentic-ai",
+        "ai-agent",
+        "ai-assistant",
+        "android",
+        "automation",
+        "autonomous-agent",
+        "desktop-app",
+        "electron",
+        "ios",
+        "linux",
+        "llm",
+        "local-ai",
+        "local-first",
+        "macos",
+        "mcp",
+        "ollama",
+        "privacy",
+        "react-native",
+        "typescript",
+        "windows"
+      ]
+    }
+  ]
+}

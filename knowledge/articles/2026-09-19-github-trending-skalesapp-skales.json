@@ -1,0 +1,32 @@
+{
+  "id": "github-20260919-skalesapp-skales",
+  "title": "skalesapp/skales: Skales 是跨平台个人 AI 智能体，支持桌面与移动端，可自主完成编码、浏览器与桌面自动化、定时任务，支持多智能体协",
+  "source": "github-trending",
+  "source_url": "https://github.com/skalesapp/skales",
+  "collected_at": "2026-09-19T12:15:51Z",
+  "summary": "Skales 是跨平台个人 AI 智能体，支持桌面与移动端，可自主完成编码、浏览器与桌面自动化、定时任务，支持多智能体协作、MCP、本地 LLM 与 26 家 AI 提供商。",
+  "analysis": {
+    "tech_highlights": [
+      "跨 macOS/Windows/Linux/Android/iOS 全平台，无需 Docker 与终端",
+      "支持 Agent2Agent 协作、MCP 协议与 Agent Skills (SKILL.md)",
+      "集成计算机使用、语音、本地 LLM (Ollama) 与 BYOK 26 家 AI 提供商",
+      "本地优先、隐私保护，支持定时自主任务与多智能体团队"
+    ],
+    "relevance_score": 8,
+    "reason": "功能覆盖全面，整合 MCP、Agent2Agent、本地 LLM 等前沿能力，对开发者构建自主智能体应用有直接参考价值，但尚属应用层产品，未改变底层技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "agentic-ai",
+    "mcp",
+    "local-llm",
+    "cross-platform",
+    "automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "product-manager"
+  ],
+  "status": "draft"
+}
