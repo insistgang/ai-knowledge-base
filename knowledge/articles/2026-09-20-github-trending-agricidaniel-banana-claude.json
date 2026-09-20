@@ -1,0 +1,29 @@
+{
+  "id": "github-20260920-agricidaniel-banana-claude",
+  "title": "AgriciDaniel/banana-claude: 为 Claude Code 提供 AI 图像生成技能，由 Gemini 驱动，充当创意总监角色，辅助内容创作。",
+  "source": "github-trending",
+  "source_url": "https://github.com/AgriciDaniel/banana-claude",
+  "collected_at": "2026-09-20T12:51:00Z",
+  "summary": "为 Claude Code 提供 AI 图像生成技能，由 Gemini 驱动，充当创意总监角色，辅助内容创作。",
+  "analysis": {
+    "tech_highlights": [
+      "将 Gemini 图像生成能力集成到 Claude Code 工作流",
+      "以技能（Skill）形式扩展 Claude Code 功能",
+      "面向内容创作的创意总监式交互设计"
+    ],
+    "relevance_score": 6,
+    "reason": "项目将图像生成能力接入 Claude Code，对使用该工具的开发者有一定实用价值，但依赖 Gemini 且功能相对单一，属于工具集成类项目，短期影响有限。",
+    "risks": []
+  },
+  "tags": [
+    "claude-code",
+    "image-generation",
+    "gemini",
+    "ai-content"
+  ],
+  "audience": [
+    "developer",
+    "creator"
+  ],
+  "status": "draft"
+}

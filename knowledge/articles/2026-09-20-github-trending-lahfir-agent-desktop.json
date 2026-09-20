@@ -1,0 +1,32 @@
+{
+  "id": "github-20260920-lahfir-agent-desktop",
+  "title": "lahfir/agent-desktop: Agent Desktop 用 Rust 构建，通过操作系统无障碍树让 AI 代理可靠地感知并操作桌面应用真实 UI 结",
+  "source": "github-trending",
+  "source_url": "https://github.com/lahfir/agent-desktop",
+  "collected_at": "2026-09-20T12:51:00Z",
+  "summary": "Agent Desktop 用 Rust 构建，通过操作系统无障碍树让 AI 代理可靠地感知并操作桌面应用真实 UI 结构，避免像素猜测，支持稳定引用与安全重试。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 OS 无障碍树获取真实 UI 结构，而非视觉像素识别",
+      "稳定引用与可安全重试的操作语义，提升代理可靠性",
+      "Rust 实现，支持 macOS，提供 MCP 与 CLI 接口",
+      "面向 computer-use agent 的通用桌面自动化能力"
+    ],
+    "relevance_score": 8,
+    "reason": "为 AI 代理提供可靠的桌面操作基础设施，技术路线（无障碍树替代像素）有明确优势，对开发 computer-use agent 有直接帮助，但生态与跨平台成熟度仍待观察。",
+    "risks": []
+  },
+  "tags": [
+    "computer-use",
+    "ai-agents",
+    "desktop-automation",
+    "accessibility",
+    "rust",
+    "mcp"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

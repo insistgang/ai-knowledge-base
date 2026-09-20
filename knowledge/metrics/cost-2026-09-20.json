@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T12:51:00Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.004495,
+    "remaining_usd": 0.095505,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1405,
+      "completion_tokens": 1030,
+      "prompt_cache_hit_tokens": 507,
+      "prompt_cache_miss_tokens": 898,
+      "total_tokens": 2435,
+      "estimated_cost_usd": 0.004495,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1405,
+    "completion_tokens": 1030,
+    "prompt_cache_hit_tokens": 507,
+    "prompt_cache_miss_tokens": 898,
+    "total_tokens": 2435,
+    "estimated_cost_usd": 0.004495
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "openai/openai-cua-sample-app",
+      "model": "deepseek-flash",
+      "prompt_tokens": 241,
+      "completion_tokens": 166,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 241,
+      "total_tokens": 407,
+      "estimated_cost_usd": 0.000739
+    },
+    {
+      "source": "github",
+      "item_name": "AgriciDaniel/banana-claude",
+      "model": "deepseek-flash",
+      "prompt_tokens": 262,
+      "completion_tokens": 171,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 134,
+      "total_tokens": 433,
+      "estimated_cost_usd": 0.000775
+    },
+    {
+      "source": "github",
+      "item_name": "huggingface/text-embeddings-inference",
+      "model": "deepseek-flash",
+      "prompt_tokens": 257,
+      "completion_tokens": 225,
+      "prompt_cache_hit_tokens": 123,
+      "prompt_cache_miss_tokens": 134,
+      "total_tokens": 482,
+      "estimated_cost_usd": 0.000932
+    },
+    {
+      "source": "github",
+      "item_name": "mudler/LocalAI",
+      "model": "deepseek-flash",
+      "prompt_tokens": 322,
+      "completion_tokens": 240,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 194,
+      "total_tokens": 562,
+      "estimated_cost_usd": 0.001042
+    },
+    {
+      "source": "github",
+      "item_name": "lahfir/agent-desktop",
+      "model": "deepseek-flash",
+      "prompt_tokens": 323,
+      "completion_tokens": 228,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 195,
+      "total_tokens": 551,
+      "estimated_cost_usd": 0.001007
+    }
+  ]
+}

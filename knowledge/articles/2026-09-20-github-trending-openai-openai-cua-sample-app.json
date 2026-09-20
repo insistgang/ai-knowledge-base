@@ -1,0 +1,30 @@
+{
+  "id": "github-20260920-openai-openai-cua-sample-app",
+  "title": "openai/openai-cua-sample-app: OpenAI 官方示例应用，演示如何通过 API 在多种计算机环境中使用 CUA（计算机使用代理），基于 TypeScr",
+  "source": "github-trending",
+  "source_url": "https://github.com/openai/openai-cua-sample-app",
+  "collected_at": "2026-09-20T12:51:00Z",
+  "summary": "OpenAI 官方示例应用，演示如何通过 API 在多种计算机环境中使用 CUA（计算机使用代理），基于 TypeScript 实现。",
+  "analysis": {
+    "tech_highlights": [
+      "OpenAI 官方 CUA 代理的 API 使用示例",
+      "支持多种计算机环境集成",
+      "TypeScript 实现，便于开发者参考"
+    ],
+    "relevance_score": 7,
+    "reason": "官方示例项目，对希望集成 CUA 能力的开发者有直接参考价值，但属于示例性质，非框架或工具，影响范围有限。",
+    "risks": []
+  },
+  "tags": [
+    "openai",
+    "cua",
+    "agent",
+    "typescript",
+    "api"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,91 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-20T12:51:00Z",
+  "items": [
+    {
+      "name": "openai/openai-cua-sample-app",
+      "url": "https://github.com/openai/openai-cua-sample-app",
+      "summary": "Learn how to use CUA (our Computer Using Agent) via the API on multiple computer environments.",
+      "stars": 1865,
+      "language": "TypeScript",
+      "topics": []
+    },
+    {
+      "name": "AgriciDaniel/banana-claude",
+      "url": "https://github.com/AgriciDaniel/banana-claude",
+      "summary": "AI image generation skill for Claude Code - Creative Director powered by Gemini",
+      "stars": 1054,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-content",
+        "claude-code",
+        "claude-code-skill",
+        "content-creation",
+        "open-source"
+      ]
+    },
+    {
+      "name": "huggingface/text-embeddings-inference",
+      "url": "https://github.com/huggingface/text-embeddings-inference",
+      "summary": "A blazing fast inference solution for text embeddings models",
+      "stars": 5056,
+      "language": "Rust",
+      "topics": [
+        "ai",
+        "embeddings",
+        "huggingface",
+        "llm",
+        "ml"
+      ]
+    },
+    {
+      "name": "mudler/LocalAI",
+      "url": "https://github.com/mudler/LocalAI",
+      "summary": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+      "stars": 49187,
+      "language": "Go",
+      "topics": [
+        "agents",
+        "ai",
+        "api",
+        "audio-generation",
+        "decentralized",
+        "distributed",
+        "image-generation",
+        "libp2p",
+        "llama",
+        "llm",
+        "mamba",
+        "mcp",
+        "musicgen",
+        "object-detection",
+        "rerank",
+        "stable-diffusion",
+        "text-generation",
+        "tts"
+      ]
+    },
+    {
+      "name": "lahfir/agent-desktop",
+      "url": "https://github.com/lahfir/agent-desktop",
+      "summary": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+      "stars": 1324,
+      "language": "Rust",
+      "topics": [
+        "accessibility",
+        "accessibility-api",
+        "ai-agents",
+        "automation",
+        "cli",
+        "computer-use",
+        "computer-use-agent",
+        "computer-use-agents",
+        "desktop-automation",
+        "macos",
+        "mcp",
+        "rust"
+      ]
+    }
+  ]
+}
