@@ -1,0 +1,30 @@
+{
+  "id": "github-20260922-oobabooga-textgen",
+  "title": "oobabooga/textgen: 开源本地大模型桌面应用，支持文本、视觉、工具调用，提供兼容 OpenAI/Anthropic 的 API，完全隐私。",
+  "source": "github-trending",
+  "source_url": "https://github.com/oobabooga/textgen",
+  "collected_at": "2026-09-22T13:04:31Z",
+  "summary": "开源本地大模型桌面应用，支持文本、视觉、工具调用，提供兼容 OpenAI/Anthropic 的 API，完全隐私。",
+  "analysis": {
+    "tech_highlights": [
+      "本地运行 LLM，数据完全私有",
+      "支持文本、视觉和工具调用",
+      "提供 OpenAI/Anthropic 兼容 API"
+    ],
+    "relevance_score": 8,
+    "reason": "对开发者和研究者有直接帮助，提供本地 LLM 的便捷桌面应用和兼容 API，便于集成和实验。",
+    "risks": []
+  },
+  "tags": [
+    "llm",
+    "local",
+    "desktop-app",
+    "api",
+    "privacy"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

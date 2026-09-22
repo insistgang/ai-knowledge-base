@@ -1,0 +1,31 @@
+{
+  "id": "github-20260922-tensorflow-tflite-micro",
+  "title": "tensorflow/tflite-micro: TensorFlow Lite Micro 是面向微控制器和 DSP 等资源受限设备的轻量级 ML 推理框架，支持在嵌入",
+  "source": "github-trending",
+  "source_url": "https://github.com/tensorflow/tflite-micro",
+  "collected_at": "2026-09-22T13:04:31Z",
+  "summary": "TensorFlow Lite Micro 是面向微控制器和 DSP 等资源受限设备的轻量级 ML 推理框架，支持在嵌入式端部署模型。",
+  "analysis": {
+    "tech_highlights": [
+      "专为微控制器和 DSP 等低功耗资源受限设备设计的轻量级推理引擎",
+      "无需操作系统和动态内存分配，可在 KB 级内存环境运行",
+      "由 TensorFlow 官方维护，生态完善，支持模型转换与量化"
+    ],
+    "relevance_score": 8,
+    "reason": "TinyML 领域的核心基础设施，对嵌入式 AI 开发者有直接帮助，官方维护且生态成熟，但受众相对垂直。",
+    "risks": []
+  },
+  "tags": [
+    "tinyml",
+    "embedded",
+    "tensorflow",
+    "microcontroller",
+    "edge-ai"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "embedded-engineer"
+  ],
+  "status": "draft"
+}

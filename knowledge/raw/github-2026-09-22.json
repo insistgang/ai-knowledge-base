@@ -1,0 +1,81 @@
+{
+  "source": "github",
+  "collected_at": "2026-09-22T13:04:31Z",
+  "items": [
+    {
+      "name": "feder-cr/aihawk_mcp_server",
+      "url": "https://github.com/feder-cr/aihawk_mcp_server",
+      "summary": "Anti-detect agentic stealth browser: undetected browsing, browser automation, Python AI web browsing agent, computer use, scraping, lead generation. No captchas.",
+      "stars": 31623,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "ai-agent",
+        "ai-automation",
+        "autonomous-agents",
+        "browser",
+        "claude-code-plugin",
+        "crawler",
+        "gemini-cli-extension",
+        "job-hunting",
+        "job-search",
+        "lead-generation",
+        "llm-agent",
+        "market-research",
+        "mcp-server",
+        "model-context-protocol",
+        "playwright",
+        "productivity",
+        "scraper",
+        "web-automation",
+        "web-research"
+      ]
+    },
+    {
+      "name": "Dong90/oh-my-taiyiforge",
+      "url": "https://github.com/Dong90/oh-my-taiyiforge",
+      "summary": "AI workflow automation plugin for intelligent code generation with Claude/Codex",
+      "stars": 888,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "automation",
+        "claude",
+        "code-generation",
+        "codex",
+        "developer-tools",
+        "harness",
+        "harness-engineering",
+        "llm",
+        "opencode",
+        "plugin",
+        "typescript",
+        "workflow"
+      ]
+    },
+    {
+      "name": "tensorflow/tflite-micro",
+      "url": "https://github.com/tensorflow/tflite-micro",
+      "summary": "Infrastructure to enable deployment of ML models to low-power resource-constrained embedded targets (including microcontrollers and digital signal processors).",
+      "stars": 3094,
+      "language": "C++",
+      "topics": []
+    },
+    {
+      "name": "oobabooga/textgen",
+      "url": "https://github.com/oobabooga/textgen",
+      "summary": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.",
+      "stars": 47695,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "kerpopule/hermes-jev-skills",
+      "url": "https://github.com/kerpopule/hermes-jev-skills",
+      "summary": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)",
+      "stars": 424,
+      "language": "Python",
+      "topics": []
+    }
+  ]
+}

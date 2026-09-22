@@ -1,0 +1,31 @@
+{
+  "id": "github-20260922-kerpopule-hermes-jev-skills",
+  "title": "kerpopule/hermes-jev-skills: 为 Hermes 智能体提供基于 Jev 的模型路由、记忆、压缩、技能选择及计算机与浏览器操作能力，兼容 Claude ",
+  "source": "github-trending",
+  "source_url": "https://github.com/kerpopule/hermes-jev-skills",
+  "collected_at": "2026-09-22T13:04:31Z",
+  "summary": "为 Hermes 智能体提供基于 Jev 的模型路由、记忆、压缩、技能选择及计算机与浏览器操作能力，兼容 Claude Code 和 Codex。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 Jev 的模型路由与技能选择机制",
+      "面向智能体的记忆管理与上下文压缩",
+      "支持计算机与浏览器自动化操作",
+      "兼容 Hermes、Claude Code 和 Codex 多平台"
+    ],
+    "relevance_score": 6,
+    "reason": "项目聚焦智能体基础设施（路由、记忆、压缩、技能选择），对构建 AI Agent 的开发者有参考价值，但生态较新、受众相对垂直，短期直接影响力有限。",
+    "risks": []
+  },
+  "tags": [
+    "agent",
+    "llm",
+    "model-routing",
+    "memory",
+    "browser-automation"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

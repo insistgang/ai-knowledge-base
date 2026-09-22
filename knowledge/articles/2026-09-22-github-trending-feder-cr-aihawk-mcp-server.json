@@ -1,0 +1,31 @@
+{
+  "id": "github-20260922-feder-cr-aihawk-mcp-server",
+  "title": "feder-cr/aihawk_mcp_server: 基于 MCP 协议的反检测隐身浏览器 AI Agent，支持无痕浏览、自动化抓取、线索生成与求职搜索，可绕过验证码。",
+  "source": "github-trending",
+  "source_url": "https://github.com/feder-cr/aihawk_mcp_server",
+  "collected_at": "2026-09-22T13:04:31Z",
+  "summary": "基于 MCP 协议的反检测隐身浏览器 AI Agent，支持无痕浏览、自动化抓取、线索生成与求职搜索，可绕过验证码。",
+  "analysis": {
+    "tech_highlights": [
+      "MCP Server 架构，可接入 Claude Code、Gemini CLI 等 LLM 客户端",
+      "反检测隐身浏览器，规避指纹识别与验证码",
+      "面向 Agentic AI 的自主网页浏览与数据抓取能力",
+      "覆盖线索生成、市场调研、求职等多场景自动化"
+    ],
+    "relevance_score": 7,
+    "reason": "MCP + 反检测浏览器 + Agent 组合实用性强，对自动化抓取和 AI Agent 开发者有直接帮助，但反检测领域存在合规与伦理风险，且技术壁垒非颠覆性。",
+    "risks": []
+  },
+  "tags": [
+    "mcp-server",
+    "browser-automation",
+    "ai-agent",
+    "web-scraping",
+    "anti-detect"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
