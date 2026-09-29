@@ -1,0 +1,31 @@
+{
+  "id": "github-20260929-pytorch-tabular-pytorch-tabular",
+  "title": "pytorch-tabular/pytorch_tabular: 基于 PyTorch Lightning 的表格数据深度学习统一框架，集成多种模型与预处理，简化训练调参流程。",
+  "source": "github-trending",
+  "source_url": "https://github.com/pytorch-tabular/pytorch_tabular",
+  "collected_at": "2026-09-29T14:35:53Z",
+  "summary": "基于 PyTorch Lightning 的表格数据深度学习统一框架，集成多种模型与预处理，简化训练调参流程。",
+  "analysis": {
+    "tech_highlights": [
+      "统一 API 支持多种表格深度学习模型",
+      "基于 PyTorch Lightning 实现高效训练",
+      "内置数据预处理与特征工程",
+      "支持超参数调优与模型解释"
+    ],
+    "relevance_score": 8,
+    "reason": "为表格数据深度学习提供统一框架，降低使用门槛，对开发者和研究者有直接帮助，但未改变技术格局。",
+    "risks": []
+  },
+  "tags": [
+    "pytorch",
+    "tabular-data",
+    "deep-learning",
+    "pytorch-lightning",
+    "framework"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

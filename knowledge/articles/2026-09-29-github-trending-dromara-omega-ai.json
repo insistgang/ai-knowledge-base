@@ -1,0 +1,30 @@
+{
+  "id": "github-20260929-dromara-omega-ai",
+  "title": "dromara/Omega-AI: Omega-AI 是基于 Java 的深度学习框架，支持自动微分、多线程及 CUDA/cuDNN GPU 加速，可快速构",
+  "source": "github-trending",
+  "source_url": "https://github.com/dromara/Omega-AI",
+  "collected_at": "2026-09-29T14:35:53Z",
+  "summary": "Omega-AI 是基于 Java 的深度学习框架，支持自动微分、多线程及 CUDA/cuDNN GPU 加速，可快速构建神经网络进行推理与训练。",
+  "analysis": {
+    "tech_highlights": [
+      "纯 Java 实现的深度学习引擎，支持自动微分",
+      "多线程与 CUDA/cuDNN GPU 加速",
+      "覆盖 LLM、Diffusion、YOLO 等主流模型场景"
+    ],
+    "relevance_score": 7,
+    "reason": "为 Java 生态提供了稀缺的深度学习框架能力，对 Java 开发者直接可用，但相比 PyTorch 等主流框架生态与性能仍有差距，属于有实用价值的补充方案。",
+    "risks": []
+  },
+  "tags": [
+    "java",
+    "deep-learning",
+    "gpu-acceleration",
+    "neural-network",
+    "cuda"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

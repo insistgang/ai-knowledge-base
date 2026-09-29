@@ -1,0 +1,30 @@
+{
+  "id": "github-20260929-apple-aiml-research-ml-ane-transformers",
+  "title": "apple-aiml-research/ml-ane-transformers: Apple 官方发布的 Transformer 参考实现，针对 Apple Neural Engine 深度优化，显著提",
+  "source": "github-trending",
+  "source_url": "https://github.com/apple-aiml-research/ml-ane-transformers",
+  "collected_at": "2026-09-29T14:35:53Z",
+  "summary": "Apple 官方发布的 Transformer 参考实现，针对 Apple Neural Engine 深度优化，显著提升在 Apple 芯片上的推理性能。",
+  "analysis": {
+    "tech_highlights": [
+      "针对 ANE 硬件架构优化的 Transformer 实现",
+      "官方参考实现，包含性能基准测试",
+      "支持在 Apple Silicon 上高效部署 Transformer 模型"
+    ],
+    "relevance_score": 7,
+    "reason": "对在 Apple 生态部署 Transformer 的开发者有直接帮助，但适用范围限于 Apple 平台，通用性有限。",
+    "risks": []
+  },
+  "tags": [
+    "transformer",
+    "apple",
+    "ane",
+    "optimization",
+    "inference"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

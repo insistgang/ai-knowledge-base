@@ -1,0 +1,30 @@
+{
+  "id": "github-20260929-canivel-dynolab",
+  "title": "canivel/dynolab: Dyno Lab 是面向 Apple Silicon 的 AI 安全与可解释性研究工作台，支持激活值、探针、SAE 与干",
+  "source": "github-trending",
+  "source_url": "https://github.com/canivel/dynolab",
+  "collected_at": "2026-09-29T14:35:53Z",
+  "summary": "Dyno Lab 是面向 Apple Silicon 的 AI 安全与可解释性研究工作台，支持激活值、探针、SAE 与干预实验，提供本地推理、Python SDK、API 和 MCP。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 MLX 的 Apple Silicon 本地推理，无需云端 GPU",
+      "集成稀疏自编码器（SAE）、探针与激活干预等机制可解释性工具",
+      "同时提供 SwiftUI 界面、Python SDK、API 与 MCP 接口，便于集成"
+    ],
+    "relevance_score": 7,
+    "reason": "面向 AI 安全与机制可解释性研究，工具链完整且支持本地推理，对相关研究者有直接帮助；但受限于 Apple Silicon 平台，受众相对较窄。",
+    "risks": []
+  },
+  "tags": [
+    "ai-safety",
+    "interpretability",
+    "mlx",
+    "sae",
+    "apple-silicon"
+  ],
+  "audience": [
+    "researcher",
+    "developer"
+  ],
+  "status": "draft"
+}

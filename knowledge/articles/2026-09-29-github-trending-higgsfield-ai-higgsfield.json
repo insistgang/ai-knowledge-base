@@ -1,0 +1,32 @@
+{
+  "id": "github-20260929-higgsfield-ai-higgsfield",
+  "title": "higgsfield-ai/higgsfield: Higgsfield 是一个容错、高可扩展的 GPU 编排与机器学习框架，专为训练数十亿至数万亿参数的大模型设计，支持分",
+  "source": "github-trending",
+  "source_url": "https://github.com/higgsfield-ai/higgsfield",
+  "collected_at": "2026-09-29T14:35:53Z",
+  "summary": "Higgsfield 是一个容错、高可扩展的 GPU 编排与机器学习框架，专为训练数十亿至数万亿参数的大模型设计，支持分布式训练和集群管理。",
+  "analysis": {
+    "tech_highlights": [
+      "容错与高可扩展的 GPU 编排",
+      "支持万亿参数级模型训练",
+      "集成 PyTorch 和分布式训练",
+      "面向 LLM 的 MLOps 解决方案"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目针对大规模分布式训练的核心痛点（容错、扩展性），对从事大模型训练的研究者和开发者有直接帮助，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "distributed-training",
+    "gpu-orchestration",
+    "large-scale-ml",
+    "fault-tolerance",
+    "pytorch"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "mlops-engineer"
+  ],
+  "status": "draft"
+}

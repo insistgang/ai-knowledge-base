@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T14:35:53Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.004364,
+    "remaining_usd": 0.095636,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1409,
+      "completion_tokens": 985,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 897,
+      "total_tokens": 2394,
+      "estimated_cost_usd": 0.004364,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1409,
+    "completion_tokens": 985,
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 897,
+    "total_tokens": 2394,
+    "estimated_cost_usd": 0.004364
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "pytorch-tabular/pytorch_tabular",
+      "model": "deepseek-flash",
+      "prompt_tokens": 269,
+      "completion_tokens": 182,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 141,
+      "total_tokens": 451,
+      "estimated_cost_usd": 0.000815
+    },
+    {
+      "source": "github",
+      "item_name": "canivel/dynolab",
+      "model": "deepseek-flash",
+      "prompt_tokens": 325,
+      "completion_tokens": 225,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 197,
+      "total_tokens": 550,
+      "estimated_cost_usd": 0.001
+    },
+    {
+      "source": "github",
+      "item_name": "apple-aiml-research/ml-ane-transformers",
+      "model": "deepseek-flash",
+      "prompt_tokens": 241,
+      "completion_tokens": 160,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 241,
+      "total_tokens": 401,
+      "estimated_cost_usd": 0.000721
+    },
+    {
+      "source": "github",
+      "item_name": "higgsfield-ai/higgsfield",
+      "model": "deepseek-flash",
+      "prompt_tokens": 290,
+      "completion_tokens": 220,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 162,
+      "total_tokens": 510,
+      "estimated_cost_usd": 0.00095
+    },
+    {
+      "source": "github",
+      "item_name": "dromara/Omega-AI",
+      "model": "deepseek-flash",
+      "prompt_tokens": 284,
+      "completion_tokens": 198,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 156,
+      "total_tokens": 482,
+      "estimated_cost_usd": 0.000878
+    }
+  ]
+}
