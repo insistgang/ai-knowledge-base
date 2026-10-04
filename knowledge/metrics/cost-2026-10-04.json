@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T13:40:09Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.004742,
+    "remaining_usd": 0.095258,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1574,
+      "completion_tokens": 1056,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 806,
+      "total_tokens": 2630,
+      "estimated_cost_usd": 0.004742,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1574,
+    "completion_tokens": 1056,
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 806,
+    "total_tokens": 2630,
+    "estimated_cost_usd": 0.004742
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "apecloud/ApeRAG",
+      "model": "deepseek-flash",
+      "prompt_tokens": 266,
+      "completion_tokens": 201,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 138,
+      "total_tokens": 467,
+      "estimated_cost_usd": 0.000869
+    },
+    {
+      "source": "github",
+      "item_name": "evilsocket/pwnagotchi",
+      "model": "deepseek-flash",
+      "prompt_tokens": 274,
+      "completion_tokens": 200,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 146,
+      "total_tokens": 474,
+      "estimated_cost_usd": 0.000874
+    },
+    {
+      "source": "github",
+      "item_name": "requie/AI-Red-Teaming-Guide",
+      "model": "deepseek-flash",
+      "prompt_tokens": 303,
+      "completion_tokens": 195,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 175,
+      "total_tokens": 498,
+      "estimated_cost_usd": 0.000888
+    },
+    {
+      "source": "github",
+      "item_name": "AgriciDaniel/claude-obsidian",
+      "model": "deepseek-flash",
+      "prompt_tokens": 395,
+      "completion_tokens": 218,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 139,
+      "total_tokens": 613,
+      "estimated_cost_usd": 0.001049
+    },
+    {
+      "source": "github",
+      "item_name": "spaceamoeba-t/tapq",
+      "model": "deepseek-flash",
+      "prompt_tokens": 336,
+      "completion_tokens": 242,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 208,
+      "total_tokens": 578,
+      "estimated_cost_usd": 0.001062
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "github-20261004-requie-ai-red-teaming-guide",
+  "title": "requie/AI-Red-Teaming-Guide: 一份面向 AI 系统的对抗性测试与安全评估指南，帮助组织在攻击者利用前发现 LLM 等 AI 系统的漏洞。",
+  "source": "github-trending",
+  "source_url": "https://github.com/requie/AI-Red-Teaming-Guide",
+  "collected_at": "2026-10-04T13:40:09Z",
+  "summary": "一份面向 AI 系统的对抗性测试与安全评估指南，帮助组织在攻击者利用前发现 LLM 等 AI 系统的漏洞。",
+  "analysis": {
+    "tech_highlights": [
+      "系统化梳理 AI/LLM 红队测试方法论与流程",
+      "覆盖对抗性测试与安全评估的实践指南",
+      "聚焦漏洞发现与防御前置的安全思维"
+    ],
+    "relevance_score": 7,
+    "reason": "AI 安全与红队测试是当前 LLM 落地的重要环节，该指南对安全工程师和 AI 开发者有直接参考价值，但作为文档类项目缺乏代码实现，短期工程价值有限。",
+    "risks": []
+  },
+  "tags": [
+    "ai-security",
+    "red-teaming",
+    "llm",
+    "adversarial-testing",
+    "guide"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "security-engineer"
+  ],
+  "status": "draft"
+}

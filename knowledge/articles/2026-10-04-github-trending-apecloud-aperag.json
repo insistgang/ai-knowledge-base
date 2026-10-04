@@ -1,0 +1,30 @@
+{
+  "id": "github-20261004-apecloud-aperag",
+  "title": "apecloud/ApeRAG: ApeRAG 是生产级 GraphRAG 系统，支持多模态索引、AI 智能体、MCP 协议及 K8s 弹性部署，面向企业",
+  "source": "github-trending",
+  "source_url": "https://github.com/apecloud/ApeRAG",
+  "collected_at": "2026-10-04T13:40:09Z",
+  "summary": "ApeRAG 是生产级 GraphRAG 系统，支持多模态索引、AI 智能体、MCP 协议及 K8s 弹性部署，面向企业知识图谱应用。",
+  "analysis": {
+    "tech_highlights": [
+      "融合 GraphRAG 与向量检索的多模态索引架构",
+      "内置 AI Agent 与 MCP 协议支持，便于工具调用",
+      "基于 Kubernetes 的可扩展生产级部署方案"
+    ],
+    "relevance_score": 8,
+    "reason": "项目将 GraphRAG、Agent 与 MCP 等前沿技术整合为可落地的生产方案，对构建知识密集型 AI 应用的开发者有直接参考价值，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "graphrag",
+    "rag",
+    "agents",
+    "mcp",
+    "knowledge-graph"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

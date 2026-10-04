@@ -1,0 +1,30 @@
+{
+  "id": "github-20261004-spaceamoeba-t-tapq",
+  "title": "spaceamoeba-t/tapq: TapQ 是一个 macOS 多模态语音代理，让开发者通过语音与 Claude Code、Codex 等 AI 编程代理",
+  "source": "github-trending",
+  "source_url": "https://github.com/spaceamoeba-t/tapq",
+  "collected_at": "2026-10-04T13:40:09Z",
+  "summary": "TapQ 是一个 macOS 多模态语音代理，让开发者通过语音与 Claude Code、Codex 等 AI 编程代理交互，支持 AirPods 手势和 CoreMotion 识别，实现免手操作。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 Swift 构建的 macOS 原生语音交互层，集成 AirPods 与 CoreMotion 手势识别",
+      "支持 Claude Code、Codex、Cursor、OpenCode 等多种 AI 编程代理的语音控制",
+      "面向无障碍与免手操作场景，提供 human-in-the-loop 的语音反馈机制"
+    ],
+    "relevance_score": 7,
+    "reason": "项目将语音与手势交互引入 AI 编程代理工作流，对使用 Claude Code/Codex 的开发者有直接效率提升，且涉及无障碍与可穿戴交互，但生态较新、受众相对垂直，尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "voice-agent",
+    "ai-agents",
+    "macos",
+    "swift",
+    "accessibility"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "github-20261004-evilsocket-pwnagotchi",
+  "title": "evilsocket/pwnagotchi: 基于树莓派的AI驱动WiFi渗透工具，利用深度强化学习自动捕获WPA握手包，集成bettercap实现自动化攻击。",
+  "source": "github-trending",
+  "source_url": "https://github.com/evilsocket/pwnagotchi",
+  "collected_at": "2026-10-04T13:40:09Z",
+  "summary": "基于树莓派的AI驱动WiFi渗透工具，利用深度强化学习自动捕获WPA握手包，集成bettercap实现自动化攻击。",
+  "analysis": {
+    "tech_highlights": [
+      "深度强化学习自动优化WiFi攻击策略",
+      "集成bettercap实现自动化握手包捕获",
+      "树莓派便携式硬件方案，可穿戴设备形态"
+    ],
+    "relevance_score": 7,
+    "reason": "项目将深度强化学习应用于WiFi安全测试，技术新颖且实用，对安全研究人员和开发者有直接帮助，但应用场景较垂直。",
+    "risks": []
+  },
+  "tags": [
+    "wifi-security",
+    "deep-reinforcement-learning",
+    "bettercap",
+    "raspberry-pi",
+    "penetration-testing"
+  ],
+  "audience": [
+    "security-researcher",
+    "developer",
+    "ethical-hacker"
+  ],
+  "status": "draft"
+}

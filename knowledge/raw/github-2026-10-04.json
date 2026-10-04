@@ -1,0 +1,111 @@
+{
+  "source": "github",
+  "collected_at": "2026-10-04T13:40:09Z",
+  "items": [
+    {
+      "name": "apecloud/ApeRAG",
+      "url": "https://github.com/apecloud/ApeRAG",
+      "summary": "ApeRAG: Production-ready GraphRAG with multi-modal indexing, AI agents, MCP support, and scalable K8s deployment",
+      "stars": 1319,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "context-engineering",
+        "graphrag",
+        "knowledge-graph",
+        "mcp"
+      ]
+    },
+    {
+      "name": "evilsocket/pwnagotchi",
+      "url": "https://github.com/evilsocket/pwnagotchi",
+      "summary": "(⌐■_■) - Deep Reinforcement Learning instrumenting bettercap for WiFi pwning.",
+      "stars": 9216,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "bettercap",
+        "deep-learning",
+        "deep-neural-network",
+        "deep-reinforcement-learning",
+        "handshakes",
+        "wpa-psk"
+      ]
+    },
+    {
+      "name": "requie/AI-Red-Teaming-Guide",
+      "url": "https://github.com/requie/AI-Red-Teaming-Guide",
+      "summary": "A comprehensive guide to adversarial testing and security evaluation of AI systems, helping organizations identify vulnerabilities before attackers exploit them.",
+      "stars": 902,
+      "language": "unknown",
+      "topics": [
+        "ai",
+        "ai-red-team",
+        "ai-red-teaming",
+        "llm-red-teaming",
+        "readteaming-guide",
+        "redteam-guide",
+        "redteam-tools",
+        "redteaming",
+        "redteaming-tools",
+        "security-red-team"
+      ]
+    },
+    {
+      "name": "AgriciDaniel/claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "summary": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "stars": 15342,
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-note-taking",
+        "ai-second-brain",
+        "claude-code",
+        "claude-code-skill",
+        "claude-memory",
+        "claude-plugin",
+        "karpathy-llm-wiki",
+        "knowledge-graph",
+        "knowledge-management",
+        "note-taking",
+        "notion-alternative",
+        "obsidian",
+        "obsidian-ai",
+        "obsidian-plugin",
+        "obsidian-second-brain",
+        "open-source",
+        "personal-knowledge-management",
+        "pkm",
+        "second-brain"
+      ]
+    },
+    {
+      "name": "spaceamoeba-t/tapq",
+      "url": "https://github.com/spaceamoeba-t/tapq",
+      "summary": "Multi-modal voice agent for your AI agents. Talk with Claude Code, Codex, and others by voice: answer their prompts, give instructions, ask what they did. Or just nod.",
+      "stars": 503,
+      "language": "Swift",
+      "topics": [
+        "accessibility",
+        "ai-agents",
+        "airpods",
+        "claude-code",
+        "cli",
+        "codex",
+        "coremotion",
+        "cursor",
+        "developer-tools",
+        "gesture-recognition",
+        "hands-free",
+        "human-in-the-loop",
+        "macos",
+        "opencode",
+        "swift",
+        "voice-agent",
+        "voice-ai",
+        "wearables"
+      ]
+    }
+  ]
+}
