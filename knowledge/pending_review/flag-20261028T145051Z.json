@@ -1,0 +1,156 @@
+{
+  "flagged_at": "2026-10-28T14:50:51Z",
+  "iteration": 1,
+  "analyses_count": 5,
+  "analyses": [
+    {
+      "summary": "华为开源的全场景深度学习框架，支持端、边、云训练与推理，主打自动微分与分布式训练。",
+      "tech_highlights": [
+        "全场景统一架构，覆盖移动端、边缘与云端",
+        "自动并行与图算融合优化",
+        "支持Ascend/GPU/CPU多硬件后端"
+      ],
+      "relevance_score": 8,
+      "reason": "成熟的开源深度学习框架，具备完整训练推理能力与国产硬件生态支持，对AI开发与研究者有直接价值。",
+      "suggested_tags": [
+        "deep-learning",
+        "framework",
+        "distributed-training",
+        "inference",
+        "ascend"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "命令行框架，用于生成复杂提示词结构，通过混淆与多层绕过架构测试AI模型的安全对齐与过滤边界。",
+      "tech_highlights": [
+        "多层理论绕过架构生成复杂提示结构",
+        "混淆与语言融合技术",
+        "面向AI安全对齐与过滤器的压力测试"
+      ],
+      "relevance_score": 5,
+      "reason": "属于AI红队/越狱提示生成工具，对安全研究有一定参考价值，但描述夸大、缺乏实际技术细节与社区验证，短期实用价值有限。",
+      "suggested_tags": [
+        "prompt-engineering",
+        "ai-safety",
+        "red-teaming",
+        "jailbreak",
+        "python"
+      ],
+      "audience": [
+        "researcher",
+        "security-engineer"
+      ]
+    },
+    {
+      "summary": "DECIMER 是一个基于 Transformer 的深度学习工具，可将化学结构图像自动转换为 SMILES 字符串，实现从扫描文档、文献和专利中数字化化学数据。",
+      "tech_highlights": [
+        "使用 Transformer 架构进行图像到 SMILES 的转换",
+        "支持从扫描文档、文献和专利中自动提取化学结构",
+        "基于 TensorFlow 实现，支持 TPU 加速"
+      ],
+      "relevance_score": 8,
+      "reason": "对化学信息学和文档数字化领域有直接帮助，提供自动化工具，但应用领域相对垂直。",
+      "suggested_tags": [
+        "化学信息学",
+        "图像识别",
+        "Transformer",
+        "深度学习",
+        "SMILES"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "PARL 是飞桨生态下的高性能分布式强化学习训练框架，支持大规模并行训练与多种 RL 算法。",
+      "tech_highlights": [
+        "高性能分布式并行训练架构",
+        "支持大规模强化学习任务",
+        "与 PaddlePaddle 深度集成",
+        "提供丰富 RL 算法与示例"
+      ],
+      "relevance_score": 8,
+      "reason": "面向强化学习工程化的成熟框架，分布式训练能力对 RL 研究与落地有直接帮助，但生态绑定 PaddlePaddle 限制了通用性。",
+      "suggested_tags": [
+        "reinforcement-learning",
+        "distributed-training",
+        "paddlepaddle",
+        "deep-learning"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "基于 GStreamer 的开源流媒体分析框架，集成 OpenVINO 推理，用于在云端或边缘构建复杂视频分析流水线。",
+      "tech_highlights": [
+        "基于 GStreamer 的模块化媒体分析流水线",
+        "深度集成 Intel OpenVINO 推理加速",
+        "支持边缘与云端部署的视频分析场景"
+      ],
+      "relevance_score": 7,
+      "reason": "面向 Intel 硬件与 OpenVINO 生态的视频分析框架，对边缘 AI 视觉应用开发者有直接帮助，但依赖特定硬件生态，通用性受限。",
+      "suggested_tags": [
+        "gstreamer",
+        "video-analytics",
+        "openvino",
+        "edge-ai",
+        "inference"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    }
+  ],
+  "review_feedback": {
+    "scores": {
+      "summary_quality": 7,
+      "technical_depth": 6,
+      "relevance": 7,
+      "originality": 6,
+      "formatting": 7
+    },
+    "overall_comment": "整体摘要准确但技术亮点偏泛，部分条目与AI/LLM/Agent主题关联较弱，标签和适用人群信息缺失。",
+    "issues": [
+      {
+        "field": "tech_highlights",
+        "severity": "medium",
+        "note": "多条技术亮点为通用描述（如'高性能分布式并行训练架构'），缺乏具体数据、架构细节或性能指标。"
+      },
+      {
+        "field": "relevance_score",
+        "severity": "medium",
+        "note": "条目2（提示词绕过框架）relevance_score=5，与AI安全相关但偏离LLM/Agent核心主题；条目5（视频分析）偏向传统CV流水线。"
+      },
+      {
+        "field": "tags",
+        "severity": "low",
+        "note": "标签粒度尚可，但缺少适用人群字段，且部分标签如'python'过于宽泛。"
+      },
+      {
+        "field": "summary",
+        "severity": "low",
+        "note": "条目1摘要未提及MindSpore名称，条目4未明确PARL全称，信息完整性不足。"
+      }
+    ],
+    "strengths": [
+      "摘要基本准确概括了项目核心功能",
+      "技术亮点覆盖了架构、硬件后端和部署场景",
+      "标签与项目主题匹配度较高"
+    ],
+    "_computed": {
+      "weighted_total": 6.6,
+      "pass_threshold": 7.0,
+      "reviewed_count": 5,
+      "total_count": 5
+    }
+  },
+  "errors": []
+}
