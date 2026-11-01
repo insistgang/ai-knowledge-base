@@ -255,6 +255,9 @@ def render_html(payload: dict[str, Any]) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Knowledge Base Dashboard</title>
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="favicon-192.png" />
   <style>
     :root {
       color-scheme: light;
@@ -279,7 +282,7 @@ def render_html(payload: dict[str, Any]) -> str:
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "PingFang SC", "Noto Sans SC", Inter, ui-sans-serif, system-ui, sans-serif;
       line-height: 1.5;
     }
 
@@ -299,6 +302,19 @@ def render_html(payload: dict[str, Any]) -> str:
       padding: 28px 32px;
       border-bottom: 1px solid var(--border);
       background: var(--surface);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      flex: 0 0 auto;
     }
 
     .eyebrow {
@@ -675,10 +691,13 @@ def render_html(payload: dict[str, Any]) -> str:
 </head>
 <body>
   <header class="topbar">
-    <div>
-      <p class="eyebrow">AI Knowledge Base</p>
-      <h1>知识库 Dashboard</h1>
-      <p class="subtitle">每日 AI/LLM/Agent 技术动态与评分汇总。</p>
+    <div class="brand">
+      <img src="favicon.svg" alt="" />
+      <div>
+        <p class="eyebrow">AI Knowledge Base</p>
+        <h1>知识库 Dashboard</h1>
+        <p class="subtitle">每日 AI、LLM 与 Agent 技术动态，按评分汇总。</p>
+      </div>
     </div>
     <div class="meta">
       <span>数据时间 UTC</span><strong>__GENERATED_AT__</strong>
