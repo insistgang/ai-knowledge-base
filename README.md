@@ -28,6 +28,8 @@
 
 当前自动从 GitHub 采集 AI/LLM/Agent 项目，经 LLM 分析评分、Reviewer 修订闭环、Supervisor 规则审核和 LangGraph 编排后归档为结构化知识条目，支持 MCP 查询与 Dashboard 展示。RSS、HN 和 arXiv 属于后续数据源规划。
 
+目录入口：本 README 和现有 CI 使用根目录的 `pipeline.workflow_runner`。`v4-production/` 保留独立原型与快照镜像，V5 验收规格要求相关实现保持同步，不能按重名目录直接删除；具体范围见 [项目总结](docs/knowledge-base-summary.md) 和 [V5 验收规格](specs/v5-collection-quality-acceptance.md)。
+
 ## 架构图
 
 ```
