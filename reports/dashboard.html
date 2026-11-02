@@ -53,17 +53,6 @@
       background: var(--surface);
     }
 
-    .eyebrow {
-      margin: 0 0 6px;
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    h1, h2, h3, p {
-      margin-top: 0;
-    }
-
     .brand {
       display: flex;
       align-items: center;
@@ -77,11 +66,21 @@
       flex: 0 0 auto;
     }
 
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
     h1 {
       margin-bottom: 8px;
-      font-size: 34px;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
+      font-size: 38px;
+      line-height: 1.1;
     }
 
     .subtitle {
@@ -124,8 +123,9 @@
       min-height: 112px;
       padding: 18px;
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 8px;
       background: var(--surface);
+      box-shadow: var(--shadow);
     }
 
     .metric span {
@@ -166,9 +166,9 @@
     .panel,
     .article {
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 8px;
       background: var(--surface);
-      box-shadow: none;
+      box-shadow: var(--shadow);
     }
 
     .panel {
