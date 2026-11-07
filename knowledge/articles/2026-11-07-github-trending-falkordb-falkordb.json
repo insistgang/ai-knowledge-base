@@ -1,0 +1,30 @@
+{
+  "id": "github-20261107-falkordb-falkordb",
+  "title": "FalkorDB/FalkorDB: FalkorDB 是基于 GraphBLAS 稀疏矩阵的极速图数据库，专为 LLM 知识图谱和 GraphRAG 场景设",
+  "source": "github-trending",
+  "source_url": "https://github.com/FalkorDB/FalkorDB",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "summary": "FalkorDB 是基于 GraphBLAS 稀疏矩阵的极速图数据库，专为 LLM 知识图谱和 GraphRAG 场景设计，使用 Rust 开发。",
+  "analysis": {
+    "tech_highlights": [
+      "底层采用 GraphBLAS 稀疏邻接矩阵表示，实现高性能图查询",
+      "面向 LLM 知识图谱和 GraphRAG 优化，支持实时图数据库场景",
+      "Rust 语言实现，兼顾性能与内存安全"
+    ],
+    "relevance_score": 8,
+    "reason": "项目直接服务于 GraphRAG 和知识图谱构建，对 LLM 应用开发者和图数据库研究者有直接帮助，技术栈现代且性能导向，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "graph-database",
+    "graphrag",
+    "knowledge-graph",
+    "rust",
+    "graphblas"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

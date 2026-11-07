@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T14:39:26Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.006934,
+    "remaining_usd": 0.093066,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1609,
+      "completion_tokens": 977,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 969,
+      "total_tokens": 2586,
+      "estimated_cost_usd": 0.00454,
+      "source": "github",
+      "model": "deepseek-flash"
+    },
+    {
+      "calls": 1,
+      "prompt_tokens": 1017,
+      "completion_tokens": 459,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 889,
+      "total_tokens": 1476,
+      "estimated_cost_usd": 0.002394,
+      "source": "workflow",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 6,
+    "prompt_tokens": 2626,
+    "completion_tokens": 1436,
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 1858,
+    "total_tokens": 4062,
+    "estimated_cost_usd": 0.006934
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "microsoft/WindowsAgentArena",
+      "model": "deepseek-flash",
+      "prompt_tokens": 279,
+      "completion_tokens": 152,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 151,
+      "total_tokens": 431,
+      "estimated_cost_usd": 0.000735
+    },
+    {
+      "source": "github",
+      "item_name": "labmlai/annotated_deep_learning_paper_implementations",
+      "model": "deepseek-flash",
+      "prompt_tokens": 380,
+      "completion_tokens": 184,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 252,
+      "total_tokens": 564,
+      "estimated_cost_usd": 0.000932
+    },
+    {
+      "source": "github",
+      "item_name": "SolaceProducts/solace-agent-mesh",
+      "model": "deepseek-flash",
+      "prompt_tokens": 347,
+      "completion_tokens": 233,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 219,
+      "total_tokens": 580,
+      "estimated_cost_usd": 0.001046
+    },
+    {
+      "source": "github",
+      "item_name": "FalkorDB/FalkorDB",
+      "model": "deepseek-flash",
+      "prompt_tokens": 301,
+      "completion_tokens": 207,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 173,
+      "total_tokens": 508,
+      "estimated_cost_usd": 0.000922
+    },
+    {
+      "source": "github",
+      "item_name": "litegraphdb/litegraph",
+      "model": "deepseek-flash",
+      "prompt_tokens": 302,
+      "completion_tokens": 201,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 174,
+      "total_tokens": 503,
+      "estimated_cost_usd": 0.000905
+    },
+    {
+      "source": "workflow",
+      "item_name": "review",
+      "model": "deepseek-flash",
+      "prompt_tokens": 1017,
+      "completion_tokens": 459,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 889,
+      "total_tokens": 1476,
+      "estimated_cost_usd": 0.002394
+    }
+  ]
+}

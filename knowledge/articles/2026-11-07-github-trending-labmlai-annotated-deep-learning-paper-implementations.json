@@ -1,0 +1,31 @@
+{
+  "id": "github-20261107-labmlai-annotated-deep-learning-paper-implementations",
+  "title": "labmlai/annotated_deep_learning_paper_implementations: 该项目用 PyTorch 实现了 60+ 篇深度学习经典论文，并配有逐行注释和并排笔记，覆盖 Transformer、优",
+  "source": "github-trending",
+  "source_url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "summary": "该项目用 PyTorch 实现了 60+ 篇深度学习经典论文，并配有逐行注释和并排笔记，覆盖 Transformer、优化器、GAN、强化学习等方向。",
+  "analysis": {
+    "tech_highlights": [
+      "60+ 篇论文的可运行 PyTorch 实现",
+      "逐行注释与并排笔记，便于理解论文细节",
+      "覆盖 Transformer、优化器、GAN、强化学习、蒸馏等主流方向"
+    ],
+    "relevance_score": 8,
+    "reason": "对学习和复现深度学习论文有直接帮助，代码与注释结合紧密，适合开发者与研究者快速理解经典算法，但并非改变技术格局的新工具。",
+    "risks": []
+  },
+  "tags": [
+    "deep-learning",
+    "pytorch",
+    "paper-implementation",
+    "tutorial",
+    "transformer"
+  ],
+  "audience": [
+    "developer",
+    "researcher",
+    "student"
+  ],
+  "status": "reviewed"
+}

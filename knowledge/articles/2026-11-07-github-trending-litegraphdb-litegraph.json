@@ -1,0 +1,31 @@
+{
+  "id": "github-20261107-litegraphdb-litegraph",
+  "title": "litegraphdb/litegraph: LiteGraph 是 C# 实现的多模态 AI 数据平台，融合属性图、关系、向量与 MCP 支持，服务知识图谱与 AI",
+  "source": "github-trending",
+  "source_url": "https://github.com/litegraphdb/litegraph",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "summary": "LiteGraph 是 C# 实现的多模态 AI 数据平台，融合属性图、关系、向量与 MCP 支持，服务知识图谱与 AI 持久化检索。",
+  "analysis": {
+    "tech_highlights": [
+      "属性图与向量检索一体化，支持 RAG 与知识持久化",
+      "内置 MCP 协议支持，便于 LLM 工具集成",
+      "兼容 Neo4j、ArangoDB、GEXF 等图数据生态",
+      "C# 原生实现，适合 .NET 技术栈"
+    ],
+    "relevance_score": 7,
+    "reason": "图数据库与向量检索结合 MCP 是当前 AI 基础设施热点，对构建知识增强应用有直接帮助，但生态与成熟度尚待验证。",
+    "risks": []
+  },
+  "tags": [
+    "graph-database",
+    "vector-search",
+    "mcp",
+    "knowledge-graph",
+    "rag"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

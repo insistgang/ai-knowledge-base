@@ -1,0 +1,111 @@
+{
+  "source": "github",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "items": [
+    {
+      "name": "microsoft/WindowsAgentArena",
+      "url": "https://github.com/microsoft/WindowsAgentArena",
+      "summary": "Windows Agent Arena (WAA) 🪟 is a scalable OS platform for testing and benchmarking of multi-modal AI agents.",
+      "stars": 915,
+      "language": "Python",
+      "topics": [
+        "agentic",
+        "ai",
+        "ai-agent",
+        "ai-benchmark",
+        "ai-research",
+        "computer",
+        "computer-use",
+        "desktop-agent",
+        "windows"
+      ]
+    },
+    {
+      "name": "labmlai/annotated_deep_learning_paper_implementations",
+      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "summary": "🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side notes 📝; including transformers (original, xl, switch, feedback, vit, ...), optimizers (adam, adabelief, sophia, ...), gans(cyclegan, stylegan2, ...), 🎮 reinforcement learning (ppo, dqn), capsnet, distillation, ... 🧠",
+      "stars": 67713,
+      "language": "Python",
+      "topics": [
+        "attention",
+        "deep-learning",
+        "deep-learning-tutorial",
+        "gan",
+        "literate-programming",
+        "lora",
+        "machine-learning",
+        "neural-networks",
+        "optimizers",
+        "pytorch",
+        "reinforcement-learning",
+        "transformer",
+        "transformers"
+      ]
+    },
+    {
+      "name": "SolaceProducts/solace-agent-mesh",
+      "url": "https://github.com/SolaceProducts/solace-agent-mesh",
+      "summary": "Platform for building and running AI agents across the full lifecycle — build, test, deploy, monitor, improve. Hosts your agents, runs their tools, and coordinates them over an event mesh, with sessions, artifacts, auth, evaluators, and observability built in.",
+      "stars": 4920,
+      "language": "Shell",
+      "topics": [
+        "a2a",
+        "a2a-protocol",
+        "agent-mesh",
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "event-driven",
+        "framework",
+        "go",
+        "harness",
+        "mcp",
+        "multi-agent",
+        "multi-agent-systems",
+        "python",
+        "solace",
+        "workflows"
+      ]
+    },
+    {
+      "name": "FalkorDB/FalkorDB",
+      "url": "https://github.com/FalkorDB/FalkorDB",
+      "summary": "A super fast Graph Database uses GraphBLAS under the hood for its sparse adjacency matrix graph representation. Our goal is to provide the best Knowledge Graph for LLM (GraphRAG).",
+      "stars": 10502,
+      "language": "Rust",
+      "topics": [
+        "cloud-database",
+        "database",
+        "database-as-a-service",
+        "developer-tools",
+        "devtools",
+        "graph-database",
+        "graphrag",
+        "knowledge-graph",
+        "realtime-database"
+      ]
+    },
+    {
+      "name": "litegraphdb/litegraph",
+      "url": "https://github.com/litegraphdb/litegraph",
+      "summary": "LiteGraph is a multi-modal AI data platform - a property graph with relational, vector, and MCP support, to power knowledge and AI persistence and retrieval",
+      "stars": 133,
+      "language": "C#",
+      "topics": [
+        "ai",
+        "arangodb",
+        "database",
+        "gexf",
+        "graph",
+        "llm",
+        "mcp",
+        "neo4j",
+        "neptune",
+        "tigergraph",
+        "titan",
+        "vector",
+        "vector-database"
+      ]
+    }
+  ]
+}

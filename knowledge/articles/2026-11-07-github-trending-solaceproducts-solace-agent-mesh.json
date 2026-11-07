@@ -1,0 +1,32 @@
+{
+  "id": "github-20261107-solaceproducts-solace-agent-mesh",
+  "title": "SolaceProducts/solace-agent-mesh: Solace 推出的 AI Agent 全生命周期平台，基于事件网格协调多 Agent 与工具，内置会话、鉴权、评估与可",
+  "source": "github-trending",
+  "source_url": "https://github.com/SolaceProducts/solace-agent-mesh",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "summary": "Solace 推出的 AI Agent 全生命周期平台，基于事件网格协调多 Agent 与工具，内置会话、鉴权、评估与可观测性。",
+  "analysis": {
+    "tech_highlights": [
+      "基于事件网格（Event Mesh）实现多 Agent 异步协调与解耦通信",
+      "覆盖构建、测试、部署、监控、优化的全生命周期 Agent 托管",
+      "内置会话管理、工件存储、鉴权、评估器与可观测性",
+      "支持 A2A 协议与 MCP，兼容多 Agent 系统与工具调用"
+    ],
+    "relevance_score": 7,
+    "reason": "面向多 Agent 生产化落地的平台型项目，事件驱动架构与全生命周期能力对构建复杂 Agent 系统有直接参考价值，但依赖 Solace 生态且较新，成熟度待验证。",
+    "risks": []
+  },
+  "tags": [
+    "multi-agent",
+    "event-driven",
+    "a2a",
+    "mcp",
+    "agent-platform"
+  ],
+  "audience": [
+    "developer",
+    "architect",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

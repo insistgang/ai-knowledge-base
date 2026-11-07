@@ -1,0 +1,31 @@
+{
+  "id": "github-20261107-microsoft-windowsagentarena",
+  "title": "microsoft/WindowsAgentArena: 微软推出的可扩展 Windows 操作系统平台，用于多模态 AI 智能体的测试与基准评测。",
+  "source": "github-trending",
+  "source_url": "https://github.com/microsoft/WindowsAgentArena",
+  "collected_at": "2026-11-07T14:39:26Z",
+  "summary": "微软推出的可扩展 Windows 操作系统平台，用于多模态 AI 智能体的测试与基准评测。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 Windows 的桌面智能体基准测试平台",
+      "支持多模态 AI 智能体评测",
+      "可扩展的 OS 级测试环境",
+      "由微软官方维护"
+    ],
+    "relevance_score": 8,
+    "reason": "为桌面/计算机使用类 AI 智能体提供标准化评测平台，对智能体研究与开发有直接帮助，填补 Windows 生态评测空白。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agent",
+    "benchmark",
+    "windows",
+    "computer-use",
+    "multimodal"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}
