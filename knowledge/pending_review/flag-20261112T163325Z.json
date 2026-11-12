@@ -1,0 +1,187 @@
+{
+  "flagged_at": "2026-11-12T16:33:25Z",
+  "iteration": 1,
+  "analyses_count": 5,
+  "analyses": [
+    {
+      "summary": "HeyGen 开源的 HTML 转视频框架，用 HTML/CSS/GSAP 编写动画，经 Puppeteer 与 FFmpeg 渲染成视频，面向 AI Agent 与 MCP 集成。",
+      "tech_highlights": [
+        "以 HTML+GSAP 作为视频创作 DSL，降低动效开发门槛",
+        "Puppeteer 逐帧渲染 + FFmpeg 编码的完整管线",
+        "原生支持 MCP 与 Claude Code，便于 Agent 自动生成视频",
+        "TypeScript 实现，可编程、可集成到自动化工作流"
+      ],
+      "relevance_score": 8,
+      "reason": "将前端动画能力与视频渲染打通，并为 AI Agent 提供 MCP 接口，对做自动化内容生成、动效视频管线的开发者有直接帮助；但生态尚早期，非颠覆性变革。",
+      "suggested_tags": [
+        "html-to-video",
+        "mcp",
+        "ai-agents",
+        "motion-graphics",
+        "ffmpeg",
+        "puppeteer"
+      ],
+      "audience": [
+        "developer",
+        "creator",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "AutoGPT 是开源自主 AI 代理平台，提供构建和运行自动化任务工具，支持 GPT、Claude、Llama 等模型。",
+      "tech_highlights": [
+        "自主代理架构，支持多步任务规划与执行",
+        "多模型兼容（OpenAI、Claude、Llama API）",
+        "模块化工具集成与可扩展的代理构建框架"
+      ],
+      "relevance_score": 8,
+      "reason": "作为自主代理领域的先驱项目，为开发者提供了直接可用的代理构建工具和参考架构，对 AI 应用开发有显著帮助，但尚未达到改变技术格局的程度。",
+      "suggested_tags": [
+        "autonomous-agents",
+        "llm",
+        "agentic-ai",
+        "python",
+        "open-source"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "收集整理 MCP（Model Context Protocol）服务器的精选列表，为 AI 应用提供标准化上下文接入资源。",
+      "tech_highlights": [
+        "汇总各类 MCP 服务器实现，便于快速检索",
+        "覆盖 AI 工具与上下文协议生态",
+        "社区维护的 awesome 列表，持续更新"
+      ],
+      "relevance_score": 7,
+      "reason": "MCP 是 AI 工具集成的重要协议，该列表为开发者快速发现和选用 MCP 服务器提供直接帮助，但本身为资源汇总而非技术实现。",
+      "suggested_tags": [
+        "mcp",
+        "ai",
+        "awesome-list",
+        "llm-tools"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "PrivateGPT 提供本地私有 AI 应用的完整 API 层，集成 RAG、技能、工具、MCP、Text-to-SQL，兼容任意 OpenAI 接口推理服务。",
+      "tech_highlights": [
+        "完整 API 层封装 RAG、工具调用、MCP 与 Text-to-SQL",
+        "兼容任意 OpenAI 兼容推理服务，便于本地/私有化部署",
+        "面向 on-premise 场景，数据不出内网"
+      ],
+      "relevance_score": 8,
+      "reason": "对需要私有化部署 LLM 应用的开发者有直接帮助，功能覆盖全面且解耦推理后端，实用性强。",
+      "suggested_tags": [
+        "rag",
+        "private-ai",
+        "on-premise",
+        "llm",
+        "mcp"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "为AI代理提供817个结构化网络安全技能，映射MITRE ATT&CK、NIST CSF等6大框架，覆盖29个安全域，兼容Claude Code等20+平台。",
+      "tech_highlights": [
+        "817个结构化安全技能，覆盖29个安全域",
+        "映射MITRE ATT&CK、NIST CSF 2.0、ATLAS、D3FEND等6大框架",
+        "遵循agentskills.io标准，兼容Claude Code、Copilot、Cursor等20+平台",
+        "Apache 2.0开源，支持安全自动化与红蓝队场景"
+      ],
+      "relevance_score": 8,
+      "reason": "将网络安全知识与AI代理标准化结合，框架映射完整、平台兼容广，对安全自动化、DevSecOps和AI安全研究有直接帮助，但属于技能库整合而非底层技术突破。",
+      "suggested_tags": [
+        "cybersecurity",
+        "ai-agents",
+        "mitre-attack",
+        "security-automation",
+        "devsecops"
+      ],
+      "audience": [
+        "developer",
+        "researcher",
+        "security-engineer"
+      ]
+    }
+  ],
+  "review_feedback": {
+    "scores": {
+      "summary_quality": 7,
+      "technical_depth": 6,
+      "relevance": 8,
+      "originality": 6,
+      "formatting": 7
+    },
+    "overall_comment": "整体条目与 AI/Agent 主题相关度较高，但技术深度普遍停留在功能罗列层面，缺少架构细节与量化数据，部分条目（如 AutoGPT、awesome-list）创新性不足。",
+    "issues": [
+      {
+        "field": "technical_depth",
+        "severity": "high",
+        "note": "第1条未说明逐帧渲染的帧率控制、GSAP 时间轴与 Puppeteer 截帧同步机制、FFmpeg 编码参数等关键管线细节，技术亮点偏概念化。"
+      },
+      {
+        "field": "technical_depth",
+        "severity": "high",
+        "note": "第2条 AutoGPT 亮点均为通用描述（多步规划、多模型兼容），缺少代理循环、记忆/工具调度、并发执行等具体架构信息，且未提及版本或性能数据。"
+      },
+      {
+        "field": "technical_depth",
+        "severity": "medium",
+        "note": "第3条为 awesome-list，亮点仅为“汇总/覆盖/持续更新”，无任何技术实现或协议细节，技术深度实质为空。"
+      },
+      {
+        "field": "technical_depth",
+        "severity": "medium",
+        "note": "第4条未说明 RAG 检索实现、Text-to-SQL 的 schema 注入方式、MCP 集成粒度等，API 层描述过于笼统。"
+      },
+      {
+        "field": "originality",
+        "severity": "medium",
+        "note": "第2条 AutoGPT 为早期知名项目，条目未体现其相对当前 Agent 框架的差异化或演进，创新点表述薄弱。"
+      },
+      {
+        "field": "originality",
+        "severity": "medium",
+        "note": "第3条为社区 awesome 列表，本身非技术创新项目，originality 应显著低于其他条目。"
+      },
+      {
+        "field": "summary_quality",
+        "severity": "low",
+        "note": "第2条摘要“提供构建和运行自动化任务工具”表述略生硬，可更精炼；第4条摘要堆叠术语较多，可读性一般。"
+      },
+      {
+        "field": "formatting",
+        "severity": "low",
+        "note": "第3条标签仅4个且缺少更细粒度分类（如 protocol、server、curated-list），标签精细度弱于其他条目；各条目均未提供适用人群字段，无法评估其合理性。"
+      },
+      {
+        "field": "relevance",
+        "severity": "low",
+        "note": "第3条为资源列表而非技术实现，与 AI/LLM/Agent 的直接技术相关度略低于其他条目，relevance_score 7 基本合理但可再降。"
+      }
+    ],
+    "strengths": [
+      "第5条量化信息充分（817 技能、29 域、6 框架、20+ 平台），技术亮点具体且可验证",
+      "第1条准确抓住 HTML/GSAP 作为视频 DSL 与 MCP/Agent 集成的核心卖点",
+      "第4条清晰点出 on-premise、OpenAI 兼容、数据不出内网等私有化关键价值",
+      "标签整体覆盖协议（mcp）、领域（cybersecurity）、技术栈（ffmpeg、python）等维度，便于检索",
+      "摘要普遍保留了关键术语（MCP、RAG、MITRE ATT&CK 等），术语准确性较好"
+    ],
+    "_computed": {
+      "weighted_total": 6.8,
+      "pass_threshold": 7.0,
+      "reviewed_count": 5,
+      "total_count": 5
+    }
+  },
+  "errors": []
+}
