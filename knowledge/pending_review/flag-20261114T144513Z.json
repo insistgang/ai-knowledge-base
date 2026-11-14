@@ -1,0 +1,175 @@
+{
+  "flagged_at": "2026-11-14T14:45:13Z",
+  "iteration": 1,
+  "analyses_count": 5,
+  "analyses": [
+    {
+      "summary": "HeyGen 开源框架，用 HTML/CSS/JS 编写动画，经 Puppeteer 与 FFmpeg 渲染为视频，专为 AI Agent 与 MCP 场景设计。",
+      "tech_highlights": [
+        "HTML 到视频的确定性渲染管线，结合 Puppeteer 截图与 FFmpeg 编码",
+        "集成 GSAP 动画生态，支持复杂动效编排",
+        "原生面向 AI Agent 与 MCP 协议，可被 Claude Code 等工具调用生成视频"
+      ],
+      "relevance_score": 8,
+      "reason": "将前端技术栈转化为视频生产工具，降低程序化视频门槛，且 Agent/MCP 集成契合当前 AI 工作流趋势，对开发者和内容自动化场景有直接帮助。",
+      "suggested_tags": [
+        "html-to-video",
+        "mcp",
+        "ai-agents",
+        "motion-graphics",
+        "typescript"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "AutoGPT 是开源自主 AI Agent 平台，提供可视化构建器与运行环境，让用户用 LLM 搭建自动化任务流程。",
+      "tech_highlights": [
+        "可视化 Agent 构建器，低代码编排 LLM 工作流",
+        "支持 OpenAI、Claude、Llama 等多模型接入",
+        "内置自主任务分解、工具调用与记忆机制",
+        "活跃社区与插件生态，持续迭代"
+      ],
+      "relevance_score": 8,
+      "reason": "作为自主 Agent 领域的标杆开源项目，提供可直接使用的 Agent 框架与构建工具，对开发者落地 AI 自动化有直接帮助，但生产级稳定性仍需评估。",
+      "suggested_tags": [
+        "agent",
+        "llm",
+        "autonomous-agents",
+        "python",
+        "workflow"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "收集整理 MCP（Model Context Protocol）服务器的精选列表，为 AI 应用提供标准化上下文接入资源。",
+      "tech_highlights": [
+        "汇总各类 MCP 服务器实现",
+        "覆盖 AI 上下文协议生态",
+        "便于快速发现和集成工具"
+      ],
+      "relevance_score": 7,
+      "reason": "MCP 是 AI 工具集成的重要协议，该列表对开发者快速接入 AI 上下文服务有直接参考价值，但本身为资源汇总而非技术实现。",
+      "suggested_tags": [
+        "mcp",
+        "ai",
+        "awesome-list",
+        "llm",
+        "tools"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "基于本地模型的私有 AI 应用完整 API 层，支持 RAG、技能、工具、MCP、text-to-sql，兼容任意 OpenAI 接口推理服务。",
+      "tech_highlights": [
+        "提供完整 API 层，封装 RAG、工具调用、MCP、text-to-sql 等能力",
+        "兼容任意 OpenAI 兼容推理服务，便于本地/私有化部署",
+        "面向 on-premise 场景，强调数据隐私与自主可控"
+      ],
+      "relevance_score": 8,
+      "reason": "为本地私有 AI 应用提供开箱即用的 API 层，集成 RAG、MCP、text-to-sql 等主流能力，对构建企业级私有化 AI 应用有直接帮助，工程价值高。",
+      "suggested_tags": [
+        "RAG",
+        "私有化部署",
+        "LLM",
+        "MCP",
+        "text-to-sql"
+      ],
+      "audience": [
+        "developer",
+        "researcher"
+      ]
+    },
+    {
+      "summary": "为AI代理提供817个结构化网络安全技能，映射MITRE ATT&CK、NIST CSF 2.0等6大框架，覆盖29个安全域，兼容Claude Code等20+平台。",
+      "tech_highlights": [
+        "817个结构化安全技能，覆盖29个安全域",
+        "映射MITRE ATT&CK、NIST CSF 2.0、ATLAS、D3FEND等6大框架",
+        "遵循agentskills.io标准，兼容Claude Code、Copilot、Cursor等20+平台",
+        "Apache 2.0开源，Python实现，支持MCP集成"
+      ],
+      "relevance_score": 8,
+      "reason": "将安全领域知识标准化为AI代理可调用的技能库，对安全自动化、红蓝对抗和AI安全研究有直接帮助，生态兼容性强，但属于知识封装而非底层技术突破。",
+      "suggested_tags": [
+        "ai-agents",
+        "cybersecurity",
+        "mitre-attack",
+        "security-automation",
+        "llm"
+      ],
+      "audience": [
+        "developer",
+        "researcher",
+        "security-engineer"
+      ]
+    }
+  ],
+  "review_feedback": {
+    "scores": {
+      "summary_quality": 7,
+      "technical_depth": 6,
+      "relevance": 8,
+      "originality": 6,
+      "formatting": 7
+    },
+    "overall_comment": "整体条目与 AI/LLM/Agent 主题相关度较高，但技术深度普遍偏浅，部分条目（如 awesome-list）缺乏实质技术亮点，且摘要与亮点存在重复表述，原创性判断依据不足。",
+    "issues": [
+      {
+        "field": "index 3 tech_highlights",
+        "severity": "high",
+        "note": "awesome-list 类条目无实质技术架构或数据细节，三条亮点均为泛泛描述，技术深度严重不足"
+      },
+      {
+        "field": "index 2 tech_highlights",
+        "severity": "medium",
+        "note": "AutoGPT 亮点为通用 Agent 能力描述，缺乏具体架构、性能数据或实现细节，且未体现与旧版差异"
+      },
+      {
+        "field": "index 1 tech_highlights",
+        "severity": "low",
+        "note": "渲染管线描述较具体，但未提及帧率、分辨率、性能等量化指标"
+      },
+      {
+        "field": "index 4 summary",
+        "severity": "low",
+        "note": "摘要与亮点高度重复，信息密度低，未说明项目名称或与同类方案差异"
+      },
+      {
+        "field": "index 5 summary",
+        "severity": "low",
+        "note": "数字堆砌较多但缺乏技能质量、更新频率或实际效果验证信息"
+      },
+      {
+        "field": "index 2 tags",
+        "severity": "low",
+        "note": "标签较粗粒度，缺少如 multi-agent、tool-use 等更精细维度"
+      },
+      {
+        "field": "index 3 relevance_score",
+        "severity": "low",
+        "note": "awesome-list 相关度给 7 偏高，资源列表类对技术分析价值有限"
+      }
+    ],
+    "strengths": [
+      "多数条目准确识别了 MCP、Agent、RAG 等当前热点方向，主题相关性强",
+      "index 1 和 index 5 的亮点包含具体技术栈与量化数据（817 技能、6 大框架、20+ 平台），信息密度较高",
+      "标签覆盖了协议、框架、部署形态等多维度，便于检索",
+      "摘要整体简洁，关键术语保留较好"
+    ],
+    "_computed": {
+      "weighted_total": 6.8,
+      "pass_threshold": 7.0,
+      "reviewed_count": 5,
+      "total_count": 5
+    }
+  },
+  "errors": []
+}
