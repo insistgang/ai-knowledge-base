@@ -1,0 +1,30 @@
+{
+  "id": "github-20261122-langfuse-langfuse",
+  "title": "langfuse/langfuse: Langfuse 是一个开源 AI 工程平台，提供 AI 网关、Agent 可观测性、评估和提示管理，基于 OpenTe",
+  "source": "github-trending",
+  "source_url": "https://github.com/langfuse/langfuse",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "summary": "Langfuse 是一个开源 AI 工程平台，提供 AI 网关、Agent 可观测性、评估和提示管理，基于 OpenTelemetry，支持自托管或云服务。",
+  "analysis": {
+    "tech_highlights": [
+      "基于 OpenTelemetry 的统一可观测性",
+      "集成 AI 网关、评估与提示管理的一体化平台",
+      "支持自托管和云服务，开源且可扩展"
+    ],
+    "relevance_score": 8,
+    "reason": "该项目为 LLM 应用开发提供全面的可观测性和管理工具，对开发者和研究者有直接帮助，但尚未达到改变技术格局的程度。",
+    "risks": []
+  },
+  "tags": [
+    "llm-observability",
+    "ai-gateway",
+    "prompt-management",
+    "evaluation",
+    "opentelemetry"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

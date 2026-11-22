@@ -1,0 +1,30 @@
+{
+  "id": "github-20261122-tangleml-tangle",
+  "title": "TangleML/tangle: Tangle 是一个 Web 应用，让用户无需配置开发环境即可构建和运行机器学习流水线，降低 ML 使用门槛。",
+  "source": "github-trending",
+  "source_url": "https://github.com/TangleML/tangle",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "summary": "Tangle 是一个 Web 应用，让用户无需配置开发环境即可构建和运行机器学习流水线，降低 ML 使用门槛。",
+  "analysis": {
+    "tech_highlights": [
+      "Web 端可视化构建 ML 流水线",
+      "免本地环境配置，云端运行",
+      "支持数据处理与云流水线编排"
+    ],
+    "relevance_score": 6,
+    "reason": "对 ML 入门和快速实验有便利价值，但属于平台封装类工具，技术深度有限，短期对开发者直接帮助一般。",
+    "risks": []
+  },
+  "tags": [
+    "machine-learning",
+    "pipeline",
+    "web-app",
+    "no-code",
+    "cloud"
+  ],
+  "audience": [
+    "developer",
+    "data-scientist"
+  ],
+  "status": "draft"
+}

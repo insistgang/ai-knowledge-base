@@ -1,0 +1,30 @@
+{
+  "id": "github-20261122-paddlepaddle-serving",
+  "title": "PaddlePaddle/Serving: 飞桨服务化部署框架，支持DAG流水线、多模型与GPU推理，提供高性能在线预测服务。",
+  "source": "github-trending",
+  "source_url": "https://github.com/PaddlePaddle/Serving",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "summary": "飞桨服务化部署框架，支持DAG流水线、多模型与GPU推理，提供高性能在线预测服务。",
+  "analysis": {
+    "tech_highlights": [
+      "基于DAG的流水线编排，支持复杂模型组合",
+      "高性能C++推理引擎，支持GPU加速与多模型管理",
+      "提供RPC/HTTP服务接口，易于集成微服务架构"
+    ],
+    "relevance_score": 8,
+    "reason": "对使用飞桨的开发者有直接部署帮助，但非飞桨用户价值有限，整体性能与灵活性突出。",
+    "risks": []
+  },
+  "tags": [
+    "model-serving",
+    "paddlepaddle",
+    "inference",
+    "dag",
+    "microservice"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

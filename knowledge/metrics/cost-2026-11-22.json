@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T15:54:34Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.004354,
+    "remaining_usd": 0.095646,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1615,
+      "completion_tokens": 913,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 975,
+      "total_tokens": 2528,
+      "estimated_cost_usd": 0.004354,
+      "source": "github",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 5,
+    "prompt_tokens": 1615,
+    "completion_tokens": 913,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 975,
+    "total_tokens": 2528,
+    "estimated_cost_usd": 0.004354
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "PaddlePaddle/Serving",
+      "model": "deepseek-flash",
+      "prompt_tokens": 299,
+      "completion_tokens": 170,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 171,
+      "total_tokens": 469,
+      "estimated_cost_usd": 0.000809
+    },
+    {
+      "source": "github",
+      "item_name": "pathwaycom/serviette",
+      "model": "deepseek-flash",
+      "prompt_tokens": 335,
+      "completion_tokens": 211,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 207,
+      "total_tokens": 546,
+      "estimated_cost_usd": 0.000968
+    },
+    {
+      "source": "github",
+      "item_name": "dipakkr/awesome-ai-engineering",
+      "model": "deepseek-flash",
+      "prompt_tokens": 354,
+      "completion_tokens": 191,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 226,
+      "total_tokens": 545,
+      "estimated_cost_usd": 0.000927
+    },
+    {
+      "source": "github",
+      "item_name": "langfuse/langfuse",
+      "model": "deepseek-flash",
+      "prompt_tokens": 365,
+      "completion_tokens": 192,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 237,
+      "total_tokens": 557,
+      "estimated_cost_usd": 0.000941
+    },
+    {
+      "source": "github",
+      "item_name": "TangleML/tangle",
+      "model": "deepseek-flash",
+      "prompt_tokens": 262,
+      "completion_tokens": 149,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 134,
+      "total_tokens": 411,
+      "estimated_cost_usd": 0.000709
+    }
+  ]
+}

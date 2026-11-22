@@ -1,0 +1,130 @@
+{
+  "source": "github",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "items": [
+    {
+      "name": "PaddlePaddle/Serving",
+      "url": "https://github.com/PaddlePaddle/Serving",
+      "summary": "A flexible, high-performance carrier for machine learning models（『飞桨』服务化部署框架）",
+      "stars": 926,
+      "language": "C++",
+      "topics": [
+        "dag",
+        "deep-learning",
+        "docker",
+        "gpu",
+        "micro-service",
+        "microservice-toolkit",
+        "online-service",
+        "paddle",
+        "paddle-serving",
+        "pipeline",
+        "prediction",
+        "predictor",
+        "python",
+        "rpc-service",
+        "serving"
+      ]
+    },
+    {
+      "name": "pathwaycom/serviette",
+      "url": "https://github.com/pathwaycom/serviette",
+      "summary": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
+      "stars": 58685,
+      "language": "Python",
+      "topics": [
+        "chromadb",
+        "document-qa",
+        "document-search",
+        "duckdb",
+        "live-data",
+        "llm",
+        "milvus",
+        "mongodb",
+        "no-code",
+        "pathway",
+        "pgvector",
+        "pinecone",
+        "qdrant",
+        "rag",
+        "real-time",
+        "retrieval-augmented-generation",
+        "self-hosted",
+        "semantic-search",
+        "vector-database",
+        "weaviate"
+      ]
+    },
+    {
+      "name": "dipakkr/awesome-ai-engineering",
+      "url": "https://github.com/dipakkr/awesome-ai-engineering",
+      "summary": "🚀 A curated collection of AI engineering resources, roadmaps, tools, and projects covering LLMs, RAG, AI Agents, MCP, fine-tuning, evaluations, and production AI systems.",
+      "stars": 22611,
+      "language": "unknown",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "ai-engineering",
+        "ai-projects",
+        "ai-resources",
+        "ai-tools",
+        "artificial-intelligence",
+        "awesome-lists",
+        "deep-learning",
+        "fine-tuning",
+        "generative-ai",
+        "large-language-models",
+        "learning-resources",
+        "llm",
+        "llmops",
+        "machine-learning",
+        "mcp",
+        "prompt-engineering",
+        "rag"
+      ]
+    },
+    {
+      "name": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "summary": "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.",
+      "stars": 37722,
+      "language": "TypeScript",
+      "topics": [
+        "ai-gateway",
+        "analytics",
+        "evaluation",
+        "gateway",
+        "langchain",
+        "large-language-models",
+        "llama-index",
+        "llm",
+        "llm-evaluation",
+        "llm-gateway",
+        "llm-observability",
+        "llmops",
+        "monitoring",
+        "observability",
+        "open-source",
+        "openai",
+        "playground",
+        "prompt-engineering",
+        "prompt-management",
+        "self-hosted"
+      ]
+    },
+    {
+      "name": "TangleML/tangle",
+      "url": "https://github.com/TangleML/tangle",
+      "summary": "Tangle is a web app that allows the users to build and run Machine Learning pipelines without having to set up development environment.",
+      "stars": 516,
+      "language": "Python",
+      "topics": [
+        "artificial-intelligence",
+        "cloud-pipelines",
+        "data-processing",
+        "machine-learning",
+        "pipelines"
+      ]
+    }
+  ]
+}

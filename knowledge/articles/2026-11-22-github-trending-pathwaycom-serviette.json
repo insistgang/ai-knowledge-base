@@ -1,0 +1,31 @@
+{
+  "id": "github-20261122-pathwaycom-serviette",
+  "title": "pathwaycom/serviette: Serviette 是一个无代码 RAG 服务器，能实时同步文档更新，支持 8 种向量数据库，基于 Pathway 构建",
+  "source": "github-trending",
+  "source_url": "https://github.com/pathwaycom/serviette",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "summary": "Serviette 是一个无代码 RAG 服务器，能实时同步文档更新，支持 8 种向量数据库，基于 Pathway 构建。",
+  "analysis": {
+    "tech_highlights": [
+      "无代码配置，简化 RAG 部署",
+      "实时同步文档变更，保持答案最新",
+      "支持多种向量数据库（Chroma、Milvus、Pinecone 等）",
+      "基于 Pathway 流处理框架，实现低延迟更新"
+    ],
+    "relevance_score": 7,
+    "reason": "项目降低了 RAG 应用的门槛，实时同步特性对文档问答场景有直接帮助，但技术架构依赖 Pathway，创新性中等，适合开发者快速搭建原型。",
+    "risks": []
+  },
+  "tags": [
+    "rag",
+    "no-code",
+    "vector-database",
+    "real-time",
+    "self-hosted"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}

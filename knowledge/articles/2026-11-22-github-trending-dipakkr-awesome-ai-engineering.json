@@ -1,0 +1,30 @@
+{
+  "id": "github-20261122-dipakkr-awesome-ai-engineering",
+  "title": "dipakkr/awesome-ai-engineering: 一份精选的 AI 工程资源合集，涵盖 LLM、RAG、AI Agent、MCP、微调、评估与生产化系统，提供路线图、工具",
+  "source": "github-trending",
+  "source_url": "https://github.com/dipakkr/awesome-ai-engineering",
+  "collected_at": "2026-11-22T15:54:34Z",
+  "summary": "一份精选的 AI 工程资源合集，涵盖 LLM、RAG、AI Agent、MCP、微调、评估与生产化系统，提供路线图、工具与项目索引。",
+  "analysis": {
+    "tech_highlights": [
+      "覆盖 LLM、RAG、Agent、MCP 等主流 AI 工程主题的体系化资源索引",
+      "包含学习路线图与生产级 AI 系统实践参考",
+      "聚合工具、项目与评估方法，便于快速检索"
+    ],
+    "relevance_score": 7,
+    "reason": "作为 awesome 类资源清单，本身无代码实现，但对 AI 工程方向的开发者与研究者有直接的入门导航与选型参考价值，覆盖面广且主题前沿。",
+    "risks": []
+  },
+  "tags": [
+    "awesome-list",
+    "llm",
+    "rag",
+    "ai-agents",
+    "llmops"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "draft"
+}
