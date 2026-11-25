@@ -1,0 +1,30 @@
+{
+  "id": "github-20261125-vercel-labs-agent-desktop",
+  "title": "vercel-labs/agent-desktop: Vercel Labs 出品的 Rust CLI 工具，让 AI Agent 通过无障碍 API 控制桌面，支持 mac",
+  "source": "github-trending",
+  "source_url": "https://github.com/vercel-labs/agent-desktop",
+  "collected_at": "2026-11-25T18:24:16Z",
+  "summary": "Vercel Labs 出品的 Rust CLI 工具，让 AI Agent 通过无障碍 API 控制桌面，支持 macOS 与 MCP 协议。",
+  "analysis": {
+    "tech_highlights": [
+      "基于无障碍 API 实现桌面自动化，无需截图或视觉模型",
+      "Rust 编写，提供 CLI 与 MCP 接口供 AI Agent 调用",
+      "面向 computer-use agent 场景，支持 macOS 桌面控制"
+    ],
+    "relevance_score": 7,
+    "reason": "为 AI Agent 提供轻量、结构化的桌面操作能力，MCP 集成降低接入成本，对构建 computer-use 类应用有直接帮助，但生态与跨平台仍待完善。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "computer-use",
+    "desktop-automation",
+    "mcp",
+    "rust"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

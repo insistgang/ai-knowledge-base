@@ -1,0 +1,31 @@
+{
+  "id": "github-20261125-teaql-teaql-agent-kit",
+  "title": "teaql/teaql-agent-kit: 面向 AI 编码代理的模型驱动框架，通过语义建模、应用生成、渐进式 API 辅助与基于证据的验证来约束和增强代理编码。",
+  "source": "github-trending",
+  "source_url": "https://github.com/teaql/teaql-agent-kit",
+  "collected_at": "2026-11-25T18:24:16Z",
+  "summary": "面向 AI 编码代理的模型驱动框架，通过语义建模、应用生成、渐进式 API 辅助与基于证据的验证来约束和增强代理编码。",
+  "analysis": {
+    "tech_highlights": [
+      "语义建模与语义护栏约束 AI 代理行为",
+      "渐进式 API 辅助与渐进式披露降低上下文负担",
+      "基于证据的验证机制提升生成代码可信度",
+      "模型驱动开发结合 DDD 支持多语言（Java/Rust）生成"
+    ],
+    "relevance_score": 7,
+    "reason": "针对 AI 编码代理的工程化治理与验证有实际价值，语义建模和证据验证思路新颖，但生态尚早期、落地依赖具体场景，对开发者有直接参考意义。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "model-driven-development",
+    "code-generation",
+    "ddd",
+    "developer-tools"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "github-20261125-browser-use-browser-use",
+  "title": "browser-use/browser-use: 开源 Python 库，让 AI 智能体直接操控浏览器完成网页任务，支持 Playwright/CDP、MCP 协议与云",
+  "source": "github-trending",
+  "source_url": "https://github.com/browser-use/browser-use",
+  "collected_at": "2026-11-25T18:24:16Z",
+  "summary": "开源 Python 库，让 AI 智能体直接操控浏览器完成网页任务，支持 Playwright/CDP、MCP 协议与云端隐身浏览器托管。",
+  "analysis": {
+    "tech_highlights": [
+      "LLM 驱动的浏览器自动化智能体框架",
+      "基于 Playwright 与 CDP 的底层控制",
+      "支持 MCP 协议与云端隐身浏览器 API"
+    ],
+    "relevance_score": 8,
+    "reason": "为 AI Agent 落地 Web 自动化提供成熟开源方案，生态活跃、可直接集成到开发与研究流程中。",
+    "risks": []
+  },
+  "tags": [
+    "ai-agents",
+    "browser-automation",
+    "playwright",
+    "llm",
+    "mcp"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

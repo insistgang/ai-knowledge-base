@@ -1,0 +1,31 @@
+{
+  "id": "github-20261125-xorbitsai-inference",
+  "title": "xorbitsai/inference: Xinference 是开源模型推理平台，支持语言、视觉、嵌入、重排序、图像、音频和视频模型，可在异构硬件上多引擎部署，",
+  "source": "github-trending",
+  "source_url": "https://github.com/xorbitsai/inference",
+  "collected_at": "2026-11-25T18:24:16Z",
+  "summary": "Xinference 是开源模型推理平台，支持语言、视觉、嵌入、重排序、图像、音频和视频模型，可在异构硬件上多引擎部署，并提供 OpenAI 兼容 API。",
+  "analysis": {
+    "tech_highlights": [
+      "支持 vLLM、SGLang、llama.cpp、MLX、Transformers 等多种推理引擎",
+      "覆盖 LLM、多模态、嵌入、重排序、语音等全类型模型",
+      "从笔记本到分布式集群的异构硬件部署能力",
+      "提供 OpenAI 兼容 API，便于集成现有生态"
+    ],
+    "relevance_score": 8,
+    "reason": "统一多引擎、多模态模型推理与 OpenAI 兼容接口，对开发者部署和集成模型有直接帮助，工程实用性强。",
+    "risks": []
+  },
+  "tags": [
+    "inference",
+    "llm",
+    "multi-modal",
+    "openai-api",
+    "model-serving"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}

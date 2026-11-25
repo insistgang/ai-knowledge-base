@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T18:24:16Z",
+  "budget": {
+    "budget_usd": 0.1,
+    "current_cost_usd": 0.00693,
+    "remaining_usd": 0.09307,
+    "exceeded": false
+  },
+  "runs": [
+    {
+      "calls": 5,
+      "prompt_tokens": 1628,
+      "completion_tokens": 923,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1628,
+      "total_tokens": 2551,
+      "estimated_cost_usd": 0.004397,
+      "source": "github",
+      "model": "deepseek-flash"
+    },
+    {
+      "calls": 1,
+      "prompt_tokens": 1036,
+      "completion_tokens": 499,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 908,
+      "total_tokens": 1535,
+      "estimated_cost_usd": 0.002533,
+      "source": "workflow",
+      "model": "deepseek-flash"
+    }
+  ],
+  "total": {
+    "calls": 6,
+    "prompt_tokens": 2664,
+    "completion_tokens": 1422,
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 2536,
+    "total_tokens": 4086,
+    "estimated_cost_usd": 0.00693
+  },
+  "calls": [
+    {
+      "source": "github",
+      "item_name": "vercel-labs/agent-desktop",
+      "model": "deepseek-flash",
+      "prompt_tokens": 282,
+      "completion_tokens": 175,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 282,
+      "total_tokens": 457,
+      "estimated_cost_usd": 0.000807
+    },
+    {
+      "source": "github",
+      "item_name": "teaql/teaql-agent-kit",
+      "model": "deepseek-flash",
+      "prompt_tokens": 327,
+      "completion_tokens": 180,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 327,
+      "total_tokens": 507,
+      "estimated_cost_usd": 0.000867
+    },
+    {
+      "source": "github",
+      "item_name": "xorbitsai/inference",
+      "model": "deepseek-flash",
+      "prompt_tokens": 358,
+      "completion_tokens": 213,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 358,
+      "total_tokens": 571,
+      "estimated_cost_usd": 0.000997
+    },
+    {
+      "source": "github",
+      "item_name": "browser-use/browser-use",
+      "model": "deepseek-flash",
+      "prompt_tokens": 321,
+      "completion_tokens": 159,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 321,
+      "total_tokens": 480,
+      "estimated_cost_usd": 0.000798
+    },
+    {
+      "source": "github",
+      "item_name": "screenpipe/screenpipe",
+      "model": "deepseek-flash",
+      "prompt_tokens": 340,
+      "completion_tokens": 196,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 340,
+      "total_tokens": 536,
+      "estimated_cost_usd": 0.000928
+    },
+    {
+      "source": "workflow",
+      "item_name": "review",
+      "model": "deepseek-flash",
+      "prompt_tokens": 1036,
+      "completion_tokens": 499,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 908,
+      "total_tokens": 1535,
+      "estimated_cost_usd": 0.002533
+    }
+  ]
+}

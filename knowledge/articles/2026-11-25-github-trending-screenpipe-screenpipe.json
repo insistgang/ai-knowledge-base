@@ -1,0 +1,32 @@
+{
+  "id": "github-20261125-screenpipe-screenpipe",
+  "title": "screenpipe/screenpipe: Screenpipe 用 Rust 在本地持续录制屏幕与音频，结合 OCR、语音转写和多模态模型，自动发现可自动化的工作",
+  "source": "github-trending",
+  "source_url": "https://github.com/screenpipe/screenpipe",
+  "collected_at": "2026-11-25T18:24:16Z",
+  "summary": "Screenpipe 用 Rust 在本地持续录制屏幕与音频，结合 OCR、语音转写和多模态模型，自动发现可自动化的工作流并交给 AI Agent 执行，强调隐私与本地优先。",
+  "analysis": {
+    "tech_highlights": [
+      "本地持续录制屏幕+音频，数据不出设备，隐私优先",
+      "融合 OCR、语音转写与多模态模型，构建可检索的个人工作记忆",
+      "自动识别重复性工作流并输出给任意 Agent（含 MCP 集成）",
+      "Rust 实现，性能与资源占用控制较好"
+    ],
+    "relevance_score": 8,
+    "reason": "为 AI Agent 提供本地上下文与记忆层，MCP 与多模态能力对开发者构建自动化工具直接有用，但生态与稳定性仍需验证。",
+    "risks": []
+  },
+  "tags": [
+    "local-first",
+    "ai-memory",
+    "mcp",
+    "multimodal",
+    "screen-recording",
+    "rust"
+  ],
+  "audience": [
+    "developer",
+    "researcher"
+  ],
+  "status": "reviewed"
+}
